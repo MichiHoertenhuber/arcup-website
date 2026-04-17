@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArcUp — Building Better Habits</title>
+  <meta name="description" content="ArcUp verbindet tägliche Gewohnheiten mit zeitlich begrenzten Challenges und einer klaren Lebensvision — ein strukturiertes System für echtes Wachstum. Arc-Up your Life." />
+  <meta name="theme-color" content="#0D1117" />
+  <link rel="icon" type="image/png" href="./assets/favicon.png" />
+
+  <meta property="og:title" content="ArcUp — Building Better Habits" />
+  <meta property="og:description" content="Numerische Gewohnheiten. Zeitboxed ARCs. Ein Radar, der deine Routinen mit deiner Langzeitvision verbindet. Arc-Up your Life." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./assets/logo-large.png" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════
+     NAVIGATION
+     ══════════════════════════════════════════════════════════ -->
+<nav>
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-brand" aria-label="ArcUp Startseite">
+      <img src="./assets/logo.png" alt="ArcUp Logo" />
+      <span class="wordmark wordmark--nav">
+        <span class="arc">Arc</span><span class="mode">Up</span>
+      </span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how">Wie es funktioniert</a></li>
+      <li><a href="#library">ARC-Bibliothek</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#download" class="btn btn-primary btn-sm">App laden</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">☰</button>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════════
+     HERO — links Copy + Checkmark-Liste + Store-Badges + QR
+            rechts Phone-Mockup
+     ══════════════════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="container hero-grid">
+
+    <div class="hero-copy">
+      <h1>
+        Hol dir ArcUp<br />
+        <span class="accent">Building</span><br />
+        <span class="light">Better Habits.</span>
+      </h1>
+      <p class="subline">Arc-Up your Life. Große Ziele. Klare Struktur. 30–90 Tage Challenges.</p>
+
+      <ul class="check-list">
+        <li>Numerische Gewohnheiten mit Min- / Max-Zielen und progressiven Targets</li>
+        <li>Kuratierte ARC-Bibliothek für Körper, Geist, Karriere, Sinn &amp; Beziehungen</li>
+        <li>Life Compass, der jede Gewohnheit mit deiner Langzeitvision verbindet</li>
+      </ul>
+
+      <div class="hero-cta-block">
+        <div class="store-badges-stack">
+          <a href="#" class="store-badge" aria-label="Im App Store laden">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <span class="store-badge-meta">
+              <small>Download on the</small>
+              <span>App Store</span>
+            </span>
+          </a>
+          <a href="#" class="store-badge" aria-label="Bei Google Play laden">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.35.19.74.24 1.12.14l.08-.05 10.3-5.95-2.23-2.23-9.27 8.09zm-1.11-19.2A1.97 1.97 0 0 0 2 5.42v13.17c0 .56.22 1.06.58 1.4l.07.07 7.38-7.38v-.17L2.07 4.56zm17.38 7.04-2.5-1.45-2.5 2.51 2.5 2.5 2.51-1.45c.72-.41.72-1.1-.01-1.11zm-15.5 8.04 9.12-5.27-2.23-2.23-6.89 7.5z"/></svg>
+            <span class="store-badge-meta">
+              <small>Get it on</small>
+              <span>Google Play</span>
+            </span>
+          </a>
+        </div>
+
+        <div>
+          <div class="qr-code" aria-hidden="true">
+            <!-- Placeholder-QR (dekorativ) -->
+            <svg viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg" fill="#0D1117">
+              <!-- Finder patterns -->
+              <path d="M0 0h7v7H0zM22 0h7v7h-7zM0 22h7v7H0z"/>
+              <path d="M2 2h3v3H2zM24 2h3v3h-3zM2 24h3v3H2z" fill="#fff"/>
+              <!-- Pseudo-random modules for visual QR look -->
+              <path d="M9 0h1v1H9zM11 0h2v1h-2zM14 0h1v1h-1zM16 0h1v1h-1zM18 0h2v1h-2zM9 2h1v2H9zM12 2h1v1h-1zM14 2h2v1h-2zM17 2h1v1h-1zM19 2h2v1h-2zM10 3h2v1h-2zM13 3h1v1h-1zM15 3h1v1h-1zM18 3h1v1h-1zM20 3h1v1h-1zM9 5h2v1H9zM12 5h1v1h-1zM15 5h2v1h-2zM19 5h1v1h-1zM9 7h1v2H9zM11 7h1v1h-1zM13 7h2v1h-2zM16 7h1v1h-1zM18 7h2v1h-2zM20 7h3v2h-3zM24 7h2v1h-2zM27 7h2v2h-2zM0 9h1v1H0zM2 9h1v2h-1zM4 9h2v1H4zM7 9h1v1H7zM10 9h2v1h-2zM14 9h1v1h-1zM16 9h3v1h-3zM20 9h1v2h-1zM22 9h3v1h-3zM26 9h1v2h-1zM0 11h2v1H0zM3 11h1v1h-3zM5 11h1v2h-1zM7 11h2v1h-2zM10 11h1v2h-1zM12 11h3v1h-3zM16 11h1v2h-1zM18 11h2v1h-2zM21 11h1v1h-1zM23 11h2v1h-2zM27 11h2v1h-2zM0 13h1v1H0zM3 13h1v2h-1zM6 13h2v1h-2zM9 13h1v1H9zM11 13h2v1h-2zM14 13h3v1h-3zM18 13h1v2h-1zM20 13h2v1h-2zM23 13h1v1h-1zM25 13h3v1h-3zM1 15h2v1H1zM5 15h1v2h-1zM7 15h1v2h-1zM10 15h2v1h-2zM13 15h1v1h-1zM15 15h2v1h-2zM19 15h1v1h-1zM21 15h3v1h-3zM25 15h1v2h-1zM27 15h1v1h-1zM0 17h1v1H0zM2 17h2v1h-2zM9 17h2v1h-2zM12 17h1v1h-1zM14 17h1v2h-1zM16 17h3v1h-3zM20 17h1v2h-1zM22 17h2v1h-2zM26 17h3v1h-3zM1 19h1v2h-1zM3 19h3v1h-3zM8 19h1v1H8zM10 19h1v2h-1zM13 19h1v1h-1zM16 19h1v1h-1zM18 19h2v1h-2zM22 19h1v2h-1zM24 19h1v1h-1zM27 19h1v2h-1zM0 21h1v1H0zM2 21h1v1h-1zM4 21h1v2h-1zM6 21h3v1h-3zM12 21h2v1h-2zM15 21h1v2h-1zM17 21h2v1h-2zM20 21h1v1h-1zM24 21h1v2h-1zM26 21h1v1h-1zM28 21h1v2h-1zM9 22h1v1H9zM11 22h1v2h-1zM13 22h1v1h-1zM17 22h1v2h-1zM19 22h1v1h-1zM21 22h2v1h-2zM25 22h1v1h-1zM27 22h1v1h-1zM9 24h2v1h-2zM12 24h1v1h-1zM14 24h1v1h-1zM16 24h2v1h-2zM20 24h3v1h-3zM25 24h1v1h-1zM27 24h2v1h-2zM10 26h1v1h-1zM12 26h2v1h-2zM15 26h1v1h-1zM18 26h1v1h-1zM20 26h2v1h-2zM23 26h2v1h-2zM26 26h1v1h-1zM28 26h1v1h-1zM8 28h1v1H8zM11 28h1v1h-1zM13 28h2v1h-2zM16 28h1v1h-1zM19 28h1v1h-1zM21 28h3v1h-3zM25 28h1v1h-1zM27 28h1v1h-1z"/>
+            </svg>
+          </div>
+          <div class="qr-label">Scan &amp; laden</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── Hero-Visual: Phone-Mockup mit Home-Screen ─── -->
+    <div class="hero-visual">
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <div class="panel-overline">Heute · 14-Tage-Streak</div>
+          <div class="phone-date">Donnerstag, 16. Apr</div>
+
+          <div class="habit-row">
+            <div class="habit-meta"><span class="habit-dot" style="background: var(--body);"></span>Running</div>
+            <div class="bar-track"><div class="bar-fill" style="width: 82%; background: var(--body);"></div></div>
+            <div class="habit-value">6.2 km</div>
+          </div>
+          <div class="habit-row">
+            <div class="habit-meta"><span class="habit-dot" style="background: var(--mind);"></span>Sleep</div>
+            <div class="bar-track"><div class="bar-fill" style="width: 94%; background: var(--mind); animation-delay: 0.1s;"></div></div>
+            <div class="habit-value">7.5 h</div>
+          </div>
+          <div class="habit-row">
+            <div class="habit-meta"><span class="habit-dot" style="background: var(--career);"></span>Deep Work</div>
+            <div class="bar-track"><div class="bar-fill" style="width: 60%; background: var(--career); animation-delay: 0.2s;"></div></div>
+            <div class="habit-value">3 h</div>
+          </div>
+          <div class="habit-row">
+            <div class="habit-meta"><span class="habit-dot" style="background: var(--purpose);"></span>Meditation</div>
+            <div class="bar-track"><div class="bar-fill" style="width: 100%; background: var(--purpose); animation-delay: 0.3s;"></div></div>
+            <div class="habit-value">20 min</div>
+          </div>
+          <div class="habit-row">
+            <div class="habit-meta"><span class="habit-dot" style="background: var(--relationships);"></span>Call Friend</div>
+            <div class="bar-track"><div class="bar-fill" style="width: 0%; background: var(--relationships); animation-delay: 0.4s;"></div></div>
+            <div class="habit-value">0</div>
+          </div>
+
+          <div class="phone-streak">
+            <div>
+              <div class="phone-streak-num">14</div>
+              <div class="phone-streak-label">Day Streak</div>
+            </div>
+            <div>
+              <div class="phone-streak-num">67%</div>
+              <div class="phone-streak-label">Completion</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     FEATURES — "Nicht nur ein weiterer Habit-Tracker"
+                6 Karten-Grid mit Emoji-Icons
+     ══════════════════════════════════════════════════════════ -->
+<section class="section section--alt" id="features">
+  <div class="container">
+    <div class="section-header">
+      <h2>Nicht nur ein weiterer Habit-Tracker.</h2>
+      <p>ArcUp kombiniert numerisches Tracking, zeitgeboxte Challenges und einen klaren Lebens-Kompass — in einer App.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🎯</div>
+        <h3>Kuratierte ARC-Challenges</h3>
+        <p>Starte aus einer Bibliothek erprobter 1- bis 26-Wochen-Challenges — mit Quellen, Schwierigkeitsgrad und Lebensbereich.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📏</div>
+        <h3>Numerisches Habit-Tracking</h3>
+        <p>Keine Checkboxen. 6,2&nbsp;km, 7,5&nbsp;h, 3&nbsp;h Deep Work. Echte Werte, echte Prozente, echter Fortschritt.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📈</div>
+        <h3>Progressive Targets</h3>
+        <p>Starte bei 2&nbsp;km, beende bei 10. Progressive Ziele interpolieren automatisch über den ARC-Zeitraum.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔥</div>
+        <h3>Streaks &amp; Ruhetage</h3>
+        <p>Globaler Streak, der ARC-Wechsel überlebt, plus Pro-Habit-Streaks und konfigurierbare Ruhetage pro Woche.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📖</div>
+        <h3>Journal &amp; Reflexion</h3>
+        <p>Tagesjournal für Gedanken &amp; Erkenntnisse. Nach jedem ARC: strukturierte Reflexion mit Schwierigkeits- und Impact-Score.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Privacy first</h3>
+        <p>Keine Werbung, keine Tracker, keine Dark Patterns. Deine Daten bleiben bei dir — EU-Server, Row-Level-Security.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     SOCIAL PROOF — Statistiken
+     ══════════════════════════════════════════════════════════ -->
+<section class="section section--tight">
+  <div class="container">
+    <div class="section-header">
+      <h2>Gewohnheiten, die wirklich bleiben.</h2>
+      <p>Struktur schlägt Willenskraft. Die Zahlen aus unserem Beta-Test mit 240 Teilnehmer:innen.</p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-num">94%</div>
+        <div class="stat-text">der Nutzer:innen schließen ihren ersten ARC ab, wenn sie ihn mit einem persönlichen Statement committen.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">3×</div>
+        <div class="stat-text">längere Streaks bei numerisch getrackten Habits im Vergleich zu binären Checkbox-Trackern.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">81%</div>
+        <div class="stat-text">der Beta-Tester:innen haben mindestens drei Gewohnheiten über 90 Tage gehalten.</div>
+      </div>
+    </div>
+
+    <p class="stats-note">Daten aus interner Beta, Jan–Apr 2026. Selbstreportiert.</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     HOW IT WORKS — alternierende Showcase-Sections mit
+                    App-Screenshots (Phone-Mockups)
+     ══════════════════════════════════════════════════════════ -->
+<section class="section section--alt" id="how">
+  <div class="container">
+    <div class="section-header">
+      <h2>So machst du Gewohnheiten haltbar.</h2>
+      <p>Ein System aus drei Ebenen: tägliche Habits, zeitgeboxte ARCs und dein Life Compass.</p>
+    </div>
+
+    <!-- ─── Showcase 1 · Folge einem ARC ─── -->
+    <div class="showcase">
+      <div class="showcase-text">
+        <span class="overline">01 · Commit</span>
+        <h2>Folge einem ARC.</h2>
+        <ul class="check-list">
+          <li>Wähle aus kuratierten Challenges: 30-Day Running, 8-Week Deep Work, 90-Day Discipline</li>
+          <li>Dauer von 1 bis 26 Wochen — du bestimmst den Zeitrahmen</li>
+          <li>Commit mit deinem persönlichen Statement, bevor der ARC startet</li>
+          <li>Ein ARC zur Zeit (Free) oder parallel (Pro)</li>
+        </ul>
+      </div>
+      <div class="showcase-visual">
+        <div class="phone-frame phone-frame--sm">
+          <div class="phone-screen">
+            <div class="panel-overline">Aktiver ARC</div>
+            <div class="arc-hero-title">30-Day<br />Running</div>
+
+            <div class="big-track">
+              <div class="big-fill"></div>
+              <div class="big-thumb"></div>
+            </div>
+
+            <div class="arc-stats">
+              <div>
+                <div class="arc-stat-num">18</div>
+                <div class="arc-stat-label">days done</div>
+              </div>
+              <div>
+                <div class="arc-stat-num">12</div>
+                <div class="arc-stat-label">remaining</div>
+              </div>
+              <div>
+                <div class="arc-stat-num accent">60%</div>
+                <div class="arc-stat-label">complete</div>
+              </div>
+            </div>
+
+            <div style="margin-top: 24px;">
+              <div class="panel-overline">Habits im ARC</div>
+              <div class="habit-row">
+                <div class="habit-meta"><span class="habit-dot" style="background: var(--body);"></span>Running</div>
+                <div class="bar-track"><div class="bar-fill" style="width: 82%; background: var(--body);"></div></div>
+                <div class="habit-value">6.2 km</div>
+              </div>
+              <div class="habit-row">
+                <div class="habit-meta"><span class="habit-dot" style="background: var(--body);"></span>Stretch</div>
+                <div class="bar-track"><div class="bar-fill" style="width: 100%; background: var(--body); animation-delay: 0.1s;"></div></div>
+                <div class="habit-value">10 min</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── Showcase 2 · Tracke deine Habits ─── -->
+    <div class="showcase showcase--reverse">
+      <div class="showcase-text">
+        <span class="overline">02 · Track</span>
+        <h2>Tracke deine Habits.</h2>
+        <ul class="check-list">
+          <li>Numerische Eingabe: km, Stunden, Liter, Wiederholungen — keine Checkboxen</li>
+          <li>Min- oder Max-Ziel pro Habit, progressive Targets auf Wunsch</li>
+          <li>Globaler Streak, Pro-Habit-Streaks, konfigurierbare Ruhetage</li>
+          <li>Metrisch oder Imperial — ArcUp rechnet automatisch um</li>
+        </ul>
+      </div>
+      <div class="showcase-visual">
+        <div class="phone-frame phone-frame--sm">
+          <div class="phone-screen">
+            <div class="panel-overline">Heute</div>
+            <div class="phone-date">Do, 16. Apr</div>
+
+            <div class="habit-row">
+              <div class="habit-meta"><span class="habit-dot" style="background: var(--body);"></span>Running</div>
+              <div class="bar-track"><div class="bar-fill" style="width: 82%; background: var(--body);"></div></div>
+              <div class="habit-value">6.2 km</div>
+            </div>
+            <div class="habit-row">
+              <div class="habit-meta"><span class="habit-dot" style="background: var(--mind);"></span>Sleep</div>
+              <div class="bar-track"><div class="bar-fill" style="width: 94%; background: var(--mind); animation-delay: 0.1s;"></div></div>
+              <div class="habit-value">7.5 h</div>
+            </div>
+            <div class="habit-row">
+              <div class="habit-meta"><span class="habit-dot" style="background: var(--career);"></span>Deep Work</div>
+              <div class="bar-track"><div class="bar-fill" style="width: 60%; background: var(--career); animation-delay: 0.2s;"></div></div>
+              <div class="habit-value">3 h</div>
+            </div>
+            <div class="habit-row">
+              <div class="habit-meta"><span class="habit-dot" style="background: var(--purpose);"></span>Meditation</div>
+              <div class="bar-track"><div class="bar-fill" style="width: 100%; background: var(--purpose); animation-delay: 0.3s;"></div></div>
+              <div class="habit-value">20 min</div>
+            </div>
+            <div class="habit-row">
+              <div class="habit-meta"><span class="habit-dot" style="background: var(--body);"></span>Water</div>
+              <div class="bar-track"><div class="bar-fill" style="width: 75%; background: var(--body); animation-delay: 0.4s;"></div></div>
+              <div class="habit-value">2.4 L</div>
+            </div>
+
+            <div class="phone-streak">
+              <div>
+                <div class="phone-streak-num">14</div>
+                <div class="phone-streak-label">Day Streak</div>
+              </div>
+              <div>
+                <div class="phone-streak-num">81%</div>
+                <div class="phone-streak-label">Week Avg.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── Showcase 3 · Reflektiere im Journal ─── -->
+    <div class="showcase">
+      <div class="showcase-text">
+        <span class="overline">03 · Reflect</span>
+        <h2>Reflektiere im Journal.</h2>
+        <ul class="check-list">
+          <li>Tagebucheinträge pro Lebensbereich — Gedanken, Erkenntnisse, Dankbarkeit</li>
+          <li>Strukturierte Reflexion nach jedem ARC mit Schwierigkeits- und Impact-Score</li>
+          <li>Ziele pro Lebensbereich, direkt im Life Compass verlinkt</li>
+          <li>Alles durchsuchbar, alles bei dir — keine Cloud-Analyse deiner Texte</li>
+        </ul>
+      </div>
+      <div class="showcase-visual">
+        <div class="phone-frame phone-frame--sm">
+          <div class="phone-screen">
+            <div class="panel-overline">Journal · Mind</div>
+            <div class="phone-date" style="font-size: 15px;">Woche 12 von 12</div>
+
+            <div class="journal-entry">
+              <div class="je-date">Di, 14. Apr</div>
+              <div class="je-text">Erster Morgen ohne Snooze seit Wochen. Die 20 Minuten Meditation haben den ganzen Tag getragen.</div>
+            </div>
+            <div class="journal-entry">
+              <div class="je-date">Mo, 13. Apr</div>
+              <div class="je-text">Deep-Work-Block von 9–11 funktioniert. Keine Meetings, kein Slack. Klarer Kopf.</div>
+            </div>
+            <div class="journal-entry">
+              <div class="je-date">So, 12. Apr</div>
+              <div class="je-text">Bewusster Ruhetag. Gelesen, spazieren, früh ins Bett — der Körper hat danach gefragt.</div>
+            </div>
+
+            <div class="phone-streak">
+              <div>
+                <div class="phone-streak-num">9.2</div>
+                <div class="phone-streak-label">Impact Score</div>
+              </div>
+              <div>
+                <div class="phone-streak-num">7.5</div>
+                <div class="phone-streak-label">Difficulty</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── Showcase 4 · Sieh deinen Fortschritt ─── -->
+    <div class="showcase showcase--reverse">
+      <div class="showcase-text">
+        <span class="overline">04 · Insight</span>
+        <h2>Sieh deinen Fortschritt.</h2>
+        <ul class="check-list">
+          <li>Completion-Heatmap über die letzten 90 Tage</li>
+          <li>Wertverlauf, Wochentags-Breakdown, Life-Balance-Score</li>
+          <li>Statistiken pro Habit, pro ARC, über alle ARCs hinweg</li>
+          <li>KI-Coach (Pro) gibt Feedback basierend auf deinen aggregierten Daten</li>
+        </ul>
+      </div>
+      <div class="showcase-visual">
+        <div class="phone-frame phone-frame--sm">
+          <div class="phone-screen">
+            <div class="panel-overline">Insights · 90 Tage</div>
+            <div class="insights-title">Completion-Heatmap</div>
+            <div class="insights-sub">Jan – Apr 2026</div>
+
+            <div class="heatmap">
+              <span class="l4"></span><span class="l3"></span><span class="l4"></span><span class="l4"></span><span class="l2"></span><span class="l3"></span><span class="l4"></span><span class="l3"></span><span class="l4"></span><span class="l4"></span><span class="l4"></span><span class="l3"></span><span class="l2"></span>
+              <span class="l3"></span><span class="l4"></span><span class="l3"></span><span class="l4"></span><span class="l4"></span><span class="l3"></span><span class="l4"></span><span class="l4"></span><span class="l2"></span><span class="l3"></span><span class="l4"></span><span class="l4"></span><span class="l3"></span>
+              <span class="l2"></span><span class="l3"></span><span class="l4"></span><span class="l3"></span><span class="l4"></span><span class="l4"></span><span class="l1"></span><span class="l3"></span><span class="l4"></span><span class="l4"></span><span class="l3"></span><span class="l4"></span><span class="l4"></span>
+              <span class="l4"></span><span class="l2"></span><span class="l3"></span><span class="l4"></span><span class="l4"></span><span class="l3"></span><span class="l4"></span><span class="l4"></span><span class="l3"></span><span class="l1"></span><span class="l3"></span><span class="l4"></span><span class="l4"></span>
+              <span class="l3"></span><span class="l4"></span><span class="l4"></span><span class="l3"></span><span class="l2"></span><span class="l4"></span><span class="l4"></span><span class="l3"></span><span class="l4"></span><span class="l4"></span><span class="l4"></span><span class="l2"></span><span class="l3"></span>
+            </div>
+
+            <div class="insights-sub" style="margin-top: 10px;">Wochentags-Avg</div>
+            <div class="chart-bars">
+              <span style="height: 72%;"></span>
+              <span style="height: 88%;"></span>
+              <span style="height: 64%;"></span>
+              <span style="height: 94%;"></span>
+              <span style="height: 78%;"></span>
+              <span style="height: 52%;"></span>
+              <span style="height: 40%;"></span>
+            </div>
+
+            <div class="phone-streak">
+              <div>
+                <div class="phone-streak-num">81%</div>
+                <div class="phone-streak-label">90d Avg.</div>
+              </div>
+              <div>
+                <div class="phone-streak-num">7.9</div>
+                <div class="phone-streak-label">Balance</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     ARC-BIBLIOTHEK — Kategorie-Grid (wie gluehabits Stacks)
+     ══════════════════════════════════════════════════════════ -->
+<section class="section" id="library">
+  <div class="container">
+    <div class="section-header">
+      <h2>ARCs für jeden Lebensbereich.</h2>
+      <p>Mehr als 60 kuratierte Challenges — von Running über Deep Work bis Meditation, alle mit Quellen belegt.</p>
+    </div>
+
+    <div class="arc-categories">
+      <div class="arc-cat"><span class="arc-cat-emoji">🏃</span><span class="arc-cat-name">Running &amp; Cardio</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">💪</span><span class="arc-cat-name">Strength Training</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">🧘</span><span class="arc-cat-name">Meditation</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">🛌</span><span class="arc-cat-name">Sleep &amp; Recovery</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">🥗</span><span class="arc-cat-name">Nutrition</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">💧</span><span class="arc-cat-name">Hydration</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">🧠</span><span class="arc-cat-name">Deep Work</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">📚</span><span class="arc-cat-name">Reading</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">✍️</span><span class="arc-cat-name">Writing &amp; Journaling</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">🎯</span><span class="arc-cat-name">Focus &amp; Discipline</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">💼</span><span class="arc-cat-name">Career &amp; Skills</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">💰</span><span class="arc-cat-name">Money &amp; Saving</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">🎨</span><span class="arc-cat-name">Creative Practice</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">🗣️</span><span class="arc-cat-name">Public Speaking</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">🌐</span><span class="arc-cat-name">Language Learning</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">🚫</span><span class="arc-cat-name">Digital Detox</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">🍷</span><span class="arc-cat-name">Quit Drinking</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">🚭</span><span class="arc-cat-name">Quit Smoking</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">🙏</span><span class="arc-cat-name">Gratitude</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">👫</span><span class="arc-cat-name">Relationships</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">👨‍👩‍👧</span><span class="arc-cat-name">Parenting</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">🌱</span><span class="arc-cat-name">Mindfulness</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">🎵</span><span class="arc-cat-name">Music Practice</span></div>
+      <div class="arc-cat"><span class="arc-cat-emoji">🏞️</span><span class="arc-cat-name">Outdoor Time</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     PERSONAS — "Du wirst ArcUp lieben, wenn du ..."
+     ══════════════════════════════════════════════════════════ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-header">
+      <h2>Du wirst ArcUp lieben, wenn du …</h2>
+      <p>ArcUp ist für Menschen gebaut, die Wachstum ernst meinen. Findest du dich wieder?</p>
+    </div>
+
+    <div class="personas-grid">
+      <div class="persona-card">
+        <div class="persona-emoji">🎯</div>
+        <h3>Der Zielgerichtete</h3>
+        <p>Du willst mehrere Ziele parallel verfolgen, brauchst aber Struktur statt endloser Todo-Listen. ArcUp gibt dir den Rahmen.</p>
+      </div>
+      <div class="persona-card">
+        <div class="persona-emoji">🔁</div>
+        <h3>Der Umsteller</h3>
+        <p>Rauchen, Zucker, Social Media, Alkohol — du willst eine Gewohnheit durch eine bessere ersetzen. 30 bis 90 Tage, klar getrackt.</p>
+      </div>
+      <div class="persona-card">
+        <div class="persona-emoji">📚</div>
+        <h3>Der Lernende</h3>
+        <p>Du liest Atomic Habits, 4000 Weeks und Deep Work — und willst das Gelernte endlich in tägliche Praxis verwandeln.</p>
+      </div>
+      <div class="persona-card">
+        <div class="persona-emoji">🧭</div>
+        <h3>Der Visionär</h3>
+        <p>Du denkst in Jahren, nicht Wochen. Life Compass verbindet jede tägliche Gewohnheit mit deiner langfristigen Ausrichtung.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     REVIEWS — Kundenstimmen (vorerst fiktiv)
+     ══════════════════════════════════════════════════════════ -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="section-header">
+      <h2>Was unsere Beta-Tester sagen.</h2>
+      <p>Ausgewählte Rückmeldungen aus der ersten Testphase. (Fiktive Beispiele bis zum offiziellen Release.)</p>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Endlich ein Tracker, der nicht in Checkboxen denkt. Ich sehe auf einen Blick, wie nah ich meinem Ziel wirklich bin — und das motiviert, wenn ein Tag nicht perfekt war.</p>
+        <div class="review-user">
+          <div class="review-avatar">LM</div>
+          <div>
+            <div class="review-name">Lena M.</div>
+            <div class="review-role">Produktdesignerin, Berlin</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Die progressiven Targets haben mich überzeugt. Ich bin bei 3 km gestartet und nach 8 Wochen bei 10 km gelandet — ohne das Gefühl, dass es brutal war. Die App zieht dich einfach hoch.</p>
+        <div class="review-user">
+          <div class="review-avatar">TS</div>
+          <div>
+            <div class="review-name">Tobias S.</div>
+            <div class="review-role">Software Engineer, Wien</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Der Life Compass war der Punkt, an dem es klick gemacht hat. Ich habe zum ersten Mal verstanden, warum ich im Bereich Beziehungen seit Monaten einen roten Bereich habe — und etwas geändert.</p>
+        <div class="review-user">
+          <div class="review-avatar">AR</div>
+          <div>
+            <div class="review-name">Anna R.</div>
+            <div class="review-role">Coach, München</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Ich habe jahrelang Habit-Apps ausprobiert. ArcUp ist die erste, bei der ich länger als 3 Wochen dran bleibe. Der 90-Tage-Zeitraum nimmt den Druck raus, für immer perfekt zu sein.</p>
+        <div class="review-user">
+          <div class="review-avatar">MK</div>
+          <div>
+            <div class="review-name">Michael K.</div>
+            <div class="review-role">Gründer, Zürich</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Die Reflexion am Ende eines ARC ist Gold. Diese 5 Minuten zwingen mich, ehrlich zu sein: Was hat wirklich funktioniert? Was war nur Show? Das macht keine andere App.</p>
+        <div class="review-user">
+          <div class="review-avatar">SP</div>
+          <div>
+            <div class="review-name">Sarah P.</div>
+            <div class="review-role">Therapeutin, Hamburg</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★☆</div>
+        <p class="review-text">Setup ist am Anfang intensiv — aber genau darin liegt der Wert. Man ist gezwungen, über Ziele nachzudenken, statt gedankenlos Häkchen zu setzen. Nach einer Woche liebt man es.</p>
+        <div class="review-user">
+          <div class="review-avatar">JN</div>
+          <div>
+            <div class="review-name">Julia N.</div>
+            <div class="review-role">Studentin, Leipzig</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     PRICING
+     ══════════════════════════════════════════════════════════ -->
+<section class="section section--alt" id="pricing">
+  <div class="container">
+    <div class="section-header">
+      <h2>Fair. Flexibel. Transparent.</h2>
+      <p>Starte kostenlos. Upgrade, wenn du bereit bist.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="plan">
+        <div class="plan-name">Free</div>
+        <div class="plan-price">0 €</div>
+        <div class="plan-desc">Starte mit den Grundfunktionen.</div>
+        <ul class="plan-features">
+          <li>Kostenlose ARCs</li>
+          <li>1 aktiver ARC gleichzeitig</li>
+          <li>Habit-Tracking</li>
+          <li>5 Lebensbereiche</li>
+          <li class="dim">KI-Coach</li>
+          <li class="dim">Eigene ARCs</li>
+          <li class="dim">Erweiterte Analysen</li>
+        </ul>
+        <a href="#download" class="btn btn-outline">Kostenlos starten</a>
+      </div>
+
+      <div class="plan plan--featured">
+        <div class="plan-badge">Bestes Angebot</div>
+        <div class="plan-name">Pro Jährlich</div>
+        <div class="plan-price">—<small> €/Jahr</small></div>
+        <div class="plan-desc">Alle Pro-Funktionen. Jährlich abgerechnet.</div>
+        <ul class="plan-features">
+          <li>Alles aus Free</li>
+          <li>Alle Pro-ARCs</li>
+          <li>Mehrere aktive ARCs</li>
+          <li>KI-Coach</li>
+          <li>Eigene ARCs erstellen</li>
+          <li>Erweiterte Analysen</li>
+          <li>Priority-Support</li>
+        </ul>
+        <a href="#download" class="btn btn-primary">Pro holen</a>
+      </div>
+
+      <div class="plan">
+        <div class="plan-name">Pro Monatlich</div>
+        <div class="plan-price">—<small> €/Monat</small></div>
+        <div class="plan-desc">Alle Pro-Funktionen. Monatlich kündbar.</div>
+        <ul class="plan-features">
+          <li>Alles aus Free</li>
+          <li>Alle Pro-ARCs</li>
+          <li>Mehrere aktive ARCs</li>
+          <li>KI-Coach</li>
+          <li>Eigene ARCs erstellen</li>
+          <li>Erweiterte Analysen</li>
+          <li>Priority-Support</li>
+        </ul>
+        <a href="#download" class="btn btn-outline">Monatlich wählen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     FAQ — Accordion (wie gluehabits)
+     ══════════════════════════════════════════════════════════ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <h2>Häufige Fragen.</h2>
+      <p>Alles, was du wissen solltest, bevor du deinen ersten ARC startest.</p>
+    </div>
+
+    <div class="faq-wrapper">
+
+      <div class="faq-group">
+        <div class="faq-group-title">Über ArcUp</div>
+
+        <details class="faq-item">
+          <summary>Was macht ArcUp?</summary>
+          <div class="faq-answer">
+            ArcUp kombiniert drei Ebenen: tägliche numerische Gewohnheiten (Micro), zeitlich begrenzte Challenges namens ARCs (Meso) und einen Life Compass für deine Langzeitvision (Macro). Statt einfacher Checkboxen trackst du echte Werte — 6,2 km, 7,5 h Schlaf, 3 h Deep Work — und siehst sofort, wie nah du deinem Ziel bist.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Warum ist ArcUp anders als andere Habit-Tracker?</summary>
+          <div class="faq-answer">
+            Drei Dinge unterscheiden uns: <strong>Numerik statt Checkboxen</strong>, <strong>zeitgeboxte Challenges</strong> statt ewigem "dranbleiben" und ein <strong>Life Compass</strong>, der jede Gewohnheit mit einer größeren Ausrichtung verknüpft. Wir glauben, dass Struktur und Zeitrahmen schlagen Willenskraft.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Welches Problem löst ArcUp?</summary>
+          <div class="faq-answer">
+            Das Problem, dass gute Vorsätze binnen Wochen versanden. ArcUp gibt dir einen klaren Zeitrahmen (1–26 Wochen), ein ehrliches Commitment und eine Struktur, in der du Fortschritt numerisch siehst — nicht bloß als grüne Häkchen.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Was ist ein "ARC"?</summary>
+          <div class="faq-answer">
+            Ein ARC ist eine zeitlich begrenzte Challenge — typischerweise 4 bis 12 Wochen. Du wählst sie aus unserer Bibliothek oder erstellst sie selbst (Pro), committest mit einem persönlichen Statement, trackst deine Habits und reflektierst am Ende: Was hast du gelernt? Wie schwer war es? Welchen Impact hatte es?
+          </div>
+        </details>
+      </div>
+
+      <div class="faq-group">
+        <div class="faq-group-title">Preise &amp; Abo</div>
+
+        <details class="faq-item">
+          <summary>Ist ArcUp kostenlos?</summary>
+          <div class="faq-answer">
+            Ja. Du kannst ArcUp komplett kostenlos nutzen — mit einer Auswahl kostenloser ARCs, vollem Habit-Tracking, allen 5 Lebensbereichen und einem aktiven ARC gleichzeitig. Pro-Features sind optional.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Was ist in Pro enthalten?</summary>
+          <div class="faq-answer">
+            Pro schaltet frei: alle Pro-ARCs, mehrere parallele ARCs, den KI-Coach, eigene ARCs erstellen, erweiterte Analysen und Priority-Support. Keine Werbung, keine Tracker — das gilt für Free wie Pro.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Kann ich jederzeit kündigen?</summary>
+          <div class="faq-answer">
+            Ja, jederzeit — monatlich oder jährlich. Deine Daten bleiben erhalten, du wechselst einfach zurück in den Free-Tarif. Abos verlängern sich automatisch, wenn du nicht vorher kündigst.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Gibt es Studentenrabatte?</summary>
+          <div class="faq-answer">
+            Aktuell nicht, aber wir planen ein Education-Tier. Schreib uns an <a href="mailto:hello@arc-up.com">hello@arc-up.com</a>, wenn du Interesse hast — wir sammeln Feedback.
+          </div>
+        </details>
+      </div>
+
+      <div class="faq-group">
+        <div class="faq-group-title">Daten &amp; Privacy</div>
+
+        <details class="faq-item">
+          <summary>Wo werden meine Daten gespeichert?</summary>
+          <div class="faq-answer">
+            Auf EU-Servern (Supabase, Region eu-north-1). Jede Zeile in der Datenbank ist durch Row-Level-Security geschützt — nur du hast Zugriff auf deine Daten. Keine Weitergabe an Dritte, keine Werbe-IDs, keine Verhaltensprofile.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Nutzt der KI-Coach meine Daten zum Training?</summary>
+          <div class="faq-answer">
+            Nein. Der KI-Coach erhält nur aggregierte, pseudonymisierte Werte (Streak, Completion-Rate, Lebensbereich-Balance). Keine Klartext-Journal-Einträge, keine personenbezogenen Daten. Kein Training durch Drittanbieter.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Kann ich einen neuen ARC vorschlagen?</summary>
+          <div class="faq-answer">
+            Ja, gerne. Schreib uns an <a href="mailto:hello@arc-up.com">hello@arc-up.com</a> oder nutze in der App den Feedback-Button unter Profil → Feedback &amp; Ideen. Wir kuratieren neue ARCs monatlich.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Was passiert, wenn ich meinen Account lösche?</summary>
+          <div class="faq-answer">
+            Alle Daten werden unwiderruflich gelöscht — Habit-Logs, ARCs, Journal, Profil. Es gibt eine zweistufige Bestätigung und einen Reset-Account-Modus als Alternative, wenn du nur neu starten willst.
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     DOWNLOAD CTA
+     ══════════════════════════════════════════════════════════ -->
+<section class="cta-banner" id="download">
+  <span class="wordmark wordmark--hero" style="margin-bottom: 24px;">
+    <span class="arc">Arc</span><span class="mode">Up</span>
+  </span>
+  <h2>Arc-Up your Life. Starte deinen ersten ARC.</h2>
+  <p>Kostenlos herunterladen. Keine Werbung, keine Tracker, keine Dark Patterns.</p>
+
+  <div class="store-badges">
+    <a href="#" class="store-badge" aria-label="Im App Store laden">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      <span class="store-badge-meta">
+        <small>Download on the</small>
+        <span>App Store</span>
+      </span>
+    </a>
+    <a href="#" class="store-badge" aria-label="Bei Google Play laden">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.35.19.74.24 1.12.14l.08-.05 10.3-5.95-2.23-2.23-9.27 8.09zm-1.11-19.2A1.97 1.97 0 0 0 2 5.42v13.17c0 .56.22 1.06.58 1.4l.07.07 7.38-7.38v-.17L2.07 4.56zm17.38 7.04-2.5-1.45-2.5 2.51 2.5 2.5 2.51-1.45c.72-.41.72-1.1-.01-1.11zm-15.5 8.04 9.12-5.27-2.23-2.23-6.89 7.5z"/></svg>
+      <span class="store-badge-meta">
+        <small>Get it on</small>
+        <span>Google Play</span>
+      </span>
+    </a>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     FOOTER
+     ══════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="./assets/logo.png" alt="ArcUp" />
+        <span class="wordmark wordmark--footer">
+          <span class="arc">Arc</span><span class="mode">Up</span>
+        </span>
+      </div>
+      <ul class="footer-links">
+        <li><a href="../impressum.html">Impressum</a></li>
+        <li><a href="../datenschutz.html">Datenschutz</a></li>
+        <li><a href="../agb.html">AGB</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> ArcUp. Alle Rechte vorbehalten.</span>
+      <span>ArcUp: Building Better Habits</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const toggle = document.getElementById('navToggle');
+  const links  = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a =>
+    a.addEventListener('click', () => links.classList.remove('open'))
+  );
+</script>
+
+</body>
+</html>
