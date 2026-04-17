@@ -120,3 +120,5 @@ In `index.html` die `href="#"` der Store-Badges durch die echten Store-URLs erse
 <a href="https://apps.apple.com/app/arcup/id<ID>" class="store-badge">
 <a href="https://play.google.com/store/apps/details?id=com.mhoer.arcup" class="store-badge">
 ```
+
+test
