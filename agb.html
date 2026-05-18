@@ -6,24 +6,29 @@
   <title>AGB — ArcUp</title>
   <meta name="robots" content="noindex" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-<nav>
+<nav id="nav" class="scrolled">
   <div class="container nav-inner">
     <a href="index.html" class="nav-brand" aria-label="ArcUp Startseite">
-      <img src="assets/logo.png" alt="ArcUp Logo" />
-      <span class="wordmark wordmark--nav">
-        <span class="arc">Arc</span><span class="mode">Up</span>
+      <span class="brand-mark">
+        <span class="brand-arc">ARC</span><span class="brand-up">UP</span>
       </span>
     </a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html#philosophie">Philosophie</a></li>
-      <li><a href="index.html#features">Features</a></li>
-      <li><a href="index.html#download" class="btn btn-primary btn-sm">App laden</a></li>
+      <li><a href="index.html#philosophy">Philosophie</a></li>
+      <li><a href="index.html#system">Das System</a></li>
+      <li><a href="index.html#pricing">Pro</a></li>
+      <li><a href="index.html#download" class="btn btn-pill">App laden</a></li>
     </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">☰</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
@@ -160,24 +165,31 @@
   </div>
 </main>
 
-<footer>
+<footer class="footer">
   <div class="container footer-inner">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <img src="assets/logo.png" alt="ArcUp" />
-        <span class="wordmark wordmark--footer">
-          <span class="arc">Arc</span><span class="mode">Up</span>
-        </span>
-      </div>
-      <ul class="footer-links">
-        <li><a href="impressum.html">Impressum</a></li>
-        <li><a href="datenschutz.html">Datenschutz</a></li>
-        <li><a href="agb.html">AGB</a></li>
-      </ul>
+    <div class="footer-brand">
+      <span class="brand-mark">
+        <span class="brand-arc">ARC</span><span class="brand-up">UP</span>
+      </span>
+      <span class="footer-tag">Building Better Habits.</span>
     </div>
-    <div class="footer-bottom">
-      <span>&copy; <span id="year"></span> ArcUp. Alle Rechte vorbehalten.</span>
-      <span>ArcUp: Building Better Habits</span>
+
+    <ul class="footer-links">
+      <li><a href="index.html#system">Das System</a></li>
+      <li><a href="index.html#areas">Lebensbereiche</a></li>
+      <li><a href="index.html#pricing">Pro</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+    </ul>
+
+    <ul class="footer-links footer-links--legal">
+      <li><a href="impressum.html">Impressum</a></li>
+      <li><a href="datenschutz.html">Datenschutz</a></li>
+      <li><a href="agb.html">AGB</a></li>
+    </ul>
+
+    <div class="footer-meta">
+      <span>&copy; <span id="year"></span> ArcUp</span>
+      <span>Macro · Meso · Micro</span>
     </div>
   </div>
 </footer>
@@ -186,7 +198,10 @@
   document.getElementById('year').textContent = new Date().getFullYear();
   const toggle = document.getElementById('navToggle');
   const links  = document.getElementById('navLinks');
-  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  toggle.addEventListener('click', () => {
+    links.classList.toggle('open');
+    toggle.classList.toggle('open');
+  });
 </script>
 </body>
 </html>
