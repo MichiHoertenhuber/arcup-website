@@ -15,7 +15,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -45,38 +45,50 @@
 
 <!-- ════════════ HERO ════════════ -->
 <header class="hero">
-  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-grid-lines"></div>
+  </div>
 
   <div class="container hero-inner">
-    <div class="hero-tag">ArcUp · Building Better Habits</div>
 
-    <h1 class="display">
-      Wachstum ist <em>kein</em><br />
-      Häkchen.
+    <div class="hero-pill">
+      <span class="hero-pill-dot"></span>
+      iOS &amp; Android · Now in Beta
+    </div>
+
+    <h1 class="hero-headline">
+      <span>Building</span>
+      <span>better</span>
+      <span class="hero-accent">habits.</span>
     </h1>
 
-    <p class="hero-lead">
-      ArcUp ist kein Habit-Tracker. Es ist ein strukturiertes System,
-      das tägliche Routinen, zeitlich begrenzte Challenges und
-      deine Lebensvision auf einer Ebene verbindet.
+    <p class="hero-sub">
+      Nicht noch ein Tracker. Ein System aus zeit&shy;begrenzten ARCs,
+      numerischen Habits und einer Quellen-Bibliothek — über fünf Lebensbereiche.
     </p>
 
     <div class="hero-cta">
-      <a href="#download" class="btn btn-primary btn-lg">App laden</a>
-      <a href="#system" class="btn btn-ghost btn-lg">So funktioniert ArcUp →</a>
-    </div>
-
-    <ul class="hero-trust">
-      <li><span class="dot"></span>Free für immer</li>
-      <li><span class="dot"></span>EU-Hosting · DSGVO</li>
-      <li><span class="dot"></span>Pro mit Lifetime</li>
-      <li><span class="dot"></span>iOS · Android</li>
-    </ul>
-
-    <div class="hero-render">
-      <img src="./assets/marketing/Homepage_Render.png" alt="ArcUp Home — Tageserfüllung, Wochenerfüllung, Level und aktive ARCs" />
+      <a href="#download" class="btn btn-primary btn-lg">App kostenlos laden</a>
+      <a href="#system" class="hero-secondary">
+        So funktioniert ArcUp
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
     </div>
   </div>
+
+  <div class="hero-stage" aria-hidden="false">
+    <div class="hero-stage-glow"></div>
+    <img src="./assets/marketing/Homepage_Render.png" alt="ArcUp Home — Tageserfüllung, Wochenerfüllung, Level und aktive ARCs" class="hero-phone" />
+    <img src="./assets/marketing/ARCs_Render.png" alt="ARCademy — kuratierte ARCs" class="hero-phone hero-phone--left" />
+    <img src="./assets/marketing/Reflect_Render.png" alt="Reflect — Wheel of Life" class="hero-phone hero-phone--right" />
+  </div>
+
+  <ul class="hero-trust">
+    <li><span class="dot"></span>Free für immer</li>
+    <li><span class="dot"></span>EU-Hosting · DSGVO</li>
+    <li><span class="dot"></span>Pro mit Lifetime</li>
+    <li><span class="dot"></span>Keine Werbung, keine Tracker</li>
+  </ul>
 </header>
 
 <!-- ════════════ MANIFESTO ════════════ -->
