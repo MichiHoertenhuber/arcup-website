@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" data-i18n-title="title.impressum">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>(function(){try{var s=['de','en','es','fr','it'],l=localStorage.getItem('arcup-lang')||(navigator.language||'de').slice(0,2).toLowerCase();document.documentElement.lang=s.indexOf(l)>-1?l:'de';}catch(e){}})();</script>
   <title>Impressum — ArcUp</title>
   <meta name="robots" content="noindex" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
@@ -10,23 +11,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/i18n.css" />
 </head>
 <body>
 
 <nav id="nav" class="scrolled">
   <div class="container nav-inner">
-    <a href="index.html" class="nav-brand" aria-label="ArcUp Startseite">
+    <a href="index.html" class="nav-brand" data-i18n-attr-aria-label="nav.home" aria-label="ArcUp Startseite">
       <span class="brand-mark">
         <span class="brand-arc">ARC</span><span class="brand-up">UP</span>
       </span>
     </a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html#philosophy">Philosophie</a></li>
-      <li><a href="index.html#system">Das System</a></li>
-      <li><a href="index.html#pricing">Pro</a></li>
-      <li><a href="index.html#download" class="btn btn-pill">App laden</a></li>
+      <li><a href="index.html#philosophy" data-i18n="nav.philosophy">Philosophie</a></li>
+      <li><a href="index.html#system" data-i18n="nav.system">Das System</a></li>
+      <li><a href="index.html#pricing" data-i18n="nav.pricing">Pro</a></li>
+      <li><a href="index.html#download" class="btn btn-pill" data-i18n="nav.download">App laden</a></li>
+      <li><div data-lang-switcher></div></li>
     </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+    <button class="nav-toggle" id="navToggle" data-i18n-attr-aria-label="nav.menu" aria-label="Menü öffnen">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -34,75 +37,159 @@
 
 <main class="container">
   <div class="legal-page">
-    <h1>Impressum</h1>
-    <p class="last-updated">Stand: April 2026</p>
+    <h1 data-i18n-html="legal.impressum.title">Impressum &amp; Offenlegung</h1>
+    <p class="last-updated" data-i18n="legal.lastUpdated">Stand: 23. Mai 2026</p>
 
-    <h2>Angaben gemäß § 5 TMG</h2>
-    <address>
+    <p class="legal-fallback-notice" data-i18n="legal.fallbackNotice"></p>
+
+    <!-- ════════════ DE ════════════ -->
+    <section data-lang-section="de">
       <p>
-        <strong>[Dein Name / Unternehmensname]</strong><br />
-        [Straße und Hausnummer]<br />
-        [PLZ] [Stadt]<br />
-        Deutschland
+        Informationen gemäß § 5 E-Commerce-Gesetz (ECG), § 14 Unternehmensgesetzbuch (UGB),
+        § 63 Gewerbeordnung (GewO) sowie Offenlegung nach § 25 Mediengesetz.
       </p>
-    </address>
 
-    <h2>Kontakt</h2>
-    <p>
-      E-Mail: <a href="mailto:kontakt@arc-up.com">kontakt@arc-up.com</a>
-    </p>
+      <h2>Diensteanbieter / Medieninhaber</h2>
+      <address>
+        <p>
+          <strong>[Vorname Nachname]</strong><br />
+          Einzelunternehmer<br />
+          [Straße Hausnummer]<br />
+          [PLZ Ort]<br />
+          Österreich
+        </p>
+      </address>
 
-    <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
-    <p>
-      [Dein Name]<br />
-      [Adresse wie oben]
-    </p>
+      <h2>Kontakt</h2>
+      <p>
+        E-Mail: <a href="mailto:kontakt@arcup.app">[kontakt@arcup.app]</a><br />
+        Telefon: [optional – +43 …]
+      </p>
 
-    <h2>Streitschlichtung</h2>
-    <p>
-      Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
-      <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">
-        https://ec.europa.eu/consumers/odr
-      </a>.
-    </p>
-    <p>
-      Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
-      Verbraucherschlichtungsstelle teilzunehmen.
-    </p>
+      <h2>Unternehmensgegenstand</h2>
+      <p>
+        Entwicklung und Vertrieb der mobilen Anwendung <em>ArcUp – Building Better Habits</em>
+        sowie damit verbundener digitaler Dienstleistungen.
+      </p>
 
-    <h2>Haftung für Inhalte</h2>
-    <p>
-      Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten
-      nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als
-      Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde
-      Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige
-      Tätigkeit hinweisen.
-    </p>
-    <p>
-      Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den
-      allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch
-      erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei
-      Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
-    </p>
+      <h2>Berufsrechtliche Angaben</h2>
+      <ul>
+        <li>Gewerbe: [Dienstleistungen in der automatischen Datenverarbeitung und Informationstechnik / freies Gewerbe gemäß § 5 Abs. 2 GewO]</li>
+        <li>Mitgliedschaft: Wirtschaftskammer Österreich (WKO), Fachgruppe Unternehmensberatung, Buchhaltung und Informationstechnologie (UBIT) des Bundeslandes [Bundesland]</li>
+        <li>Anwendbare Rechtsvorschriften: Gewerbeordnung (GewO), abrufbar unter <a href="https://www.ris.bka.gv.at" target="_blank" rel="noopener noreferrer">www.ris.bka.gv.at</a></li>
+        <li>Aufsichtsbehörde: Bezirkshauptmannschaft [Bezirk] / Magistrat [Stadt]</li>
+      </ul>
 
-    <h2>Haftung für Links</h2>
-    <p>
-      Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen
-      Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
-      Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der
-      Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf
-      mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der
-      Verlinkung nicht erkennbar.
-    </p>
+      <h2>Steuerliche Angaben</h2>
+      <ul>
+        <li>UID-Nummer: [ATU…] <em>(nur eintragen, falls vorhanden; Kleinunternehmer können den Hinweis „Kleinunternehmer gemäß § 6 Abs. 1 Z 27 UStG – keine Umsatzsteuer ausgewiesen" verwenden)</em></li>
+        <li>Firmenbuchnummer: entfällt (Einzelunternehmer, nicht firmenbuchpflichtig)</li>
+      </ul>
 
-    <h2>Urheberrecht</h2>
-    <p>
-      Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen
-      dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art
-      der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen
-      Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind
-      nur für den privaten, nicht kommerziellen Gebrauch gestattet.
-    </p>
+      <h2>Online-Streitbeilegung</h2>
+      <p>
+        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+        <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr</a>.
+      </p>
+      <p>
+        Wir sind weder verpflichtet noch bereit, an einem Streitbeilegungsverfahren vor einer
+        Verbraucherschlichtungsstelle teilzunehmen.
+      </p>
+
+      <h2>Haftungsausschluss</h2>
+      <p>
+        Die Inhalte der App und etwaiger Webseiten wurden mit größter Sorgfalt erstellt.
+        Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine
+        Gewähr übernommen werden. ArcUp ersetzt keine medizinische, psychologische,
+        ernährungswissenschaftliche oder sportwissenschaftliche Beratung. Die App vermittelt
+        Methoden zur Selbstreflexion und Gewohnheitsbildung; Entscheidungen über Training,
+        Ernährung, Schlaf oder andere gesundheitsrelevante Themen trifft der Nutzer
+        eigenverantwortlich. Bei gesundheitlichen Beschwerden ist ärztlicher Rat einzuholen.
+      </p>
+
+      <h2>Urheberrecht</h2>
+      <p>
+        Sämtliche Inhalte der App (Texte, Grafiken, Logos, Icons, Quellcode, Programmlogik,
+        Datenmodelle, kuratierte Habit- und ARC-Bibliothek) sind urheberrechtlich geschützt.
+        Eine Vervielfältigung, Bearbeitung, Verbreitung oder Verwertung außerhalb der Grenzen
+        des Urheberrechts bedarf der schriftlichen Zustimmung des Anbieters.
+      </p>
+    </section>
+
+    <!-- ════════════ EN ════════════ -->
+    <section data-lang-section="en">
+      <p>
+        Information pursuant to Section 5 of the Austrian E-Commerce Act (ECG), Section 14
+        of the Austrian Commercial Code (UGB), Section 63 of the Austrian Trade Regulations
+        Act (GewO) and disclosure under Section 25 of the Austrian Media Act
+        <em>(translation provided for convenience — the binding text is the German version above)</em>.
+      </p>
+
+      <h2>Service provider / Media owner</h2>
+      <address>
+        <p>
+          <strong>[First name Last name]</strong><br />
+          Sole proprietor<br />
+          [Street and number]<br />
+          [Postal code, city]<br />
+          Austria
+        </p>
+      </address>
+
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:kontakt@arcup.app">[kontakt@arcup.app]</a><br />
+        Phone: [optional – +43 …]
+      </p>
+
+      <h2>Scope of business</h2>
+      <p>
+        Development and distribution of the mobile application <em>ArcUp – Building Better Habits</em>
+        and related digital services.
+      </p>
+
+      <h2>Professional information</h2>
+      <ul>
+        <li>Trade: [Services in automatic data processing and information technology / unregulated trade pursuant to Section 5(2) GewO]</li>
+        <li>Membership: Austrian Federal Economic Chamber (WKO), Professional Association of Management Consulting, Accounting and Information Technology (UBIT) of the federal state of [State]</li>
+        <li>Applicable laws: Austrian Trade Regulations Act (GewO), available at <a href="https://www.ris.bka.gv.at" target="_blank" rel="noopener noreferrer">www.ris.bka.gv.at</a></li>
+        <li>Supervisory authority: District Administrative Authority of [District] / Municipality of [City]</li>
+      </ul>
+
+      <h2>Tax information</h2>
+      <ul>
+        <li>VAT ID: [ATU…] <em>(only enter if applicable; small businesses may use the notice "Small business pursuant to Section 6(1)(27) of the Austrian VAT Act – no VAT charged")</em></li>
+        <li>Commercial register number: not applicable (sole proprietor, no commercial register obligation)</li>
+      </ul>
+
+      <h2>Online dispute resolution</h2>
+      <p>
+        The European Commission provides a platform for online dispute resolution (ODR):
+        <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr</a>.
+      </p>
+      <p>
+        We are neither obliged nor willing to participate in dispute resolution proceedings
+        before a consumer arbitration board.
+      </p>
+
+      <h2>Disclaimer</h2>
+      <p>
+        The content of the app and any associated websites has been compiled with the greatest
+        care. However, no guarantee can be given for its accuracy, completeness or timeliness.
+        ArcUp does not replace medical, psychological, nutritional or sports-science advice.
+        The app provides methods for self-reflection and habit formation; decisions about
+        training, nutrition, sleep and other health-related topics are made by the user on
+        their own responsibility. In case of health concerns, please consult a physician.
+      </p>
+
+      <h2>Copyright</h2>
+      <p>
+        All content of the app (text, graphics, logos, icons, source code, program logic, data
+        models, curated habit and ARC library) is protected by copyright. Reproduction,
+        modification, distribution or any use beyond the limits of copyright law requires the
+        written consent of the provider.
+      </p>
+    </section>
   </div>
 </main>
 
@@ -112,29 +199,30 @@
       <span class="brand-mark">
         <span class="brand-arc">ARC</span><span class="brand-up">UP</span>
       </span>
-      <span class="footer-tag">Building Better Habits.</span>
+      <span class="footer-tag" data-i18n="ft.tag">Building Better Habits.</span>
     </div>
 
     <ul class="footer-links">
-      <li><a href="index.html#system">Das System</a></li>
-      <li><a href="index.html#areas">Lebensbereiche</a></li>
-      <li><a href="index.html#pricing">Pro</a></li>
-      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="index.html#system" data-i18n="ft.system">Das System</a></li>
+      <li><a href="index.html#areas" data-i18n="ft.areas">Lebensbereiche</a></li>
+      <li><a href="index.html#pricing" data-i18n="ft.pricing">Pro</a></li>
+      <li><a href="index.html#faq" data-i18n="ft.faq">FAQ</a></li>
     </ul>
 
     <ul class="footer-links footer-links--legal">
-      <li><a href="impressum.html">Impressum</a></li>
-      <li><a href="datenschutz.html">Datenschutz</a></li>
-      <li><a href="agb.html">AGB</a></li>
+      <li><a href="impressum.html" data-i18n="ft.impressum">Impressum</a></li>
+      <li><a href="datenschutz.html" data-i18n="ft.datenschutz">Datenschutz</a></li>
+      <li><a href="agb.html" data-i18n="ft.agb">AGB</a></li>
     </ul>
 
     <div class="footer-meta">
       <span>&copy; <span id="year"></span> ArcUp</span>
-      <span>Macro · Meso · Micro</span>
+      <span data-i18n="ft.macroMicroMeso">Macro · Meso · Micro</span>
     </div>
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
   const toggle = document.getElementById('navToggle');

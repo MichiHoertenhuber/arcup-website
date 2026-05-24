@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>(function(){try{var s=['de','en','es','fr','it'],l=localStorage.getItem('arcup-lang')||(navigator.language||'de').slice(0,2).toLowerCase();document.documentElement.lang=s.indexOf(l)>-1?l:'de';}catch(e){}})();</script>
   <title>ArcUp — Building Better Habits</title>
   <meta name="description" content="Nicht noch ein Habit-Tracker. Ein Wachstums-System aus zeitlich begrenzten ARCs, numerischen Habits und einer Quellen-Bibliothek." />
   <meta name="theme-color" content="#06080C" />
@@ -18,26 +19,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/i18n.css" />
 </head>
 <body>
 
 <!-- ════════════ NAV ════════════ -->
 <nav id="nav">
   <div class="container nav-inner">
-    <a href="index.html" class="nav-brand" aria-label="ArcUp Startseite">
+    <a href="index.html" class="nav-brand" data-i18n-attr-aria-label="nav.home" aria-label="ArcUp Startseite">
       <span class="brand-mark">
         <span class="brand-arc">ARC</span><span class="brand-up">UP</span>
       </span>
     </a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#philosophy">Philosophie</a></li>
-      <li><a href="#system">Das System</a></li>
-      <li><a href="#areas">Lebensbereiche</a></li>
-      <li><a href="#pricing">Pro</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#download" class="btn btn-pill">App laden</a></li>
+      <li><a href="#philosophy" data-i18n="nav.philosophy">Philosophie</a></li>
+      <li><a href="#system" data-i18n="nav.system">Das System</a></li>
+      <li><a href="#areas" data-i18n="nav.areas">Lebensbereiche</a></li>
+      <li><a href="#pricing" data-i18n="nav.pricing">Pro</a></li>
+      <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+      <li><a href="#download" class="btn btn-pill" data-i18n="nav.download">App laden</a></li>
+      <li><div data-lang-switcher></div></li>
     </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+    <button class="nav-toggle" id="navToggle" data-i18n-attr-aria-label="nav.menu" aria-label="Menü öffnen">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -53,24 +56,24 @@
 
     <div class="hero-pill">
       <span class="hero-pill-dot"></span>
-      iOS &amp; Android · Now in Beta
+      <span data-i18n-html="hero.pill">iOS &amp; Android · Now in Beta</span>
     </div>
 
     <h1 class="hero-headline">
-      <span>Building</span>
-      <span>better</span>
-      <span class="hero-accent">habits.</span>
+      <span data-i18n="hero.headline1">Building</span>
+      <span data-i18n="hero.headline2">better</span>
+      <span class="hero-accent" data-i18n="hero.headline3">habits.</span>
     </h1>
 
-    <p class="hero-sub">
+    <p class="hero-sub" data-i18n-html="hero.sub">
       Nicht noch ein Tracker. Ein System aus zeit&shy;begrenzten ARCs,
       numerischen Habits und einer Quellen-Bibliothek — über fünf Lebensbereiche.
     </p>
 
     <div class="hero-cta">
-      <a href="#download" class="btn btn-primary btn-lg">App kostenlos laden</a>
+      <a href="#download" class="btn btn-primary btn-lg" data-i18n="hero.ctaPrimary">App kostenlos laden</a>
       <a href="#system" class="hero-secondary">
-        So funktioniert ArcUp
+        <span data-i18n="hero.ctaSecondary">So funktioniert ArcUp</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
     </div>
@@ -78,24 +81,24 @@
 
   <div class="hero-stage" aria-hidden="false">
     <div class="hero-stage-glow"></div>
-    <img src="./assets/marketing/Homepage_Render.png" alt="ArcUp Home — Tageserfüllung, Wochenerfüllung, Level und aktive ARCs" class="hero-phone" />
-    <img src="./assets/marketing/ARCs_Render.png" alt="ARCademy — kuratierte ARCs" class="hero-phone hero-phone--left" />
-    <img src="./assets/marketing/Reflect_Render.png" alt="Reflect — Wheel of Life" class="hero-phone hero-phone--right" />
+    <img src="./assets/marketing/Homepage_Render.png" data-i18n-attr-alt="hero.altHome" alt="ArcUp Home — Tageserfüllung, Wochenerfüllung, Level und aktive ARCs" class="hero-phone" />
+    <img src="./assets/marketing/ARCs_Render.png" data-i18n-attr-alt="hero.altARCs" alt="ARCademy — kuratierte ARCs" class="hero-phone hero-phone--left" />
+    <img src="./assets/marketing/Reflect_Render.png" data-i18n-attr-alt="hero.altRef" alt="Reflect — Wheel of Life" class="hero-phone hero-phone--right" />
   </div>
 
   <ul class="hero-trust">
-    <li><span class="dot"></span>Free für immer</li>
-    <li><span class="dot"></span>EU-Hosting · DSGVO</li>
-    <li><span class="dot"></span>Pro mit Lifetime</li>
-    <li><span class="dot"></span>Keine Werbung, keine Tracker</li>
+    <li><span class="dot"></span><span data-i18n="hero.trust1">Free für immer</span></li>
+    <li><span class="dot"></span><span data-i18n="hero.trust2">EU-Hosting · DSGVO</span></li>
+    <li><span class="dot"></span><span data-i18n="hero.trust3">Pro mit Lifetime</span></li>
+    <li><span class="dot"></span><span data-i18n="hero.trust4">Keine Werbung, keine Tracker</span></li>
   </ul>
 </header>
 
 <!-- ════════════ MANIFESTO ════════════ -->
 <section class="section manifesto" id="philosophy">
   <div class="container narrow">
-    <span class="overline">Manifest</span>
-    <h2 class="display-md">
+    <span class="overline" data-i18n="mani.overline">Manifest</span>
+    <h2 class="display-md" data-i18n-html="mani.title">
       Wir tracken keine Häkchen.<br />
       Wir <em>messen</em> Verhalten — in Zahlen, über Zeit, mit Quellen im Rücken.
     </h2>
@@ -103,23 +106,23 @@
     <div class="principles">
       <div class="principle">
         <span class="principle-num">01</span>
-        <h3>Strukturiert statt beliebig.</h3>
-        <p>Habits sind keine Free-Text-Notizen. Jeder Habit hat Zielwert, Richtung (≥ oder ≤) und Einheit. „5,2 km gelaufen", nicht „Sport gemacht".</p>
+        <h3 data-i18n="p1.h">Strukturiert statt beliebig.</h3>
+        <p data-i18n="p1.b">Habits sind keine Free-Text-Notizen. Jeder Habit hat Zielwert, Richtung (≥ oder ≤) und Einheit. „5,2 km gelaufen", nicht „Sport gemacht".</p>
       </div>
       <div class="principle">
         <span class="principle-num">02</span>
-        <h3>Zeit-geboxte Anstrengung.</h3>
-        <p>Echte Verhaltensänderung passiert in fokussierten Phasen. Ein ARC ist eine Verpflichtung über 1 bis 12 Wochen — kein „forever streak".</p>
+        <h3 data-i18n="p2.h">Zeit-geboxte Anstrengung.</h3>
+        <p data-i18n="p2.b">Echte Verhaltensänderung passiert in fokussierten Phasen. Ein ARC ist eine Verpflichtung über 1 bis 12 Wochen — kein „forever streak".</p>
       </div>
       <div class="principle">
         <span class="principle-num">03</span>
-        <h3>Wissen als Fundament.</h3>
-        <p>Jede Empfehlung hat eine Quelle: ein Buch, eine Studie, einen Vortrag, einen Creator. Wir behaupten nichts ohne Beleg.</p>
+        <h3 data-i18n="p3.h">Wissen als Fundament.</h3>
+        <p data-i18n="p3.b">Jede Empfehlung hat eine Quelle: ein Buch, eine Studie, einen Vortrag, einen Creator. Wir behaupten nichts ohne Beleg.</p>
       </div>
       <div class="principle">
         <span class="principle-num">04</span>
-        <h3>Progressive Steigerung.</h3>
-        <p>Ziele wachsen linear über die ARC-Dauer — von 1 auf 5 km, von 5 auf 20 Minuten. Wachstum passiert durch Steigerung, nicht durch Wiederholung.</p>
+        <h3 data-i18n="p4.h">Progressive Steigerung.</h3>
+        <p data-i18n="p4.b">Ziele wachsen linear über die ARC-Dauer — von 1 auf 5 km, von 5 auf 20 Minuten. Wachstum passiert durch Steigerung, nicht durch Wiederholung.</p>
       </div>
     </div>
   </div>
@@ -129,39 +132,39 @@
 <section class="section layers">
   <div class="container">
     <div class="section-head">
-      <span class="overline">Drei Zeit-Ebenen. Ein System.</span>
-      <h2 class="display-md">Macro. Meso. Micro.</h2>
+      <span class="overline" data-i18n="layers.overline">Drei Zeit-Ebenen. Ein System.</span>
+      <h2 class="display-md" data-i18n="layers.title">Macro. Meso. Micro.</h2>
     </div>
 
     <div class="layers-grid">
       <article class="layer">
         <div class="layer-meta">
-          <span class="layer-tier">Macro</span>
-          <span class="layer-time">Lebenszeit</span>
+          <span class="layer-tier" data-i18n="macro.tier">Macro</span>
+          <span class="layer-time" data-i18n="macro.time">Lebenszeit</span>
         </div>
-        <h3>Compass</h3>
-        <p class="layer-q">Wer will ich werden?</p>
-        <p>Fünf Lebensbereiche und ein Vision-Statement. Der Compass hält die Richtung, wenn der Alltag laut wird.</p>
+        <h3 data-i18n="macro.h">Compass</h3>
+        <p class="layer-q" data-i18n="macro.q">Wer will ich werden?</p>
+        <p data-i18n="macro.b">Fünf Lebensbereiche und ein Vision-Statement. Der Compass hält die Richtung, wenn der Alltag laut wird.</p>
       </article>
 
       <article class="layer layer--accent">
         <div class="layer-meta">
-          <span class="layer-tier">Meso</span>
-          <span class="layer-time">1–12 Wochen</span>
+          <span class="layer-tier" data-i18n="meso.tier">Meso</span>
+          <span class="layer-time" data-i18n="meso.time">1–12 Wochen</span>
         </div>
-        <h3>ARC</h3>
-        <p class="layer-q">Was übe ich gerade gezielt?</p>
-        <p>Eine zeitlich begrenzte Challenge mit klarem Start, Ende und Commitment. 1 bis N Habits, progressive Ziele, Reflexion am Schluss.</p>
+        <h3 data-i18n="meso.h">ARC</h3>
+        <p class="layer-q" data-i18n="meso.q">Was übe ich gerade gezielt?</p>
+        <p data-i18n="meso.b">Eine zeitlich begrenzte Challenge mit klarem Start, Ende und Commitment. 1 bis N Habits, progressive Ziele, Reflexion am Schluss.</p>
       </article>
 
       <article class="layer">
         <div class="layer-meta">
-          <span class="layer-tier">Micro</span>
-          <span class="layer-time">Täglich · Wöchentlich</span>
+          <span class="layer-tier" data-i18n="micro.tier">Micro</span>
+          <span class="layer-time" data-i18n="micro.time">Täglich · Wöchentlich</span>
         </div>
-        <h3>Habit</h3>
-        <p class="layer-q">Was tue ich heute konkret?</p>
-        <p>Atomare, numerisch messbare Einheit. 5 km, 7 h, 2 l, ≤ 30 min. Eine Sache, ein Wert, eine Richtung.</p>
+        <h3 data-i18n="micro.h">Habit</h3>
+        <p class="layer-q" data-i18n="micro.q">Was tue ich heute konkret?</p>
+        <p data-i18n="micro.b">Atomare, numerisch messbare Einheit. 5 km, 7 h, 2 l, ≤ 30 min. Eine Sache, ein Wert, eine Richtung.</p>
       </article>
     </div>
   </div>
@@ -172,9 +175,9 @@
 
   <div class="container">
     <div class="section-head section-head--center">
-      <span class="overline">Die App</span>
-      <h2 class="display-md">Vier Räume. Eine Reise.</h2>
-      <p class="section-sub">Jeder Tab erfüllt genau eine Aufgabe. Keine überladenen Screens, keine Multifunktions-Buttons.</p>
+      <span class="overline" data-i18n="sys.overline">Die App</span>
+      <h2 class="display-md" data-i18n="sys.title">Vier Räume. Eine Reise.</h2>
+      <p class="section-sub" data-i18n="sys.sub">Jeder Tab erfüllt genau eine Aufgabe. Keine überladenen Screens, keine Multifunktions-Buttons.</p>
     </div>
   </div>
 
@@ -182,17 +185,17 @@
   <div class="showcase">
     <div class="container showcase-inner">
       <div class="showcase-copy">
-        <div class="showcase-num">01 — Home</div>
-        <h3 class="display-sm">Heute. Numerisch. Ehrlich.</h3>
-        <p>Drei Ringe für Tag, Woche und Level. Eine Liste deiner heutigen Habits — mit dem konkreten Zielwert, nicht mit einer Checkbox. Aktive ARCs zeigen, wo du gerade stehst.</p>
+        <div class="showcase-num" data-i18n="sc1.num">01 — Home</div>
+        <h3 class="display-sm" data-i18n="sc1.h">Heute. Numerisch. Ehrlich.</h3>
+        <p data-i18n="sc1.b">Drei Ringe für Tag, Woche und Level. Eine Liste deiner heutigen Habits — mit dem konkreten Zielwert, nicht mit einer Checkbox. Aktive ARCs zeigen, wo du gerade stehst.</p>
         <ul class="copy-list">
-          <li>Tages- und Wochenerfüllung als Prozent, proportional zum Zielwert</li>
-          <li>Level, Streak und aktive ARC-Karte mit Tag X von Y</li>
-          <li>Logbuch öffnet sich in einem Tap — nur der heutige Tag, keine Rückdatierung</li>
+          <li data-i18n="sc1.li1">Tages- und Wochenerfüllung als Prozent, proportional zum Zielwert</li>
+          <li data-i18n="sc1.li2">Level, Streak und aktive ARC-Karte mit Tag X von Y</li>
+          <li data-i18n="sc1.li3">Logbuch öffnet sich in einem Tap — nur der heutige Tag, keine Rückdatierung</li>
         </ul>
       </div>
       <div class="showcase-art">
-        <img src="./assets/marketing/Homepage_Render.png" alt="ArcUp Home — Tages-, Wochen- und Level-Ringe mit aktivem ARC Morning Mastery" />
+        <img src="./assets/marketing/Homepage_Render.png" data-i18n-attr-alt="sc1.alt" alt="ArcUp Home — Tages-, Wochen- und Level-Ringe mit aktivem ARC Morning Mastery" />
       </div>
     </div>
   </div>
@@ -201,17 +204,17 @@
   <div class="showcase showcase--reverse">
     <div class="container showcase-inner">
       <div class="showcase-copy">
-        <div class="showcase-num">02 — ARCademy</div>
-        <h3 class="display-sm">Wähle, baue, oder lass generieren.</h3>
-        <p>Eine kuratierte Bibliothek aus ARCs zwischen 1 und 12 Wochen. Schwierigkeit, Lebensbereich, Quelle, Dauer — alles filterbar. Plus zwei Wege, eigene Pfade zu gehen.</p>
+        <div class="showcase-num" data-i18n="sc2.num">02 — ARCademy</div>
+        <h3 class="display-sm" data-i18n="sc2.h">Wähle, baue, oder lass generieren.</h3>
+        <p data-i18n="sc2.b">Eine kuratierte Bibliothek aus ARCs zwischen 1 und 12 Wochen. Schwierigkeit, Lebensbereich, Quelle, Dauer — alles filterbar. Plus zwei Wege, eigene Pfade zu gehen.</p>
         <ul class="copy-list">
-          <li>Kuratierte ARCs mit Theorie, Tipps, Cover und Primärquelle</li>
-          <li>KI-Generator: Ziel in einem Satz beschreiben, fertigen ARC erhalten — editierbar</li>
-          <li>Selfmade-ARCs aus kuratierten Habits per Drei-Schritte-Wizard <span class="pro-pill">Pro</span></li>
+          <li data-i18n="sc2.li1">Kuratierte ARCs mit Theorie, Tipps, Cover und Primärquelle</li>
+          <li data-i18n="sc2.li2">KI-Generator: Ziel in einem Satz beschreiben, fertigen ARC erhalten — editierbar</li>
+          <li data-i18n-html="sc2.li3">Selfmade-ARCs aus kuratierten Habits per Drei-Schritte-Wizard <span class="pro-pill">Pro</span></li>
         </ul>
       </div>
       <div class="showcase-art">
-        <img src="./assets/marketing/ARCs_Render.png" alt="ARCademy — Beliebte ARCs Productivity Reset und Quadrant II Architect mit Suche und Filter" />
+        <img src="./assets/marketing/ARCs_Render.png" data-i18n-attr-alt="sc2.alt" alt="ARCademy — Beliebte ARCs Productivity Reset und Quadrant II Architect mit Suche und Filter" />
       </div>
     </div>
   </div>
@@ -220,17 +223,17 @@
   <div class="showcase">
     <div class="container showcase-inner">
       <div class="showcase-copy">
-        <div class="showcase-num">03 — Discover</div>
-        <h3 class="display-sm">Die Quellen hinter dem System.</h3>
-        <p>Hinter jedem ARC steht ein Buch, eine Studie, ein Talk. Sechs Quellentypen — als 5- bis 10-minütige Destillate lesbar, direkt mit Habits und ARCs verlinkt.</p>
+        <div class="showcase-num" data-i18n="sc3.num">03 — Discover</div>
+        <h3 class="display-sm" data-i18n="sc3.h">Die Quellen hinter dem System.</h3>
+        <p data-i18n="sc3.b">Hinter jedem ARC steht ein Buch, eine Studie, ein Talk. Sechs Quellentypen — als 5- bis 10-minütige Destillate lesbar, direkt mit Habits und ARCs verlinkt.</p>
         <ul class="copy-list">
-          <li>Buch · Artikel · Film · Creator · Rede · ArcUp Original</li>
-          <li>Kein „im Buch lernst du…" — die Kernideen direkt destilliert, 4–8 Minuten Lesedauer</li>
-          <li>Jede Quelle ist mit den ARCs und Habits verknüpft, die sie inspiriert hat</li>
+          <li data-i18n="sc3.li1">Buch · Artikel · Film · Creator · Rede · ArcUp Original</li>
+          <li data-i18n="sc3.li2">Kein „im Buch lernst du…" — die Kernideen direkt destilliert, 4–8 Minuten Lesedauer</li>
+          <li data-i18n="sc3.li3">Jede Quelle ist mit den ARCs und Habits verknüpft, die sie inspiriert hat</li>
         </ul>
       </div>
       <div class="showcase-art">
-        <img src="./assets/marketing/Quellen_Render.png" alt="Discover — Quellen-Bibliothek mit Atomic Habits, 168 Hours und Can't Hurt Me" />
+        <img src="./assets/marketing/Quellen_Render.png" data-i18n-attr-alt="sc3.alt" alt="Discover — Quellen-Bibliothek mit Atomic Habits, 168 Hours und Can't Hurt Me" />
       </div>
     </div>
   </div>
@@ -239,17 +242,17 @@
   <div class="showcase showcase--reverse">
     <div class="container showcase-inner">
       <div class="showcase-copy">
-        <div class="showcase-num">04 — Reflect</div>
-        <h3 class="display-sm">Der Compass. Dein Wheel of Life.</h3>
-        <p>Bewerte deine fünf Lebensbereiche von 1 bis 10. Sieh, wo Balance fehlt. Schreibe Vision, Ziele und Journal — paginiert, durchsuchbar, jederzeit editierbar.</p>
+        <div class="showcase-num" data-i18n="sc4.num">04 — Reflect</div>
+        <h3 class="display-sm" data-i18n="sc4.h">Der Compass. Dein Wheel of Life.</h3>
+        <p data-i18n="sc4.b">Bewerte deine fünf Lebensbereiche von 1 bis 10. Sieh, wo Balance fehlt. Schreibe Vision, Ziele und Journal — paginiert, durchsuchbar, jederzeit editierbar.</p>
         <ul class="copy-list">
-          <li>Interaktiver Radar über Körper, Geist, Wachstum, Beziehungen, Freizeit</li>
-          <li>Vision-Statement und Ziele pro Bereich (wöchentlich, monatlich, jährlich) <span class="pro-pill">Pro</span></li>
-          <li>Journal in vier Typen: Gedanke, Lernen, Dankbarkeit, Erfolge &amp; Verluste <span class="pro-pill">Pro</span></li>
+          <li data-i18n="sc4.li1">Interaktiver Radar über Körper, Geist, Wachstum, Beziehungen, Freizeit</li>
+          <li data-i18n-html="sc4.li2">Vision-Statement und Ziele pro Bereich (wöchentlich, monatlich, jährlich) <span class="pro-pill">Pro</span></li>
+          <li data-i18n-html="sc4.li3">Journal in vier Typen: Gedanke, Lernen, Dankbarkeit, Erfolge &amp; Verluste <span class="pro-pill">Pro</span></li>
         </ul>
       </div>
       <div class="showcase-art">
-        <img src="./assets/marketing/Reflect_Render.png" alt="Reflect — Wheel-of-Life-Radar mit Bewertung 37 von 50 über fünf Lebensbereiche" />
+        <img src="./assets/marketing/Reflect_Render.png" data-i18n-attr-alt="sc4.alt" alt="Reflect — Wheel-of-Life-Radar mit Bewertung 37 von 50 über fünf Lebensbereiche" />
       </div>
     </div>
   </div>
@@ -259,41 +262,41 @@
 <section class="section areas" id="areas">
   <div class="container">
     <div class="section-head section-head--center">
-      <span class="overline">Der Compass</span>
-      <h2 class="display-md">Fünf Lebensbereiche.<br />Ein Rahmen.</h2>
-      <p class="section-sub">Jede Quelle, jeder Habit, jeder ARC gehört genau einer Area an. Das hält den Compass scharf und verhindert „passt überall"-Inhalte.</p>
+      <span class="overline" data-i18n="areas.overline">Der Compass</span>
+      <h2 class="display-md" data-i18n-html="areas.title">Fünf Lebensbereiche.<br />Ein Rahmen.</h2>
+      <p class="section-sub" data-i18n="areas.sub">Jede Quelle, jeder Habit, jeder ARC gehört genau einer Area an. Das hält den Compass scharf und verhindert „passt überall"-Inhalte.</p>
     </div>
 
     <div class="areas-grid">
       <article class="area" style="--area: var(--body);">
         <div class="area-head"><span class="area-num">01</span><span class="area-dot"></span></div>
-        <h3>Body</h3>
-        <p class="area-desc">Ausdauer, Kraft, Mobility, Schlaf, Ernährung, Recovery.</p>
-        <p class="area-q">Was trägt dich durch dein Leben?</p>
+        <h3 data-i18n="a1.h">Body</h3>
+        <p class="area-desc" data-i18n="a1.d">Ausdauer, Kraft, Mobility, Schlaf, Ernährung, Recovery.</p>
+        <p class="area-q" data-i18n="a1.q">Was trägt dich durch dein Leben?</p>
       </article>
       <article class="area" style="--area: var(--mind);">
         <div class="area-head"><span class="area-num">02</span><span class="area-dot"></span></div>
-        <h3>Mind</h3>
-        <p class="area-desc">Meditation, Fokus, Stress-Regulation, Resilienz.</p>
-        <p class="area-q">Wer bist du, wenn es leise wird?</p>
+        <h3 data-i18n="a2.h">Mind</h3>
+        <p class="area-desc" data-i18n="a2.d">Meditation, Fokus, Stress-Regulation, Resilienz.</p>
+        <p class="area-q" data-i18n="a2.q">Wer bist du, wenn es leise wird?</p>
       </article>
       <article class="area" style="--area: var(--growth);">
         <div class="area-head"><span class="area-num">03</span><span class="area-dot"></span></div>
-        <h3>Growth</h3>
-        <p class="area-desc">Lesen, Lernen, Deep Work, Karriere, Finanzen.</p>
-        <p class="area-q">Was lernst du, das dich verändert?</p>
+        <h3 data-i18n="a3.h">Growth</h3>
+        <p class="area-desc" data-i18n="a3.d">Lesen, Lernen, Deep Work, Karriere, Finanzen.</p>
+        <p class="area-q" data-i18n="a3.q">Was lernst du, das dich verändert?</p>
       </article>
       <article class="area" style="--area: var(--relationships);">
         <div class="area-head"><span class="area-num">04</span><span class="area-dot"></span></div>
-        <h3>Relationships</h3>
-        <p class="area-desc">Partnerschaft, Familie, Freunde, Netzwerk, Repair.</p>
-        <p class="area-q">Wer wird dich vermissen, wenn du fehlst?</p>
+        <h3 data-i18n="a4.h">Relationships</h3>
+        <p class="area-desc" data-i18n="a4.d">Partnerschaft, Familie, Freunde, Netzwerk, Repair.</p>
+        <p class="area-q" data-i18n="a4.q">Wer wird dich vermissen, wenn du fehlst?</p>
       </article>
       <article class="area" style="--area: var(--leisure);">
         <div class="area-head"><span class="area-num">05</span><span class="area-dot"></span></div>
-        <h3>Leisure</h3>
-        <p class="area-desc">Hobbys, Natur, Kreativität, Spiel, Digital Detox.</p>
-        <p class="area-q">Was tust du, wenn niemand zusieht?</p>
+        <h3 data-i18n="a5.h">Leisure</h3>
+        <p class="area-desc" data-i18n="a5.d">Hobbys, Natur, Kreativität, Spiel, Digital Detox.</p>
+        <p class="area-q" data-i18n="a5.q">Was tust du, wenn niemand zusieht?</p>
       </article>
     </div>
   </div>
@@ -305,9 +308,9 @@
     <div class="foundation-grid">
 
       <article class="foundation-card">
-        <span class="overline">Quellen-fundiert</span>
-        <h3 class="display-sm">Jede Empfehlung hat eine Quelle.</h3>
-        <p>Sechs Quellentypen, mikro-konsumierbar in 4 bis 8 Minuten lesbar. Direkt aus der App. Mit Habits und ARCs verknüpft.</p>
+        <span class="overline" data-i18n="fnd1.over">Quellen-fundiert</span>
+        <h3 class="display-sm" data-i18n="fnd1.h">Jede Empfehlung hat eine Quelle.</h3>
+        <p data-i18n="fnd1.b">Sechs Quellentypen, mikro-konsumierbar in 4 bis 8 Minuten lesbar. Direkt aus der App. Mit Habits und ARCs verknüpft.</p>
         <ul class="src-list">
           <li><span class="src-tag">Book</span> Atomic Habits — James Clear</li>
           <li><span class="src-tag">Book</span> Outlive — Peter Attia</li>
@@ -319,9 +322,9 @@
       </article>
 
       <article class="foundation-card">
-        <span class="overline">Hierarchisch</span>
-        <h3 class="display-sm">Habits sind kein flacher Name.</h3>
-        <p>Über 120 kuratierte Habits in einer Baum-Struktur. Du trackst „Long Run = 12 km" — Insights aggregieren automatisch unter <em>Laufen</em> und <em>Ausdauertraining</em>.</p>
+        <span class="overline" data-i18n="fnd2.over">Hierarchisch</span>
+        <h3 class="display-sm" data-i18n="fnd2.h">Habits sind kein flacher Name.</h3>
+        <p data-i18n-html="fnd2.b">Über 120 kuratierte Habits in einer Baum-Struktur. Du trackst „Long Run = 12 km" — Insights aggregieren automatisch unter <em>Laufen</em> und <em>Ausdauertraining</em>.</p>
         <ul class="tree" aria-label="Beispiel-Hierarchie">
           <li class="t-1">
             Ausdauertraining
@@ -349,32 +352,32 @@
 <section class="section compare">
   <div class="container">
     <div class="section-head section-head--center">
-      <span class="overline">Numerisch, immer</span>
-      <h2 class="display-md">Wir tracken Werte,<br />keine Häkchen.</h2>
-      <p class="section-sub">Andere fragen: „Hast du heute Sport gemacht?" ArcUp fragt: „Wie viele Kilometer? Wie viele Minuten? Wie schnell?"</p>
+      <span class="overline" data-i18n="cmp.over">Numerisch, immer</span>
+      <h2 class="display-md" data-i18n-html="cmp.h">Wir tracken Werte,<br />keine Häkchen.</h2>
+      <p class="section-sub" data-i18n="cmp.sub">Andere fragen: „Hast du heute Sport gemacht?" ArcUp fragt: „Wie viele Kilometer? Wie viele Minuten? Wie schnell?"</p>
     </div>
 
     <div class="compare-grid">
       <div class="compare-col compare-col--bad">
-        <div class="compare-label">Häkchen-Tracker</div>
+        <div class="compare-label" data-i18n="cmp.badLabel">Häkchen-Tracker</div>
         <ul>
-          <li>✓ Sport gemacht</li>
-          <li>✓ Wasser getrunken</li>
-          <li>✓ Gelesen</li>
-          <li>✓ Meditiert</li>
+          <li data-i18n="cmp.bad1">✓ Sport gemacht</li>
+          <li data-i18n="cmp.bad2">✓ Wasser getrunken</li>
+          <li data-i18n="cmp.bad3">✓ Gelesen</li>
+          <li data-i18n="cmp.bad4">✓ Meditiert</li>
         </ul>
-        <p class="compare-note">Binär. Keine Tiefe. Erfüllung = 100 % oder 0 %.</p>
+        <p class="compare-note" data-i18n="cmp.badNote">Binär. Keine Tiefe. Erfüllung = 100 % oder 0 %.</p>
       </div>
       <div class="compare-divider" aria-hidden="true">→</div>
       <div class="compare-col compare-col--good">
-        <div class="compare-label">ArcUp</div>
+        <div class="compare-label" data-i18n="cmp.goodLabel">ArcUp</div>
         <ul>
-          <li><strong>5,2 km</strong> · Laufen, Zone 2 · 78 %</li>
-          <li><strong>2,4 l</strong> · Wasser · 96 %</li>
-          <li><strong>34 min</strong> · Lesen · 100 %</li>
-          <li><strong>20 min</strong> · Meditation · 100 %</li>
+          <li data-i18n-html="cmp.good1"><strong>5,2 km</strong> · Laufen, Zone 2 · 78 %</li>
+          <li data-i18n-html="cmp.good2"><strong>2,4 l</strong> · Wasser · 96 %</li>
+          <li data-i18n-html="cmp.good3"><strong>34 min</strong> · Lesen · 100 %</li>
+          <li data-i18n-html="cmp.good4"><strong>20 min</strong> · Meditation · 100 %</li>
         </ul>
-        <p class="compare-note">Echte Werte. Proportionale Erfüllung. Roll-up im Insights.</p>
+        <p class="compare-note" data-i18n="cmp.goodNote">Echte Werte. Proportionale Erfüllung. Roll-up im Insights.</p>
       </div>
     </div>
   </div>
@@ -384,35 +387,35 @@
 <section class="section not-this">
   <div class="container">
     <div class="section-head section-head--center">
-      <span class="overline">Bewusste Abgrenzung</span>
-      <h2 class="display-md">Was ArcUp <em>nicht</em> ist.</h2>
-      <p class="section-sub">Damit du weißt, wofür du dich entscheidest.</p>
+      <span class="overline" data-i18n="not.over">Bewusste Abgrenzung</span>
+      <h2 class="display-md" data-i18n-html="not.h">Was ArcUp <em>nicht</em> ist.</h2>
+      <p class="section-sub" data-i18n="not.sub">Damit du weißt, wofür du dich entscheidest.</p>
     </div>
 
     <div class="not-grid">
       <div class="not-item">
-        <h4>Kein To-Do-Manager.</h4>
-        <p>Habits sind keine Aufgaben mit Deadline. Ziele haben einen eigenen Platz.</p>
+        <h4 data-i18n="not1.h">Kein To-Do-Manager.</h4>
+        <p data-i18n="not1.b">Habits sind keine Aufgaben mit Deadline. Ziele haben einen eigenen Platz.</p>
       </div>
       <div class="not-item">
-        <h4>Kein generischer Habit-Tracker.</h4>
-        <p>Nicht „heute Sport gemacht ja/nein". Sondern „heute 5,2 km gelaufen". Numerisch, immer.</p>
+        <h4 data-i18n="not2.h">Kein generischer Habit-Tracker.</h4>
+        <p data-i18n="not2.b">Nicht „heute Sport gemacht ja/nein". Sondern „heute 5,2 km gelaufen". Numerisch, immer.</p>
       </div>
       <div class="not-item">
-        <h4>Kein Social Network.</h4>
-        <p>Keine Follower, keine Likes, keine Posts. Deine Insights sind privat.</p>
+        <h4 data-i18n="not3.h">Kein Social Network.</h4>
+        <p data-i18n="not3.b">Keine Follower, keine Likes, keine Posts. Deine Insights sind privat.</p>
       </div>
       <div class="not-item">
-        <h4>Kein Streak-um-jeden-Preis.</h4>
-        <p>Streaks gibt es, aber Rest-Days sind eingebaut. Es gibt keine Streak-Shields.</p>
+        <h4 data-i18n="not4.h">Kein Streak-um-jeden-Preis.</h4>
+        <p data-i18n="not4.b">Streaks gibt es, aber Rest-Days sind eingebaut. Es gibt keine Streak-Shields.</p>
       </div>
       <div class="not-item">
-        <h4>Keine Pure-Player-Konkurrenz.</h4>
-        <p>Wir sind die Struktur darüber — Strava, Headspace &amp; Co. bleiben ergänzend nutzbar.</p>
+        <h4 data-i18n="not5.h">Keine Pure-Player-Konkurrenz.</h4>
+        <p data-i18n-html="not5.b">Wir sind die Struktur darüber — Strava, Headspace &amp; Co. bleiben ergänzend nutzbar.</p>
       </div>
       <div class="not-item">
-        <h4>Kein Dark Pattern.</h4>
-        <p>Keine Werbung, keine Tracker, kein Notification-Spam. EU-Hosting, DSGVO.</p>
+        <h4 data-i18n="not6.h">Kein Dark Pattern.</h4>
+        <p data-i18n="not6.b">Keine Werbung, keine Tracker, kein Notification-Spam. EU-Hosting, DSGVO.</p>
       </div>
     </div>
   </div>
@@ -422,64 +425,64 @@
 <section class="section pricing" id="pricing">
   <div class="container">
     <div class="section-head section-head--center">
-      <span class="overline">Free oder Pro</span>
-      <h2 class="display-md">Du entscheidest.</h2>
-      <p class="section-sub">Alle Kernfunktionen sind frei. Pro schaltet die Tiefe frei — Personal ARC, mehrere parallele ARCs, Insights, Journal, Ziele, KI-Generator.</p>
+      <span class="overline" data-i18n="pr.over">Free oder Pro</span>
+      <h2 class="display-md" data-i18n="pr.h">Du entscheidest.</h2>
+      <p class="section-sub" data-i18n="pr.sub">Alle Kernfunktionen sind frei. Pro schaltet die Tiefe frei — Personal ARC, mehrere parallele ARCs, Insights, Journal, Ziele, KI-Generator.</p>
     </div>
 
     <div class="plans">
       <article class="plan">
         <div class="plan-head">
-          <span class="plan-name">Free</span>
+          <span class="plan-name" data-i18n="pr.free.name">Free</span>
           <span class="plan-price">€0</span>
         </div>
-        <p class="plan-tag">Für immer kostenlos.</p>
+        <p class="plan-tag" data-i18n="pr.free.tag">Für immer kostenlos.</p>
         <ul class="plan-list">
-          <li>Habit-Tracking, über 120 kuratierte Habits</li>
-          <li>1 aktiver ARC gleichzeitig</li>
-          <li>Wheel of Life &amp; Selbstbewertung</li>
-          <li>Quellen-Bibliothek (öffentliche Quellen)</li>
-          <li class="off">Personal ARC (endlos, Pro)</li>
-          <li class="off">Premium-ARCs (Pro)</li>
-          <li class="off">Insights, Journal, Ziele (Pro)</li>
-          <li class="off">Eigene ARCs &amp; KI-Generator (Pro)</li>
+          <li data-i18n="pr.free.l1">Habit-Tracking, über 120 kuratierte Habits</li>
+          <li data-i18n="pr.free.l2">1 aktiver ARC gleichzeitig</li>
+          <li data-i18n-html="pr.free.l3">Wheel of Life &amp; Selbstbewertung</li>
+          <li data-i18n="pr.free.l4">Quellen-Bibliothek (öffentliche Quellen)</li>
+          <li class="off" data-i18n="pr.free.l5">Personal ARC (endlos, Pro)</li>
+          <li class="off" data-i18n="pr.free.l6">Premium-ARCs (Pro)</li>
+          <li class="off" data-i18n="pr.free.l7">Insights, Journal, Ziele (Pro)</li>
+          <li class="off" data-i18n-html="pr.free.l8">Eigene ARCs &amp; KI-Generator (Pro)</li>
         </ul>
-        <a href="#download" class="btn btn-ghost btn-block">Kostenlos starten</a>
+        <a href="#download" class="btn btn-ghost btn-block" data-i18n="pr.free.cta">Kostenlos starten</a>
       </article>
 
       <article class="plan plan--featured">
-        <span class="plan-flag">Bestes Angebot</span>
+        <span class="plan-flag" data-i18n="pr.lt.flag">Bestes Angebot</span>
         <div class="plan-head">
-          <span class="plan-name">Pro Lifetime</span>
-          <span class="plan-price">—<small>€ einmalig</small></span>
+          <span class="plan-name" data-i18n="pr.lt.name">Pro Lifetime</span>
+          <span class="plan-price">—<small data-i18n="pr.lt.unit">€ einmalig</small></span>
         </div>
-        <p class="plan-tag">Ein Preis. Alle Features. Für immer.</p>
+        <p class="plan-tag" data-i18n="pr.lt.tag">Ein Preis. Alle Features. Für immer.</p>
         <ul class="plan-list">
-          <li>Alles aus Free</li>
-          <li><strong>Personal ARC</strong> — die einzige ARC ohne Enddatum</li>
-          <li>Mehrere aktive ARCs parallel</li>
-          <li>Alle drei Insights-Tabs</li>
-          <li>Ziel-Tracking &amp; Journal in vier Typen</li>
-          <li>Eigene ARCs per Wizard</li>
-          <li>KI-Generator (Wochen-Kontingent)</li>
-          <li>Erfolge teilen als Share-Image</li>
+          <li data-i18n="pr.lt.l1">Alles aus Free</li>
+          <li data-i18n-html="pr.lt.l2"><strong>Personal ARC</strong> — die einzige ARC ohne Enddatum</li>
+          <li data-i18n="pr.lt.l3">Mehrere aktive ARCs parallel</li>
+          <li data-i18n="pr.lt.l4">Alle drei Insights-Tabs</li>
+          <li data-i18n-html="pr.lt.l5">Ziel-Tracking &amp; Journal in vier Typen</li>
+          <li data-i18n="pr.lt.l6">Eigene ARCs per Wizard</li>
+          <li data-i18n="pr.lt.l7">KI-Generator (Wochen-Kontingent)</li>
+          <li data-i18n="pr.lt.l8">Erfolge teilen als Share-Image</li>
         </ul>
-        <a href="#download" class="btn btn-primary btn-block">Pro Lifetime holen</a>
+        <a href="#download" class="btn btn-primary btn-block" data-i18n="pr.lt.cta">Pro Lifetime holen</a>
       </article>
 
       <article class="plan">
         <div class="plan-head">
-          <span class="plan-name">Pro Jahr</span>
-          <span class="plan-price">—<small>€ / Jahr</small></span>
+          <span class="plan-name" data-i18n="pr.yr.name">Pro Jahr</span>
+          <span class="plan-price">—<small data-i18n="pr.yr.unit">€ / Jahr</small></span>
         </div>
-        <p class="plan-tag">Jährlich abgerechnet, monatlich kündbar.</p>
+        <p class="plan-tag" data-i18n="pr.yr.tag">Jährlich abgerechnet, monatlich kündbar.</p>
         <ul class="plan-list">
-          <li>Alles aus Pro</li>
-          <li>Auch monatlich verfügbar</li>
-          <li>Abrechnung über App Store oder Stripe</li>
-          <li>Jederzeit kündbar — Daten bleiben erhalten</li>
+          <li data-i18n="pr.yr.l1">Alles aus Pro</li>
+          <li data-i18n="pr.yr.l2">Auch monatlich verfügbar</li>
+          <li data-i18n="pr.yr.l3">Abrechnung über App Store oder Stripe</li>
+          <li data-i18n="pr.yr.l4">Jederzeit kündbar — Daten bleiben erhalten</li>
         </ul>
-        <a href="#download" class="btn btn-ghost btn-block">Jährlich wählen</a>
+        <a href="#download" class="btn btn-ghost btn-block" data-i18n="pr.yr.cta">Jährlich wählen</a>
       </article>
     </div>
   </div>
@@ -489,76 +492,76 @@
 <section class="section faq" id="faq">
   <div class="container narrow">
     <div class="section-head">
-      <span class="overline">FAQ</span>
-      <h2 class="display-md">Häufige Fragen.</h2>
+      <span class="overline" data-i18n="faq.over">FAQ</span>
+      <h2 class="display-md" data-i18n="faq.h">Häufige Fragen.</h2>
     </div>
 
     <details class="qa">
-      <summary>Was unterscheidet ArcUp von anderen Habit-Trackern?</summary>
-      <div class="qa-body">
+      <summary data-i18n="faq1.q">Was unterscheidet ArcUp von anderen Habit-Trackern?</summary>
+      <div class="qa-body" data-i18n="faq1.a">
         Fünf Dinge: numerisches Tracking statt Häkchen, zeitlich begrenzte ARCs statt ewiger Disziplin-Marathons, progressive Ziele die automatisch wachsen, eine integrierte Quellen-Bibliothek und der Wheel of Life über fünf Lebensbereiche.
       </div>
     </details>
 
     <details class="qa">
-      <summary>Was ist ein ARC?</summary>
-      <div class="qa-body">
+      <summary data-i18n="faq2.q">Was ist ein ARC?</summary>
+      <div class="qa-body" data-i18n="faq2.a">
         Eine zeitlich begrenzte Challenge über 1 bis 12 Wochen. Sie bündelt 1 bis N Habits mit konkreten Ziel-Konfigurationen, hat einen klaren Start, ein Commitment-Statement, optional progressive Targets und endet in einer strukturierten Reflexion.
       </div>
     </details>
 
     <details class="qa">
-      <summary>Woher kommen ARCs?</summary>
-      <div class="qa-body">
+      <summary data-i18n="faq3.q">Woher kommen ARCs?</summary>
+      <div class="qa-body" data-i18n-html="faq3.a">
         Drei Quellen: <strong>kuratiert</strong> vom ArcUp-Team auf Basis von Büchern, Reden und Forschung, <strong>selbst erstellt</strong> per Drei-Schritte-Wizard (Pro) oder <strong>KI-generiert</strong> aus einem natürlichsprachigen Prompt (Pro).
       </div>
     </details>
 
     <details class="qa">
-      <summary>Was sind progressive Ziele?</summary>
-      <div class="qa-body">
+      <summary data-i18n="faq4.q">Was sind progressive Ziele?</summary>
+      <div class="qa-body" data-i18n="faq4.a">
         Ein ARC-Habit kann statt eines festen Zielwerts einen Start- und Endwert haben. Der Zielwert wächst linear über die ARC-Laufzeit. Beispiel: Meditation von 5 Min. auf 20 Min. über 8 Wochen — du musst nichts manuell anpassen.
       </div>
     </details>
 
     <details class="qa">
-      <summary>Was ist die Personal ARC?</summary>
-      <div class="qa-body">
+      <summary data-i18n="faq5.q">Was ist die Personal ARC?</summary>
+      <div class="qa-body" data-i18n="faq5.a">
         Die einzige ARC ohne Enddatum — endlos, privat, frei konfigurierbar. Sie ist gedacht für Habits, die dich dauerhaft begleiten. Hier sind auch tracked-only Habits ohne Zielwert erlaubt. Ein Pro-Feature.
       </div>
     </details>
 
     <details class="qa">
-      <summary>Was heißt „numerisches Tracking"?</summary>
-      <div class="qa-body">
+      <summary data-i18n="faq6.q">Was heißt „numerisches Tracking"?</summary>
+      <div class="qa-body" data-i18n="faq6.a">
         Jeder Habit hat Zielwert, Einheit und Richtung (≥ oder ≤). Statt „erledigt / nicht erledigt" trackst du echte Werte — „5,2 km gelaufen", „7 h geschlafen", „≤ 30 Min. Social Media" — mit proportionaler Erfüllung zwischen 0 und 100 %.
       </div>
     </details>
 
     <details class="qa">
-      <summary>Kann ich nachträglich Werte eintragen?</summary>
-      <div class="qa-body">
+      <summary data-i18n="faq7.q">Kann ich nachträglich Werte eintragen?</summary>
+      <div class="qa-body" data-i18n="faq7.a">
         Nein — bewusst nicht. Im Logbuch wird immer nur der heutige Tag getrackt. Keine Rückdatierung. Das ist Teil der Ehrlichkeit der App.
       </div>
     </details>
 
     <details class="qa">
-      <summary>Wie funktioniert der Streak?</summary>
-      <div class="qa-body">
+      <summary data-i18n="faq8.q">Wie funktioniert der Streak?</summary>
+      <div class="qa-body" data-i18n-html="faq8.a">
         Aufeinanderfolgende Tage mit 100 % Tageserfüllung. Ruhetage brechen den Streak nicht. Es gibt <strong>keine Streak-Shields</strong> — Ehrlichkeit statt Pay-to-Recover.
       </div>
     </details>
 
     <details class="qa">
-      <summary>Auf welchen Plattformen läuft ArcUp?</summary>
-      <div class="qa-body">
+      <summary data-i18n="faq9.q">Auf welchen Plattformen läuft ArcUp?</summary>
+      <div class="qa-body" data-i18n="faq9.a">
         Native iOS- und Android-App. Funktionsumfang identisch. Sprachen: Englisch, Deutsch, Spanisch, Französisch, Italienisch.
       </div>
     </details>
 
     <details class="qa">
-      <summary>Wo werden meine Daten gespeichert?</summary>
-      <div class="qa-body">
+      <summary data-i18n="faq10.q">Wo werden meine Daten gespeichert?</summary>
+      <div class="qa-body" data-i18n="faq10.a">
         Auf EU-Servern mit Row-Level-Security. Keine Werbung, keine Tracker, keine Dark Patterns. Export gemäß DSGVO Art. 20 jederzeit möglich.
       </div>
     </details>
@@ -568,20 +571,20 @@
 <!-- ════════════ CTA ════════════ -->
 <section class="cta" id="download">
   <div class="container">
-    <h2 class="display">
+    <h2 class="display" data-i18n-html="cta.h">
       Starte einen <em>ARC</em>,<br />
       keinen Vorsatz.
     </h2>
-    <p class="cta-sub">ArcUp: Building Better Habits. Kostenlos laden. iOS &amp; Android.</p>
+    <p class="cta-sub" data-i18n-html="cta.sub">ArcUp: Building Better Habits. Kostenlos laden. iOS &amp; Android.</p>
 
     <div class="cta-stores">
-      <a href="#" class="store-btn" aria-label="Im App Store laden">
+      <a href="#" class="store-btn" data-i18n-attr-aria-label="cta.appStoreAria" aria-label="Im App Store laden">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-        <span><small>Download on the</small><strong>App Store</strong></span>
+        <span><small data-i18n="cta.appStoreSmall">Download on the</small><strong data-i18n="cta.appStoreBig">App Store</strong></span>
       </a>
-      <a href="#" class="store-btn" aria-label="Bei Google Play laden">
+      <a href="#" class="store-btn" data-i18n-attr-aria-label="cta.googleAria" aria-label="Bei Google Play laden">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.35.19.74.24 1.12.14l.08-.05 10.3-5.95-2.23-2.23-9.27 8.09zm-1.11-19.2A1.97 1.97 0 0 0 2 5.42v13.17c0 .56.22 1.06.58 1.4l.07.07 7.38-7.38v-.17L2.07 4.56zm17.38 7.04-2.5-1.45-2.5 2.51 2.5 2.5 2.51-1.45c.72-.41.72-1.1-.01-1.11zm-15.5 8.04 9.12-5.27-2.23-2.23-6.89 7.5z"/></svg>
-        <span><small>Get it on</small><strong>Google Play</strong></span>
+        <span><small data-i18n="cta.googleSmall">Get it on</small><strong data-i18n="cta.googleBig">Google Play</strong></span>
       </a>
     </div>
   </div>
@@ -594,29 +597,30 @@
       <span class="brand-mark">
         <span class="brand-arc">ARC</span><span class="brand-up">UP</span>
       </span>
-      <span class="footer-tag">Building Better Habits.</span>
+      <span class="footer-tag" data-i18n="ft.tag">Building Better Habits.</span>
     </div>
 
     <ul class="footer-links">
-      <li><a href="#system">Das System</a></li>
-      <li><a href="#areas">Lebensbereiche</a></li>
-      <li><a href="#pricing">Pro</a></li>
-      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#system" data-i18n="ft.system">Das System</a></li>
+      <li><a href="#areas" data-i18n="ft.areas">Lebensbereiche</a></li>
+      <li><a href="#pricing" data-i18n="ft.pricing">Pro</a></li>
+      <li><a href="#faq" data-i18n="ft.faq">FAQ</a></li>
     </ul>
 
     <ul class="footer-links footer-links--legal">
-      <li><a href="impressum.html">Impressum</a></li>
-      <li><a href="datenschutz.html">Datenschutz</a></li>
-      <li><a href="agb.html">AGB</a></li>
+      <li><a href="impressum.html" data-i18n="ft.impressum">Impressum</a></li>
+      <li><a href="datenschutz.html" data-i18n="ft.datenschutz">Datenschutz</a></li>
+      <li><a href="agb.html" data-i18n="ft.agb">AGB</a></li>
     </ul>
 
     <div class="footer-meta">
       <span>&copy; <span id="year"></span> ArcUp</span>
-      <span>Macro · Meso · Micro</span>
+      <span data-i18n="ft.macroMicroMeso">Macro · Meso · Micro</span>
     </div>
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 

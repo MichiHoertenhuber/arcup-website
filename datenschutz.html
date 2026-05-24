@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" data-i18n-title="title.datenschutz">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>(function(){try{var s=['de','en','es','fr','it'],l=localStorage.getItem('arcup-lang')||(navigator.language||'de').slice(0,2).toLowerCase();document.documentElement.lang=s.indexOf(l)>-1?l:'de';}catch(e){}})();</script>
   <title>Datenschutzerklärung — ArcUp</title>
   <meta name="robots" content="noindex" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
@@ -10,23 +11,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/i18n.css" />
 </head>
 <body>
 
 <nav id="nav" class="scrolled">
   <div class="container nav-inner">
-    <a href="index.html" class="nav-brand" aria-label="ArcUp Startseite">
+    <a href="index.html" class="nav-brand" data-i18n-attr-aria-label="nav.home" aria-label="ArcUp Startseite">
       <span class="brand-mark">
         <span class="brand-arc">ARC</span><span class="brand-up">UP</span>
       </span>
     </a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html#philosophy">Philosophie</a></li>
-      <li><a href="index.html#system">Das System</a></li>
-      <li><a href="index.html#pricing">Pro</a></li>
-      <li><a href="index.html#download" class="btn btn-pill">App laden</a></li>
+      <li><a href="index.html#philosophy" data-i18n="nav.philosophy">Philosophie</a></li>
+      <li><a href="index.html#system" data-i18n="nav.system">Das System</a></li>
+      <li><a href="index.html#pricing" data-i18n="nav.pricing">Pro</a></li>
+      <li><a href="index.html#download" class="btn btn-pill" data-i18n="nav.download">App laden</a></li>
+      <li><div data-lang-switcher></div></li>
     </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+    <button class="nav-toggle" id="navToggle" data-i18n-attr-aria-label="nav.menu" aria-label="Menü öffnen">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -34,115 +37,506 @@
 
 <main class="container">
   <div class="legal-page">
-    <h1>Datenschutzerklärung</h1>
-    <p class="last-updated">Stand: April 2026</p>
+    <h1 data-i18n="legal.datenschutz.title">Datenschutzerklärung</h1>
+    <p class="last-updated" data-i18n="legal.lastUpdated">Stand: 23. Mai 2026</p>
 
-    <h2>1. Verantwortlicher</h2>
-    <p>
-      Verantwortlicher im Sinne der DSGVO ist:<br />
-      [Dein Name / Unternehmensname]<br />
-      [Adresse]<br />
-      E-Mail: <a href="mailto:kontakt@arc-up.com">kontakt@arc-up.com</a>
-    </p>
+    <p class="legal-fallback-notice" data-i18n="legal.fallbackNotice"></p>
 
-    <h2>2. Erhebung und Verarbeitung personenbezogener Daten</h2>
-    <p>
-      Wir erheben und verarbeiten personenbezogene Daten nur, soweit dies zur Bereitstellung
-      einer funktionsfähigen App sowie unserer Inhalte und Leistungen erforderlich ist.
-      Die Verarbeitung erfolgt regelmäßig nur nach Einwilligung des Nutzers. Eine Ausnahme
-      gilt in solchen Fällen, in denen eine vorherige Einholung einer Einwilligung aus
-      tatsächlichen Gründen nicht möglich ist und die Verarbeitung der Daten durch
-      gesetzliche Vorschriften gestattet ist.
-    </p>
+    <!-- ════════════ DE ════════════ -->
+    <section data-lang-section="de">
+      <p>
+        Diese Datenschutzerklärung erläutert Art, Umfang und Zwecke der Verarbeitung
+        personenbezogener Daten im Rahmen der Nutzung der mobilen Anwendung
+        <strong>ArcUp</strong> (im Folgenden „App"). Maßgeblich sind die
+        Datenschutz-Grundverordnung (<strong>DSGVO</strong>), das österreichische
+        <strong>Datenschutzgesetz (DSG)</strong> sowie ergänzende Bestimmungen.
+      </p>
 
-    <h2>3. Nutzerkonto und Authentifizierung</h2>
-    <p>
-      Zur Nutzung der App ist eine Registrierung erforderlich. Dabei werden folgende Daten
-      verarbeitet:
-    </p>
-    <ul>
-      <li>E-Mail-Adresse (zur Authentifizierung)</li>
-      <li>Vorname, optional Nachname und Benutzername</li>
-      <li>Präferenzen (Einheitensystem, Sprache, Zeitzone, App-Design, erster Wochentag, Ruhetage)</li>
-      <li>Selbst eingegebene Habit-Logs, ARC-Runs, Ziele und Journal-Einträge</li>
-    </ul>
-    <p>
-      Diese Daten werden über Supabase (Supabase Inc., 970 Toa Payoh North, Singapur) als
-      Backend-Dienstleister verarbeitet und in der EU (Region eu-north-1, Stockholm) gespeichert.
-      Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung).
-    </p>
+      <h2>1. Verantwortlicher</h2>
+      <p>
+        Verantwortlicher im Sinne des Art. 4 Z 7 DSGVO ist die im Impressum
+        (siehe <a href="impressum.html">Impressum</a>) genannte Person. Für
+        datenschutzrechtliche Anliegen ist folgende Kontaktadresse eingerichtet:
+      </p>
+      <p>E-Mail: <a href="mailto:datenschutz@arcup.app"><strong>[datenschutz@arcup.app]</strong></a></p>
+      <p>
+        Ein Datenschutzbeauftragter ist nach Art. 37 DSGVO nicht bestellt, da die gesetzlichen
+        Voraussetzungen hierfür nicht vorliegen.
+      </p>
 
-    <h2>4. Anmeldung über Google</h2>
-    <p>
-      Optional kannst du dich über dein Google-Konto anmelden. Dabei werden Name und
-      E-Mail-Adresse deines Google-Profils an uns übermittelt. Weitere Informationen findest
-      du in der Datenschutzerklärung von Google.
-    </p>
+      <h2>2. Übersicht: welche Daten wir verarbeiten</h2>
+      <p>
+        Die App ist so gestaltet, dass möglichst <strong>wenige personenbezogene Daten</strong>
+        verarbeitet werden („Datenminimierung", Art. 5 Abs. 1 lit. c DSGVO). Konkret werden
+        folgende Datenkategorien verarbeitet:
+      </p>
 
-    <h2>5. Zahlungsabwicklung (Pro-Plan)</h2>
-    <p>
-      Für den kostenpflichtigen Pro-Plan nutzen wir Stripe (Stripe Payments Europe, Ltd.,
-      1 Grand Canal Street Lower, Grand Canal Dock, Dublin, D02 H210, Irland). Zahlungsdaten
-      werden ausschließlich an Stripe übermittelt und dort verarbeitet.
-      Auf iOS und Android erfolgt die Abrechnung alternativ über den jeweiligen App-Store
-      (Apple Inc. / Google LLC) nach deren Bedingungen.
-      Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO.
-    </p>
+      <h3>a) Account- und Profildaten</h3>
+      <ul>
+        <li>E-Mail-Adresse (für Anmeldung, Konto-Bestätigung, Passwort-Zurücksetzung)</li>
+        <li>Benutzername, Vorname (im Profil)</li>
+        <li>Spracheinstellung, Maßeinheit (metrisch/imperial), Zeitzone, Farbschema, erster Wochentag</li>
+        <li>Erinnerungszeiten für Habit-Benachrichtigungen (Morgen / Mittag / Abend)</li>
+        <li>Onboarding-Status („welche Walkthroughs habe ich gesehen")</li>
+        <li>Zeitstempel der Kontoerstellung, des letzten Logins und des letzten Datenexports</li>
+      </ul>
 
-    <h2>6. KI-Generator (Pro-Feature)</h2>
-    <p>
-      Der KI-Generator erzeugt aus einer von dir eingegebenen Zielbeschreibung einen ARC-Vorschlag
-      mit Habits, Zielwerten und Tipps. Dein Prompt wird dafür an einen KI-Dienstleister übermittelt.
-      Es werden keine Journal-Einträge, Habit-Logs oder sonstige personenbezogenen Tracking-Daten
-      gesendet. Rechtsgrundlage ist deine ausdrückliche Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).
-    </p>
+      <h3>b) Nutzungsdaten zur App-Funktionalität</h3>
+      <ul>
+        <li>Selbst angelegte Lebensbereiche (Life Areas), Ziele, Tagebucheinträge</li>
+        <li>Gewählte ARCs (Herausforderungen) und ihre Konfiguration</li>
+        <li>Habit-Definitionen, sofern selbst erstellt</li>
+        <li>Habit-Logs (täglich/wöchentlich eingegebene numerische Werte je Habit)</li>
+        <li>Berechnete Statistiken: tägliche/wöchentliche Vervollständigung, Streak, XP, Level</li>
+        <li>Erfolge / Achievements</li>
+        <li>Urlaubsperioden (Vacation Mode) zur Pausierung der Streak</li>
+      </ul>
 
-    <h2>7. Hosting dieser Website</h2>
-    <p>
-      Diese Website wird über GitHub Pages (GitHub Inc., 88 Colin P Kelly Jr St, San Francisco,
-      CA 94107, USA) gehostet. Beim Aufruf der Seiten überträgt dein Browser automatisch
-      Informationen an die Server von GitHub, u. a. deine IP-Adresse. Wir haben keinen Einfluss
-      auf diese Datenverarbeitung. Weitere Informationen findest du in der Datenschutzerklärung
-      von GitHub.
-    </p>
+      <h3>c) Hochgeladene Inhalte</h3>
+      <ul>
+        <li>ARC-Coverbilder, die der Nutzer selbst hochlädt (gespeichert im Storage-Bereich <code>arc-covers/&lt;user_id&gt;/</code>)</li>
+      </ul>
 
-    <h2>8. Deine Rechte</h2>
-    <p>Du hast das Recht auf:</p>
-    <ul>
-      <li>Auskunft über deine gespeicherten Daten (Art. 15 DSGVO)</li>
-      <li>Berichtigung unrichtiger Daten (Art. 16 DSGVO)</li>
-      <li>Löschung deiner Daten (Art. 17 DSGVO)</li>
-      <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
-      <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
-      <li>Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
-      <li>Widerruf einer erteilten Einwilligung (Art. 7 Abs. 3 DSGVO)</li>
-    </ul>
-    <p>
-      Zur Ausübung deiner Rechte wende dich an:
-      <a href="mailto:kontakt@arc-up.com">kontakt@arc-up.com</a>
-    </p>
+      <h3>d) Abonnement- und Zahlungsdaten</h3>
+      <ul>
+        <li>Stripe-Kunden-ID (<code>stripe_customer_id</code>), Stripe-Abo-ID</li>
+        <li>Tarif, Status, Verlängerungsdatum, Kündigungsmarkierung</li>
+        <li>Letzter Rechnungsbetrag, Währung, Datum, Link zur von Stripe gehosteten Rechnung</li>
+        <li>Zahlungsmittel-Kennzeichen (Marke z. B. „Visa", letzte 4 Ziffern der Karte) – <strong>keine vollständigen Kreditkartennummern</strong>; die vollständigen Zahlungsdaten werden ausschließlich von Stripe verarbeitet und sind dem Anbieter nicht zugänglich.</li>
+      </ul>
 
-    <h2>9. Beschwerderecht</h2>
-    <p>
-      Du hast das Recht, dich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung
-      deiner Daten zu beschweren.
-    </p>
+      <h3>e) Technische Daten</h3>
+      <p>
+        Beim Aufruf der Server-Infrastruktur fallen technisch unvermeidbare Protokolldaten
+        an (IP-Adresse, Zeitstempel, Endpunkt, HTTP-Statuscode). Diese werden vom Cloud-Anbieter
+        Supabase verarbeitet und nur zur Aufrechterhaltung des Betriebs und zur Abwehr von
+        Missbrauch genutzt.
+      </p>
 
-    <h2>10. Datenlöschung</h2>
-    <p>
-      Du kannst dein Konto und alle damit verbundenen Daten jederzeit in den App-Einstellungen
-      unter „Account löschen" löschen. Alternativ findest du dort die Funktion „Account
-      zurücksetzen", die nur deinen Fortschritt (Habits, Streaks, XP, ARCs, Journals) entfernt,
-      das Profil aber bestehen lässt. Daten werden nach dem Löschen innerhalb von 30 Tagen
-      vollständig von unseren Servern entfernt.
-    </p>
+      <h3>f) Daten, die wir <em>nicht</em> erheben</h3>
+      <ul>
+        <li><strong>Keine</strong> Standortdaten (GPS)</li>
+        <li><strong>Keine</strong> Kontakte</li>
+        <li><strong>Keine</strong> Kalender-, SMS- oder Telefonbuchdaten</li>
+        <li><strong>Keine</strong> Push-Token / Geräte-Identifier für Push-Server (Benachrichtigungen werden ausschließlich <strong>lokal</strong> auf dem Gerät geplant – siehe 7.)</li>
+        <li><strong>Kein</strong> App-Tracking, <strong>keine</strong> Analytics, <strong>keine</strong> Werbe-IDs, <strong>keine</strong> Cookies in der App, <strong>keine</strong> Drittanbieter-Tracker (Google Analytics, Facebook SDK o. ä. sind nicht eingebunden)</li>
+        <li><strong>Keine</strong> Gesundheitsdaten im engeren Sinne des Art. 9 DSGVO werden gezielt erhoben. Habit-Logs können zwar Werte enthalten, die Rückschlüsse auf Verhalten zulassen (z. B. Schlafdauer, Schritte), werden jedoch ausschließlich auf Initiative des Nutzers eingegeben.</li>
+      </ul>
 
-    <h2>11. Änderungen dieser Datenschutzerklärung</h2>
-    <p>
-      Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den
-      aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen
-      umzusetzen. Für deinen erneuten Besuch gilt dann die neue Datenschutzerklärung.
-    </p>
+      <h2>3. Zwecke und Rechtsgrundlagen</h2>
+      <ul>
+        <li><strong>Bereitstellung des Nutzerkontos, Authentifizierung</strong> (E-Mail, Passwort-Hash, Profildaten) — Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung)</li>
+        <li><strong>Bereitstellung der Kernfunktionen</strong> (Habit-Logging, ARCs, Statistiken) — Art. 6 Abs. 1 lit. b DSGVO</li>
+        <li><strong>Abrechnung des Pro-Tarifs, Abonnement-Verwaltung</strong> — Art. 6 Abs. 1 lit. b DSGVO; steuerrechtliche Aufbewahrung Art. 6 Abs. 1 lit. c DSGVO i. V. m. BAO</li>
+        <li><strong>KI-gestützte ARC-Vorschläge</strong> („Generate ARC", Pro-Feature) — Art. 6 Abs. 1 lit. b DSGVO, nur auf aktive Anfrage des Nutzers</li>
+        <li><strong>Lokale Erinnerungs-Benachrichtigungen</strong> — Art. 6 Abs. 1 lit. a DSGVO (Einwilligung über System-Dialog)</li>
+        <li><strong>Datenexport und Datenauskunft</strong> (DSGVO Art. 15/20) — Art. 6 Abs. 1 lit. c DSGVO i. V. m. Art. 15/20 DSGVO</li>
+        <li><strong>Kontolöschung</strong> (DSGVO Art. 17) — Art. 6 Abs. 1 lit. c DSGVO i. V. m. Art. 17 DSGVO</li>
+        <li><strong>Aufrechterhaltung und Sicherheit des Betriebs</strong> (Logs, Missbrauchserkennung) — Art. 6 Abs. 1 lit. f DSGVO, berechtigtes Interesse an stabilem und sicherem Betrieb</li>
+      </ul>
+
+      <h2>4. Empfänger / Auftragsverarbeiter</h2>
+      <p>
+        Wir setzen für den Betrieb der App folgende Auftragsverarbeiter ein. Mit allen wurden –
+        soweit DSGVO-pflichtig – Auftragsverarbeitungsverträge (AVV) nach Art. 28 DSGVO
+        abgeschlossen.
+      </p>
+
+      <h3>Supabase Inc. – Backend, Datenbank, Authentifizierung, Storage</h3>
+      <ul>
+        <li>Sitz: 970 Toa Payoh North, #07-04, Singapore 318992 (Holding); operative Tochter in den USA.</li>
+        <li>Funktion: Hosting der PostgreSQL-Datenbank, Authentifizierungs-Service, Object Storage (für Coverbilder und Daten-Exporte), Edge Functions.</li>
+        <li><strong>Hosting-Region: Stockholm (<code>eu-north-1</code>), Europäische Union.</strong> Datenbank, Auth-Service, Storage und Edge Functions liegen physisch in der EU.</li>
+        <li>Drittlandsbezug: Supabase ist ein US-amerikanisches Unternehmen. Mit Supabase besteht ein AVV inklusive der EU-Standardvertragsklauseln nach Art. 46 Abs. 2 lit. c DSGVO.</li>
+        <li>Datenschutzerklärung: <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">supabase.com/privacy</a></li>
+      </ul>
+
+      <h3>Stripe Payments Europe, Ltd. – Zahlungsabwicklung</h3>
+      <ul>
+        <li>Sitz: 1 Grand Canal Street Lower, Grand Canal Dock, Dublin, Irland.</li>
+        <li>Funktion: Abwicklung der Pro-Abonnements und Lifetime-Käufe außerhalb der App-Store-IAP-Mechaniken (Stripe Checkout), Verwaltung des Customer Portal, Webhook-Lieferung von Abonnement-Ereignissen, Bereitstellung von Rechnungen.</li>
+        <li>Verarbeitete Daten: E-Mail, Stripe-Kunden-ID, Zahlungsmittel-Daten, Rechnungs- und Abo-Verlauf. Die vollständigen Kreditkarten-/Kontodaten verarbeitet ausschließlich Stripe.</li>
+        <li>Stripe ist eigenständiger Verantwortlicher für die Zahlungstransaktion (PCI-DSS-konform) und unser Auftragsverarbeiter für die in unserem Auftrag erhobenen Daten.</li>
+        <li>Datenschutzerklärung: <a href="https://stripe.com/at/privacy" target="_blank" rel="noopener noreferrer">stripe.com/at/privacy</a></li>
+      </ul>
+
+      <h3>Anthropic, PBC – Generierung von ARC-Vorschlägen (Pro-Feature)</h3>
+      <ul>
+        <li>Sitz: 548 Market St, PMB 90375, San Francisco, CA 94104, USA.</li>
+        <li>Funktion: Verarbeitung des vom Nutzer eingegebenen Textprompts plus mitgeschickter Katalog-Stammdaten (Habits, Lebensbereiche, Sprache, Einheitensystem) zur Erzeugung eines KI-generierten ARC-Vorschlags durch das Modell <em>Claude Haiku 4.5</em>.</li>
+        <li>Drittlandsbezug: USA. Anthropic stellt EU-Standardvertragsklauseln zur Verfügung.</li>
+        <li>Datenverwendung: Eingaben werden laut Anthropic-Richtlinie für API-Kunden <strong>nicht</strong> für das Training von Modellen verwendet. Anthropic speichert API-Eingaben standardmäßig nur für die Dauer der Anfrage bzw. zur Missbrauchserkennung für einen begrenzten Zeitraum.</li>
+        <li>Diese Funktion wird <strong>ausschließlich auf aktive Anfrage</strong> des Pro-Nutzers ausgelöst.</li>
+        <li>Datenschutzerklärung: <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener noreferrer">anthropic.com/legal/privacy</a></li>
+      </ul>
+
+      <h3>Apple Distribution International Ltd. / Google Commerce Ltd. – App-Vertrieb</h3>
+      <ul>
+        <li>Sitz: Apple – Hollyhill Industrial Estate, Cork, Irland. Google – Gordon House, Barrow Street, Dublin 4, Irland.</li>
+        <li>Funktion: Vertrieb der App über den jeweiligen Store; bei In-App-Käufen Abwicklung der Zahlung über die Store-eigenen Mechanismen.</li>
+        <li>Wir erhalten von Apple/Google nur aggregierte und pseudonymisierte Informationen über Käufe, keine personenbezogenen Klardaten der Käufer.</li>
+        <li>Datenschutzerklärungen: <a href="https://www.apple.com/legal/privacy" target="_blank" rel="noopener noreferrer">apple.com/legal/privacy</a> und <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></li>
+      </ul>
+
+      <h2>5. Drittlandsübermittlung</h2>
+      <p>
+        Mit Supabase (US-Konzernzugehörigkeit, EU-Hosting) und Anthropic (USA) bestehen
+        Datenverarbeitungen mit Bezug zu einem Drittstaat. Soweit Daten in die USA übertragen
+        oder von dort aus zugänglich werden, stützen wir die Übermittlung auf die
+        <strong>Standardvertragsklauseln (SCC)</strong> der EU-Kommission gem. Art. 46 Abs. 2
+        lit. c DSGVO. Wir prüfen die jeweils aktuellen Angemessenheitsentscheidungen
+        (z. B. EU-US Data Privacy Framework) und passen die Grundlage bei Bedarf an.
+      </p>
+
+      <h2>6. Speicherdauer</h2>
+      <ul>
+        <li><strong>Account-, Profil- und Nutzungsdaten:</strong> für die Dauer des bestehenden Vertragsverhältnisses. Bei Löschung des Kontos werden sie umgehend gelöscht (siehe 10.).</li>
+        <li><strong>Habit-Logs, Statistiken, Achievements, Ziele, Journal-Einträge, Selfmade-Habits/-ARCs, Coverbilder, Urlaubsperioden:</strong> bis zur Kontolöschung. Einzelne Datensätze kann der Nutzer jederzeit selbst innerhalb der App löschen.</li>
+        <li><strong>Cross-ARC-Vervollständigungs-Logs</strong> (<code>completion_logs</code>): rollierendes 90-Tage-Fenster; ältere Datensätze werden automatisch gelöscht.</li>
+        <li><strong>Abo-/Rechnungsdaten:</strong> sieben Jahre gemäß § 132 Bundesabgabenordnung (BAO) bzw. § 212 UGB. Innerhalb dieser Frist werden Daten nur noch zu Beweis- und Aufbewahrungszwecken vorgehalten und nicht weiter aktiv verarbeitet.</li>
+        <li><strong>Stripe-Datenbestand:</strong> Mit der Kontolöschung wird der Stripe-Kunde <strong>vollständig gelöscht</strong> (Stripe <code>customers.del</code>); damit werden auch laufende Abos automatisch beendet. Anonymisierte Zahlungsbelege verbleiben bei Stripe aus regulatorischen Gründen.</li>
+        <li><strong>Server-Logs:</strong> maximal 30 Tage durch Supabase-Logging, danach automatische Rotation.</li>
+      </ul>
+
+      <h2>7. Push-Benachrichtigungen (rein lokal)</h2>
+      <p>
+        ArcUp nutzt <strong>keinen</strong> Push-Server (kein FCM, kein APNs-Token wird gespeichert
+        oder an unsere Server übertragen). Alle Erinnerungen sind <strong>lokal auf dem Gerät</strong>
+        durch das Betriebssystem geplante Benachrichtigungen. Der Nutzer kann sie jederzeit über
+        die Profil-Einstellungen der App oder über die System-Einstellungen seines Geräts
+        vollständig deaktivieren.
+      </p>
+      <p>
+        Die Berechtigung zur Anzeige von Benachrichtigungen wird über den jeweiligen System-Dialog
+        von iOS/Android eingeholt; eine Ablehnung beeinträchtigt die übrige Funktionalität der
+        App nicht.
+      </p>
+
+      <h2>8. Lokale Datenspeicherung auf dem Gerät</h2>
+      <ul>
+        <li><strong>Expo SecureStore:</strong> speichert ausschließlich das Supabase-Sitzungstoken (JWT) verschlüsselt im sicheren Bereich des Betriebssystems (iOS Keychain / Android Keystore). Bei Logout oder Konto-Löschung wird das Token entfernt.</li>
+        <li><strong>Lokaler Cache (TanStack React Query):</strong> im Arbeitsspeicher der App, zur Performance-Optimierung der Anzeige. Kein persistenter Datenexport; bei App-Schließung gelöscht.</li>
+        <li><strong>Foto-Auswahl (expo-image-picker):</strong> greift nach Bestätigung des System-Dialogs auf einzelne, vom Nutzer ausgewählte Bilder zu, ausschließlich zur Verwendung als ARC-Coverbild.</li>
+      </ul>
+
+      <h2>9. Sicherheit</h2>
+      <p>
+        Wir treffen geeignete technische und organisatorische Maßnahmen gemäß Art. 32 DSGVO,
+        insbesondere:
+      </p>
+      <ul>
+        <li><strong>Transport-Verschlüsselung:</strong> Sämtliche Kommunikation zwischen App und Server erfolgt über HTTPS/TLS.</li>
+        <li><strong>Authentifizierung:</strong> Passwort-basierte Anmeldung mit Supabase Auth; serverseitiges Hashing der Passwörter.</li>
+        <li><strong>Row-Level Security (RLS):</strong> Auf Datenbank-Ebene ist für jede Tabelle erzwungen, dass Nutzer ausschließlich auf ihre eigenen Zeilen zugreifen können (Vergleich <code>auth.uid() = user_id</code>).</li>
+        <li><strong>Verschlüsselte Token-Ablage</strong> im Keychain/Keystore des Endgeräts.</li>
+        <li><strong>Backups</strong> durch die EU-Infrastruktur des Cloud-Anbieters (verschlüsselte Snapshots).</li>
+        <li><strong>Strenge Minimal-Berechtigungen</strong> für Server-Funktionen; sensible Drittanbieter-Schlüssel (Stripe, Anthropic) liegen ausschließlich serverseitig.</li>
+      </ul>
+
+      <h2>10. Ihre Rechte als betroffene Person</h2>
+      <p>Sie haben jederzeit folgende Rechte:</p>
+      <ul>
+        <li><strong>Auskunft</strong> (Art. 15 DSGVO) über die zu Ihrer Person gespeicherten Daten</li>
+        <li><strong>Berichtigung</strong> unrichtiger Daten (Art. 16 DSGVO)</li>
+        <li><strong>Löschung</strong> (Art. 17 DSGVO – „Recht auf Vergessenwerden")</li>
+        <li><strong>Einschränkung</strong> der Verarbeitung (Art. 18 DSGVO)</li>
+        <li><strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO)</li>
+        <li><strong>Widerspruch</strong> gegen Verarbeitungen, die auf berechtigtem Interesse beruhen (Art. 21 DSGVO)</li>
+        <li><strong>Widerruf</strong> einer erteilten Einwilligung mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO)</li>
+      </ul>
+      <p>Zur Erleichterung der Ausübung dieser Rechte bietet die App zwei integrierte Selbstbedienungs-Funktionen:</p>
+      <ul>
+        <li><strong>Datenexport („Datenexport" im Profil-Bereich):</strong> erstellt einen ZIP-Download Ihres gesamten personenbezogenen Datenbestands (alle Tabellen, in denen Sie Eigentümer sind, plus Ihre hochgeladenen Coverbilder) als JSON-Dateien plus Manifest. Aus Schutz vor missbräuchlichen Massenanfragen ist die Funktion auf <strong>eine Anfrage pro 24 Stunden</strong> beschränkt (Art. 12 Abs. 5 DSGVO).</li>
+        <li><strong>Konto-Löschung („Konto löschen" in den Account-Einstellungen):</strong> löscht unwiderruflich Ihren Supabase-Account, alle damit verknüpften Datensätze über <code>ON DELETE CASCADE</code>-Verknüpfungen, sämtliche von Ihnen hochgeladenen Storage-Objekte (Coverbilder und ggf. vorgenerierte Export-Archive) sowie Ihren Stripe-Kunden samt laufender Abos.</li>
+      </ul>
+      <p>Darüber hinaus erreichen Sie uns unter der in 1. angegebenen Adresse.</p>
+
+      <h2>11. Beschwerderecht</h2>
+      <p>Sie haben das Recht, Beschwerde bei einer Aufsichtsbehörde einzulegen. Zuständig in Österreich ist:</p>
+      <address>
+        <p>
+          <strong>Österreichische Datenschutzbehörde (DSB)</strong><br />
+          Barichgasse 40-42, 1030 Wien<br />
+          Telefon: +43 1 52 152-0<br />
+          E-Mail: <a href="mailto:dsb@dsb.gv.at">dsb@dsb.gv.at</a><br />
+          Web: <a href="https://www.dsb.gv.at" target="_blank" rel="noopener noreferrer">www.dsb.gv.at</a>
+        </p>
+      </address>
+      <p>
+        Nutzer aus anderen EU-Mitgliedstaaten können sich ebenso an die Aufsichtsbehörde
+        ihres gewöhnlichen Aufenthaltsorts wenden.
+      </p>
+
+      <h2>12. Automatisierte Entscheidungsfindung, Profiling</h2>
+      <p>
+        Eine automatisierte Entscheidungsfindung mit rechtlicher Wirkung im Sinne des
+        Art. 22 DSGVO findet <strong>nicht</strong> statt. Die KI-Funktion „Generate ARC"
+        erstellt lediglich Vorschläge, die ausschließlich auf Initiative des Nutzers
+        angestoßen werden und vom Nutzer angenommen, geändert oder verworfen werden können.
+      </p>
+
+      <h2>13. Minderjährige</h2>
+      <p>
+        ArcUp ist nicht auf Kinder unter 16 Jahren ausgerichtet. Wir erheben wissentlich keine
+        Daten von Personen unter 16 Jahren ohne Einwilligung der Erziehungsberechtigten
+        (Art. 8 DSGVO). Eltern oder Erziehungsberechtigte, die feststellen, dass ihr Kind uns
+        Daten übermittelt hat, können sich jederzeit an die in 1. genannte Adresse wenden;
+        die Daten werden umgehend gelöscht.
+      </p>
+
+      <h2>14. Änderungen dieser Datenschutzerklärung</h2>
+      <p>
+        Wir behalten uns vor, diese Datenschutzerklärung anzupassen, wenn sich Funktionen der
+        App, eingesetzte Dienstleister oder die Rechtslage ändern. Die jeweils aktuelle Fassung
+        ist über die App (Profil → Rechtliches) abrufbar.
+      </p>
+    </section>
+
+    <!-- ════════════ EN ════════════ -->
+    <section data-lang-section="en">
+      <p>
+        This privacy policy explains the nature, scope and purposes of the processing of
+        personal data in connection with the use of the mobile application <strong>ArcUp</strong>
+        (hereinafter the "App"). The relevant legal bases are the General Data Protection
+        Regulation (<strong>GDPR</strong>), the Austrian Data Protection Act (DSG) and
+        supplementary provisions. <em>Translation provided for convenience — the binding text
+        is the German version.</em>
+      </p>
+
+      <h2>1. Controller</h2>
+      <p>
+        The controller within the meaning of Art. 4(7) GDPR is the person named in the
+        <a href="impressum.html">imprint</a>. The following address is set up for data
+        protection enquiries:
+      </p>
+      <p>Email: <a href="mailto:datenschutz@arcup.app"><strong>[datenschutz@arcup.app]</strong></a></p>
+      <p>
+        A Data Protection Officer has not been appointed under Art. 37 GDPR, as the statutory
+        requirements for this are not met.
+      </p>
+
+      <h2>2. Overview: what data we process</h2>
+      <p>
+        The App is designed so that <strong>as little personal data as possible</strong> is
+        processed ("data minimisation", Art. 5(1)(c) GDPR). Specifically, the following
+        categories of data are processed:
+      </p>
+
+      <h3>a) Account and profile data</h3>
+      <ul>
+        <li>Email address (for sign-in, account confirmation, password reset)</li>
+        <li>Username, first name (in the profile)</li>
+        <li>Language preference, unit system (metric/imperial), time zone, colour scheme, first weekday</li>
+        <li>Reminder times for habit notifications (morning / midday / evening)</li>
+        <li>Onboarding status ("which walkthroughs have I seen")</li>
+        <li>Timestamps of account creation, last login and last data export</li>
+      </ul>
+
+      <h3>b) Usage data for app functionality</h3>
+      <ul>
+        <li>Self-created life areas, goals, journal entries</li>
+        <li>Selected ARCs (challenges) and their configuration</li>
+        <li>Habit definitions, if self-created</li>
+        <li>Habit logs (numeric values entered daily/weekly per habit)</li>
+        <li>Calculated statistics: daily/weekly completion, streak, XP, level</li>
+        <li>Achievements</li>
+        <li>Vacation periods (Vacation Mode) for pausing the streak</li>
+      </ul>
+
+      <h3>c) Uploaded content</h3>
+      <ul>
+        <li>ARC cover images uploaded by the User (stored in the storage area <code>arc-covers/&lt;user_id&gt;/</code>)</li>
+      </ul>
+
+      <h3>d) Subscription and payment data</h3>
+      <ul>
+        <li>Stripe customer ID (<code>stripe_customer_id</code>), Stripe subscription ID</li>
+        <li>Plan, status, renewal date, cancellation marker</li>
+        <li>Last invoice amount, currency, date, link to the Stripe-hosted invoice</li>
+        <li>Payment method identifier (brand e.g. "Visa", last 4 digits of the card) – <strong>no full credit card numbers</strong>; the complete payment data is processed exclusively by Stripe and is not accessible to the Provider.</li>
+      </ul>
+
+      <h3>e) Technical data</h3>
+      <p>
+        When accessing the server infrastructure, technically unavoidable log data (IP address,
+        timestamp, endpoint, HTTP status code) is generated. This is processed by the cloud
+        provider Supabase and used only to maintain operation and prevent abuse.
+      </p>
+
+      <h3>f) Data we <em>do not</em> collect</h3>
+      <ul>
+        <li><strong>No</strong> location data (GPS)</li>
+        <li><strong>No</strong> contacts</li>
+        <li><strong>No</strong> calendar, SMS or phonebook data</li>
+        <li><strong>No</strong> push tokens / device identifiers for push servers (notifications are scheduled exclusively <strong>locally</strong> on the device – see 7.)</li>
+        <li><strong>No</strong> app tracking, <strong>no</strong> analytics, <strong>no</strong> advertising IDs, <strong>no</strong> cookies in the app, <strong>no</strong> third-party trackers (Google Analytics, Facebook SDK or similar are not integrated)</li>
+        <li><strong>No</strong> health data in the narrower sense of Art. 9 GDPR is collected purposefully. Habit logs may contain values that allow conclusions about behaviour (e.g. sleep duration, steps), but they are entered only at the User's initiative.</li>
+      </ul>
+
+      <h2>3. Purposes and legal bases</h2>
+      <ul>
+        <li><strong>Providing the user account, authentication</strong> (email, password hash, profile data) — Art. 6(1)(b) GDPR (performance of contract)</li>
+        <li><strong>Providing the core features</strong> (habit logging, ARCs, statistics) — Art. 6(1)(b) GDPR</li>
+        <li><strong>Billing of the Pro plan, subscription management</strong> — Art. 6(1)(b) GDPR; tax-law retention Art. 6(1)(c) GDPR in conjunction with BAO</li>
+        <li><strong>AI-assisted ARC suggestions</strong> ("Generate ARC", Pro feature) — Art. 6(1)(b) GDPR, only on active request of the User</li>
+        <li><strong>Local reminder notifications</strong> — Art. 6(1)(a) GDPR (consent via system dialog)</li>
+        <li><strong>Data export and access</strong> (GDPR Art. 15/20) — Art. 6(1)(c) GDPR in conjunction with Art. 15/20 GDPR</li>
+        <li><strong>Account deletion</strong> (GDPR Art. 17) — Art. 6(1)(c) GDPR in conjunction with Art. 17 GDPR</li>
+        <li><strong>Maintaining and securing operation</strong> (logs, abuse detection) — Art. 6(1)(f) GDPR, legitimate interest in stable and secure operation</li>
+      </ul>
+
+      <h2>4. Recipients / processors</h2>
+      <p>
+        We use the following processors to operate the App. Where required by the GDPR, data
+        processing agreements (DPAs) under Art. 28 GDPR have been concluded with all of them.
+      </p>
+
+      <h3>Supabase Inc. – backend, database, authentication, storage</h3>
+      <ul>
+        <li>Seat: 970 Toa Payoh North, #07-04, Singapore 318992 (holding); operating subsidiary in the USA.</li>
+        <li>Function: hosting of the PostgreSQL database, authentication service, object storage (for cover images and data exports), edge functions.</li>
+        <li><strong>Hosting region: Stockholm (<code>eu-north-1</code>), European Union.</strong> Database, auth service, storage and edge functions are physically located in the EU.</li>
+        <li>Third-country reference: Supabase is a US company. A DPA including the EU Standard Contractual Clauses under Art. 46(2)(c) GDPR has been concluded with Supabase.</li>
+        <li>Privacy policy: <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">supabase.com/privacy</a></li>
+      </ul>
+
+      <h3>Stripe Payments Europe, Ltd. – payment processing</h3>
+      <ul>
+        <li>Seat: 1 Grand Canal Street Lower, Grand Canal Dock, Dublin, Ireland.</li>
+        <li>Function: processing of Pro subscriptions and Lifetime purchases outside the in-app-purchase mechanisms of the stores (Stripe Checkout), Customer Portal management, webhook delivery of subscription events, provision of invoices.</li>
+        <li>Processed data: email, Stripe customer ID, payment method data, invoice and subscription history. Full credit-card/bank-account data is processed exclusively by Stripe.</li>
+        <li>Stripe is independent controller for the payment transaction (PCI-DSS compliant) and our processor for the data we collect.</li>
+        <li>Privacy policy: <a href="https://stripe.com/at/privacy" target="_blank" rel="noopener noreferrer">stripe.com/at/privacy</a></li>
+      </ul>
+
+      <h3>Anthropic, PBC – generation of ARC suggestions (Pro feature)</h3>
+      <ul>
+        <li>Seat: 548 Market St, PMB 90375, San Francisco, CA 94104, USA.</li>
+        <li>Function: processing of the text prompt entered by the User plus catalogue master data sent along (habits, life areas, language, unit system) to produce an AI-generated ARC suggestion by the model <em>Claude Haiku 4.5</em>.</li>
+        <li>Third-country reference: USA. Anthropic provides EU Standard Contractual Clauses.</li>
+        <li>Data use: according to Anthropic's policy for API customers, inputs are <strong>not</strong> used to train models. By default, Anthropic stores API inputs only for the duration of the request or for abuse detection for a limited period.</li>
+        <li>This feature is triggered <strong>exclusively on active request</strong> of the Pro User.</li>
+        <li>Privacy policy: <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener noreferrer">anthropic.com/legal/privacy</a></li>
+      </ul>
+
+      <h3>Apple Distribution International Ltd. / Google Commerce Ltd. – app distribution</h3>
+      <ul>
+        <li>Seat: Apple – Hollyhill Industrial Estate, Cork, Ireland. Google – Gordon House, Barrow Street, Dublin 4, Ireland.</li>
+        <li>Function: distribution of the app via the respective store; for in-app purchases, payment processing via the store's own mechanisms.</li>
+        <li>We receive only aggregated and pseudonymised purchase information from Apple/Google, no plain personal data of buyers.</li>
+        <li>Privacy policies: <a href="https://www.apple.com/legal/privacy" target="_blank" rel="noopener noreferrer">apple.com/legal/privacy</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></li>
+      </ul>
+
+      <h2>5. Transfer to third countries</h2>
+      <p>
+        With Supabase (US corporate affiliation, EU hosting) and Anthropic (USA), there are
+        processing operations involving a third country. To the extent data is transferred to
+        the USA or accessible from there, we base the transfer on the
+        <strong>Standard Contractual Clauses (SCC)</strong> of the EU Commission under
+        Art. 46(2)(c) GDPR. We review the respective adequacy decisions in force (e.g.
+        EU-US Data Privacy Framework) and adjust the basis as required.
+      </p>
+
+      <h2>6. Storage period</h2>
+      <ul>
+        <li><strong>Account, profile and usage data:</strong> for the duration of the existing contractual relationship. Upon deletion of the account, it is deleted immediately (see 10.).</li>
+        <li><strong>Habit logs, statistics, achievements, goals, journal entries, self-made habits/ARCs, cover images, vacation periods:</strong> until account deletion. Individual records can be deleted by the User at any time within the App.</li>
+        <li><strong>Cross-ARC completion logs</strong> (<code>completion_logs</code>): rolling 90-day window; older records are automatically deleted.</li>
+        <li><strong>Subscription/invoice data:</strong> seven years pursuant to Section 132 of the Austrian Federal Fiscal Code (BAO) or Section 212 UGB. During this period, data is retained only for evidence and storage purposes and is no longer actively processed.</li>
+        <li><strong>Stripe records:</strong> Upon account deletion, the Stripe customer is <strong>fully deleted</strong> (Stripe <code>customers.del</code>); active subscriptions are thereby automatically terminated. Anonymised payment receipts remain with Stripe for regulatory reasons.</li>
+        <li><strong>Server logs:</strong> max. 30 days via Supabase logging, then automatic rotation.</li>
+      </ul>
+
+      <h2>7. Push notifications (purely local)</h2>
+      <p>
+        ArcUp uses <strong>no</strong> push server (no FCM, no APNs token is stored or
+        transmitted to our servers). All reminders are <strong>locally on the device</strong>
+        scheduled notifications by the operating system. The User can deactivate them at any
+        time via the profile settings of the App or via the system settings of their device.
+      </p>
+      <p>
+        Permission to display notifications is obtained via the respective iOS/Android system
+        dialog; refusal does not impair the other functionality of the App.
+      </p>
+
+      <h2>8. Local data storage on the device</h2>
+      <ul>
+        <li><strong>Expo SecureStore:</strong> stores only the Supabase session token (JWT) encrypted in the secure area of the operating system (iOS Keychain / Android Keystore). The token is removed on logout or account deletion.</li>
+        <li><strong>Local cache (TanStack React Query):</strong> in the App's working memory, to optimise display performance. No persistent data export; deleted when the App is closed.</li>
+        <li><strong>Photo picker (expo-image-picker):</strong> after confirming the system dialog, accesses individual images selected by the User, exclusively for use as ARC cover image.</li>
+      </ul>
+
+      <h2>9. Security</h2>
+      <p>
+        We take appropriate technical and organisational measures pursuant to Art. 32 GDPR,
+        in particular:
+      </p>
+      <ul>
+        <li><strong>Transport encryption:</strong> all communication between App and server is via HTTPS/TLS.</li>
+        <li><strong>Authentication:</strong> password-based sign-in with Supabase Auth; server-side hashing of passwords.</li>
+        <li><strong>Row-Level Security (RLS):</strong> at the database level, each table enforces that users can only access their own rows (comparison <code>auth.uid() = user_id</code>).</li>
+        <li><strong>Encrypted token storage</strong> in the device's Keychain/Keystore.</li>
+        <li><strong>Backups</strong> via the EU infrastructure of the cloud provider (encrypted snapshots).</li>
+        <li><strong>Strict minimum permissions</strong> for server functions; sensitive third-party keys (Stripe, Anthropic) are kept exclusively server-side.</li>
+      </ul>
+
+      <h2>10. Your rights as a data subject</h2>
+      <p>You have the following rights at any time:</p>
+      <ul>
+        <li><strong>Access</strong> (Art. 15 GDPR) to the data stored about you</li>
+        <li><strong>Rectification</strong> of incorrect data (Art. 16 GDPR)</li>
+        <li><strong>Erasure</strong> (Art. 17 GDPR – "right to be forgotten")</li>
+        <li><strong>Restriction</strong> of processing (Art. 18 GDPR)</li>
+        <li><strong>Data portability</strong> (Art. 20 GDPR)</li>
+        <li><strong>Objection</strong> to processing based on legitimate interest (Art. 21 GDPR)</li>
+        <li><strong>Withdrawal</strong> of consent with effect for the future (Art. 7(3) GDPR)</li>
+      </ul>
+      <p>To facilitate the exercise of these rights, the App offers two integrated self-service functions:</p>
+      <ul>
+        <li><strong>Data export ("Data export" in the profile area):</strong> creates a ZIP download of your entire personal data set (all tables where you are the owner, plus your uploaded cover images) as JSON files plus a manifest. To protect against abusive bulk requests, the function is limited to <strong>one request per 24 hours</strong> (Art. 12(5) GDPR).</li>
+        <li><strong>Account deletion ("Delete account" in the account settings):</strong> irreversibly deletes your Supabase account, all linked records via <code>ON DELETE CASCADE</code> relations, all storage objects you have uploaded (cover images and any pre-generated export archives) as well as your Stripe customer including active subscriptions.</li>
+      </ul>
+      <p>You can also reach us at the address given in 1.</p>
+
+      <h2>11. Right to complain</h2>
+      <p>You have the right to lodge a complaint with a supervisory authority. Competent in Austria is:</p>
+      <address>
+        <p>
+          <strong>Austrian Data Protection Authority (DSB)</strong><br />
+          Barichgasse 40-42, 1030 Vienna<br />
+          Phone: +43 1 52 152-0<br />
+          Email: <a href="mailto:dsb@dsb.gv.at">dsb@dsb.gv.at</a><br />
+          Web: <a href="https://www.dsb.gv.at" target="_blank" rel="noopener noreferrer">www.dsb.gv.at</a>
+        </p>
+      </address>
+      <p>
+        Users from other EU member states may equally turn to the supervisory authority of
+        their place of habitual residence.
+      </p>
+
+      <h2>12. Automated decision-making, profiling</h2>
+      <p>
+        Automated decision-making with legal effect within the meaning of Art. 22 GDPR
+        <strong>does not</strong> take place. The AI feature "Generate ARC" merely creates
+        suggestions that are triggered exclusively at the User's initiative and can be
+        accepted, modified or discarded by the User.
+      </p>
+
+      <h2>13. Minors</h2>
+      <p>
+        ArcUp is not directed at children under 16 years of age. We knowingly do not collect
+        data from persons under 16 without the consent of their legal guardians (Art. 8 GDPR).
+        Parents or legal guardians who notice that their child has transmitted data to us may
+        contact us at any time at the address given in 1.; the data will be deleted promptly.
+      </p>
+
+      <h2>14. Changes to this privacy policy</h2>
+      <p>
+        We reserve the right to adapt this privacy policy if functions of the App, processors
+        used or the legal situation change. The current version is available via the App
+        (Profile → Legal).
+      </p>
+    </section>
   </div>
 </main>
 
@@ -152,29 +546,30 @@
       <span class="brand-mark">
         <span class="brand-arc">ARC</span><span class="brand-up">UP</span>
       </span>
-      <span class="footer-tag">Building Better Habits.</span>
+      <span class="footer-tag" data-i18n="ft.tag">Building Better Habits.</span>
     </div>
 
     <ul class="footer-links">
-      <li><a href="index.html#system">Das System</a></li>
-      <li><a href="index.html#areas">Lebensbereiche</a></li>
-      <li><a href="index.html#pricing">Pro</a></li>
-      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="index.html#system" data-i18n="ft.system">Das System</a></li>
+      <li><a href="index.html#areas" data-i18n="ft.areas">Lebensbereiche</a></li>
+      <li><a href="index.html#pricing" data-i18n="ft.pricing">Pro</a></li>
+      <li><a href="index.html#faq" data-i18n="ft.faq">FAQ</a></li>
     </ul>
 
     <ul class="footer-links footer-links--legal">
-      <li><a href="impressum.html">Impressum</a></li>
-      <li><a href="datenschutz.html">Datenschutz</a></li>
-      <li><a href="agb.html">AGB</a></li>
+      <li><a href="impressum.html" data-i18n="ft.impressum">Impressum</a></li>
+      <li><a href="datenschutz.html" data-i18n="ft.datenschutz">Datenschutz</a></li>
+      <li><a href="agb.html" data-i18n="ft.agb">AGB</a></li>
     </ul>
 
     <div class="footer-meta">
       <span>&copy; <span id="year"></span> ArcUp</span>
-      <span>Macro · Meso · Micro</span>
+      <span data-i18n="ft.macroMicroMeso">Macro · Meso · Micro</span>
     </div>
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
   const toggle = document.getElementById('navToggle');

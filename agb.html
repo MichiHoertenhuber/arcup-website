@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" data-i18n-title="title.agb">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>(function(){try{var s=['de','en','es','fr','it'],l=localStorage.getItem('arcup-lang')||(navigator.language||'de').slice(0,2).toLowerCase();document.documentElement.lang=s.indexOf(l)>-1?l:'de';}catch(e){}})();</script>
   <title>AGB — ArcUp</title>
   <meta name="robots" content="noindex" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
@@ -10,23 +11,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/i18n.css" />
 </head>
 <body>
 
 <nav id="nav" class="scrolled">
   <div class="container nav-inner">
-    <a href="index.html" class="nav-brand" aria-label="ArcUp Startseite">
+    <a href="index.html" class="nav-brand" data-i18n-attr-aria-label="nav.home" aria-label="ArcUp Startseite">
       <span class="brand-mark">
         <span class="brand-arc">ARC</span><span class="brand-up">UP</span>
       </span>
     </a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html#philosophy">Philosophie</a></li>
-      <li><a href="index.html#system">Das System</a></li>
-      <li><a href="index.html#pricing">Pro</a></li>
-      <li><a href="index.html#download" class="btn btn-pill">App laden</a></li>
+      <li><a href="index.html#philosophy" data-i18n="nav.philosophy">Philosophie</a></li>
+      <li><a href="index.html#system" data-i18n="nav.system">Das System</a></li>
+      <li><a href="index.html#pricing" data-i18n="nav.pricing">Pro</a></li>
+      <li><a href="index.html#download" class="btn btn-pill" data-i18n="nav.download">App laden</a></li>
+      <li><div data-lang-switcher></div></li>
     </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+    <button class="nav-toggle" id="navToggle" data-i18n-attr-aria-label="nav.menu" aria-label="Menü öffnen">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -34,134 +37,578 @@
 
 <main class="container">
   <div class="legal-page">
-    <h1>Allgemeine Geschäftsbedingungen</h1>
-    <p class="last-updated">Stand: April 2026</p>
+    <h1 data-i18n="legal.agb.title">Allgemeine Geschäftsbedingungen</h1>
+    <p class="last-updated" data-i18n="legal.lastUpdated">Stand: 23. Mai 2026</p>
 
-    <h2>§ 1 Geltungsbereich</h2>
-    <p>
-      Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für die Nutzung der mobilen
-      Applikation „ArcUp" (nachfolgend „App") und der zugehörigen Website
-      (nachfolgend „Dienst"), angeboten von [Dein Name / Unternehmensname]
-      (nachfolgend „Anbieter").
-    </p>
-    <p>
-      Mit der Registrierung oder der Nutzung des Dienstes erklärt der Nutzer sein
-      Einverständnis mit diesen AGB.
-    </p>
+    <p class="legal-fallback-notice" data-i18n="legal.fallbackNotice"></p>
 
-    <h2>§ 2 Leistungsbeschreibung</h2>
-    <p>
-      ArcUp ist eine App zur persönlichen Ziel- und Gewohnheitsverfolgung. Sie ermöglicht
-      Nutzern das Anlegen von zeitlich begrenzten Challenges („ARCs"), das Tracken numerischer
-      Gewohnheiten sowie die Verknüpfung mit einer persönlichen Lebensvision
-      (fünf Lebensbereiche: Körper, Geist, Wachstum, Beziehungen, Freizeit).
-    </p>
-    <p>
-      Es werden zwei Nutzungsmodelle angeboten:
-    </p>
-    <ul>
-      <li><strong>Free:</strong> Grundfunktionen kostenlos nutzbar, inklusive eines aktiven ARC gleichzeitig.</li>
-      <li><strong>Pro:</strong> Erweiterte Funktionen (KI-Generator, eigene ARCs, mehrere parallele ARCs, Premium-ARCs, Insights, Ziel-Tracking, Journal, Erfolge teilen) gegen ein monatliches, jährliches oder Lifetime-Entgelt.</li>
-    </ul>
+    <!-- ════════════ DE ════════════ -->
+    <section data-lang-section="de">
+      <p>
+        Für die Nutzung der mobilen Anwendung <strong>ArcUp</strong> zwischen dem Anbieter
+        (im Impressum genannt, im Folgenden „Anbieter") und dem Nutzer (im Folgenden „Nutzer").
+      </p>
 
-    <h2>§ 3 Registrierung und Nutzerkonto</h2>
-    <p>
-      Für die Nutzung der App ist eine Registrierung mit einer gültigen E-Mail-Adresse
-      erforderlich. Der Nutzer ist verpflichtet, seine Zugangsdaten vertraulich zu behandeln
-      und den Anbieter unverzüglich zu informieren, wenn er Anhaltspunkte dafür hat, dass
-      sein Konto von Dritten missbraucht wird.
-    </p>
-    <p>
-      Ein Anspruch auf Erstellung eines Nutzerkontos besteht nicht. Der Anbieter behält
-      sich vor, Konten bei Verstößen gegen diese AGB zu sperren oder zu löschen.
-    </p>
+      <h2>§ 1 Geltungsbereich</h2>
+      <p>
+        (1) Diese AGB regeln das Vertragsverhältnis zwischen dem Anbieter und dem Nutzer
+        im Zusammenhang mit der Nutzung von ArcUp, unabhängig davon, über welchen Vertriebsweg
+        (Apple App Store, Google Play Store, sonstige Plattform) die App bezogen wurde.
+      </p>
+      <p>
+        (2) Entgegenstehende oder von diesen AGB abweichende Bedingungen des Nutzers werden
+        nicht anerkannt, es sei denn, der Anbieter stimmt ihrer Geltung ausdrücklich
+        schriftlich zu.
+      </p>
+      <p>
+        (3) Verbraucher im Sinne dieser AGB ist jede natürliche Person, die ein Rechtsgeschäft
+        zu einem Zweck abschließt, der weder ihrer gewerblichen noch ihrer selbständigen
+        beruflichen Tätigkeit zugerechnet werden kann (§ 1 KSchG).
+      </p>
 
-    <h2>§ 4 Abonnement und Zahlung (Pro-Plan)</h2>
-    <p>
-      Das Pro-Abonnement wird über den jeweiligen App-Store (Apple App Store / Google Play Store)
-      oder direkt über Stripe abgerechnet. Die jeweils aktuellen Preise sind in der App einsehbar.
-    </p>
-    <p>
-      Das Abonnement verlängert sich automatisch, sofern es nicht vor Ablauf der Laufzeit
-      über den jeweiligen App-Store oder in den Kontoeinstellungen gekündigt wird.
-      Es gelten ergänzend die Zahlungsbedingungen des jeweiligen Store-Betreibers.
-    </p>
+      <h2>§ 2 Leistungsbeschreibung</h2>
+      <p>
+        (1) <strong>ArcUp</strong> ist eine mobile Anwendung für strukturierte Gewohnheitsbildung
+        und persönliche Entwicklung. Sie verbindet tägliche Gewohnheiten („Habits") mit zeitlich
+        begrenzten Herausforderungen („ARCs") und einer übergeordneten Lebensbereichs-Struktur
+        („Life Areas / Compass").
+      </p>
+      <p>(2) Die App wird in zwei Tarifen angeboten:</p>
+      <ul>
+        <li><strong>Free</strong> – kostenloser Basistarif mit eingeschränktem Funktionsumfang (max. 1 aktiver ARC, keine selbst erstellten Habits/ARCs, keine KI-Vorschläge).</li>
+        <li><strong>Pro</strong> – kostenpflichtiger Tarif mit erweitertem Funktionsumfang (mehrere parallele ARCs, selbst erstellte Habits/ARCs, KI-gestützte ARC-Vorschläge).</li>
+      </ul>
+      <p>
+        (3) Der Anbieter ist berechtigt, den Funktionsumfang der App weiterzuentwickeln, zu
+        erweitern, einzuschränken oder einzelne Funktionen einzustellen, sofern dies dem
+        Nutzer zumutbar ist und der Kernumfang der entgeltlichen Leistung erhalten bleibt.
+      </p>
+      <p>
+        (4) Die App ersetzt keine medizinische, psychologische, sportwissenschaftliche oder
+        ernährungswissenschaftliche Beratung. Der Nutzer entscheidet eigenverantwortlich
+        über die Anwendung empfohlener Methoden.
+      </p>
 
-    <h2>§ 5 Widerrufsrecht</h2>
-    <p>
-      Für digitale Inhalte und Dienstleistungen, die sofort nach Vertragsschluss genutzt werden,
-      erlischt das Widerrufsrecht gemäß § 356 Abs. 5 BGB, sobald mit der Ausführung des
-      Vertrages begonnen wird und der Verbraucher ausdrücklich zugestimmt hat, dass der Anbieter
-      mit der Ausführung vor Ablauf der Widerrufsfrist beginnt.
-    </p>
-    <p>
-      Für Käufe über den Apple App Store oder Google Play Store gelten die Erstattungsrichtlinien
-      des jeweiligen Store-Betreibers.
-    </p>
+      <h2>§ 3 Vertragsschluss</h2>
+      <p>
+        (1) Mit der Installation und der Anlage eines Nutzerkontos kommt zwischen dem Anbieter
+        und dem Nutzer ein unbefristeter, unentgeltlicher Nutzungsvertrag über den
+        <strong>Free-Tarif</strong> zustande.
+      </p>
+      <p>
+        (2) Mit Abschluss eines kostenpflichtigen Tarifs (siehe § 4) kommt ein zusätzlicher
+        entgeltlicher Vertrag über den <strong>Pro-Tarif</strong> zustande. Dieser Vertrag
+        wird wirksam, sobald die Zahlungstransaktion vom jeweiligen Zahlungsdienstleister
+        bestätigt wurde.
+      </p>
+      <p>
+        (3) Voraussetzung für die Anlage eines Kontos ist die Vollendung des
+        <strong>16. Lebensjahres</strong>. Minderjährige zwischen 14 und 16 Jahren benötigen
+        die Zustimmung ihrer Erziehungsberechtigten.
+      </p>
 
-    <h2>§ 6 Nutzungsrechte</h2>
-    <p>
-      Der Anbieter gewährt dem Nutzer ein einfaches, nicht übertragbares Recht zur Nutzung
-      der App auf eigenen Endgeräten. Es ist dem Nutzer untersagt:
-    </p>
-    <ul>
-      <li>Die App zu vervielfältigen, zu verkaufen oder zu vermieten</li>
-      <li>Den Quellcode zu dekompilieren oder zurückzuentwickeln</li>
-      <li>Die App für illegale Zwecke zu nutzen</li>
-    </ul>
+      <h2>§ 4 Tarife, Preise, Zahlung</h2>
+      <p>
+        (1) Die Preise des Pro-Tarifs sind in der App im Bildschirm „Subscription" ausgewiesen.
+        Stand bei Vertragserstellung dieser AGB:
+      </p>
+      <ul>
+        <li><strong>Pro Monat</strong> — € 6,99 · 1 Monat, automatische Verlängerung</li>
+        <li><strong>Pro Jahr</strong> — € 49,99 · 12 Monate, automatische Verlängerung</li>
+        <li><strong>Pro Lifetime</strong> — € 149,99 einmalig · unbegrenzt, keine Verlängerung</li>
+      </ul>
+      <p>
+        (2) Alle Preise verstehen sich [als Endpreise inkl. gesetzlicher Umsatzsteuer /
+        als Nettopreise; Kleinunternehmer gemäß § 6 Abs. 1 Z 27 UStG – keine Umsatzsteuer
+        ausgewiesen]. Anpassung an die individuelle steuerliche Situation erforderlich.
+      </p>
+      <p>(3) Die Zahlung erfolgt – je nach in der App gewähltem Vertriebsweg – über einen der folgenden Zahlungsdienstleister:</p>
+      <ul>
+        <li><strong>Stripe Payments Europe, Ltd.</strong> (1 Grand Canal Street Lower, Grand Canal Dock, Dublin, Irland) für Zahlungen außerhalb der In-App-Kauf-Mechanismen der Stores.</li>
+        <li><strong>Apple Distribution International Ltd.</strong> (Hollyhill Industrial Estate, Hollyhill, Cork, Irland) bei In-App-Käufen über den Apple App Store.</li>
+        <li><strong>Google Commerce Limited</strong> (Gordon House, Barrow Street, Dublin 4, Irland) bei In-App-Käufen über den Google Play Store.</li>
+      </ul>
+      <p>
+        Es gelten zusätzlich die jeweiligen Nutzungsbedingungen dieser Dienstleister. Rechnungen
+        und Belege werden vom jeweiligen Zahlungsdienstleister bereitgestellt.
+      </p>
+      <p>
+        (4) Bei wiederkehrenden Abonnements (Monat/Jahr) verlängert sich der Vertrag automatisch
+        um die gleiche Laufzeit, sofern er nicht spätestens 24 Stunden vor Ende der laufenden
+        Periode gekündigt wird. Die Kündigung erfolgt direkt im Stripe Customer Portal (über die
+        App erreichbar) bzw. in den Abonnementeinstellungen des jeweiligen App Stores.
+      </p>
+      <p>
+        (5) Der „Lifetime"-Tarif ist eine einmalige Zahlung und gewährt unbefristeten Zugang zum
+        Pro-Funktionsumfang in der jeweils aktuellen Ausgestaltung. Ein Anspruch auf einen
+        bestimmten zukünftigen Funktionsumfang besteht nicht.
+      </p>
+      <p>
+        (6) Bei Zahlungsverzug einer wiederkehrenden Zahlung ist der Anbieter berechtigt, den
+        Pro-Zugang nach erfolgloser Nachforderung durch den Zahlungsdienstleister zu pausieren
+        oder zu beenden.
+      </p>
 
-    <h2>§ 7 Inhalte der Nutzer</h2>
-    <p>
-      Eigene ARCs, Journal-Einträge, Reflexionen und andere vom Nutzer erstellte Inhalte
-      verbleiben im Eigentum des Nutzers. Der Nutzer räumt dem Anbieter jedoch das Recht ein,
-      diese Inhalte zur Bereitstellung des Dienstes zu speichern und zu verarbeiten.
-      Der Nutzer versichert, dass seine Inhalte keine Rechte Dritter verletzen.
-    </p>
+      <h2>§ 5 Widerrufsrecht für Verbraucher (FAGG)</h2>
+      <h3>Widerrufsbelehrung</h3>
+      <p>
+        Sie haben das Recht, binnen <strong>14 Tagen</strong> ohne Angabe von Gründen diesen
+        Vertrag zu widerrufen. Die Widerrufsfrist beträgt 14 Tage ab dem Tag des Vertragsabschlusses.
+      </p>
+      <p>
+        Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (Kontaktdaten siehe Impressum) mittels
+        einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief oder eine E-Mail)
+        über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür
+        das <strong>Muster-Widerrufsformular</strong> verwenden, das jedoch nicht vorgeschrieben ist.
+      </p>
+      <p>
+        Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung
+        des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.
+      </p>
 
-    <h2>§ 8 Verfügbarkeit und Änderungen</h2>
-    <p>
-      Der Anbieter strebt eine möglichst hohe Verfügbarkeit des Dienstes an, übernimmt
-      jedoch keine Garantie für eine ununterbrochene Erreichbarkeit. Der Anbieter behält
-      sich vor, den Funktionsumfang des Dienstes jederzeit zu ändern, zu erweitern oder
-      einzuschränken.
-    </p>
+      <h3>Folgen des Widerrufs</h3>
+      <p>
+        Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen
+        erhalten haben, unverzüglich und spätestens binnen 14 Tagen ab dem Tag zurückzuzahlen,
+        an dem die Mitteilung über Ihren Widerruf bei uns eingegangen ist. Für diese Rückzahlung
+        verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion
+        eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart;
+        in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet.
+      </p>
 
-    <h2>§ 9 Haftungsbeschränkung</h2>
-    <p>
-      Der Anbieter haftet nur für Schäden, die auf vorsätzlichem oder grob fahrlässigem
-      Verhalten beruhen. Die Haftung für leichte Fahrlässigkeit ist — soweit gesetzlich
-      zulässig — ausgeschlossen, außer bei Verletzung von Leben, Körper oder Gesundheit.
-    </p>
-    <p>
-      Die in der App angezeigten Inhalte (ARCs, Empfehlungen, KI-generierte Vorschläge, Quellen der Lern-Mediathek) stellen
-      keine medizinische, psychologische oder sonstige fachliche Beratung dar.
-    </p>
+      <h3>Vorzeitiges Erlöschen des Widerrufsrechts (§ 18 Abs. 1 Z 11 FAGG)</h3>
+      <p>
+        Sie willigen ausdrücklich ein, dass mit der Ausführung des Vertrags vor Ablauf der
+        Widerrufsfrist begonnen wird (Bereitstellung der Pro-Funktionen unmittelbar nach
+        erfolgreicher Zahlung). Sie nehmen zur Kenntnis, dass Sie hierdurch mit vollständiger
+        Vertragserfüllung <strong>Ihr Widerrufsrecht verlieren</strong>.
+      </p>
 
-    <h2>§ 10 Datenschutz</h2>
-    <p>
-      Die Verarbeitung personenbezogener Daten erfolgt gemäß unserer
-      <a href="datenschutz.html">Datenschutzerklärung</a>.
-    </p>
+      <h3>Muster-Widerrufsformular</h3>
+      <p>
+        An: [Vorname Nachname], [Adresse], [E-Mail]<br /><br />
+        Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über den
+        Kauf der folgenden Dienstleistung:<br /><br />
+        Bestellt am (*) / erhalten am (*): ……………………………<br />
+        Name des/der Verbraucher(s): ……………………………<br />
+        Anschrift des/der Verbraucher(s): ……………………………<br />
+        Unterschrift (nur bei Mitteilung auf Papier): ……………………………<br />
+        Datum: ……………………………<br /><br />
+        (*) Unzutreffendes streichen.
+      </p>
 
-    <h2>§ 11 Änderungen der AGB</h2>
-    <p>
-      Der Anbieter behält sich vor, diese AGB mit angemessener Ankündigungsfrist zu ändern.
-      Nutzern wird die Änderung per E-Mail oder In-App-Benachrichtigung mitgeteilt. Wird
-      der Änderung nicht innerhalb von 30 Tagen widersprochen und der Dienst weiterhin
-      genutzt, gilt die Änderung als akzeptiert.
-    </p>
+      <h2>§ 6 Pflichten und Verhalten des Nutzers</h2>
+      <p>(1) Der Nutzer verpflichtet sich, die App nicht missbräuchlich zu nutzen. Untersagt sind insbesondere:</p>
+      <ul>
+        <li>automatisiertes Auslesen oder Bespielen der App (Scraping, Bots),</li>
+        <li>Umgehung oder Manipulation der Tarif-Limits, der Authentifizierung oder der Zahlungsmechanik,</li>
+        <li>Hochladen rechtswidriger, beleidigender, gewaltverherrlichender oder pornografischer Inhalte (insbesondere als ARC-Coverbild, Habit-Beschreibung oder Journal-Eintrag),</li>
+        <li>Eingriffe in den Quellcode, Reverse Engineering, soweit nicht gesetzlich erlaubt.</li>
+      </ul>
+      <p>
+        (2) Der Nutzer ist verantwortlich für die Geheimhaltung seiner Zugangsdaten. Bei
+        Verdacht auf unbefugte Nutzung ist das Passwort umgehend zu ändern.
+      </p>
+      <p>
+        (3) Bei wiederholten oder schwerwiegenden Verstößen ist der Anbieter berechtigt, das
+        Konto vorübergehend zu sperren oder dauerhaft zu schließen. Bereits geleistete Zahlungen
+        für den verbleibenden Abrechnungszeitraum werden in diesem Fall nicht erstattet, soweit
+        der Verstoß dem Nutzer zuzurechnen ist.
+      </p>
 
-    <h2>§ 12 Anwendbares Recht und Gerichtsstand</h2>
-    <p>
-      Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts.
-      Gerichtsstand ist, soweit gesetzlich zulässig, der Sitz des Anbieters.
-    </p>
+      <h2>§ 7 Verfügbarkeit</h2>
+      <p>
+        (1) Der Anbieter strebt eine möglichst hohe Verfügbarkeit der App und der dahinterliegenden
+        Server-Infrastruktur an, schuldet jedoch keine ständige Verfügbarkeit.
+      </p>
+      <p>
+        (2) Geplante Wartungsarbeiten, Ausfälle der genutzten Cloud-Dienstleister (siehe § 4
+        sowie Datenschutzerklärung) oder Störungen außerhalb des Einflussbereichs des Anbieters
+        begründen keinen Anspruch auf Schadensersatz oder anteilige Rückerstattung, sofern die
+        Verfügbarkeit im Jahresmittel nicht erheblich beeinträchtigt ist.
+      </p>
 
-    <h2>§ 13 Kontakt</h2>
-    <p>
-      Bei Fragen zu diesen AGB wende dich an:
-      <a href="mailto:kontakt@arc-up.com">kontakt@arc-up.com</a>
-    </p>
+      <h2>§ 8 Geistiges Eigentum, Nutzungsrechte</h2>
+      <p>
+        (1) Sämtliche Rechte an der App, ihren Inhalten, ihrer Datenstruktur, ihrer kuratierten
+        Habit- und ARC-Bibliothek sowie ihrem Quellcode verbleiben beim Anbieter.
+      </p>
+      <p>
+        (2) Der Nutzer erhält ein einfaches, nicht übertragbares, zeitlich auf die Vertragslaufzeit
+        beschränktes Recht zur Nutzung der App auf den von ihm autorisierten Endgeräten. Eine
+        Weitergabe der Zugangsdaten oder eine Mehrfachnutzung eines Kontos durch verschiedene
+        Personen ist unzulässig.
+      </p>
+      <p>
+        (3) Vom Nutzer selbst erstellte Inhalte (eigene Habits, eigene ARCs, ARC-Coverbilder,
+        Journal-Einträge, Ziele, Habit-Logs) bleiben im Eigentum des Nutzers. Der Nutzer räumt
+        dem Anbieter ein einfaches, räumlich und zeitlich auf die Vertragslaufzeit beschränktes
+        Nutzungsrecht ein, soweit dies zur Bereitstellung, Speicherung, Anzeige und Verarbeitung
+        dieser Inhalte innerhalb der App erforderlich ist.
+      </p>
+
+      <h2>§ 9 Haftung</h2>
+      <p>
+        (1) Der Anbieter haftet nach Maßgabe der gesetzlichen Vorschriften für Vorsatz und
+        grobe Fahrlässigkeit unbeschränkt sowie für Schäden aus der Verletzung des Lebens,
+        des Körpers oder der Gesundheit.
+      </p>
+      <p>
+        (2) Bei leichter Fahrlässigkeit haftet der Anbieter nur bei Verletzung wesentlicher
+        Vertragspflichten („Kardinalpflichten") und beschränkt auf den vertragstypischen,
+        vorhersehbaren Schaden.
+      </p>
+      <p>
+        (3) Eine darüber hinausgehende Haftung – insbesondere für entgangenen Gewinn,
+        immateriellen Schaden, indirekte oder Folgeschäden – ist ausgeschlossen, soweit
+        gesetzlich zulässig.
+      </p>
+      <p>
+        (4) Der Anbieter haftet nicht für Datenverluste, soweit der Schaden bei ordnungsgemäßer
+        Datensicherung durch den Nutzer (über das in der App integrierte Datenexport-Feature)
+        vermeidbar gewesen wäre.
+      </p>
+      <p>
+        (5) Die Einschränkungen der Absätze (2) bis (4) gelten nicht für Ansprüche nach dem
+        Produkthaftungsgesetz.
+      </p>
+
+      <h2>§ 10 Datenschutz</h2>
+      <p>
+        Hinweise zur Verarbeitung personenbezogener Daten finden sich in der
+        <a href="datenschutz.html">Datenschutzerklärung</a>.
+      </p>
+
+      <h2>§ 11 Vertragsdauer, Kündigung, Kontolöschung</h2>
+      <p>
+        (1) Der unentgeltliche Free-Vertrag läuft auf unbestimmte Zeit und kann vom Nutzer
+        jederzeit durch Löschung des Kontos in der App (Profil → Account → „Konto löschen")
+        beendet werden.
+      </p>
+      <p>
+        (2) Der Pro-Vertrag läuft je nach gewähltem Tarif. Eine Kündigung ist gemäß § 4 (4)
+        jederzeit zum Ende der laufenden Abrechnungsperiode möglich.
+      </p>
+      <p>
+        (3) Mit Löschung des Kontos werden sämtliche personenbezogenen Daten des Nutzers im
+        Backend gelöscht (siehe Datenschutzerklärung). Eine etwaige bezahlte, aber noch nicht
+        voll genutzte Abrechnungsperiode wird nicht anteilig erstattet, sofern die Löschung
+        durch den Nutzer ausgelöst wird.
+      </p>
+      <p>
+        (4) Der Anbieter kann den Vertrag aus wichtigem Grund (insbesondere bei wesentlichen
+        Pflichtverletzungen nach § 6) fristlos kündigen.
+      </p>
+
+      <h2>§ 12 Änderung der AGB</h2>
+      <p>
+        (1) Der Anbieter ist berechtigt, diese AGB mit angemessener Vorankündigung zu ändern,
+        soweit dies aus rechtlichen, technischen oder produktbezogenen Gründen erforderlich
+        ist und dem Nutzer zumutbar ist.
+      </p>
+      <p>
+        (2) Änderungen werden dem Nutzer per E-Mail oder per In-App-Benachrichtigung mit einer
+        Frist von mindestens <strong>30 Tagen</strong> vor Inkrafttreten angekündigt. Widerspricht
+        der Nutzer den Änderungen nicht binnen dieser Frist, gelten sie als angenommen. Im
+        Widerspruchsfall steht beiden Seiten ein Sonderkündigungsrecht zu.
+      </p>
+
+      <h2>§ 13 Schlussbestimmungen</h2>
+      <p>
+        (1) Es gilt <strong>österreichisches Recht</strong> unter Ausschluss des UN-Kaufrechts.
+        Für Verbraucher gilt diese Rechtswahl nur insoweit, als ihnen dadurch nicht der Schutz
+        zwingender Bestimmungen ihres gewöhnlichen Aufenthaltsstaates entzogen wird.
+      </p>
+      <p>
+        (2) Erfüllungsort und Gerichtsstand für Streitigkeiten mit Unternehmern ist [Sitz des
+        Anbieters]. Für Verbraucher gelten die gesetzlichen Gerichtsstände.
+      </p>
+      <p>
+        (3) Sollten einzelne Bestimmungen dieser AGB unwirksam sein oder werden, bleibt die
+        Wirksamkeit der übrigen Bestimmungen unberührt.
+      </p>
+    </section>
+
+    <!-- ════════════ EN ════════════ -->
+    <section data-lang-section="en">
+      <p>
+        Governing the use of the mobile application <strong>ArcUp</strong> between the
+        provider (named in the imprint, hereinafter "Provider") and the user (hereinafter "User").
+        <em>Translation provided for convenience — the binding text is the German version.</em>
+      </p>
+
+      <h2>§ 1 Scope</h2>
+      <p>
+        (1) These Terms govern the contractual relationship between the Provider and the User
+        in connection with the use of ArcUp, regardless of the distribution channel (Apple App
+        Store, Google Play Store, other platform) through which the app was obtained.
+      </p>
+      <p>
+        (2) Conflicting or deviating terms of the User are not recognised unless the Provider
+        expressly agrees to their validity in writing.
+      </p>
+      <p>
+        (3) A consumer within the meaning of these Terms is any natural person who enters into
+        a legal transaction for a purpose that cannot be attributed predominantly to their
+        commercial or independent professional activity (Section 1 of the Austrian Consumer
+        Protection Act, KSchG).
+      </p>
+
+      <h2>§ 2 Description of services</h2>
+      <p>
+        (1) <strong>ArcUp</strong> is a mobile application for structured habit formation and
+        personal development. It combines daily habits ("Habits") with time-boxed challenges
+        ("ARCs") and an overarching life-area structure ("Life Areas / Compass").
+      </p>
+      <p>(2) The app is offered in two plans:</p>
+      <ul>
+        <li><strong>Free</strong> – free basic plan with limited feature set (max. 1 active ARC, no self-made habits/ARCs, no AI suggestions).</li>
+        <li><strong>Pro</strong> – paid plan with extended feature set (multiple parallel ARCs, self-made habits/ARCs, AI-assisted ARC suggestions).</li>
+      </ul>
+      <p>
+        (3) The Provider is entitled to further develop, expand, restrict or discontinue
+        individual features of the app, provided this is reasonable for the User and the core
+        scope of the paid service is preserved.
+      </p>
+      <p>
+        (4) The app does not replace medical, psychological, sports-science or nutritional
+        advice. The User decides on the application of recommended methods on their own
+        responsibility.
+      </p>
+
+      <h2>§ 3 Conclusion of contract</h2>
+      <p>
+        (1) By installing the app and creating a user account, an indefinite, free usage
+        contract for the <strong>Free plan</strong> is concluded between the Provider and the User.
+      </p>
+      <p>
+        (2) By taking out a paid plan (see § 4), an additional paid contract for the
+        <strong>Pro plan</strong> is concluded. This contract becomes effective once the
+        payment transaction has been confirmed by the respective payment service provider.
+      </p>
+      <p>
+        (3) Creating an account requires the User to be at least <strong>16 years old</strong>.
+        Minors between 14 and 16 require the consent of their legal guardians.
+      </p>
+
+      <h2>§ 4 Plans, prices, payment</h2>
+      <p>
+        (1) The prices for the Pro plan are shown in the app on the "Subscription" screen.
+        At the time these Terms were drafted:
+      </p>
+      <ul>
+        <li><strong>Pro Monthly</strong> — € 6.99 · 1 month, automatic renewal</li>
+        <li><strong>Pro Yearly</strong> — € 49.99 · 12 months, automatic renewal</li>
+        <li><strong>Pro Lifetime</strong> — € 149.99 one-time · unlimited, no renewal</li>
+      </ul>
+      <p>
+        (2) All prices are quoted [as final prices including statutory VAT / as net prices;
+        small businesses pursuant to Section 6(1)(27) of the Austrian VAT Act – no VAT charged].
+        Adjustment to the individual tax situation is required.
+      </p>
+      <p>(3) Payment is processed – depending on the distribution channel selected in the app – by one of the following payment service providers:</p>
+      <ul>
+        <li><strong>Stripe Payments Europe, Ltd.</strong> (1 Grand Canal Street Lower, Grand Canal Dock, Dublin, Ireland) for payments outside the in-app purchase mechanisms of the stores.</li>
+        <li><strong>Apple Distribution International Ltd.</strong> (Hollyhill Industrial Estate, Hollyhill, Cork, Ireland) for in-app purchases via the Apple App Store.</li>
+        <li><strong>Google Commerce Limited</strong> (Gordon House, Barrow Street, Dublin 4, Ireland) for in-app purchases via the Google Play Store.</li>
+      </ul>
+      <p>
+        The respective terms of use of these providers apply additionally. Invoices and receipts
+        are provided by the respective payment service provider.
+      </p>
+      <p>
+        (4) Recurring subscriptions (monthly/yearly) renew automatically for the same period
+        unless cancelled at least 24 hours before the end of the current period. Cancellation
+        is made directly in the Stripe Customer Portal (accessible via the app) or in the
+        subscription settings of the respective app store.
+      </p>
+      <p>
+        (5) The "Lifetime" plan is a one-time payment and grants indefinite access to the Pro
+        feature set in its respective current form. There is no entitlement to a specific
+        future feature set.
+      </p>
+      <p>
+        (6) In the event of late payment of a recurring charge, the Provider is entitled to
+        suspend or terminate Pro access after unsuccessful retry by the payment service provider.
+      </p>
+
+      <h2>§ 5 Right of withdrawal for consumers (FAGG)</h2>
+      <h3>Notice of withdrawal</h3>
+      <p>
+        You have the right to withdraw from this contract within <strong>14 days</strong>
+        without giving any reason. The withdrawal period is 14 days from the day of contract
+        conclusion.
+      </p>
+      <p>
+        To exercise your right of withdrawal, you must inform us (contact details see imprint)
+        by means of a clear statement (e.g. a letter sent by post or an email) of your decision
+        to withdraw from this contract. You may use the <strong>model withdrawal form</strong>,
+        but this is not mandatory.
+      </p>
+      <p>
+        To meet the withdrawal deadline, it is sufficient for you to send your communication
+        concerning your exercise of the right of withdrawal before the withdrawal period has
+        expired.
+      </p>
+
+      <h3>Consequences of withdrawal</h3>
+      <p>
+        If you withdraw from this contract, we shall reimburse to you all payments received
+        from you without undue delay and not later than 14 days from the day on which we are
+        informed about your decision to withdraw. We shall carry out such reimbursement using
+        the same means of payment that you used for the initial transaction, unless you have
+        expressly agreed otherwise; in any event, you will not incur any fees as a result of
+        this reimbursement.
+      </p>
+
+      <h3>Early termination of the right of withdrawal (Section 18(1)(11) FAGG)</h3>
+      <p>
+        You expressly consent to performance of the contract beginning before expiry of the
+        withdrawal period (Pro features become available immediately after successful payment).
+        You acknowledge that, upon complete performance of the contract, you thereby
+        <strong>lose your right of withdrawal</strong>.
+      </p>
+
+      <h3>Model withdrawal form</h3>
+      <p>
+        To: [First name Last name], [Address], [Email]<br /><br />
+        I/We (*) hereby withdraw from the contract concluded by me/us (*) for the purchase of
+        the following service:<br /><br />
+        Ordered on (*) / received on (*): ……………………………<br />
+        Name of consumer(s): ……………………………<br />
+        Address of consumer(s): ……………………………<br />
+        Signature (only for paper notice): ……………………………<br />
+        Date: ……………………………<br /><br />
+        (*) Delete as appropriate.
+      </p>
+
+      <h2>§ 6 User duties and conduct</h2>
+      <p>(1) The User undertakes not to use the app abusively. In particular, the following are prohibited:</p>
+      <ul>
+        <li>automated reading or feeding of the app (scraping, bots),</li>
+        <li>circumventing or manipulating plan limits, authentication or the payment mechanism,</li>
+        <li>uploading illegal, offensive, violence-glorifying or pornographic content (in particular as ARC cover image, habit description or journal entry),</li>
+        <li>interference with the source code, reverse engineering, except where permitted by law.</li>
+      </ul>
+      <p>
+        (2) The User is responsible for keeping their credentials confidential. If unauthorised
+        use is suspected, the password must be changed immediately.
+      </p>
+      <p>
+        (3) In case of repeated or serious violations, the Provider is entitled to temporarily
+        suspend or permanently close the account. Payments already made for the remaining
+        billing period will not be refunded if the breach is attributable to the User.
+      </p>
+
+      <h2>§ 7 Availability</h2>
+      <p>
+        (1) The Provider strives for the highest possible availability of the app and the
+        underlying server infrastructure, but does not owe permanent availability.
+      </p>
+      <p>
+        (2) Scheduled maintenance, outages of the cloud providers used (see § 4 and Privacy
+        Policy) or disruptions beyond the Provider's control do not give rise to any claim
+        for damages or proportional refund, provided that availability is not significantly
+        impaired in the annual average.
+      </p>
+
+      <h2>§ 8 Intellectual property, usage rights</h2>
+      <p>
+        (1) All rights to the app, its content, its data structure, its curated habit and ARC
+        library and its source code remain with the Provider.
+      </p>
+      <p>
+        (2) The User receives a simple, non-transferable right, limited to the duration of the
+        contract, to use the app on the devices authorised by them. Sharing access credentials
+        or multi-user operation of one account is not permitted.
+      </p>
+      <p>
+        (3) Content created by the User (own habits, own ARCs, ARC cover images, journal
+        entries, goals, habit logs) remains the property of the User. The User grants the
+        Provider a simple usage right, limited in territory and time to the duration of the
+        contract, to the extent necessary for providing, storing, displaying and processing
+        this content within the app.
+      </p>
+
+      <h2>§ 9 Liability</h2>
+      <p>
+        (1) The Provider shall be liable in accordance with statutory provisions for intent
+        and gross negligence without limitation, as well as for damages resulting from injury
+        to life, body or health.
+      </p>
+      <p>
+        (2) In cases of slight negligence, the Provider shall be liable only for breach of
+        material contractual obligations ("cardinal duties") and limited to typical, foreseeable
+        damages.
+      </p>
+      <p>
+        (3) Any liability beyond this – in particular for lost profits, immaterial damage,
+        indirect or consequential damages – is excluded to the extent permitted by law.
+      </p>
+      <p>
+        (4) The Provider is not liable for data loss to the extent that the damage could have
+        been avoided by proper data backup by the User (via the integrated data export feature
+        in the app).
+      </p>
+      <p>
+        (5) The limitations in paragraphs (2) to (4) do not apply to claims under the Austrian
+        Product Liability Act.
+      </p>
+
+      <h2>§ 10 Data protection</h2>
+      <p>
+        Information on the processing of personal data is provided in the
+        <a href="datenschutz.html">Privacy Policy</a>.
+      </p>
+
+      <h2>§ 11 Duration, termination, account deletion</h2>
+      <p>
+        (1) The free Free contract runs for an indefinite period and can be terminated by the
+        User at any time by deleting the account in the app (Profile → Account → "Delete account").
+      </p>
+      <p>
+        (2) The Pro contract runs according to the selected plan. Termination is possible at
+        any time as of the end of the current billing period in accordance with § 4(4).
+      </p>
+      <p>
+        (3) Upon deletion of the account, all personal data of the User is deleted in the
+        backend (see Privacy Policy). Any paid but not yet fully used billing period will
+        not be refunded proportionally if the deletion is initiated by the User.
+      </p>
+      <p>
+        (4) The Provider may terminate the contract for good cause without notice (in
+        particular for material breaches of duty under § 6).
+      </p>
+
+      <h2>§ 12 Changes to the Terms</h2>
+      <p>
+        (1) The Provider is entitled to change these Terms with reasonable advance notice
+        where required for legal, technical or product-related reasons and reasonable for
+        the User.
+      </p>
+      <p>
+        (2) Changes will be announced to the User by email or in-app notification at least
+        <strong>30 days</strong> before they take effect. If the User does not object to the
+        changes within this period, they are deemed accepted. In case of objection, both sides
+        have a special right to terminate.
+      </p>
+
+      <h2>§ 13 Final provisions</h2>
+      <p>
+        (1) <strong>Austrian law</strong> applies to the exclusion of the UN Convention on
+        Contracts for the International Sale of Goods. For consumers, this choice of law
+        applies only insofar as it does not deprive them of the protection of mandatory
+        provisions of their country of habitual residence.
+      </p>
+      <p>
+        (2) Place of performance and venue for disputes with entrepreneurs is [Provider's seat].
+        For consumers, the statutory venues apply.
+      </p>
+      <p>
+        (3) Should individual provisions of these Terms be or become invalid, the validity of
+        the remaining provisions shall remain unaffected.
+      </p>
+    </section>
   </div>
 </main>
 
@@ -171,29 +618,30 @@
       <span class="brand-mark">
         <span class="brand-arc">ARC</span><span class="brand-up">UP</span>
       </span>
-      <span class="footer-tag">Building Better Habits.</span>
+      <span class="footer-tag" data-i18n="ft.tag">Building Better Habits.</span>
     </div>
 
     <ul class="footer-links">
-      <li><a href="index.html#system">Das System</a></li>
-      <li><a href="index.html#areas">Lebensbereiche</a></li>
-      <li><a href="index.html#pricing">Pro</a></li>
-      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="index.html#system" data-i18n="ft.system">Das System</a></li>
+      <li><a href="index.html#areas" data-i18n="ft.areas">Lebensbereiche</a></li>
+      <li><a href="index.html#pricing" data-i18n="ft.pricing">Pro</a></li>
+      <li><a href="index.html#faq" data-i18n="ft.faq">FAQ</a></li>
     </ul>
 
     <ul class="footer-links footer-links--legal">
-      <li><a href="impressum.html">Impressum</a></li>
-      <li><a href="datenschutz.html">Datenschutz</a></li>
-      <li><a href="agb.html">AGB</a></li>
+      <li><a href="impressum.html" data-i18n="ft.impressum">Impressum</a></li>
+      <li><a href="datenschutz.html" data-i18n="ft.datenschutz">Datenschutz</a></li>
+      <li><a href="agb.html" data-i18n="ft.agb">AGB</a></li>
     </ul>
 
     <div class="footer-meta">
       <span>&copy; <span id="year"></span> ArcUp</span>
-      <span>Macro · Meso · Micro</span>
+      <span data-i18n="ft.macroMicroMeso">Macro · Meso · Micro</span>
     </div>
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
   const toggle = document.getElementById('navToggle');
