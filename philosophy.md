@@ -22,7 +22,7 @@ ArcUp ist **kein Habit-Tracker**. Es ist ein strukturiertes System für persönl
 
 1. **Strukturiert statt beliebig.** Habits sind keine Free-Text-Notizen, sondern numerische Messgrößen mit Zielwert, Richtung (Above/Below) und Einheit. Jedes Habit ist quantifiziert.
 2. **Zeit-geboxte Anstrengung.** Echte Verhaltensänderung passiert in fokussierten Phasen. Ein ARC ist eine bewusste Verpflichtung über 1–12 Wochen — kein „forever streak".
-3. **Wissen als Fundament.** Jede Empfehlung hat eine Quelle: ein Buch, eine Studie, einen Vortrag, einen Creator. Wir behaupten nichts ohne Beleg.
+3. **Eigenständige Inhalte als Fundament.** Die Lern-Mediathek besteht primär aus **ArcUp Originals** — redaktionell von uns selbst geschriebenen Artikeln über etablierte, nicht urheberrechtlich geschützte Konzepte (Trainings­wissenschaft, Schlafhygiene, Atemtechniken, Lerntheorie usw.). Wo sinnvoll, verlinken wir auf **vertiefende Drittquellen** (Bücher, Vorträge, Videos) als optionale Lese-Empfehlungen, gegebenenfalls als gekennzeichnete Affiliate-Links. Wir reproduzieren keine geschützten Inhalte aus diesen Werken.
 4. **Progressive Steigerung.** Targets können statisch oder über die ARC-Dauer linear interpoliert sein (`target_start_value → target_end_value`). Wachstum passiert *durch* Steigerung, nicht durch Wiederholung.
 5. **Kuratierte Library.** Habits, ARCs und Quellen werden zentral kuratiert (`creator_type = 'System'`). User wählen aus einer durchdachten Auswahl, statt eine Wildwiese aus eigenen Habits anzulegen. (User können `Selfmade` ARCs aus bestehenden Habits zusammenstellen — aber Habits selbst bleiben kuratiert.)
 6. **Fünf Life Areas als Compass.** Body, Mind, Growth, Relationships, Leisure. Jedes Inhaltsobjekt (Quelle, Habit, ARC) gehört genau **einer** Life Area an. Das hält den Compass scharf und verhindert „passt überall"-Inhalte.
@@ -72,38 +72,44 @@ Die `life_area_id` ist im seed bereits final vergeben (per `00000000000000_initi
 
 ### 2.1 Quellen (`arc_sources`) — das *Warum*
 
-Quellen sind das **Wissens-Backbone** der App. Jede Quelle ist eine eigenständige, mikro-konsumierbare Wissens-Einheit, die der User direkt in der App lesen kann (`content_md`).
+Quellen sind eigenständige, mikro-konsumierbare Wissens-Einheiten, die der User direkt in der App lesen kann (`content_md`). **Standard ist `type = 'ArcUp Original'`** — redaktionelle Eigenproduktion über etablierte, nicht urheberrechtlich geschützte Konzepte. Andere Typen (Book, Speech, …) sind möglich, aber zurückhaltend zu verwenden und nur dann sinnvoll, wenn die Quelle als reine **Verweis-Empfehlung** (mit optionalem Affiliate-Link) dient und der `content_md` keine geschützten Inhalte aus dem Drittwerk reproduziert.
 
 **Sechs Typen** (`type`):
 
-| Typ | Beispiel | Verwendung |
-|---|---|---|
-| `Book` | *Atomic Habits* von James Clear | Klassische Sachbücher mit Methodik-Substanz |
-| `Article` | wissenschaftliche Studie, Long-Read, Blog-Post | Kürzere, fokussiertere Quellen |
-| `Movie` | Dokumentation, Lecture-Aufzeichnung | Visuelle / narrative Wissensvermittlung |
-| `Creator` | Andrew Huberman, Cal Newport, Yuval Harari | Personen-zentriert, Body of Work |
-| `Speech` | TED-Talk, Commencement Speech | Pointierte, einzelne Botschaft |
-| `ArcUp Original` | von uns selbst geschriebener Inhalt | Synthesen, Lückenfüller, App-spezifisches |
+| Typ | Verwendung |
+|---|---|
+| `ArcUp Original` | **Primär verwenden.** Redaktionelle Eigenproduktion zu einem Thema (z. B. „Zone-2-Cardio", „Schlafhygiene-Protokoll"). Keine Bezugnahme auf ein konkretes geschütztes Werk im `content_md`. |
+| `Book` | Reine Buchempfehlung. `content_md` beschreibt nur das *Thema* in eigenen Worten, niemals Inhalte aus dem Buch. Buchtitel und Autor in `title`/`authors`, weiterführende Buchempfehlungen über `arc_source_affiliate_links` (Multi-Link-Tabelle). |
+| `Article` | Verweis auf wissenschaftliche Studie, Long-Read, Blog-Post — mit kurzer eigener Einordnung. |
+| `Movie` | Dokumentation, Lecture-Aufzeichnung — mit eigener Einordnung. |
+| `Creator` | Personen-zentriert (z. B. ein Podcast-Host) — mit eigener thematischer Einordnung, ohne Reproduktion von Creator-Inhalten. |
+| `Speech` | TED-Talk, Commencement Speech — mit eigener thematischer Einordnung. |
 
 **Pflichtfelder & Konventionen:**
-- `title` — prägnant; bei Büchern Originaltitel
-- `subtitle` — One-Liner / Tagline (max. ~60 Zeichen, sichtbar in Kacheln)
-- `authors` — `text[]`, immer als Array, auch bei einer Person
-- `content_md` — **die eigentliche Inhalts-Substanz**: 600–1500 Wörter, lesbar in 4–8 Minuten, in Markdown. Soll für sich allein stehen — kein Verweis auf „in dem Buch lernst du…", sondern die Kernideen direkt destilliert. Aufbau in der Regel: Hook → Kernthese → 3–5 konkrete Prinzipien → praktische Anwendung → kurzer Outro / Reflexionsfrage.
-- `image_url` — Cover oder Profilbild (1:1 oder 2:3 für Bücher; HTTPS, möglichst stabile CDN)
-- `source_url` — Link zum Original (Buchhandel-neutral, Wikipedia, YouTube, offizielle Site)
-- `external_url` / `affiliate_tag` — Affiliate-Link nur wenn vorhanden, nie erfunden
-- `estimated_read_minutes` — realistische Schätzung für `content_md` (bei `Movie`/`Speech` die Original-Länge)
-- `is_free` — Default `true`. `false` nur bei Quellen, die hinter einer Paid-Tier-Schwelle liegen sollen
-- `is_trending` — kuratorisches Feature-Flag für die Home-Carousel „Beliebt & Neu"
-- `life_area_id` — genau **eine** Life Area (FK)
-- `translations` — JSONB `{ "de": { "title", "subtitle", "content_md" }, "es": {...}, "fr": {...}, "it": {...} }`. Englisch ist Source-of-Truth in den Hauptspalten. **Alle 4 Übersetzungen sind Pflicht** (de, es, fr, it).
+- `title` — prägnant; bei `ArcUp Original` thematisch („Zone-2-Cardio"), bei `Book` der Originaltitel als Empfehlung.
+- `subtitle` — One-Liner / Tagline (max. ~60 Zeichen, sichtbar in Kacheln).
+- `authors` — `text[]`, immer als Array. Für Eigenproduktionen `['ArcUp Editorial']`.
+- `content_md` — **die eigentliche Inhalts-Substanz**: 600–1500 Wörter, lesbar in 4–8 Minuten, in Markdown. **Vollständig in eigenen Worten geschrieben**. Keine Paraphrase eines spezifischen Buchs, keine Übernahme geprägter Begriffe ohne Kontext.
+- `image_url` — Cover oder Profilbild (HTTPS). Für `ArcUp Original` lizenzfreie Quellen (Unsplash u. Ä.).
+- `source_url` — optionaler Link zur Originalquelle (NULL erlaubt). Bei `ArcUp Original` typischerweise NULL.
+- `external_url` / `affiliate_tag` — **deprecated** für neue Quellen; stattdessen die neue 1:N-Tabelle `arc_source_affiliate_links` mit beliebig vielen gekennzeichneten Empfehlungs-Links (Label + URL pro Eintrag). Die Alt-Felder werden noch von Legacy-Quellen genutzt und fließen als Single-Link-Fallback in die UI.
+- `estimated_read_minutes` — realistische Schätzung für `content_md` (bei `Movie`/`Speech` die Original-Länge).
+- `is_free` — Default `true`.
+- `is_trending` — kuratorisches Feature-Flag für die Home-Carousel „Beliebt & Neu".
+- `life_area_id` — genau **eine** Life Area (FK).
+- `translations` — JSONB für de/es/fr/it. Source-of-Truth-Sprache je nach Eintrag (englisch oder deutsch — beides ist im Bestand vorhanden).
+
+**Affiliate-Links (`arc_source_affiliate_links`):**
+- 1:N — eine Quelle kann mehrere Empfehlungs-Links tragen (z. B. Amazon, Thalia, bücher.de oder mehrere thematisch verwandte Bücher).
+- Spalten: `label` (in der UI sichtbar, z. B. „Atomic Habits — Amazon"), `url` (vollständig, mit Affiliate-Tag), `sort_order`.
+- Die UI rendert sie in einer eigenen Sektion „Quellen mit ähnlichen Inhalten ⃰" mit Sternchen-Kennzeichnung und Disclosure-Block. Werbekennzeichnung gemäß § 6 ECG / § 26 MedienG ist Pflicht und in der UI bereits umgesetzt.
+- Affiliate-Vergütung darf **niemals** die inhaltliche Empfehlung beeinflussen.
 
 **Was eine gute Quelle ausmacht:**
 - Sie hat **eine klare These**, nicht „10 zufällige Tipps".
 - Sie ist **direkt anwendbar** — der Leser kann am nächsten Tag etwas anders machen.
-- Sie hat **Substanz, kein Self-Help-Geschwafel**. Wenn möglich Studien-/Daten-basiert.
-- Sie **inspiriert mindestens ein Habit oder einen ARC**, der in der App existiert (oder später existieren wird). Reine „nice to know"-Quellen werden nicht gesourct.
+- Sie ist **rechtssauber**: keine Reproduktion geschützter Inhalte, keine wörtlichen Paraphrasen, keine geschützten Marken-Begriffe ohne Kontext.
+- Sie **inspiriert mindestens ein Habit oder einen ARC**, der in der App existiert (oder später existieren wird).
 
 **Verlinkungs-Regel:** Wenn eine Quelle einen Habit oder ARC inspiriert hat, muss sie via `habit_sources` (Habit) bzw. `arcs.source_id` (ARC, optional) verknüpft werden.
 
@@ -213,9 +219,10 @@ Pro ARC werden 1–N Habits angehängt, jeweils mit:
 
 ### Schritt 1 — Quellen anlegen
 - Pro Life Area mindestens 8–12 Quellen.
-- Mix aus Typen anstreben: nicht nur Books, auch Articles, Creators, Speeches, ArcUp Originals.
+- **Default: `type = 'ArcUp Original'`** — eigene redaktionelle Inhalte sind die Norm. Andere Typen nur, wenn der `content_md` rechtlich sauber das *Thema* in eigenen Worten behandelt und das Drittwerk reine Empfehlung bleibt.
 - `content_md` ist die wichtigste Spalte — hier liegt der Endnutzer-Wert. Niemals leer lassen.
-- Pro Quelle alle 4 Übersetzungen mitliefern.
+- Pro Quelle Übersetzungen mitliefern (die jeweils nicht in den Hauptspalten geführten Sprachen).
+- Buchempfehlungen, Affiliate-Links und sonstige weiterführende Drittquellen über die neue Tabelle `arc_source_affiliate_links` (1:N) hinterlegen, nicht in `external_url` (deprecated für neue Inhalte).
 
 ### Schritt 2 — Habits anlegen
 - Pro Life Area einen kompakten, durchdachten Baum (8–20 Habits insgesamt pro Area).
@@ -256,7 +263,7 @@ Pro ARC werden 1–N Habits angehängt, jeweils mit:
 
 | Inhaltstyp | Pflicht-Spalten | Pflicht-Verlinkung |
 |---|---|---|
-| `arc_sources` | `type`, `title`, `authors`, `content_md`, `image_url`, `source_url`, `estimated_read_minutes`, `life_area_id`, `translations` (de/es/fr/it für title, subtitle, content_md) | — |
+| `arc_sources` | `type` (default `'ArcUp Original'`), `title`, `authors`, `content_md` (eigene Worte!), `image_url`, `estimated_read_minutes`, `life_area_id`, `translations` | optionale Drittempfehlungen über `arc_source_affiliate_links` (1:N) |
 | `habits` | alle Unit-Felder, `metric_key`, `base_conversion_factor`, `name`, `description`, `life_area_id`, `icon`, `is_positive`, `translations` (de/es/fr/it für name, description, theory_md, tips_md) | `habit_sources` ≥ 1 Eintrag |
 | `arcs` | `title`, `subtitle`, `theory_md`, `tips_md`, `cover_url`, `duration_weeks`, `life_area_id`, `difficulty`, `creator_type='System'`, `translations` (de/es/fr/it für alle Texte) | `source_id` (empfohlen), `arc_habits` ≥ 1 Eintrag pro ARC |
 

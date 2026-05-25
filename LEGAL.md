@@ -55,7 +55,42 @@ Die Inhalte der App und etwaiger Webseiten wurden mit größter Sorgfalt erstell
 
 ### Urheberrecht
 
-Sämtliche Inhalte der App (Texte, Grafiken, Logos, Icons, Quellcode, Programmlogik, Datenmodelle, kuratierte Habit- und ARC-Bibliothek) sind urheberrechtlich geschützt. Eine Vervielfältigung, Bearbeitung, Verbreitung oder Verwertung außerhalb der Grenzen des Urheberrechts bedarf der schriftlichen Zustimmung des Anbieters.
+Sämtliche redaktionellen Inhalte der App (Texte, Grafiken, Logos, Icons, Quellcode, Programmlogik, Datenmodelle, kuratierte Habit- und ARC-Bibliothek, ArcUp-Originalbeiträge unter `arc_sources.type = 'ArcUp Original'`) sind urheberrechtlich geschützt. Eine Vervielfältigung, Bearbeitung, Verbreitung oder Verwertung außerhalb der Grenzen des Urheberrechts bedarf der schriftlichen Zustimmung des Anbieters.
+
+Soweit in der App Drittquellen genannt werden (Buchtitel, Autorinnen und Autoren, Vortragstitel, Videos, Artikel), erfolgt die Nennung ausschließlich zu **Referenz- und Empfehlungszwecken**. Die Nennung begründet keine Verbindung zu, Partnerschaft mit oder Befürwortung durch die jeweils genannten Personen, Verlage oder Rechteinhaber. Sämtliche Marken- und Urheberrechte an den genannten Drittwerken verbleiben bei deren Inhabern.
+
+### Affiliate-Hinweis (Amazon-Partnerprogramm) / Werbekennzeichnung
+
+Der Anbieter ist Teilnehmer am **Partnerprogramm von Amazon EU**, das zur Bereitstellung eines Mediums für Websites und Apps konzipiert wurde, mittels dessen durch die Platzierung von Werbeanzeigen und Links zu amazon.de (sowie länderspezifischen Amazon-Domains wie amazon.at, amazon.com) Werbekostenerstattungen verdient werden können.
+
+Konkret bedeutet das:
+
+> **„Als Amazon-Partner verdient ArcUp an qualifizierten Käufen."**
+
+Dieser Hinweis ist im sinngemäß identischen Wortlaut auch innerhalb der App auf jenen Bildschirmen sichtbar, auf denen Amazon-Empfehlungs-Links angezeigt werden (siehe Quellen-Detailansicht, Abschnitt „Quellen mit ähnlichen Inhalten"). Affiliate-Links werden zusätzlich mit einem Sternchen (`*`) gekennzeichnet im Sinne des § 6 ECG, § 26 MedienG und § 2 UWG.
+
+Bei einem über einen solchen Link zustandekommenden Kauf erhält der Anbieter eine Werbekostenerstattung von Amazon. Für den Nutzer entstehen dadurch **keine Mehrkosten**. Andere Affiliate-Programme als Amazon werden derzeit nicht eingesetzt.
+
+Der Anbieter wählt verlinkte Drittangebote nach sachlichen Kriterien aus; die Möglichkeit einer Affiliate-Vergütung hat keinen Einfluss auf die inhaltliche Empfehlung. Für die Inhalte und die Verfügbarkeit verlinkter Amazon-Produktseiten ist ausschließlich Amazon verantwortlich; Preise, Verfügbarkeit und Produktdetails können sich auf Amazon jederzeit ändern und werden vom Anbieter nicht zwischengespeichert.
+
+### Verwendete Drittinhalte / Open-Source-Bestandteile
+
+#### Icons — game-icons.net (CC-BY 4.0)
+
+Ein Teil der in der App verwendeten Ränge-/Tier-Icons stammt von **game-icons.net**, erstellt von **Lorc**, **Delapouite** und weiteren Mitwirkenden. Die Icons werden unter der Lizenz **Creative Commons Attribution 4.0 International (CC-BY 4.0)** verwendet (<https://creativecommons.org/licenses/by/4.0/>) und wurden so modifiziert, dass sie `currentColor` für die Tier-abhängige Färbung nutzen.
+
+> Icons by Lorc, Delapouite and contributors — game-icons.net (CC-BY 4.0).
+> Modified to use `currentColor` for tier-based tinting.
+
+#### Cover-Bilder
+
+Bestimmte redaktionelle Cover-Bilder (insbesondere für ArcUp-Original-Quellen) stammen von **Unsplash** (<https://unsplash.com>) und werden unter den Bedingungen der **Unsplash-Lizenz** verwendet, die eine kostenfreie kommerzielle Nutzung ohne Attributionspflicht erlaubt.
+
+### Hinweis auf KI-gestützte Inhalte
+
+Ein wesentlicher Teil der in der App unter „ARC-Sources" / „Lern-Mediathek" angezeigten redaktionellen Inhalte (insbesondere Quellen vom Typ `ArcUp Original`) wurde **mit Unterstützung generativer Künstlicher Intelligenz** (Large Language Models, derzeit Claude von Anthropic) erstellt und anschließend redaktionell durch den Anbieter geprüft und freigegeben. Auf jeder einzelnen Quelle ist dies durch ein sichtbares Kennzeichen („KI-gestützt erstellt") sowie einen Hinweistext in der Detailansicht ersichtlich.
+
+KI-gestützt erstellte Inhalte können trotz redaktioneller Prüfung fehlerhaft, unvollständig oder veraltet sein. Sie ersetzen keine medizinische, psychologische, ernährungswissenschaftliche, sportwissenschaftliche oder rechtliche Beratung (siehe auch Haftungsausschluss). Personenbezogene Daten der Nutzer fließen **nicht** in die Erstellung dieser redaktionellen Inhalte ein — die Generierung erfolgt vorab und kuratorisch, ohne Bezug zu individuellen Nutzerprofilen.
 
 ---
 
@@ -73,7 +108,7 @@ Für die Nutzung der mobilen Anwendung **ArcUp** zwischen dem Anbieter (im Impre
 
 ### § 2 Leistungsbeschreibung
 
-(1) **ArcUp** ist eine mobile Anwendung für strukturierte Gewohnheitsbildung und persönliche Entwicklung. Sie verbindet tägliche Gewohnheiten („Habits“) mit zeitlich begrenzten Herausforderungen („ARCs“) und einer übergeordneten Lebensbereichs-Struktur („Life Areas / Compass“).
+(1) **ArcUp** ist eine mobile Anwendung für strukturierte Gewohnheitsbildung und persönliche Entwicklung. Sie verbindet tägliche Gewohnheiten („Habits“) mit zeitlich begrenzten Herausforderungen („ARCs“) und einer übergeordneten Lebensbereichs-Struktur („Life Areas / Compass“). Ergänzend stellt die App eine **redaktionelle Bibliothek („ARC-Sources“)** mit Eigenproduktionen sowie referenzierten Drittquellen bereit (siehe § 8a).
 
 (2) Die App wird in zwei Tarifen angeboten:
 
@@ -176,6 +211,19 @@ Sie willigen ausdrücklich ein, dass mit der Ausführung des Vertrags vor Ablauf
 (2) Der Nutzer erhält ein einfaches, nicht übertragbares, zeitlich auf die Vertragslaufzeit beschränktes Recht zur Nutzung der App auf den von ihm autorisierten Endgeräten. Eine Weitergabe der Zugangsdaten oder eine Mehrfachnutzung eines Kontos durch verschiedene Personen ist unzulässig.
 
 (3) Vom Nutzer selbst erstellte Inhalte (eigene Habits, eigene ARCs, ARC-Coverbilder, Journal-Einträge, Ziele, Habit-Logs) bleiben im Eigentum des Nutzers. Der Nutzer räumt dem Anbieter ein einfaches, räumlich und zeitlich auf die Vertragslaufzeit beschränktes Nutzungsrecht ein, soweit dies zur Bereitstellung, Speicherung, Anzeige und Verarbeitung dieser Inhalte innerhalb der App erforderlich ist.
+
+### § 8a Inhalte Dritter, Affiliate-Empfehlungen
+
+(1) Die App stellt unter „ARC-Sources” eine redaktionelle Bibliothek bereit. Diese enthält:
+
+- **Eigenproduktionen des Anbieters** („ArcUp Originals”), die vollständig urheberrechtlich beim Anbieter liegen. Diese Inhalte wurden **mit Unterstützung generativer KI** erstellt und redaktionell freigegeben (siehe „Hinweis auf KI-gestützte Inhalte” in Abschnitt 1). Sie ersetzen keine fachliche Beratung.
+- **Verweise auf Drittquellen** (insbesondere Bücher) in Form von Titel, Autor, Cover-Bild und Amazon-Empfehlungslink. Diese Verweise dienen ausschließlich der Information und Empfehlung; die Rechte an den genannten Drittwerken verbleiben bei den jeweiligen Rechteinhabern.
+
+(2) Sämtliche derzeit innerhalb der App eingesetzten Affiliate-Links führen zu **Amazon EU (amazon.de / amazon.at)**. Der Anbieter nimmt am **Amazon-Partnerprogramm** teil. Bei einem über einen solchen Link zustandekommenden qualifizierten Kauf erhält der Anbieter eine Werbekostenerstattung von Amazon. Für den Nutzer entstehen dadurch keine Mehrkosten. Affiliate-Links werden in der App durch ein Sternchen (`*`) klar erkennbar gemacht; in derselben Ansicht ist der nach Amazon-Partnerprogramm-Bedingungen erforderliche Hinweis *„Als Amazon-Partner verdient ArcUp an qualifizierten Käufen.”* sichtbar.
+
+(3) Die Auswahl der referenzierten Drittquellen und die inhaltliche Empfehlung erfolgt nach redaktionellen Kriterien des Anbieters. Die Amazon-Partnerschaft hat keinen Einfluss auf die inhaltliche Bewertung oder die Auswahl der empfohlenen Werke. Eine Garantie für die Verfügbarkeit, den Preis oder die inhaltliche Aktualität der verlinkten Amazon-Produktseiten kann nicht übernommen werden; hierfür ist ausschließlich Amazon verantwortlich. Der Anbieter speichert keine Amazon-Preise oder -Produktdetails dauerhaft zwischen.
+
+(4) Datenschutzhinweis: Klickt der Nutzer auf einen Amazon-Empfehlungs-Link, verlässt er die App und wird über den Geräte-Browser zu Amazon weitergeleitet. Die Datenverarbeitung auf der Amazon-Zielseite richtet sich ausschließlich nach den Bestimmungen von Amazon (<https://www.amazon.de/gp/help/customer/display.html?nodeId=201909010>). Der Anbieter selbst überträgt im Zuge des Klicks keine personenbezogenen Daten an Amazon; die Affiliate-Zuordnung erfolgt ausschließlich über den anonymen Partner-Tag in der Ziel-URL (vgl. Datenschutzerklärung 3.4a).
 
 ### § 9 Haftung
 
@@ -326,6 +374,21 @@ Wir setzen für den Betrieb der App folgende Auftragsverarbeiter ein. Mit allen 
 - Funktion: Vertrieb der App über den jeweiligen Store; bei In-App-Käufen Abwicklung der Zahlung über die Store-eigenen Mechanismen.
 - Wir erhalten von Apple/Google nur aggregierte und pseudonymisierte Informationen über Käufe, keine personenbezogenen Klardaten der Käufer.
 - Datenschutzerklärungen: <https://www.apple.com/legal/privacy> und <https://policies.google.com/privacy>
+
+### 3.4a Ausgehende Links und Amazon-Affiliate-Empfehlungen
+
+Die App enthält in der „ARC-Sources”-Bibliothek redaktionell ausgewählte Verweise zu Amazon-Produktseiten (Buchempfehlungen). Klickt der Nutzer auf einen solchen Link, **verlässt er die App** und wird im externen Browser des Geräts zur Amazon-Zielseite weitergeleitet.
+
+- Der Anbieter selbst **überträgt im Moment des Klicks keine personenbezogenen Daten** an Amazon. Die Affiliate-Zuordnung erfolgt ausschließlich über einen anonymen Partner-Tag (z. B. `tag=arcup-21`) in der Ziel-URL, der den Anbieter als vermittelnde Quelle ausweist, nicht den klickenden Nutzer.
+- Auf der Amazon-Zielseite kann Amazon eigene Cookies, Tracking-Pixel oder ähnliche Technologien einsetzen. Für diese Vorgänge ist ausschließlich Amazon datenschutzrechtlich verantwortlich. Maßgeblich ist Amazons Datenschutzerklärung: <https://www.amazon.de/gp/help/customer/display.html?nodeId=201909010>.
+- Es findet **kein Profiling** des Nutzers durch den Anbieter im Zuge eines Affiliate-Klicks statt.
+- Der Anbieter erhält von Amazon im Rahmen des Partnerprogramms ausschließlich aggregierte, nicht personenbezogene Statistiken (Klick- und Conversionszahlen) — keine Klardaten zu einzelnen klickenden oder kaufenden Nutzern.
+
+### 3.4b Einsatz von KI für redaktionelle Inhalte
+
+Die in der App angezeigten ArcUp-Original-Inhalte (Lern-Mediathek) wurden mit Unterstützung des Large Language Models **Claude (Anthropic)** vorab und kuratorisch erstellt. **Es werden zu keinem Zeitpunkt personenbezogene Daten der Nutzer für diese Inhaltsgenerierung an Anthropic übermittelt.** Die Inhaltserstellung erfolgt unabhängig vom konkreten Nutzer; jeder Nutzer sieht denselben kuratierten Inhalt.
+
+Der separate, nutzergesteuerte KI-Generator („Generate ARC”, Pro-Feature) ist hiervon zu unterscheiden und in Abschnitt 3.4 (Anthropic, PBC) gesondert beschrieben — nur dort werden vom Nutzer eingegebene Prompts in Echtzeit an Anthropic übermittelt.
 
 ### 3.5 Drittlandsübermittlung
 
