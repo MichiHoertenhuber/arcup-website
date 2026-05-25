@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="de" data-i18n-title="title.faq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>(function(){try{var s=['de','en','es','fr','it'],l=localStorage.getItem('arcup-lang')||(navigator.language||'de').slice(0,2).toLowerCase();document.documentElement.lang=s.indexOf(l)>-1?l:'de';}catch(e){}})();</script>
+  <title>FAQ — ArcUp</title>
+  <meta name="description" content="Häufig gestellte Fragen zu ArcUp — Grundlagen, ARCs, Habits, Tracking, Streaks, Library, Free vs Pro, AI Coach, Insights, Datenschutz." />
+  <meta name="theme-color" content="#06080C" />
+  <link rel="icon" type="image/png" href="./assets/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/i18n.css" />
+</head>
+<body>
+
+<nav id="nav" class="scrolled">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-brand" data-i18n-attr-aria-label="nav.home" aria-label="ArcUp Startseite">
+      <span class="brand-mark">
+        <span class="brand-arc">ARC</span><span class="brand-up">UP</span>
+      </span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#philosophy" data-i18n="nav.philosophy">Philosophie</a></li>
+      <li><a href="index.html#system" data-i18n="nav.system">Das System</a></li>
+      <li><a href="index.html#pricing" data-i18n="nav.pricing">Pro</a></li>
+      <li><a href="faq.html" data-i18n="nav.faq" aria-current="page">FAQ</a></li>
+      <li><a href="index.html#download" class="btn btn-pill" data-i18n="nav.download">App laden</a></li>
+      <li><div data-lang-switcher></div></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" data-i18n-attr-aria-label="nav.menu" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main class="container">
+  <div class="faq-page">
+    <header class="faq-page-head">
+      <span class="overline" data-i18n="faq.over">FAQ</span>
+      <h1 data-i18n="faq.h">Häufige Fragen.</h1>
+      <p class="faq-intro" data-i18n="faq.intro">
+        Alles, was du über ArcUp wissen musst — von der Grundidee über Tracking, ARCs und Library bis zu Abo, KI und Datenschutz.
+      </p>
+    </header>
+
+    <!-- ════════════ 1. Grundlagen ════════════ -->
+    <h2 class="faq-section-title" data-i18n="faqs.basics">Grundlagen</h2>
+    <section class="faq-list">
+      <details class="qa" id="what-is-arcup">
+        <summary data-i18n="faq01.q">Was ist ArcUp?</summary>
+        <div class="qa-body" data-i18n-html="faq01.a"></div>
+      </details>
+      <details class="qa" id="is-classic-tracker">
+        <summary data-i18n="faq02.q">Ist ArcUp ein klassischer Habit-Tracker?</summary>
+        <div class="qa-body" data-i18n-html="faq02.a"></div>
+      </details>
+      <details class="qa" id="what-is-an-arc">
+        <summary data-i18n="faq03.q">Was ist ein ARC?</summary>
+        <div class="qa-body" data-i18n-html="faq03.a"></div>
+      </details>
+      <details class="qa" id="life-areas">
+        <summary data-i18n="faq04.q">Was sind die fünf Life Areas?</summary>
+        <div class="qa-body" data-i18n-html="faq04.a"></div>
+      </details>
+      <details class="qa" id="who-is-it-for">
+        <summary data-i18n="faq05.q">Für wen ist ArcUp gedacht?</summary>
+        <div class="qa-body" data-i18n-html="faq05.a"></div>
+      </details>
+    </section>
+
+    <!-- ════════════ 2. ARCs & Habits im Detail ════════════ -->
+    <h2 class="faq-section-title" data-i18n="faqs.arcsHabits">ARCs &amp; Habits im Detail</h2>
+    <section class="faq-list">
+      <details class="qa" id="habits-arcs-goals">
+        <summary data-i18n="faq06.q">Wie unterscheiden sich Habits, ARCs und Goals?</summary>
+        <div class="qa-body" data-i18n-html="faq06.a"></div>
+      </details>
+      <details class="qa" id="progressive-targets">
+        <summary data-i18n="faq07.q">Was sind progressive Ziele?</summary>
+        <div class="qa-body" data-i18n-html="faq07.a"></div>
+      </details>
+      <details class="qa" id="above-below">
+        <summary data-i18n="faq08.q">Was bedeutet „Above" und „Below" bei einem Habit?</summary>
+        <div class="qa-body" data-i18n-html="faq08.a"></div>
+      </details>
+      <details class="qa" id="daily-vs-weekly">
+        <summary data-i18n="faq09.q">Was ist der Unterschied zwischen Daily- und Weekly-Habits?</summary>
+        <div class="qa-body" data-i18n-html="faq09.a"></div>
+      </details>
+      <details class="qa" id="habits-per-arc">
+        <summary data-i18n="faq10.q">Wie viele Habits sollte ein ARC haben?</summary>
+        <div class="qa-body" data-i18n-html="faq10.a"></div>
+      </details>
+      <details class="qa" id="multiple-arcs">
+        <summary data-i18n="faq11.q">Kann ich gleichzeitig mehrere ARCs aktiv haben?</summary>
+        <div class="qa-body" data-i18n-html="faq11.a"></div>
+      </details>
+    </section>
+
+    <!-- ════════════ 3. Tracking & Logging ════════════ -->
+    <h2 class="faq-section-title" data-i18n="faqs.tracking">Tracking &amp; Logging</h2>
+    <section class="faq-list">
+      <details class="qa" id="how-to-track">
+        <summary data-i18n="faq12.q">Wie tracke ich meine Habits?</summary>
+        <div class="qa-body" data-i18n-html="faq12.a"></div>
+      </details>
+      <details class="qa" id="back-dating">
+        <summary data-i18n="faq13.q">Kann ich auch vergangene Tage nachtragen?</summary>
+        <div class="qa-body" data-i18n-html="faq13.a"></div>
+      </details>
+      <details class="qa" id="percentage">
+        <summary data-i18n="faq14.q">Was bedeutet die Prozentzahl bei jedem Habit?</summary>
+        <div class="qa-body" data-i18n-html="faq14.a"></div>
+      </details>
+      <details class="qa" id="perfect-day">
+        <summary data-i18n="faq15.q">Was ist ein „perfekter Tag"?</summary>
+        <div class="qa-body" data-i18n-html="faq15.a"></div>
+      </details>
+    </section>
+
+    <!-- ════════════ 4. Streaks, Rest Days & Vacation ════════════ -->
+    <h2 class="faq-section-title" data-i18n="faqs.streaks">Streaks, Rest Days &amp; Vacation</h2>
+    <section class="faq-list">
+      <details class="qa" id="streak">
+        <summary data-i18n="faq16.q">Was ist der Streak?</summary>
+        <div class="qa-body" data-i18n-html="faq16.a"></div>
+      </details>
+      <details class="qa" id="rest-days">
+        <summary data-i18n="faq17.q">Was sind Rest Days?</summary>
+        <div class="qa-body" data-i18n-html="faq17.a"></div>
+      </details>
+      <details class="qa" id="vacation-mode">
+        <summary data-i18n="faq18.q">Was ist der Vacation Mode?</summary>
+        <div class="qa-body" data-i18n-html="faq18.a"></div>
+      </details>
+    </section>
+
+    <!-- ════════════ 5. Library & Sources ════════════ -->
+    <h2 class="faq-section-title" data-i18n="faqs.library">Library &amp; Sources</h2>
+    <section class="faq-list">
+      <details class="qa" id="arc-sources">
+        <summary data-i18n="faq19.q">Was sind ARC-Sources / die Lern-Mediathek?</summary>
+        <div class="qa-body" data-i18n-html="faq19.a"></div>
+      </details>
+      <details class="qa" id="arcup-originals">
+        <summary data-i18n="faq20.q">Was sind ArcUp Originals?</summary>
+        <div class="qa-body" data-i18n-html="faq20.a"></div>
+      </details>
+      <details class="qa" id="affiliate-links">
+        <summary data-i18n="faq21.q">Was sind die Affiliate-Links in der Library?</summary>
+        <div class="qa-body" data-i18n-html="faq21.a"></div>
+      </details>
+    </section>
+
+    <!-- ════════════ 6. Free vs Pro ════════════ -->
+    <h2 class="faq-section-title" data-i18n="faqs.freePro">Free vs Pro</h2>
+    <section class="faq-list">
+      <details class="qa" id="free-plan">
+        <summary data-i18n="faq22.q">Was ist im kostenlosen Tarif enthalten?</summary>
+        <div class="qa-body" data-i18n-html="faq22.a"></div>
+      </details>
+      <details class="qa" id="pro-features">
+        <summary data-i18n="faq23.q">Was bekomme ich zusätzlich mit Pro?</summary>
+        <div class="qa-body" data-i18n-html="faq23.a"></div>
+      </details>
+      <details class="qa" id="pro-pricing">
+        <summary data-i18n="faq24.q">Was kostet Pro?</summary>
+        <div class="qa-body" data-i18n-html="faq24.a"></div>
+      </details>
+      <details class="qa" id="cancel-pro">
+        <summary data-i18n="faq25.q">Kann ich mein Pro-Abo jederzeit kündigen?</summary>
+        <div class="qa-body" data-i18n-html="faq25.a"></div>
+      </details>
+      <details class="qa" id="right-of-withdrawal">
+        <summary data-i18n="faq26.q">Habe ich ein Widerrufsrecht?</summary>
+        <div class="qa-body" data-i18n-html="faq26.a"></div>
+      </details>
+    </section>
+
+    <!-- ════════════ 7. AI Coach ════════════ -->
+    <h2 class="faq-section-title" data-i18n="faqs.aiCoach">AI Coach</h2>
+    <section class="faq-list">
+      <details class="qa" id="ai-arc-generator">
+        <summary data-i18n="faq27.q">Wie funktioniert der AI ARC Generator?</summary>
+        <div class="qa-body" data-i18n-html="faq27.a"></div>
+      </details>
+    </section>
+
+    <!-- ════════════ 8. Insights & Reflexion ════════════ -->
+    <h2 class="faq-section-title" data-i18n="faqs.insights">Insights &amp; Reflexion</h2>
+    <section class="faq-list">
+      <details class="qa" id="insights">
+        <summary data-i18n="faq28.q">Welche Insights bekomme ich?</summary>
+        <div class="qa-body" data-i18n-html="faq28.a"></div>
+      </details>
+      <details class="qa" id="goals-journal">
+        <summary data-i18n="faq29.q">Was ist das Goal- und Journal-System?</summary>
+        <div class="qa-body" data-i18n-html="faq29.a"></div>
+      </details>
+    </section>
+
+    <!-- ════════════ 9. Persönliche Einstellungen ════════════ -->
+    <h2 class="faq-section-title" data-i18n="faqs.settings">Persönliche Einstellungen</h2>
+    <section class="faq-list">
+      <details class="qa" id="app-designs">
+        <summary data-i18n="faq30.q">Welche App-Designs gibt es?</summary>
+        <div class="qa-body" data-i18n-html="faq30.a"></div>
+      </details>
+      <details class="qa" id="units">
+        <summary data-i18n="faq31.q">Funktioniert ArcUp mit imperialen Einheiten?</summary>
+        <div class="qa-body" data-i18n-html="faq31.a"></div>
+      </details>
+      <details class="qa" id="languages">
+        <summary data-i18n="faq32.q">In welchen Sprachen ist ArcUp verfügbar?</summary>
+        <div class="qa-body" data-i18n-html="faq32.a"></div>
+      </details>
+      <details class="qa" id="notifications">
+        <summary data-i18n="faq33.q">Wie funktionieren die Push-Erinnerungen?</summary>
+        <div class="qa-body" data-i18n-html="faq33.a"></div>
+      </details>
+    </section>
+
+    <!-- ════════════ 10. Daten & Datenschutz ════════════ -->
+    <h2 class="faq-section-title" data-i18n="faqs.privacy">Daten &amp; Datenschutz</h2>
+    <section class="faq-list">
+      <details class="qa" id="data-storage">
+        <summary data-i18n="faq34.q">Was passiert mit meinen Daten?</summary>
+        <div class="qa-body" data-i18n-html="faq34.a"></div>
+      </details>
+      <details class="qa" id="data-export">
+        <summary data-i18n="faq35.q">Kann ich meine Daten exportieren?</summary>
+        <div class="qa-body" data-i18n-html="faq35.a"></div>
+      </details>
+      <details class="qa" id="reset-delete">
+        <summary data-i18n="faq36.q">Kann ich mein Konto zurücksetzen oder löschen?</summary>
+        <div class="qa-body" data-i18n-html="faq36.a"></div>
+      </details>
+      <details class="qa" id="gdpr">
+        <summary data-i18n="faq37.q">Ist ArcUp DSGVO-konform?</summary>
+        <div class="qa-body" data-i18n-html="faq37.a"></div>
+      </details>
+      <details class="qa" id="ai-training">
+        <summary data-i18n="faq38.q">Werden meine Daten für KI-Training verwendet?</summary>
+        <div class="qa-body" data-i18n-html="faq38.a"></div>
+      </details>
+    </section>
+
+    <!-- ════════════ 11. Technik & Plattform ════════════ -->
+    <h2 class="faq-section-title" data-i18n="faqs.tech">Technik &amp; Plattform</h2>
+    <section class="faq-list">
+      <details class="qa" id="platforms">
+        <summary data-i18n="faq39.q">Auf welchen Plattformen läuft ArcUp?</summary>
+        <div class="qa-body" data-i18n-html="faq39.a"></div>
+      </details>
+      <details class="qa" id="feedback">
+        <summary data-i18n="faq40.q">Was tun bei Fragen, Bugs oder Wünschen?</summary>
+        <div class="qa-body" data-i18n-html="faq40.a"></div>
+      </details>
+    </section>
+
+    <aside class="faq-legal-cta">
+      <p data-i18n="faq.legalHint">Du suchst rechtliche Informationen?</p>
+      <ul>
+        <li><a href="impressum.html" data-i18n="ft.impressum">Impressum</a></li>
+        <li><a href="datenschutz.html" data-i18n="ft.datenschutz">Datenschutz</a></li>
+        <li><a href="agb.html" data-i18n="ft.agb">AGB</a></li>
+      </ul>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">
+        <span class="brand-arc">ARC</span><span class="brand-up">UP</span>
+      </span>
+      <span class="footer-tag" data-i18n="ft.tag">Building Better Habits.</span>
+    </div>
+
+    <ul class="footer-links">
+      <li><a href="index.html#system" data-i18n="ft.system">Das System</a></li>
+      <li><a href="index.html#areas" data-i18n="ft.areas">Lebensbereiche</a></li>
+      <li><a href="index.html#pricing" data-i18n="ft.pricing">Pro</a></li>
+      <li><a href="faq.html" data-i18n="ft.faq">FAQ</a></li>
+    </ul>
+
+    <ul class="footer-links footer-links--legal">
+      <li><a href="impressum.html" data-i18n="ft.impressum">Impressum</a></li>
+      <li><a href="datenschutz.html" data-i18n="ft.datenschutz">Datenschutz</a></li>
+      <li><a href="agb.html" data-i18n="ft.agb">AGB</a></li>
+    </ul>
+
+    <div class="footer-meta">
+      <span>&copy; <span id="year"></span> ArcUp</span>
+      <span data-i18n="ft.macroMicroMeso">Macro · Meso · Micro</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile nav toggle
+  const toggle = document.getElementById('navToggle');
+  const links  = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    links.classList.toggle('open');
+    toggle.classList.toggle('open');
+  });
+  links.querySelectorAll('a').forEach(a =>
+    a.addEventListener('click', () => {
+      links.classList.remove('open');
+      toggle.classList.remove('open');
+    })
+  );
+
+  // Deep-link support: open targeted <details> and scroll into view
+  function openHashTarget() {
+    const hash = decodeURIComponent(window.location.hash.replace(/^#/, ''));
+    if (!hash) return;
+    const target = document.getElementById(hash);
+    if (target && target.tagName === 'DETAILS') {
+      target.open = true;
+      requestAnimationFrame(() => {
+        const y = target.getBoundingClientRect().top + window.scrollY - 90;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      });
+    }
+  }
+  window.addEventListener('hashchange', openHashTarget);
+  window.addEventListener('load', openHashTarget);
+</script>
+
+</body>
+</html>

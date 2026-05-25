@@ -102,6 +102,126 @@ html[lang="es"] .legal-page [data-lang-section="en"],
 html[lang="fr"] .legal-page [data-lang-section="en"],
 html[lang="it"] .legal-page [data-lang-section="en"] { display: block; }
 
+/* ════════════════════════════════════════════════════════════
+   FAQ PAGE
+   ════════════════════════════════════════════════════════════ */
+.faq-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 180px 0 120px;
+}
+.faq-page-head {
+  margin-bottom: 56px;
+}
+.faq-page-head .overline {
+  display: block;
+  margin-bottom: 14px;
+}
+.faq-page-head h1 {
+  font-size: clamp(40px, 6vw, 64px);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.04;
+  margin: 0 0 20px;
+}
+.faq-intro {
+  font-size: 17px;
+  color: var(--text-mute);
+  line-height: 1.6;
+  max-width: 620px;
+  margin: 0;
+}
+.faq-allcta {
+  margin-top: 32px;
+  text-align: center;
+  font-size: 14px;
+}
+.faq-allcta a {
+  color: var(--accent);
+  border-bottom: 1px solid rgba(34, 197, 94, 0.3);
+  padding-bottom: 2px;
+  transition: border-color 0.15s ease;
+}
+.faq-allcta a:hover { border-bottom-color: var(--accent); }
+
+.faq-section-title {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 56px 0 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--hairline);
+}
+.faq-list + .faq-section-title { margin-top: 64px; }
+.faq-list .qa {
+  scroll-margin-top: 96px;
+}
+.faq-list .qa-body ul,
+.faq-list .qa-body ol {
+  margin: 10px 0 4px;
+  padding-left: 22px;
+}
+.faq-list .qa-body li {
+  margin-bottom: 6px;
+  line-height: 1.55;
+}
+.faq-list .qa-body p {
+  margin: 0 0 10px;
+}
+.faq-list .qa-body code {
+  font-size: 0.9em;
+  padding: 1px 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+.faq-list .qa[open] {
+  border-color: var(--accent-soft);
+}
+.faq-list .qa:target {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent) inset;
+}
+
+.faq-legal-cta {
+  margin-top: 72px;
+  padding: 28px 32px;
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.02);
+}
+.faq-legal-cta p {
+  margin: 0 0 12px;
+  color: var(--text-mute);
+  font-size: 14px;
+  letter-spacing: 0.01em;
+}
+.faq-legal-cta ul {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.faq-legal-cta a {
+  color: var(--text);
+  font-size: 14px;
+  border-bottom: 1px solid var(--hairline-2);
+  padding-bottom: 2px;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.faq-legal-cta a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+@media (max-width: 720px) {
+  .faq-page { padding: 130px 0 90px; }
+  .faq-legal-cta { padding: 22px 20px; }
+}
+
 .foundation-disclosure {
   margin-top: 18px;
   font-size: 12.5px;
