@@ -237,6 +237,23 @@ Sie willigen ausdrücklich ein, dass mit der Ausführung des Vertrags vor Ablauf
 
 (5) Die Einschränkungen der Absätze (2) bis (4) gelten nicht für Ansprüche nach dem Produkthaftungsgesetz.
 
+(6) **Gesundheitsbezogener Haftungsausschluss.** ArcUp ist kein medizinisches, psychotherapeutisches, sport- oder ernährungswissenschaftliches Beratungsangebot. Die in der App angebotenen ARCs (Challenges), Gewohnheiten, Trainingsempfehlungen, Atem- und Meditationsübungen sowie Ernährungs- und Schlafhinweise sind **allgemeine Empfehlungen für gesunde, erwachsene Personen** und stellen keine individuelle medizinische Beratung dar. Sie wurden überwiegend mit Unterstützung generativer KI erstellt (siehe Abschnitt 1 und 3.4b der Datenschutzerklärung).
+
+Der Nutzer ist vollumfänglich selbst dafür verantwortlich zu beurteilen, ob eine konkrete ARC oder Gewohnheit für seinen Gesundheits- und Fitnesszustand geeignet ist. Vor Beginn einer ARC, die körperliche Belastung, Kälte- oder Hitzeexposition, Fastenphasen, intensive Atemübungen, Bildschirm- oder Schlafänderungen oder ähnliche Interventionen umfasst, ist – insbesondere bei Vorerkrankungen – ärztlicher oder fachlicher Rat einzuholen. Dies gilt unter anderem bei:
+
+- Herz-Kreislauf-Erkrankungen oder Bluthochdruck;
+- Atemwegserkrankungen (z. B. Asthma);
+- Diabetes oder Stoffwechselerkrankungen;
+- Schwangerschaft oder Stillzeit;
+- psychischen Erkrankungen, insbesondere Angst-, Panik- oder Essstörungen;
+- akuten Verletzungen oder muskuloskelettalen Beschwerden;
+- regelmäßiger Medikamenteneinnahme;
+- einem Alter unter 18 Jahren (zusätzlich zur in § 3 (3) genannten Zustimmung der Erziehungsberechtigten).
+
+Bei Auftreten von Schmerzen, Schwindel, Atemnot, Herzrasen oder anderen Beschwerden während einer ARC oder Gewohnheit ist diese **sofort abzubrechen** und ärztlicher Rat einzuholen. Der Anbieter haftet nicht für gesundheitliche oder psychische Schäden, die aus der eigenverantwortlichen Durchführung von ARCs oder Habits durch den Nutzer entstehen, soweit der Schaden bei Beachtung dieser Hinweise und der ärztlichen Sorgfaltspflicht des Nutzers vermeidbar gewesen wäre. Die gesetzliche Haftung des Anbieters bei Vorsatz, grober Fahrlässigkeit sowie für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit nach Absatz (1) bleibt unberührt.
+
+(7) Der Nutzer bestätigt diese Kenntnisnahme einmalig beim ersten App-Start über einen ausdrücklichen Bestätigungsdialog; eine kurze Wiederholung dieses Hinweises wird vor dem Start jeder ARC angezeigt.
+
 ### § 10 Datenschutz
 
 Hinweise zur Verarbeitung personenbezogener Daten finden sich in der Datenschutzerklärung in Abschnitt 3 dieses Dokuments.
