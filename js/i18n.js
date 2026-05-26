@@ -41,21 +41,21 @@
 
     // ─── HERO ────────────────────────────────────────────
     'hero.pill': {
-      de: 'iOS &amp; Android · Jetzt in der Beta',
-      en: 'iOS &amp; Android · Now in Beta',
-      es: 'iOS y Android · Ahora en Beta',
-      fr: 'iOS et Android · Maintenant en Beta',
-      it: 'iOS e Android · Ora in Beta',
+      de: 'iOS &amp; Android · Jetzt verfügbar',
+      en: 'iOS &amp; Android · Available now',
+      es: 'iOS y Android · Ya disponible',
+      fr: 'iOS et Android · Disponible maintenant',
+      it: 'iOS e Android · Ora disponibile',
     },
     'hero.headline1': { de: 'Building', en: 'Building', es: 'Construir', fr: 'Construire', it: 'Costruire' },
-    'hero.headline2': { de: 'better',   en: 'better',   es: 'mejores',   fr: 'de meilleures', it: 'abitudini' },
-    'hero.headline3': { de: 'habits.',  en: 'habits.',  es: 'hábitos.',  fr: 'habitudes.',    it: 'migliori.' },
+    'hero.headline2': { de: 'better',   en: 'better',   es: 'mejores',   fr: 'de meilleures', it: 'migliori' },
+    'hero.headline3': { de: 'habits.',  en: 'habits.',  es: 'hábitos.',  fr: 'habitudes.',    it: 'abitudini.' },
     'hero.sub': {
-      de: 'Nicht noch ein Tracker. Ein System aus zeit&shy;begrenzten ARCs, numerischen Habits und einer eigenen Lern-Mediathek — verteilt auf fünf Lebensbereiche.',
-      en: 'Not another tracker. A system of time-boxed ARCs, numeric habits and a source library — across five life areas.',
-      es: 'No es otro rastreador. Un sistema de ARCs limitados en el tiempo, hábitos numéricos y una biblioteca de fuentes — en cinco áreas de vida.',
-      fr: "Pas un énième tracker. Un système d'ARCs limités dans le temps, d'habitudes chiffrées et d'une bibliothèque de sources — sur cinq domaines de vie.",
-      it: "Non un altro tracker. Un sistema di ARC a tempo limitato, abitudini numeriche e una biblioteca di fonti — su cinque aree di vita.",
+      de: 'Drei Ebenen, ein System: langfristige Vision in fünf Lebens&shy;bereichen, fokussierte 1–12-Wochen-Challenges (ARCs) und numerische Habits im Alltag.',
+      en: 'Three layers, one system: a long-term vision across five life areas, focused 1–12-week challenges (ARCs) and numeric habits in your day.',
+      es: 'Tres niveles, un sistema: visión a largo plazo en cinco áreas de vida, retos focalizados de 1 a 12 semanas (ARCs) y hábitos numéricos en el día a día.',
+      fr: "Trois niveaux, un système : une vision long terme sur cinq domaines de vie, des défis focalisés de 1 à 12 semaines (ARC) et des habitudes chiffrées au quotidien.",
+      it: 'Tre livelli, un sistema: una visione a lungo termine su cinque aree di vita, sfide focalizzate di 1 a 12 settimane (ARC) e abitudini numeriche nel quotidiano.',
     },
     'hero.ctaPrimary': {
       de: 'App kostenlos laden', en: 'Get the app for free', es: 'Descargar gratis',
@@ -69,19 +69,20 @@
     'hero.trust2': { de: 'EU-Hosting · DSGVO',      en: 'EU hosting · GDPR',      es: 'Hosting UE · RGPD',    fr: 'Hébergement UE · RGPD',  it: 'Hosting UE · GDPR' },
     'hero.trust3': { de: 'Pro mit Lifetime',        en: 'Pro with Lifetime',      es: 'Pro con Lifetime',     fr: 'Pro avec Lifetime',      it: 'Pro con Lifetime' },
     'hero.trust4': { de: 'Keine Werbung, keine Tracker', en: 'No ads, no trackers', es: 'Sin anuncios, sin rastreadores', fr: 'Pas de pub, pas de trackers', it: 'Niente pubblicità, niente tracker' },
+    'hero.trust5': { de: 'Voller Datenexport jederzeit', en: 'Full data export any time', es: 'Exportación completa de datos cuando quieras', fr: 'Export complet de tes données à tout moment', it: 'Export completo dei dati in qualsiasi momento' },
 
     'hero.altHome':  { de: 'ArcUp Home — Tageserfüllung, Wochenerfüllung, Level und aktive ARCs', en: 'ArcUp Home — daily and weekly completion, level and active ARCs', es: 'ArcUp Inicio — cumplimiento diario y semanal, nivel y ARCs activos', fr: "ArcUp Accueil — achèvement quotidien et hebdomadaire, niveau et ARC actifs", it: "ArcUp Home — completamento giornaliero e settimanale, livello e ARC attivi" },
     'hero.altARCs':  { de: 'ARCademy — kuratierte ARCs', en: 'ARCademy — curated ARCs', es: 'ARCademy — ARCs curados', fr: 'ARCademy — ARC sélectionnés', it: 'ARCademy — ARC selezionati' },
     'hero.altRef':   { de: 'Reflect — Wheel of Life', en: 'Reflect — Wheel of Life', es: 'Reflect — Rueda de la vida', fr: 'Reflect — Roue de la vie', it: 'Reflect — Ruota della vita' },
 
     // ─── MANIFESTO ───────────────────────────────────────
-    'mani.overline': { de: 'Manifest', en: 'Manifesto', es: 'Manifiesto', fr: 'Manifeste', it: 'Manifesto' },
+    'mani.overline': { de: 'Was daraus folgt', en: 'What follows from this', es: 'Lo que se sigue', fr: 'Ce qui en découle', it: 'Cosa ne consegue' },
     'mani.title': {
-      de: 'Wir tracken keine Häkchen.<br />Wir <em>messen</em> Verhalten — in Zahlen, über Zeit, mit Quellen im Rücken.',
-      en: "We don't track checkmarks.<br />We <em>measure</em> behaviour — in numbers, over time, backed by sources.",
-      es: 'No marcamos casillas.<br /><em>Medimos</em> comportamiento — en cifras, a lo largo del tiempo, con fuentes detrás.',
-      fr: "On ne coche pas des cases.<br />On <em>mesure</em> le comportement — en chiffres, dans le temps, avec des sources à l'appui.",
-      it: 'Non spuntiamo caselle.<br /><em>Misuriamo</em> il comportamento — in numeri, nel tempo, con fonti alle spalle.',
+      de: 'Vier Prinzipien.<br />Sie machen aus „mehr Sport" <em>5,2 km in Zone 2</em>.',
+      en: 'Four principles.<br />They turn "more sport" into <em>5.2 km in Zone 2</em>.',
+      es: 'Cuatro principios.<br />Convierten «más deporte» en <em>5,2 km en Zona 2</em>.',
+      fr: 'Quatre principes.<br />Ils transforment « plus de sport » en <em>5,2 km en Zone 2</em>.',
+      it: 'Quattro principi.<br />Trasformano «più sport» in <em>5,2 km in Zona 2</em>.',
     },
     'p1.h': { de: 'Strukturiert statt beliebig.', en: 'Structured, not arbitrary.', es: 'Estructurado, no arbitrario.', fr: 'Structuré, pas arbitraire.', it: 'Strutturato, non arbitrario.' },
     'p1.b': {
@@ -116,9 +117,41 @@
       it: "Gli obiettivi crescono linearmente lungo l'ARC — da 1 a 5 km, da 5 a 20 minuti. La crescita avviene per progressione, non per ripetizione.",
     },
 
+    // ─── ARC EXAMPLES ────────────────────────────────────
+    'arcs.overline': { de: 'Konkret', en: 'Concretely', es: 'En concreto', fr: 'Concrètement', it: 'In concreto' },
+    'arcs.title':    { de: 'So sieht eine Phase aus.', en: 'What a phase looks like.', es: 'Cómo se ve una fase.', fr: 'À quoi ressemble une phase.', it: 'Com’è fatta una fase.' },
+    'arcs.sub':      { de: 'Drei reale ARCs aus der Bibliothek — jeweils mit Dauer, Lebensbereich und den Habits, die du tatsächlich trackst.', en: 'Three real ARCs from the library — each with duration, life area and the habits you actually track.', es: 'Tres ARCs reales de la biblioteca — con duración, área de vida y los hábitos que realmente registras.', fr: "Trois ARC réels de la bibliothèque — avec durée, domaine de vie et les habitudes que tu suis vraiment.", it: 'Tre ARC reali dalla biblioteca — con durata, area di vita e le abitudini che tracci davvero.' },
+
+    'arc1.area': { de: 'Body · Mind', en: 'Body · Mind', es: 'Body · Mind', fr: 'Body · Mind', it: 'Body · Mind' },
+    'arc1.dur':  { de: '4 Wochen', en: '4 weeks', es: '4 semanas', fr: '4 semaines', it: '4 settimane' },
+    'arc1.h':    { de: 'Morning Mastery', en: 'Morning Mastery', es: 'Morning Mastery', fr: 'Morning Mastery', it: 'Morning Mastery' },
+    'arc1.b':    { de: 'Eine konsistente Morgenroutine etablieren — wenig kognitive Last, klarer Start in den Tag.', en: 'Build a consistent morning routine — low cognitive load, clean start to the day.', es: 'Construir una rutina matutina consistente — poca carga cognitiva, inicio claro del día.', fr: "Construire une routine matinale cohérente — faible charge cognitive, départ propre dans la journée.", it: 'Costruire una routine mattutina coerente — basso carico cognitivo, inizio pulito della giornata.' },
+    'arc1.h1':   { de: 'Wake-up time ≤ 07:00', en: 'Wake-up time ≤ 07:00', es: 'Hora de despertar ≤ 07:00', fr: 'Heure de réveil ≤ 07:00', it: 'Ora di sveglia ≤ 07:00' },
+    'arc1.h2':   { de: 'Mobility ≥ 8 min', en: 'Mobility ≥ 8 min', es: 'Movilidad ≥ 8 min', fr: 'Mobilité ≥ 8 min', it: 'Mobilità ≥ 8 min' },
+    'arc1.h3':   { de: 'Meditation ≥ 10 min', en: 'Meditation ≥ 10 min', es: 'Meditación ≥ 10 min', fr: 'Méditation ≥ 10 min', it: 'Meditazione ≥ 10 min' },
+    'arc1.h4':   { de: 'Hydration ≥ 0,5 l vor dem Frühstück', en: 'Hydration ≥ 0.5 l before breakfast', es: 'Hidratación ≥ 0,5 l antes del desayuno', fr: 'Hydratation ≥ 0,5 l avant le petit-déjeuner', it: 'Idratazione ≥ 0,5 l prima della colazione' },
+
+    'arc2.area': { de: 'Growth', en: 'Growth', es: 'Growth', fr: 'Growth', it: 'Growth' },
+    'arc2.dur':  { de: '30 Tage', en: '30 days', es: '30 días', fr: '30 jours', it: '30 giorni' },
+    'arc2.h':    { de: 'Reading Reset', en: 'Reading Reset', es: 'Reading Reset', fr: 'Reading Reset', it: 'Reading Reset' },
+    'arc2.b':    { de: 'Lesen wieder zur Default-Aktivität machen — und Bildschirm-Spätabends drosseln.', en: 'Make reading the default again — and throttle late-evening screen time.', es: 'Volver a hacer de la lectura tu actividad por defecto — y reducir pantalla por la noche.', fr: 'Refaire de la lecture une activité par défaut — et réduire les écrans tard le soir.', it: 'Rendere la lettura di nuovo default — e ridurre lo schermo a tarda sera.' },
+    'arc2.h1':   { de: 'Lesen ≥ 20 min', en: 'Reading ≥ 20 min', es: 'Lectura ≥ 20 min', fr: 'Lecture ≥ 20 min', it: 'Lettura ≥ 20 min' },
+    'arc2.h2':   { de: 'Notes aus dem Gelesenen ≥ 1', en: 'Notes from reading ≥ 1', es: 'Notas de lectura ≥ 1', fr: 'Notes de lecture ≥ 1', it: 'Note dalla lettura ≥ 1' },
+    'arc2.h3':   { de: 'Bildschirmzeit nach 20 Uhr ≤ 60 min', en: 'Screen time after 8 pm ≤ 60 min', es: 'Pantalla después de las 20 h ≤ 60 min', fr: 'Temps d’écran après 20 h ≤ 60 min', it: 'Schermo dopo le 20 ≤ 60 min' },
+
+    'arc3.area': { de: 'Body', en: 'Body', es: 'Body', fr: 'Body', it: 'Body' },
+    'arc3.dur':  { de: '6 Wochen', en: '6 weeks', es: '6 semanas', fr: '6 semaines', it: '6 settimane' },
+    'arc3.h':    { de: 'Sleep Deeper', en: 'Sleep Deeper', es: 'Sleep Deeper', fr: 'Sleep Deeper', it: 'Sleep Deeper' },
+    'arc3.b':    { de: 'Schlafhygiene auf einem Niveau, das wirklich misst — Hebel, nicht Bauchgefühl.', en: 'Sleep hygiene on a level that actually measures — levers, not gut feel.', es: 'Higiene del sueño en un nivel que realmente mide — palancas, no intuición.', fr: 'Une hygiène du sommeil qui mesure vraiment — des leviers, pas du ressenti.', it: 'Igiene del sonno su un livello che misura davvero — leve, non sensazioni.' },
+    'arc3.h1':   { de: 'Koffein ≤ 14 Uhr', en: 'Caffeine ≤ 2 pm', es: 'Cafeína ≤ 14 h', fr: 'Caféine ≤ 14 h', it: 'Caffeina ≤ 14:00' },
+    'arc3.h2':   { de: 'Bildschirm-Stop ≥ 60 min vor dem Bett', en: 'Screen stop ≥ 60 min before bed', es: 'Cortar pantalla ≥ 60 min antes de dormir', fr: 'Arrêt écran ≥ 60 min avant le coucher', it: 'Stop schermo ≥ 60 min prima di dormire' },
+    'arc3.h3':   { de: 'In-Bed-Time ≤ 23:00', en: 'In-bed time ≤ 23:00', es: 'En cama ≤ 23:00', fr: 'Au lit ≤ 23:00', it: 'A letto ≤ 23:00' },
+    'arc3.h4':   { de: 'Schlafdauer ≥ 7 h', en: 'Sleep duration ≥ 7 h', es: 'Duración del sueño ≥ 7 h', fr: 'Durée de sommeil ≥ 7 h', it: 'Durata del sonno ≥ 7 h' },
+
     // ─── LAYERS (Macro/Meso/Micro) ───────────────────────
-    'layers.overline': { de: 'Drei Zeit-Ebenen. Ein System.', en: 'Three time horizons. One system.', es: 'Tres horizontes temporales. Un sistema.', fr: 'Trois horizons temporels. Un système.', it: 'Tre orizzonti temporali. Un sistema.' },
+    'layers.overline': { de: 'Die Architektur', en: 'The architecture', es: 'La arquitectura', fr: 'L’architecture', it: 'L’architettura' },
     'layers.title':    { de: 'Vision. Phase. Alltag.', en: 'Vision. Phase. Daily.', es: 'Visión. Fase. Día a día.', fr: 'Vision. Phase. Quotidien.', it: 'Visione. Fase. Quotidiano.' }, // _x:'Macro. Meso. Micro.'
+    'layers.sub':      { de: 'Aus den vier Prinzipien wird eine Struktur — drei Zeit-Ebenen, die ineinander greifen.', en: 'From those four principles emerges a structure — three time layers that interlock.', es: 'De esos cuatro principios surge una estructura — tres niveles temporales que encajan.', fr: "De ces quatre principes émerge une structure — trois niveaux temporels qui s'imbriquent.", it: 'Dai quattro principi nasce una struttura — tre livelli temporali che si incastrano.' },
 
     'macro.tier': { de: 'Vision', en: 'Vision', es: 'Visión', fr: 'Vision', it: 'Visione' }, // _x:'Macro'
     'macro.time': { de: 'Lebenszeit', en: 'A lifetime', es: 'Toda la vida', fr: 'Une vie', it: 'Una vita' },
@@ -139,9 +172,9 @@
     'micro.b':    { de: 'Atomare, numerisch messbare Einheit. 5 km, 7 h, 2 l, ≤ 30 min. Eine Sache, ein Wert, eine Richtung.', en: 'Atomic, numerically measurable unit. 5 km, 7 h, 2 l, ≤ 30 min. One thing, one value, one direction.', es: 'Unidad atómica medible. 5 km, 7 h, 2 l, ≤ 30 min. Una cosa, un valor, una dirección.', fr: 'Unité atomique, mesurable. 5 km, 7 h, 2 l, ≤ 30 min. Une chose, une valeur, une direction.', it: "Unità atomica, misurabile. 5 km, 7 h, 2 l, ≤ 30 min. Una cosa, un valore, una direzione." },
 
     // ─── THE APP (4 showcases) ───────────────────────────
-    'sys.overline': { de: 'Die App', en: 'The App', es: 'La App', fr: "L'App", it: "L'App" },
+    'sys.overline': { de: 'In der App', en: 'Inside the app', es: 'Dentro de la app', fr: 'Dans l’app', it: 'Dentro l’app' },
     'sys.title':    { de: 'Vier Räume. Eine Reise.', en: 'Four spaces. One journey.', es: 'Cuatro espacios. Un viaje.', fr: 'Quatre espaces. Un voyage.', it: 'Quattro spazi. Un viaggio.' },
-    'sys.sub':      { de: 'Jeder Tab erfüllt genau eine Aufgabe. Keine überladenen Screens, keine Multifunktions-Buttons.', en: 'Each tab does exactly one job. No overloaded screens, no multi-function buttons.', es: 'Cada pestaña hace una sola cosa. Pantallas claras, sin botones multifunción.', fr: 'Chaque onglet a une seule tâche. Pas d’écrans surchargés, pas de boutons multifonctions.', it: 'Ogni tab fa una sola cosa. Schermate pulite, niente pulsanti multifunzione.' },
+    'sys.sub':      { de: 'Drei Ebenen, vier Tabs — jeder erfüllt genau eine Aufgabe. Keine überladenen Screens, keine Multifunktions-Buttons.', en: 'Three layers, four tabs — each does exactly one job. No overloaded screens, no multi-function buttons.', es: 'Tres niveles, cuatro pestañas — cada una hace una sola cosa. Pantallas claras, sin botones multifunción.', fr: 'Trois niveaux, quatre onglets — chacun a une seule tâche. Pas d’écrans surchargés, pas de boutons multifonctions.', it: 'Tre livelli, quattro tab — ognuno fa una sola cosa. Schermate pulite, niente pulsanti multifunzione.' },
 
     // 01 Home
     'sc1.num':   { de: '01 — Home', en: '01 — Home', es: '01 — Inicio', fr: '01 — Accueil', it: '01 — Home' },
@@ -150,6 +183,8 @@
     'sc1.li1':   { de: 'Tages- und Wochenerfüllung als Prozent, proportional zum Zielwert', en: 'Daily and weekly completion as a percentage, proportional to the target', es: 'Cumplimiento diario y semanal en porcentaje, proporcional al objetivo', fr: 'Complétion quotidienne et hebdomadaire en pourcentage, proportionnelle à la cible', it: 'Completamento giornaliero e settimanale in percentuale, proporzionale al target' },
     'sc1.li2':   { de: 'Level, Streak und aktive ARC-Karte mit Tag X von Y', en: 'Level, streak and active-ARC card showing day X of Y', es: 'Nivel, racha y tarjeta de ARC activo con día X de Y', fr: 'Niveau, série et carte d’ARC actif jour X sur Y', it: 'Livello, streak e card di ARC attivo con giorno X di Y' },
     'sc1.li3':   { de: 'Logbuch öffnet sich in einem Tap — nur der heutige Tag, keine Rückdatierung', en: 'The logbook opens in one tap — only today, no back-dating', es: 'El registro se abre en un toque — solo hoy, sin retroactividad', fr: "Le journal s'ouvre en un tap — uniquement aujourd'hui, pas d'antidatage", it: "Il logbook si apre con un tap — solo oggi, niente retrodatazione" },
+    'sc1.li4':   { de: 'Live-Timer (Stoppuhr oder Pomodoro) für Lese-, Meditations- und Deep-Work-Habits', en: 'Live timer (stopwatch or Pomodoro) for reading, meditation and deep-work habits', es: 'Timer en vivo (cronómetro o Pomodoro) para hábitos de lectura, meditación y deep work', fr: "Timer en direct (chrono ou Pomodoro) pour les habitudes de lecture, méditation et deep work", it: 'Timer live (cronometro o Pomodoro) per abitudini di lettura, meditazione e deep work' },
+    'sc1.li5':   { de: 'Rest Days und Vacation Mode — Auszeiten brechen deinen Streak nicht', en: 'Rest days and Vacation Mode — time off does not break your streak', es: 'Días de descanso y modo Vacaciones — las pausas no rompen tu racha', fr: 'Jours de repos et mode Vacances — les pauses ne cassent pas ta série', it: 'Giorni di riposo e Vacation Mode — le pause non rompono il tuo streak' },
     'sc1.alt':   { de: 'ArcUp Home — Tages-, Wochen- und Level-Ringe mit aktivem ARC Morning Mastery', en: 'ArcUp Home — daily, weekly and level rings with active ARC Morning Mastery', es: 'ArcUp Inicio — anillos de día, semana y nivel con ARC Morning Mastery', fr: "ArcUp Accueil — anneaux jour, semaine et niveau avec ARC Morning Mastery actif", it: 'ArcUp Home — anelli giorno, settimana e livello con ARC Morning Mastery attivo' },
 
     // 02 ARCademy
@@ -174,62 +209,46 @@
     'sc4.num': { de: '04 — Reflect', en: '04 — Reflect', es: '04 — Reflect', fr: '04 — Reflect', it: '04 — Reflect' },
     'sc4.h':   { de: 'Deine Lebensbereiche im Blick.', en: 'Your life areas at a glance.', es: 'Tus áreas de vida de un vistazo.', fr: 'Tes domaines de vie en un coup d’œil.', it: 'Le tue aree di vita a colpo d’occhio.' }, // _x:'Der Compass. Dein Wheel of Life.', en: 'The Compass. Your Wheel of Life.', es: 'El Compass. Tu Wheel of Life.', fr: 'Le Compass. Votre Wheel of Life.', it: 'Il Compass. La tua Wheel of Life.' },
     'sc4.b':   { de: 'Bewerte deine fünf Lebensbereiche von 1 bis 10. Sieh, wo Balance fehlt. Schreibe Vision, Ziele und Journal — paginiert, durchsuchbar, jederzeit editierbar.', en: 'Rate your five life areas from 1 to 10. See where balance is missing. Write vision, goals and journal — paginated, searchable, always editable.', es: 'Puntúa tus cinco áreas de 1 a 10. Ve dónde falta equilibrio. Escribe visión, metas y diario — paginado, buscable, siempre editable.', fr: 'Notez vos cinq domaines de 1 à 10. Voyez où le déséquilibre se cache. Écrivez vision, objectifs et journal — paginé, cherchable, toujours éditable.', it: 'Valuta le tue cinque aree da 1 a 10. Vedi dove manca equilibrio. Scrivi visione, obiettivi e diario — paginato, ricercabile, sempre modificabile.' },
-    'sc4.li1': { de: 'Interaktiver Radar über Körper, Geist, Wachstum, Beziehungen, Freizeit', en: 'Interactive radar across Body, Mind, Growth, Relationships, Leisure', es: 'Radar interactivo sobre Cuerpo, Mente, Crecimiento, Relaciones, Ocio', fr: 'Radar interactif sur Corps, Esprit, Croissance, Relations, Loisirs', it: 'Radar interattivo su Corpo, Mente, Crescita, Relazioni, Tempo libero' },
+    'sc4.li1': { de: 'Interaktiver Radar über Body, Mind, Growth, Relationships, Leisure', en: 'Interactive radar across Body, Mind, Growth, Relationships, Leisure', es: 'Radar interactivo sobre Cuerpo, Mente, Crecimiento, Relaciones, Ocio', fr: 'Radar interactif sur Corps, Esprit, Croissance, Relations, Loisirs', it: 'Radar interattivo su Corpo, Mente, Crescita, Relazioni, Tempo libero' },
     'sc4.li2': { de: 'Vision-Statement und Ziele pro Bereich (wöchentlich, monatlich, jährlich) <span class="pro-pill">Pro</span>', en: 'Vision statement and goals per area (weekly, monthly, yearly) <span class="pro-pill">Pro</span>', es: 'Declaración de visión y metas por área (semanal, mensual, anual) <span class="pro-pill">Pro</span>', fr: "Énoncé de vision et objectifs par domaine (hebdo, mensuel, annuel) <span class=\"pro-pill\">Pro</span>", it: 'Dichiarazione di visione e obiettivi per area (settimanale, mensile, annuale) <span class="pro-pill">Pro</span>' },
     'sc4.li3': { de: 'Journal in vier Typen: Gedanke, Lernen, Dankbarkeit, Erfolge &amp; Verluste <span class="pro-pill">Pro</span>', en: 'Journal in four types: Thought, Learning, Gratitude, Wins &amp; Losses <span class="pro-pill">Pro</span>', es: 'Diario en cuatro tipos: Pensamiento, Aprendizaje, Gratitud, Logros y pérdidas <span class="pro-pill">Pro</span>', fr: "Journal en quatre types : Pensée, Apprentissage, Gratitude, Victoires et pertes <span class=\"pro-pill\">Pro</span>", it: 'Diario in quattro tipi: Pensiero, Apprendimento, Gratitudine, Vittorie e perdite <span class="pro-pill">Pro</span>' },
+    'sc4.li4': { de: 'Insights mit Heatmaps, 90-Tage-Profil und Habit-Korrelationen <span class="pro-pill">Pro</span>', en: 'Insights with heatmaps, 90-day profile and habit correlations <span class="pro-pill">Pro</span>', es: 'Insights con heatmaps, perfil de 90 días y correlaciones entre hábitos <span class="pro-pill">Pro</span>', fr: 'Insights avec heatmaps, profil 90 jours et corrélations entre habitudes <span class="pro-pill">Pro</span>', it: 'Insights con heatmap, profilo 90 giorni e correlazioni tra abitudini <span class="pro-pill">Pro</span>' },
     'sc4.alt': { de: 'Reflect — Wheel-of-Life-Radar mit Bewertung 37 von 50 über fünf Lebensbereiche', en: 'Reflect — Wheel-of-Life radar showing 37 out of 50 across five life areas', es: 'Reflect — radar Wheel of Life con 37 de 50 en cinco áreas', fr: "Reflect — radar Wheel of Life à 37 sur 50 sur cinq domaines", it: 'Reflect — radar Wheel of Life con 37 su 50 sulle cinque aree' },
 
     // ─── AREAS ───────────────────────────────────────────
-    'areas.overline': { de: 'Lebensbereiche', en: 'Life Areas', es: 'Áreas de vida', fr: 'Domaines de vie', it: 'Aree di vita' }, // _x:'Der Compass', en: 'The Compass', es: 'El Compass', fr: 'Le Compass', it: 'Il Compass' },
-    'areas.title':    { de: 'Fünf Lebensbereiche.<br />Ein Rahmen.', en: 'Five life areas.<br />One framework.', es: 'Cinco áreas de vida.<br />Un marco.', fr: 'Cinq domaines de vie.<br />Un cadre.', it: 'Cinque aree di vita.<br />Un’unica cornice.' },
+    'areas.overline': { de: 'Der Rahmen', en: 'The framework', es: 'El marco', fr: 'Le cadre', it: 'La cornice' },
+    'areas.title':    { de: 'Fünf Bereiche.<br />Ein Leben.', en: 'Five areas.<br />One life.', es: 'Cinco áreas.<br />Una vida.', fr: 'Cinq domaines.<br />Une vie.', it: 'Cinque aree.<br />Una vita.' },
     'areas.sub':      { de: 'Jede Quelle, jeder Habit und jeder ARC gehört zu genau einem Lebensbereich. Das hält den Fokus klar und verhindert „passt-überall"-Inhalte.', en: 'Every source, habit and ARC belongs to exactly one life area. That keeps the focus sharp and prevents "fits anywhere" content.', es: 'Cada fuente, cada hábito y cada ARC pertenece a exactamente una área de vida. Eso mantiene el foco nítido y evita el contenido «encaja en todas partes».', fr: "Chaque source, chaque habitude et chaque ARC appartient à un seul domaine de vie. Cela garde le focus clair et évite le contenu « utile partout ».", it: 'Ogni fonte, ogni abitudine e ogni ARC appartiene a una sola area di vita. Così il focus resta nitido e si evitano contenuti «buoni per tutto».' }, // _x:'...Das hält den Compass scharf...', en: 'Every source, habit and ARC belongs to exactly one area. That keeps the Compass sharp and prevents "fits anywhere" content.', es: 'Cada fuente, hábito y ARC pertenece a una sola área. Eso mantiene el Compass afilado y evita el contenido «encaja en todas partes».', fr: "Chaque source, habitude et ARC appartient à un seul domaine. Cela garde le Compass net et évite le contenu « utile partout ».", it: 'Ogni fonte, abitudine e ARC appartiene a una sola area. Così il Compass resta nitido e si evitano contenuti «buoni per tutto».' },
 
-    'a1.h': { de: 'Körper', en: 'Body', es: 'Cuerpo', fr: 'Corps', it: 'Corpo' },
+    'a1.h': { de: 'Body', en: 'Body', es: 'Cuerpo', fr: 'Corps', it: 'Corpo' },
     'a1.d': { de: 'Ausdauer, Kraft, Mobility, Schlaf, Ernährung, Recovery.', en: 'Endurance, strength, mobility, sleep, nutrition, recovery.', es: 'Resistencia, fuerza, movilidad, sueño, nutrición, recuperación.', fr: 'Endurance, force, mobilité, sommeil, nutrition, récupération.', it: 'Resistenza, forza, mobilità, sonno, nutrizione, recupero.' },
     'a1.q': { de: 'Was trägt dich durch dein Leben?', en: 'What carries you through your life?', es: '¿Qué te sostiene en tu vida?', fr: 'Qu’est-ce qui vous porte à travers la vie ?', it: 'Cosa ti porta avanti nella vita?' },
 
-    'a2.h': { de: 'Geist', en: 'Mind', es: 'Mente', fr: 'Esprit', it: 'Mente' },
+    'a2.h': { de: 'Mind', en: 'Mind', es: 'Mente', fr: 'Esprit', it: 'Mente' },
     'a2.d': { de: 'Meditation, Fokus, Stress-Regulation, Resilienz.', en: 'Meditation, focus, stress regulation, resilience.', es: 'Meditación, foco, regulación del estrés, resiliencia.', fr: 'Méditation, concentration, régulation du stress, résilience.', it: 'Meditazione, focus, regolazione dello stress, resilienza.' },
     'a2.q': { de: 'Wer bist du, wenn es leise wird?', en: 'Who are you when it gets quiet?', es: '¿Quién eres cuando se hace el silencio?', fr: 'Qui êtes-vous quand le silence se fait ?', it: 'Chi sei quando cala il silenzio?' },
 
-    'a3.h': { de: 'Wachstum', en: 'Growth', es: 'Crecimiento', fr: 'Croissance', it: 'Crescita' },
+    'a3.h': { de: 'Growth', en: 'Growth', es: 'Crecimiento', fr: 'Croissance', it: 'Crescita' },
     'a3.d': { de: 'Lesen, Lernen, Deep Work, Karriere, Finanzen.', en: 'Reading, learning, deep work, career, finance.', es: 'Lectura, aprendizaje, deep work, carrera, finanzas.', fr: 'Lecture, apprentissage, deep work, carrière, finances.', it: 'Lettura, apprendimento, deep work, carriera, finanze.' },
     'a3.q': { de: 'Was lernst du, das dich verändert?', en: 'What are you learning that changes you?', es: '¿Qué aprendes que te transforma?', fr: "Qu'apprenez-vous qui vous transforme ?", it: 'Cosa stai imparando che ti trasforma?' },
 
-    'a4.h': { de: 'Beziehungen', en: 'Relationships', es: 'Relaciones', fr: 'Relations', it: 'Relazioni' },
+    'a4.h': { de: 'Relationships', en: 'Relationships', es: 'Relaciones', fr: 'Relations', it: 'Relazioni' },
     'a4.d': { de: 'Partnerschaft, Familie, Freunde, Netzwerk, Repair.', en: 'Partnership, family, friends, network, repair.', es: 'Pareja, familia, amigos, red, reparación.', fr: 'Couple, famille, amis, réseau, réparation.', it: 'Coppia, famiglia, amici, rete, riparazione.' },
-    'a4.q': { de: 'Wer wird dich vermissen, wenn du fehlst?', en: 'Who will miss you when you’re gone?', es: '¿Quién te echará de menos si faltas?', fr: 'Qui vous regrettera si vous manquez ?', it: 'Chi sentirà la tua mancanza se non ci sei?' },
+    'a4.q': { de: 'Wer steht dir wirklich nahe?', en: 'Who is really close to you?', es: '¿Quién está realmente cerca de ti?', fr: 'Qui te tient vraiment à cœur ?', it: 'Chi ti è davvero vicino?' },
 
-    'a5.h': { de: 'Freizeit', en: 'Leisure', es: 'Ocio', fr: 'Loisirs', it: 'Tempo libero' },
+    'a5.h': { de: 'Leisure', en: 'Leisure', es: 'Ocio', fr: 'Loisirs', it: 'Tempo libero' },
     'a5.d': { de: 'Hobbys, Natur, Kreativität, Spiel, Digital Detox.', en: 'Hobbies, nature, creativity, play, digital detox.', es: 'Aficiones, naturaleza, creatividad, juego, detox digital.', fr: 'Loisirs, nature, créativité, jeu, détox numérique.', it: 'Hobby, natura, creatività, gioco, detox digitale.' },
     'a5.q': { de: 'Was tust du, wenn niemand zusieht?', en: 'What do you do when nobody is watching?', es: '¿Qué haces cuando nadie mira?', fr: 'Que faites-vous quand personne ne regarde ?', it: 'Cosa fai quando nessuno guarda?' },
 
     // ─── FOUNDATION ──────────────────────────────────────
-    'fnd1.over': { de: 'ArcUp Originals',  en: 'ArcUp Originals',  es: 'ArcUp Originals',  fr: 'ArcUp Originals',  it: 'ArcUp Originals' },
-    'fnd1.h':    { de: 'Eigene Wissens-Briefings.', en: 'Our own knowledge briefings.', es: 'Nuestros propios briefings.', fr: 'Nos propres briefings.', it: 'I nostri briefing originali.' },
-    'fnd1.b':    { de: 'Redaktionell selbst geschrieben, in 4 bis 8 Minuten lesbar. Direkt aus der App. Mit Habits und ARCs verknüpft.', en: 'Editorially written by us, readable in 4 to 8 minutes. Directly from the app. Linked to habits and ARCs.', es: 'Escritos por nosotros, legibles en 4 a 8 minutos. Directo desde la app. Vinculados a hábitos y ARCs.', fr: "Écrits par nous, lisibles en 4 à 8 minutes. Directement dans l'app. Liés aux habitudes et ARC.", it: "Scritti da noi, leggibili in 4–8 minuti. Direttamente nell'app. Collegati ad abitudini e ARC." },
-    'fnd1.s1': { de: 'Zone-2-Cardio — die Mechanik aerober Basis', en: 'Zone-2 cardio — the mechanics of an aerobic base', es: 'Cardio Zona 2 — la mecánica de la base aeróbica', fr: "Cardio Zone 2 — la mécanique de la base aérobie", it: 'Cardio Zona 2 — la meccanica della base aerobica' },
-    'fnd1.s2': { de: 'Schlafhygiene-Protokoll: 7 Hebel, die wirken', en: 'Sleep-hygiene protocol: 7 levers that work', es: 'Higiene del sueño: 7 palancas que funcionan', fr: 'Hygiène du sommeil : 7 leviers qui marchent', it: 'Igiene del sonno: 7 leve che funzionano' },
-    'fnd1.s3': { de: 'Box-Breathing &amp; 4-7-8 für Stress-Regulation', en: 'Box breathing &amp; 4-7-8 for stress regulation', es: 'Respiración box y 4-7-8 para la regulación del estrés', fr: 'Respiration carrée et 4-7-8 pour réguler le stress', it: 'Box breathing e 4-7-8 per la regolazione dello stress' },
-    'fnd1.s4': { de: 'Deep-Work-Protokoll: Fokus über 90 Minuten', en: 'Deep-work protocol: focus over 90 minutes', es: 'Protocolo deep work: foco durante 90 minutos', fr: 'Protocole deep work : focus sur 90 minutes', it: 'Protocollo deep work: focus per 90 minuti' },
-    'fnd1.s5': { de: 'Quadrant-II-Planning für die Woche', en: 'Quadrant-II planning for the week', es: 'Planificación cuadrante II para la semana', fr: 'Planification quadrant II pour la semaine', it: 'Pianificazione quadrante II per la settimana' },
-    'fnd1.s6': { de: 'Habit-Architektur: Cue, Action, Reward', en: 'Habit architecture: cue, action, reward', es: 'Arquitectura de hábitos: cue, action, reward', fr: 'Architecture des habitudes : cue, action, reward', it: 'Architettura delle abitudini: cue, action, reward' },
-    'fnd1.note': {
-      de: '+ optionale Buch- und Talk-Empfehlungen mit *-Markierung als Affiliate-Links. Keine Mehrkosten für dich.',
-      en: '+ optional book and talk recommendations marked with * as affiliate links. No extra cost for you.',
-      es: '+ recomendaciones opcionales de libros y charlas marcadas con * como enlaces de afiliado. Sin coste adicional para ti.',
-      fr: '+ recommandations optionnelles de livres et conférences marquées d’un * comme liens affiliés. Sans surcoût pour vous.',
-      it: '+ consigli opzionali su libri e talk marcati con * come link affiliati. Nessun costo aggiuntivo per te.',
-    },
-
     'fnd2.over': { de: 'Hierarchisch', en: 'Hierarchical', es: 'Jerárquico', fr: 'Hiérarchique', it: 'Gerarchico' },
     'fnd2.h':    { de: 'Habits in einer klaren Hierarchie.', en: 'Habits in a clear hierarchy.', es: 'Hábitos en una jerarquía clara.', fr: 'Des habitudes dans une hiérarchie claire.', it: 'Abitudini in una gerarchia chiara.' }, // _x:'Habits sind kein flacher Name.', en: 'Habits are not a flat name.', es: 'Los hábitos no son un nombre plano.', fr: 'Les habitudes ne sont pas un simple nom.', it: 'Le abitudini non sono un nome piatto.' },
     'fnd2.b':    { de: 'Über 120 kuratierte Habits, sauber in Ober- und Unterkategorien strukturiert. Du trackst „Long Run = 12 km" — die Insights summieren das automatisch unter <em>Laufen</em> und <em>Ausdauertraining</em> mit.', en: 'Over 120 curated habits, neatly structured into parent and child categories. You track "Long Run = 12 km" — your insights automatically roll it up under <em>Running</em> and <em>Endurance training</em>.', es: 'Más de 120 hábitos curados, organizados con claridad en categorías padre e hija. Tú registras «Long Run = 12 km» — los insights lo agregan automáticamente bajo <em>Correr</em> y <em>Entrenamiento de resistencia</em>.', fr: "Plus de 120 habitudes sélectionnées, organisées proprement en catégories parentes et enfants. Tu suis « Long Run = 12 km » — les insights l'agrègent automatiquement sous <em>Course</em> et <em>Endurance</em>.", it: 'Oltre 120 abitudini curate, organizzate con chiarezza in categorie padre e figlie. Tracci «Long Run = 12 km» — gli insights lo aggregano automaticamente sotto <em>Corsa</em> e <em>Allenamento di resistenza</em>.' }, // _x:'Über 120 kuratierte Habits in einer Baum-Struktur...', en: 'Over 120 curated habits in a tree. You track "Long Run = 12 km" — insights automatically roll up under <em>Running</em> and <em>Endurance training</em>.', es: 'Más de 120 hábitos curados en árbol. Registras «Long Run = 12 km» — los insights se agregan bajo <em>Correr</em> y <em>Entrenamiento de resistencia</em>.', fr: "Plus de 120 habitudes sélectionnées en arborescence. Vous suivez « Long Run = 12 km » — les insights remontent automatiquement sous <em>Course</em> et <em>Endurance</em>.", it: 'Oltre 120 abitudini curate in un albero. Tracci «Long Run = 12 km» — gli insights si aggregano automaticamente sotto <em>Corsa</em> e <em>Allenamento di resistenza</em>.' },
 
     // ─── COMPARE ─────────────────────────────────────────
-    'cmp.over': { de: 'Numerisch, immer', en: 'Numeric, always', es: 'Numérico, siempre', fr: 'Chiffré, toujours', it: 'Numerico, sempre' },
+    'cmp.over': { de: 'Der Unterschied', en: 'The difference', es: 'La diferencia', fr: 'La différence', it: 'La differenza' },
     'cmp.h':    { de: 'Wir tracken Werte,<br />keine Häkchen.', en: 'We track values,<br />not checkmarks.', es: 'Registramos valores,<br />no marcas.', fr: 'Nous suivons des valeurs,<br />pas des cases cochées.', it: 'Tracciamo valori,<br />non spunte.' },
-    'cmp.sub':  { de: 'Andere fragen: „Hast du heute Sport gemacht?" ArcUp fragt: „Wie viele Kilometer? Wie viele Minuten? Wie schnell?"', en: 'Others ask: "Did you do sport today?" ArcUp asks: "How many kilometres? How many minutes? How fast?"', es: 'Otros preguntan: «¿Hiciste deporte hoy?» ArcUp pregunta: «¿Cuántos kilómetros? ¿Cuántos minutos? ¿A qué velocidad?»', fr: 'Les autres demandent « t’as fait du sport aujourd’hui ? » ArcUp demande « combien de kilomètres ? combien de minutes ? à quelle vitesse ? »', it: 'Gli altri chiedono: «Hai fatto sport oggi?» ArcUp chiede: «Quanti chilometri? Quanti minuti? A che velocità?»' },
+    'cmp.sub':  { de: 'Andere fragen: „Hast du heute Sport gemacht?" ArcUp fragt: „Wie viele Kilometer? Wie viele Minuten? Wie schnell?" — und alles, was du einträgst, ist später wieder messbar.', en: 'Others ask: "Did you do sport today?" ArcUp asks: "How many kilometres? How many minutes? How fast?" — and every value you log stays measurable later on.', es: 'Otros preguntan: «¿Hiciste deporte hoy?» ArcUp pregunta: «¿Cuántos kilómetros? ¿Cuántos minutos? ¿A qué velocidad?» — y cada valor que registras sigue siendo medible después.', fr: 'Les autres demandent « t’as fait du sport aujourd’hui ? » ArcUp demande « combien de kilomètres ? combien de minutes ? à quelle vitesse ? » — et chaque valeur saisie reste mesurable plus tard.', it: 'Gli altri chiedono: «Hai fatto sport oggi?» ArcUp chiede: «Quanti chilometri? Quanti minuti? A che velocità?» — e ogni valore inserito resta misurabile in seguito.' },
 
     'cmp.badLabel': { de: 'Häkchen-Tracker', en: 'Checkbox tracker', es: 'Tracker de casillas', fr: 'Tracker à cases', it: 'Tracker a spunte' },
     'cmp.bad1':     { de: '✓ Sport gemacht', en: '✓ Did sport', es: '✓ Hice deporte', fr: '✓ Fait du sport', it: '✓ Fatto sport' },
@@ -246,9 +265,9 @@
     'cmp.goodNote': { de: 'Echte Werte. Proportionale Erfüllung. Roll-up im Insights.', en: 'Real values. Proportional completion. Roll-up in Insights.', es: 'Valores reales. Cumplimiento proporcional. Agregación en Insights.', fr: 'Vraies valeurs. Achèvement proportionnel. Agrégation dans Insights.', it: 'Valori reali. Completamento proporzionale. Aggregazione in Insights.' },
 
     // ─── NOT THIS ────────────────────────────────────────
-    'not.over': { de: 'Bewusste Abgrenzung', en: 'Deliberate boundaries', es: 'Delimitación consciente', fr: 'Frontières assumées', it: 'Confini intenzionali' },
+    'not.over': { de: 'Was wir bewusst weggelassen haben', en: 'What we deliberately left out', es: 'Lo que dejamos fuera a propósito', fr: 'Ce que nous avons volontairement laissé de côté', it: 'Ciò che abbiamo lasciato fuori di proposito' },
     'not.h':    { de: 'Was ArcUp <em>nicht</em> ist.', en: 'What ArcUp is <em>not</em>.', es: 'Lo que ArcUp <em>no</em> es.', fr: "Ce qu’ArcUp <em>n'est pas</em>.", it: 'Cosa ArcUp <em>non</em> è.' },
-    'not.sub':  { de: 'Damit du weißt, wofür du dich entscheidest.', en: 'So you know what you’re choosing.', es: 'Para que sepas qué estás eligiendo.', fr: 'Pour que vous sachiez ce que vous choisissez.', it: 'Perché tu sappia cosa stai scegliendo.' },
+    'not.sub':  { de: 'Genauso wichtig wie die Features: was nicht in der App ist — und warum.', en: 'Just as important as the features: what is not in the app — and why.', es: 'Tan importante como las funciones: lo que no está en la app — y por qué.', fr: "Aussi important que les fonctionnalités : ce qui n'est pas dans l'app — et pourquoi.", it: 'Importante quanto le funzioni: ciò che non c’è nell’app — e perché.' },
 
     'not1.h': { de: 'Kein To-Do-Manager.', en: 'Not a to-do manager.', es: 'No es un gestor de tareas.', fr: 'Pas un gestionnaire de tâches.', it: 'Non è un gestore di to-do.' },
     'not1.b': { de: 'Habits sind keine Aufgaben mit Deadline. Ziele haben einen eigenen Platz.', en: 'Habits are not deadlined tasks. Goals have their own place.', es: 'Los hábitos no son tareas con fecha. Las metas tienen su propio lugar.', fr: 'Les habitudes ne sont pas des tâches à échéance. Les objectifs ont leur propre espace.', it: 'Le abitudini non sono task con scadenza. Gli obiettivi hanno il loro spazio.' },
@@ -262,48 +281,69 @@
     'not4.h': { de: 'Kein Streak-um-jeden-Preis.', en: 'No streak at any cost.', es: 'No racha a cualquier precio.', fr: 'Pas de série à tout prix.', it: 'Niente streak a tutti i costi.' },
     'not4.b': { de: 'Streaks gibt es, aber Rest-Days sind eingebaut. Es gibt keine Streak-Shields.', en: 'Streaks exist, but rest days are built in. No streak shields.', es: 'Hay rachas, pero los días de descanso están integrados. Sin escudos de racha.', fr: 'Les séries existent, mais les jours de repos sont prévus. Pas de « boucliers de série ».', it: 'Le streak ci sono, ma i giorni di riposo sono integrati. Niente streak shield.' },
 
-    'not5.h': { de: 'Keine Konkurrenz zu Spezial-Apps.', en: 'No pure-player rivalry.', es: 'No competimos con apps específicas.', fr: 'Pas de concurrence avec les pure players.', it: 'Niente concorrenza con i pure player.' }, // _x:'Keine Pure-Player-Konkurrenz.', en: 'No pure-player rivalry.', es: 'No competimos con apps específicas.', fr: 'Pas de concurrence avec les pure players.', it: 'Niente concorrenza con i pure player.' },
-    'not5.b': { de: 'Wir sind die Struktur darüber — Strava, Headspace &amp; Co. bleiben ergänzend nutzbar.', en: 'We’re the structure above — Strava, Headspace &amp; co. stay complementary.', es: 'Somos la estructura por encima — Strava, Headspace y similares son complementos.', fr: 'Nous sommes la structure au-dessus — Strava, Headspace et compagnie restent complémentaires.', it: 'Siamo la struttura sopra — Strava, Headspace &amp; co. restano complementari.' },
-
     'not6.h': { de: 'Kein Dark Pattern.', en: 'No dark patterns.', es: 'Sin dark patterns.', fr: 'Pas de dark patterns.', it: 'Niente dark pattern.' },
     'not6.b': { de: 'Keine Werbung, keine Tracker, kein Notification-Spam. EU-Hosting, DSGVO.', en: 'No ads, no trackers, no notification spam. EU hosting, GDPR.', es: 'Sin anuncios, sin rastreadores, sin spam de notificaciones. Hosting UE, RGPD.', fr: 'Pas de pub, pas de trackers, pas de spam de notifications. Hébergement UE, RGPD.', it: 'Niente pubblicità, niente tracker, niente spam di notifiche. Hosting UE, GDPR.' },
 
+    // ─── ACHIEVEMENTS ────────────────────────────────────
+    'ach.over':  { de: 'Wenn du dranbleibst', en: 'When you stay with it', es: 'Cuando perseveras', fr: 'Quand tu tiens bon', it: 'Quando tieni duro' },
+    'ach.h':     { de: 'Badges, die du <em>wirklich</em> verdient hast.', en: 'Badges you <em>actually</em> earned.', es: 'Insignias que <em>de verdad</em> ganaste.', fr: 'Des badges que tu as <em>vraiment</em> mérités.', it: 'Badge che hai <em>davvero</em> meritato.' },
+    'ach.sub':   { de: 'Kein XP-Casino, keine Coins, keine Pop-ups. Echte Meilensteine aus deinen echten Daten — sechs Beispiele von vielen.', en: 'No XP casino, no coins, no pop-ups. Real milestones from your real data — six examples of many.', es: 'Sin casino de XP, sin monedas, sin pop-ups. Hitos reales a partir de tus datos reales — seis ejemplos de muchos.', fr: "Pas de casino XP, pas de pièces, pas de pop-ups. De vrais jalons à partir de tes vraies données — six exemples parmi tant d'autres.", it: 'Niente casinò di XP, niente coin, niente pop-up. Veri traguardi dai tuoi dati reali — sei esempi tra molti.' },
+
+    'ach.s1.v':  { de: '30', en: '30', es: '30', fr: '30', it: '30' },
+    'ach.s1.l':  { de: 'Tage Streak in Folge', en: 'Day streak in a row', es: 'Días de racha seguidos', fr: 'Jours de série consécutifs', it: 'Giorni di streak consecutivi' },
+    'ach.s2.v':  { de: '12', en: '12', es: '12', fr: '12', it: '12' },
+    'ach.s2.l':  { de: 'Abgeschlossene ARCs', en: 'Completed ARCs', es: 'ARCs completados', fr: 'ARC terminés', it: 'ARC completati' },
+    'ach.s3.v':  { de: '100', en: '100', es: '100', fr: '100', it: '100' },
+    'ach.s3.l':  { de: 'Perfekte Tage', en: 'Perfect days', es: 'Días perfectos', fr: 'Jours parfaits', it: 'Giorni perfetti' },
+    'ach.s4.v':  { de: '10', en: '10', es: '10', fr: '10', it: '10' },
+    'ach.s4.l':  { de: 'Perfekte Wochen', en: 'Perfect weeks', es: 'Semanas perfectas', fr: 'Semaines parfaites', it: 'Settimane perfette' },
+    'ach.s5.v':  { de: '25', en: '25', es: '25', fr: '25', it: '25' },
+    'ach.s5.l':  { de: 'Selfmade Habits &amp; ARCs', en: 'Self-made habits &amp; ARCs', es: 'Hábitos y ARCs propios', fr: 'Habitudes et ARC personnels', it: 'Abitudini e ARC personali' },
+    'ach.s6.v':  { de: '50', en: '50', es: '50', fr: '50', it: '50' },
+    'ach.s6.l':  { de: 'Erledigte Goals', en: 'Completed goals', es: 'Metas completadas', fr: 'Objectifs accomplis', it: 'Goal completati' },
+
+    'ach.note':  { de: 'Achievements geben kein XP — das Badge selbst ist der Reward. Du sammelst sie für Streaks, abgeschlossene ARCs, perfekte Tage und Wochen, Selfmade-Inhalte, erledigte Goals und Journal-Einträge.', en: 'Achievements grant no XP — the badge itself is the reward. You collect them for streaks, completed ARCs, perfect days and weeks, self-made content, completed goals and journal entries.', es: 'Los logros no dan XP — la insignia misma es la recompensa. Los obtienes por rachas, ARCs completados, días y semanas perfectos, contenido propio, metas completadas y entradas de diario.', fr: "Les achievements ne donnent pas d'XP — le badge en lui-même est la récompense. Tu les collectes pour les séries, les ARC terminés, les jours et semaines parfaits, les contenus personnels, les objectifs accomplis et les entrées de journal.", it: 'Gli achievement non danno XP — il badge stesso è il premio. Li collezioni per streak, ARC completati, giorni e settimane perfette, contenuti personali, goal completati e voci di journal.' },
+
+    // ─── FOUNDER NOTE ────────────────────────────────────
+    'founder.over': { de: 'Hinter ArcUp', en: 'Behind ArcUp', es: 'Detrás de ArcUp', fr: 'Derrière ArcUp', it: 'Dietro ad ArcUp' },
+    'founder.h':    { de: 'Hi, ich bin Michael.', en: 'Hi, I’m Michael.', es: 'Hola, soy Michael.', fr: 'Salut, je suis Michael.', it: 'Ciao, sono Michael.' },
+    'founder.b1':   { de: 'ArcUp ist mein Versuch, ein System für persönliche Entwicklung zu bauen, das ernst meint, was es verspricht — strukturiert, numerisch, mit Quellen im Rücken. Kein Habit-Tracker für Häkchen, kein Streak-Casino, kein Social-Feed.', en: 'ArcUp is my attempt to build a personal-development system that means what it says — structured, numeric, sourced. Not a checkbox tracker, not a streak casino, not a social feed.', es: 'ArcUp es mi intento de construir un sistema de desarrollo personal que cumple lo que promete — estructurado, numérico, con fuentes. No es un tracker de casillas, ni un casino de rachas, ni un feed social.', fr: "ArcUp est ma tentative de construire un système de développement personnel qui tient vraiment ses promesses — structuré, chiffré, sourcé. Pas un tracker à cases, pas un casino de séries, pas un fil social.", it: 'ArcUp è il mio tentativo di costruire un sistema di sviluppo personale che mantiene quel che promette — strutturato, numerico, con fonti. Non un tracker a spunte, non un casinò di streak, non un feed social.' },
+    'founder.b2':   { de: 'Solo gebaut, in Österreich. Kein VC, keine Werbung, keine Tracker. Wenn dir etwas fehlt oder du einen Bug findest: das Feedback-Formular in der App landet direkt bei mir.', en: 'Built solo, in Austria. No VC, no ads, no trackers. If something is missing or you find a bug, the feedback form in the app lands straight in my inbox.', es: 'Construido en solitario, en Austria. Sin VC, sin anuncios, sin rastreadores. Si te falta algo o encuentras un bug, el formulario de feedback en la app me llega directamente.', fr: "Construit en solo, en Autriche. Pas de VC, pas de pub, pas de trackers. S'il te manque quelque chose ou si tu trouves un bug, le formulaire de feedback dans l'app arrive directement chez moi.", it: 'Costruito da solo, in Austria. Niente VC, niente pubblicità, niente tracker. Se ti manca qualcosa o trovi un bug, il modulo di feedback nell’app arriva direttamente da me.' },
+
     // ─── PRICING ─────────────────────────────────────────
-    'pr.over': { de: 'Free oder Pro', en: 'Free or Pro', es: 'Free o Pro', fr: 'Free ou Pro', it: 'Free o Pro' },
-    'pr.h':    { de: 'Du entscheidest.', en: 'You decide.', es: 'Tú decides.', fr: 'À vous de choisir.', it: 'Decidi tu.' },
-    'pr.sub':  { de: 'Alle Kernfunktionen sind frei. Pro schaltet die Tiefe frei — Fundament, mehrere parallele ARCs, Insights, Journal, Ziele, KI-Generator.', en: 'All core features are free. Pro unlocks the depth — Fundament, multiple parallel ARCs, Insights, Journal, Goals, AI generator.', es: 'Las funciones esenciales son gratis. Pro desbloquea la profundidad — Fundament, varios ARCs en paralelo, Insights, Diario, Metas, generador IA.', fr: "Toutes les fonctions essentielles sont gratuites. Pro débloque la profondeur — Fundament, plusieurs ARC en parallèle, Insights, Journal, Objectifs, générateur IA.", it: "Tutte le funzioni principali sono gratis. Pro sblocca la profondità — Fundament, più ARC in parallelo, Insights, Diario, Obiettivi, generatore IA." },
+    'pr.over': { de: 'Was es kostet', en: 'What it costs', es: 'Cuánto cuesta', fr: 'Le prix', it: 'Quanto costa' },
+    'pr.h':    { de: 'Free oder Pro. Du entscheidest.', en: 'Free or Pro. You decide.', es: 'Free o Pro. Tú decides.', fr: 'Free ou Pro. À vous de choisir.', it: 'Free o Pro. Decidi tu.' },
+    'pr.sub':  { de: 'Alle Kernfunktionen sind frei. Pro schaltet die Tiefe frei — mehrere parallele ARCs, Insights mit Habit-Korrelationen, Journal, Ziele und KI-Generator.', en: 'All core features are free. Pro unlocks the depth — multiple parallel ARCs, Insights with habit correlations, Journal, Goals and AI generator.', es: 'Las funciones esenciales son gratis. Pro desbloquea la profundidad — varios ARCs en paralelo, Insights con correlaciones, Diario, Metas y generador IA.', fr: "Toutes les fonctions essentielles sont gratuites. Pro débloque la profondeur — plusieurs ARC en parallèle, Insights avec corrélations, Journal, Objectifs et générateur IA.", it: "Tutte le funzioni principali sono gratis. Pro sblocca la profondità — più ARC in parallelo, Insights con correlazioni, Diario, Obiettivi e generatore IA." },
+
+    // Feature labels — mirrored 1:1 from the app's subscription screen (src/locales/*.ts → subscription.features.*)
+    'pf.habitTracking':  { de: 'Gewohnheits-Tracking',          en: 'Habit Tracking',              es: 'Seguimiento de hábitos',      fr: 'Suivi des habitudes',        it: 'Tracciamento abitudini' },
+    'pf.curatedHabits':  { de: '120+ fundierte Gewohnheiten',   en: '120+ Curated Habits',         es: '120+ hábitos fundamentados',  fr: '120+ habitudes fondées',     it: '120+ abitudini fondate' },
+    'pf.lifeAreas':      { de: 'Lebensbereiche &amp; Vision',   en: 'Life Areas &amp; Vision',     es: 'Áreas de vida y Visión',      fr: 'Domaines de vie &amp; Vision', it: 'Aree di vita e Visione' },
+    'pf.contentLibrary': { de: 'Quellen &amp; Bibliothek',      en: 'Sources &amp; Content Library', es: 'Fuentes y Biblioteca',       fr: 'Sources &amp; Bibliothèque',  it: 'Fonti &amp; Biblioteca' },
+    'pf.shareResults':   { de: 'Erfolge teilen',                en: 'Share Results',               es: 'Compartir resultados',        fr: 'Partager les résultats',     it: 'Condividi i risultati' },
+    'pf.multipleArcs':   { de: 'Mehrere aktive ARCs',           en: 'Multiple Active ARCs',        es: 'Varios ARCs activos',         fr: 'Plusieurs ARCs actifs',      it: 'Più ARC attivi' },
+    'pf.premiumContent': { de: 'Premium-Inhalte',               en: 'Premium Content',             es: 'Contenido Premium',           fr: 'Contenu Premium',            it: 'Contenuto Premium' },
+    'pf.insights':       { de: 'Insights',                       en: 'Insights',                    es: 'Insights',                    fr: 'Insights',                   it: 'Insights' },
+    'pf.goalTracking':   { de: 'Ziel-Tracking',                 en: 'Goal Tracking',               es: 'Seguimiento de objetivos',    fr: 'Suivi des objectifs',        it: 'Tracciamento obiettivi' },
+    'pf.journaling':     { de: 'Journaling',                     en: 'Journaling',                  es: 'Diario',                      fr: 'Journal',                    it: 'Diario' },
+    'pf.customArcs':     { de: 'Eigene ARCs',                   en: 'Custom ARCs',                 es: 'ARCs personalizados',         fr: 'ARCs personnalisés',         it: 'ARC personalizzati' },
+    'pf.aiGenerator':    { de: 'KI-Generator für ARCs',         en: 'AI ARC Generator',            es: 'Generador IA de ARCs',        fr: "Générateur IA d'ARCs",       it: 'Generatore IA di ARC' },
 
     'pr.free.name':  { de: 'Free', en: 'Free', es: 'Free', fr: 'Free', it: 'Free' },
     'pr.free.tag':   { de: 'Für immer kostenlos.', en: 'Free forever.', es: 'Gratis para siempre.', fr: 'Gratuit pour toujours.', it: 'Gratis per sempre.' },
-    'pr.free.l1':    { de: 'Habit-Tracking, über 120 kuratierte Habits', en: 'Habit tracking, 120+ curated habits', es: 'Tracking de hábitos, más de 120 curados', fr: 'Suivi d’habitudes, plus de 120 sélectionnées', it: 'Tracciamento abitudini, oltre 120 curate' },
-    'pr.free.l2':    { de: '1 aktiver ARC gleichzeitig', en: '1 active ARC at a time', es: '1 ARC activo a la vez', fr: '1 ARC actif à la fois', it: '1 ARC attivo alla volta' },
-    'pr.free.l3':    { de: 'Wheel of Life &amp; Selbstbewertung', en: 'Wheel of Life &amp; self-rating', es: 'Wheel of Life y autoevaluación', fr: 'Wheel of Life et auto-évaluation', it: 'Wheel of Life e autovalutazione' },
-    'pr.free.l4':    { de: 'Quellen-Bibliothek (öffentliche Quellen)', en: 'Source library (public sources)', es: 'Biblioteca de fuentes (fuentes públicas)', fr: 'Bibliothèque de sources (sources publiques)', it: 'Biblioteca di fonti (fonti pubbliche)' },
-    'pr.free.l5':    { de: 'Fundament (endloser Bereich, Pro)', en: 'Fundament (endless area, Pro)', es: 'Fundament (área sin fin, Pro)', fr: 'Fundament (espace sans fin, Pro)', it: 'Fundament (area senza fine, Pro)' },
-    'pr.free.l6':    { de: 'Premium-ARCs (Pro)', en: 'Premium ARCs (Pro)', es: 'ARCs premium (Pro)', fr: 'ARC premium (Pro)', it: 'ARC premium (Pro)' },
-    'pr.free.l7':    { de: 'Insights, Journal, Ziele (Pro)', en: 'Insights, Journal, Goals (Pro)', es: 'Insights, Diario, Metas (Pro)', fr: 'Insights, Journal, Objectifs (Pro)', it: 'Insights, Diario, Obiettivi (Pro)' },
-    'pr.free.l8':    { de: 'Eigene ARCs &amp; KI-Generator (Pro)', en: 'Custom ARCs &amp; AI generator (Pro)', es: 'ARCs propios y generador IA (Pro)', fr: 'ARC personnalisés et générateur IA (Pro)', it: 'ARC personali e generatore IA (Pro)' },
     'pr.free.cta':   { de: 'Kostenlos starten', en: 'Start for free', es: 'Empezar gratis', fr: 'Commencer gratuitement', it: 'Inizia gratis' },
 
     'pr.lt.flag':   { de: 'Bestes Angebot', en: 'Best value', es: 'Mejor opción', fr: 'Meilleure offre', it: 'Migliore offerta' },
     'pr.lt.name':   { de: 'Pro Lifetime', en: 'Pro Lifetime', es: 'Pro Lifetime', fr: 'Pro Lifetime', it: 'Pro Lifetime' },
-    'pr.lt.unit':   { de: '€ einmalig', en: '€ one-time', es: '€ pago único', fr: '€ unique', it: '€ una tantum' },
+    'pr.lt.unit':   { de: 'einmalig', en: 'one-time', es: 'pago único', fr: 'paiement unique', it: 'una tantum' },
     'pr.lt.tag':    { de: 'Ein Preis. Alle Features. Für immer.', en: 'One price. All features. Forever.', es: 'Un precio. Todas las funciones. Para siempre.', fr: 'Un prix. Toutes les fonctions. Pour toujours.', it: 'Un prezzo. Tutte le funzioni. Per sempre.' },
-    'pr.lt.l1':     { de: 'Alles aus Free', en: 'Everything in Free', es: 'Todo lo de Free', fr: 'Tout ce que contient Free', it: 'Tutto ciò che è in Free' },
-    'pr.lt.l2':     { de: '<strong>Fundament</strong> — dein endloser Bereich für Alltags-Habits', en: '<strong>Fundament</strong> — your endless area for everyday habits', es: '<strong>Fundament</strong> — tu área sin fin para hábitos diarios', fr: '<strong>Fundament</strong> — votre espace sans fin pour les habitudes du quotidien', it: '<strong>Fundament</strong> — il tuo spazio senza fine per le abitudini quotidiane' },
-    'pr.lt.l3':     { de: 'Mehrere aktive ARCs parallel', en: 'Multiple active ARCs in parallel', es: 'Varios ARCs activos en paralelo', fr: 'Plusieurs ARC actifs en parallèle', it: 'Più ARC attivi in parallelo' },
-    'pr.lt.l4':     { de: 'Alle drei Insights-Tabs', en: 'All three Insights tabs', es: 'Las tres pestañas de Insights', fr: 'Les trois onglets Insights', it: 'Tutti e tre i tab di Insights' },
-    'pr.lt.l5':     { de: 'Ziel-Tracking &amp; Journal in vier Typen', en: 'Goal tracking &amp; journal in four types', es: 'Seguimiento de metas y diario en cuatro tipos', fr: 'Suivi d’objectifs et journal en quatre types', it: 'Tracciamento obiettivi e diario in quattro tipi' },
-    'pr.lt.l6':     { de: 'Eigene ARCs per Wizard', en: 'Custom ARCs via wizard', es: 'ARCs propios con asistente', fr: 'ARC personnalisés via assistant', it: 'ARC personali con procedura guidata' },
-    'pr.lt.l7':     { de: 'KI-Generator (Wochen-Kontingent)', en: 'AI generator (weekly quota)', es: 'Generador IA (cuota semanal)', fr: 'Générateur IA (quota hebdo)', it: 'Generatore IA (quota settimanale)' },
-    'pr.lt.l8':     { de: 'Erfolge teilen als Share-Image', en: 'Share achievements as share images', es: 'Comparte logros como imagen', fr: 'Partagez vos succès en image', it: 'Condividi i successi come immagine' },
     'pr.lt.cta':    { de: 'Pro Lifetime holen', en: 'Get Pro Lifetime', es: 'Conseguir Pro Lifetime', fr: 'Obtenir Pro Lifetime', it: 'Ottieni Pro Lifetime' },
 
     'pr.yr.name':   { de: 'Pro Jahr', en: 'Pro Yearly', es: 'Pro Anual', fr: 'Pro Annuel', it: 'Pro Annuale' },
-    'pr.yr.unit':   { de: '€ / Jahr', en: '€ / year', es: '€ / año', fr: '€ / an', it: '€ / anno' },
-    'pr.yr.tag':    { de: 'Jährlich abgerechnet, monatlich kündbar.', en: 'Billed yearly, cancel monthly.', es: 'Facturado anualmente, cancela cuando quieras.', fr: 'Facturé annuellement, résiliable chaque mois.', it: 'Fatturato annualmente, cancellabile mensilmente.' },
-    'pr.yr.l1':     { de: 'Alles aus Pro', en: 'Everything in Pro', es: 'Todo lo de Pro', fr: 'Tout ce que contient Pro', it: 'Tutto ciò che è in Pro' },
-    'pr.yr.l2':     { de: 'Auch monatlich verfügbar', en: 'Also available monthly', es: 'Disponible también mensualmente', fr: 'Aussi disponible mensuellement', it: 'Disponibile anche mensilmente' },
+    'pr.yr.unit':   { de: '/ Jahr', en: '/ year', es: '/ año', fr: '/ an', it: '/ anno' },
+    'pr.yr.tag':    { de: 'Jährlich abgerechnet, jederzeit kündbar.', en: 'Billed yearly, cancel any time.', es: 'Facturado anualmente, cancela cuando quieras.', fr: 'Facturé annuellement, résiliable à tout moment.', it: 'Fatturato annualmente, cancellabile in qualsiasi momento.' },
+    'pr.yr.l1':     { de: 'Alle Pro-Features wie Lifetime', en: 'All Pro features as in Lifetime', es: 'Todas las funciones Pro como en Lifetime', fr: 'Toutes les fonctions Pro comme dans Lifetime', it: 'Tutte le funzioni Pro come in Lifetime' },
+    'pr.yr.l2':     { de: 'Auch monatlich verfügbar für <strong>€ 6,99 / Monat</strong>', en: 'Also available monthly at <strong>€ 6.99 / month</strong>', es: 'Disponible también mensualmente por <strong>€ 6,99 / mes</strong>', fr: 'Aussi disponible mensuellement à <strong>6,99 € / mois</strong>', it: 'Disponibile anche mensilmente a <strong>€ 6,99 / mese</strong>' },
     'pr.yr.l3':     { de: 'Abrechnung über App Store oder Stripe', en: 'Billed via App Store or Stripe', es: 'Facturación vía App Store o Stripe', fr: 'Facturation via App Store ou Stripe', it: 'Fatturazione via App Store o Stripe' },
     'pr.yr.l4':     { de: 'Jederzeit kündbar — Daten bleiben erhalten', en: 'Cancel any time — your data stays', es: 'Cancela cuando quieras — tus datos se conservan', fr: 'Résiliable à tout moment — vos données restent', it: 'Cancellabile in qualsiasi momento — i tuoi dati restano' },
     'pr.yr.cta':    { de: 'Jährlich wählen', en: 'Choose yearly', es: 'Elegir anual', fr: 'Choisir annuel', it: 'Scegli annuale' },
@@ -360,11 +400,11 @@
     'title.faq':         { de: 'FAQ — ArcUp', en: 'FAQ — ArcUp', es: 'FAQ — ArcUp', fr: 'FAQ — ArcUp', it: 'FAQ — ArcUp' },
 
     'faq.intro': {
-      de: 'Antworten auf die Fragen, die uns am häufigsten zu Habits, ARCs, dem Fundament, der Lern-Mediathek, Pricing und Datenschutz gestellt werden.',
-      en: 'Answers to the questions we get asked most about habits, ARCs, the Fundament, the Learning Library, pricing and privacy.',
-      es: 'Respuestas a las preguntas más frecuentes sobre hábitos, ARCs, el Fundament, la biblioteca, precios y privacidad.',
-      fr: "Réponses aux questions qu'on nous pose le plus souvent sur les habitudes, les ARC, le Fundament, la bibliothèque, les tarifs et la confidentialité.",
-      it: 'Risposte alle domande più frequenti su abitudini, ARC, Fundament, biblioteca, prezzi e privacy.',
+      de: 'Antworten auf die Fragen, die uns am häufigsten zu Habits, ARCs, der Lern-Mediathek, Pricing und Datenschutz gestellt werden.',
+      en: 'Answers to the questions we get asked most about habits, ARCs, the Learning Library, pricing and privacy.',
+      es: 'Respuestas a las preguntas más frecuentes sobre hábitos, ARCs, la biblioteca, precios y privacidad.',
+      fr: "Réponses aux questions qu'on nous pose le plus souvent sur les habitudes, les ARC, la bibliothèque, les tarifs et la confidentialité.",
+      it: 'Risposte alle domande più frequenti su abitudini, ARC, biblioteca, prezzi e privacy.',
     },
     'faq.legalHint': {
       de: 'Du suchst rechtliche Informationen?',
