@@ -78,11 +78,11 @@
     // ─── MANIFESTO ───────────────────────────────────────
     'mani.overline': { de: 'Was daraus folgt', en: 'What follows from this', es: 'Lo que se sigue', fr: 'Ce qui en découle', it: 'Cosa ne consegue' },
     'mani.title': {
-      de: 'Vier Prinzipien.<br />Sie machen aus „mehr Sport" <em>5,2 km in Zone 2</em>.',
-      en: 'Four principles.<br />They turn "more sport" into <em>5.2 km in Zone 2</em>.',
-      es: 'Cuatro principios.<br />Convierten «más deporte» en <em>5,2 km en Zona 2</em>.',
-      fr: 'Quatre principes.<br />Ils transforment « plus de sport » en <em>5,2 km en Zone 2</em>.',
-      it: 'Quattro principi.<br />Trasformano «più sport» in <em>5,2 km in Zona 2</em>.',
+      de: 'Vier Prinzipien,<br />die Verhalten <em>messbar</em> machen.',
+      en: 'Four principles<br />that make behaviour <em>measurable</em>.',
+      es: 'Cuatro principios<br />que hacen el comportamiento <em>medible</em>.',
+      fr: 'Quatre principes<br />qui rendent le comportement <em>mesurable</em>.',
+      it: 'Quattro principi<br />che rendono il comportamento <em>misurabile</em>.',
     },
     'p1.h': { de: 'Strukturiert statt beliebig.', en: 'Structured, not arbitrary.', es: 'Estructurado, no arbitrario.', fr: 'Structuré, pas arbitraire.', it: 'Strutturato, non arbitrario.' },
     'p1.b': {
@@ -119,38 +119,45 @@
 
     // ─── ARC EXAMPLES ────────────────────────────────────
     'arcs.overline': { de: 'Konkret', en: 'Concretely', es: 'En concreto', fr: 'Concrètement', it: 'In concreto' },
-    'arcs.title':    { de: 'So sieht eine Phase aus.', en: 'What a phase looks like.', es: 'Cómo se ve una fase.', fr: 'À quoi ressemble une phase.', it: 'Com’è fatta una fase.' },
+    'arcs.title':    { de: 'So sieht ein ARC aus.', en: 'What an ARC looks like.', es: 'Cómo se ve un ARC.', fr: 'À quoi ressemble un ARC.', it: 'Com’è fatto un ARC.' },
     'arcs.sub':      { de: 'Drei reale ARCs aus der Bibliothek — jeweils mit Dauer, Lebensbereich und den Habits, die du tatsächlich trackst.', en: 'Three real ARCs from the library — each with duration, life area and the habits you actually track.', es: 'Tres ARCs reales de la biblioteca — con duración, área de vida y los hábitos que realmente registras.', fr: "Trois ARC réels de la bibliothèque — avec durée, domaine de vie et les habitudes que tu suis vraiment.", it: 'Tre ARC reali dalla biblioteca — con durata, area di vita e le abitudini che tracci davvero.' },
 
-    'arc1.area': { de: 'Body · Mind', en: 'Body · Mind', es: 'Body · Mind', fr: 'Body · Mind', it: 'Body · Mind' },
-    'arc1.dur':  { de: '4 Wochen', en: '4 weeks', es: '4 semanas', fr: '4 semaines', it: '4 settimane' },
-    'arc1.h':    { de: 'Morning Mastery', en: 'Morning Mastery', es: 'Morning Mastery', fr: 'Morning Mastery', it: 'Morning Mastery' },
-    'arc1.b':    { de: 'Eine konsistente Morgenroutine etablieren — wenig kognitive Last, klarer Start in den Tag.', en: 'Build a consistent morning routine — low cognitive load, clean start to the day.', es: 'Construir una rutina matutina consistente — poca carga cognitiva, inicio claro del día.', fr: "Construire une routine matinale cohérente — faible charge cognitive, départ propre dans la journée.", it: 'Costruire una routine mattutina coerente — basso carico cognitivo, inizio pulito della giornata.' },
-    'arc1.h1':   { de: 'Wake-up time ≤ 07:00', en: 'Wake-up time ≤ 07:00', es: 'Hora de despertar ≤ 07:00', fr: 'Heure de réveil ≤ 07:00', it: 'Ora di sveglia ≤ 07:00' },
-    'arc1.h2':   { de: 'Mobility ≥ 8 min', en: 'Mobility ≥ 8 min', es: 'Movilidad ≥ 8 min', fr: 'Mobilité ≥ 8 min', it: 'Mobilità ≥ 8 min' },
-    'arc1.h3':   { de: 'Meditation ≥ 10 min', en: 'Meditation ≥ 10 min', es: 'Meditación ≥ 10 min', fr: 'Méditation ≥ 10 min', it: 'Meditazione ≥ 10 min' },
-    'arc1.h4':   { de: 'Hydration ≥ 0,5 l vor dem Frühstück', en: 'Hydration ≥ 0.5 l before breakfast', es: 'Hidratación ≥ 0,5 l antes del desayuno', fr: 'Hydratation ≥ 0,5 l avant le petit-déjeuner', it: 'Idratazione ≥ 0,5 l prima della colazione' },
+    // ARC 1 — Baseline (Growth, 2 weeks) — from supabase seed_arcs_basic
+    'arc1.area': { de: 'Growth', en: 'Growth', es: 'Growth', fr: 'Growth', it: 'Growth' },
+    'arc1.dur':  { de: '2 Wochen', en: '2 weeks', es: '2 semanas', fr: '2 semaines', it: '2 settimane' },
+    'arc1.h':    { de: 'Baseline', en: 'Baseline', es: 'Baseline', fr: 'Baseline', it: 'Baseline' },
+    'arc1.b':    { de: 'Vierzehn Tage ehrliches Tracking — sieh dich selbst, bevor du dich änderst.', en: 'Fourteen days of honest tracking — see yourself before you change yourself.', es: 'Catorce días de seguimiento honesto — verte antes de cambiarte.', fr: "Quatorze jours de suivi honnête — te voir avant de te changer.", it: 'Quattordici giorni di tracciamento onesto — vediti prima di cambiarti.' },
+    'arc1.h1':   { de: 'Mood Check-In · 1×/Tag', en: 'Mood Check-In · 1×/day', es: 'Mood Check-In · 1×/día', fr: 'Mood Check-In · 1×/jour', it: 'Mood Check-In · 1×/giorno' },
+    'arc1.h2':   { de: 'Sleep ≥ 7 h', en: 'Sleep ≥ 7 h', es: 'Sueño ≥ 7 h', fr: 'Sommeil ≥ 7 h', it: 'Sonno ≥ 7 h' },
+    'arc1.h3':   { de: 'Water Intake ≥ 1,5 l', en: 'Water Intake ≥ 1.5 l', es: 'Agua ≥ 1,5 l', fr: 'Eau ≥ 1,5 l', it: 'Acqua ≥ 1,5 l' },
+    'arc1.h4':   { de: 'Steps ≥ 4.000', en: 'Steps ≥ 4,000', es: 'Pasos ≥ 4.000', fr: 'Pas ≥ 4 000', it: 'Passi ≥ 4.000' },
+    'arc1.h5':   { de: 'Compass Review · 1×/Woche', en: 'Compass Review · 1×/week', es: 'Compass Review · 1×/semana', fr: 'Compass Review · 1×/semaine', it: 'Compass Review · 1×/settimana' },
 
-    'arc2.area': { de: 'Growth', en: 'Growth', es: 'Growth', fr: 'Growth', it: 'Growth' },
-    'arc2.dur':  { de: '30 Tage', en: '30 days', es: '30 días', fr: '30 jours', it: '30 giorni' },
-    'arc2.h':    { de: 'Reading Reset', en: 'Reading Reset', es: 'Reading Reset', fr: 'Reading Reset', it: 'Reading Reset' },
-    'arc2.b':    { de: 'Lesen wieder zur Default-Aktivität machen — und Bildschirm-Spätabends drosseln.', en: 'Make reading the default again — and throttle late-evening screen time.', es: 'Volver a hacer de la lectura tu actividad por defecto — y reducir pantalla por la noche.', fr: 'Refaire de la lecture une activité par défaut — et réduire les écrans tard le soir.', it: 'Rendere la lettura di nuovo default — e ridurre lo schermo a tarda sera.' },
-    'arc2.h1':   { de: 'Lesen ≥ 20 min', en: 'Reading ≥ 20 min', es: 'Lectura ≥ 20 min', fr: 'Lecture ≥ 20 min', it: 'Lettura ≥ 20 min' },
-    'arc2.h2':   { de: 'Notes aus dem Gelesenen ≥ 1', en: 'Notes from reading ≥ 1', es: 'Notas de lectura ≥ 1', fr: 'Notes de lecture ≥ 1', it: 'Note dalla lettura ≥ 1' },
-    'arc2.h3':   { de: 'Bildschirmzeit nach 20 Uhr ≤ 60 min', en: 'Screen time after 8 pm ≤ 60 min', es: 'Pantalla después de las 20 h ≤ 60 min', fr: 'Temps d’écran après 20 h ≤ 60 min', it: 'Schermo dopo le 20 ≤ 60 min' },
+    // ARC 2 — Sleep First (Body, 3 weeks) — from supabase seed_arcs_basic
+    'arc2.area': { de: 'Body', en: 'Body', es: 'Body', fr: 'Body', it: 'Body' },
+    'arc2.dur':  { de: '3 Wochen', en: '3 weeks', es: '3 semanas', fr: '3 semaines', it: '3 settimane' },
+    'arc2.h':    { de: 'Sleep First', en: 'Sleep First', es: 'Sleep First', fr: 'Sleep First', it: 'Sleep First' },
+    'arc2.b':    { de: 'Drei Wochen, um den einen Habit zu fixen, auf dem alle anderen stehen.', en: 'Three weeks to fix the one habit everything else stands on.', es: 'Tres semanas para arreglar el único hábito sobre el que se sostienen los demás.', fr: "Trois semaines pour réparer l'unique habitude sur laquelle reposent toutes les autres.", it: 'Tre settimane per sistemare l’unica abitudine su cui tutte le altre poggiano.' },
+    'arc2.h1':   { de: 'Sleep ≥ 7,5 h', en: 'Sleep ≥ 7.5 h', es: 'Sueño ≥ 7,5 h', fr: 'Sommeil ≥ 7,5 h', it: 'Sonno ≥ 7,5 h' },
+    'arc2.h2':   { de: 'Consistent Wake Time', en: 'Consistent Wake Time', es: 'Hora de despertar constante', fr: 'Heure de réveil constante', it: 'Orario di sveglia costante' },
+    'arc2.h3':   { de: 'Tech-Free Hour vor dem Bett', en: 'Tech-Free Hour Before Bed', es: 'Hora sin pantallas antes de dormir', fr: 'Heure sans écran avant le coucher', it: 'Ora senza schermi prima di dormire' },
+    'arc2.h4':   { de: 'Bedtime Routine', en: 'Bedtime Routine', es: 'Rutina nocturna', fr: 'Routine du coucher', it: 'Routine serale' },
+    'arc2.h5':   { de: 'Sunlight Exposure ≥ 10 min · morgens', en: 'Sunlight Exposure ≥ 10 min · morning', es: 'Luz solar ≥ 10 min · por la mañana', fr: 'Lumière du soleil ≥ 10 min · matin', it: 'Esposizione al sole ≥ 10 min · mattina' },
 
-    'arc3.area': { de: 'Body', en: 'Body', es: 'Body', fr: 'Body', it: 'Body' },
-    'arc3.dur':  { de: '6 Wochen', en: '6 weeks', es: '6 semanas', fr: '6 semaines', it: '6 settimane' },
-    'arc3.h':    { de: 'Sleep Deeper', en: 'Sleep Deeper', es: 'Sleep Deeper', fr: 'Sleep Deeper', it: 'Sleep Deeper' },
-    'arc3.b':    { de: 'Schlafhygiene auf einem Niveau, das wirklich misst — Hebel, nicht Bauchgefühl.', en: 'Sleep hygiene on a level that actually measures — levers, not gut feel.', es: 'Higiene del sueño en un nivel que realmente mide — palancas, no intuición.', fr: 'Une hygiène du sommeil qui mesure vraiment — des leviers, pas du ressenti.', it: 'Igiene del sonno su un livello che misura davvero — leve, non sensazioni.' },
-    'arc3.h1':   { de: 'Koffein ≤ 14 Uhr', en: 'Caffeine ≤ 2 pm', es: 'Cafeína ≤ 14 h', fr: 'Caféine ≤ 14 h', it: 'Caffeina ≤ 14:00' },
-    'arc3.h2':   { de: 'Bildschirm-Stop ≥ 60 min vor dem Bett', en: 'Screen stop ≥ 60 min before bed', es: 'Cortar pantalla ≥ 60 min antes de dormir', fr: 'Arrêt écran ≥ 60 min avant le coucher', it: 'Stop schermo ≥ 60 min prima di dormire' },
-    'arc3.h3':   { de: 'In-Bed-Time ≤ 23:00', en: 'In-bed time ≤ 23:00', es: 'En cama ≤ 23:00', fr: 'Au lit ≤ 23:00', it: 'A letto ≤ 23:00' },
-    'arc3.h4':   { de: 'Schlafdauer ≥ 7 h', en: 'Sleep duration ≥ 7 h', es: 'Duración del sueño ≥ 7 h', fr: 'Durée de sommeil ≥ 7 h', it: 'Durata del sonno ≥ 7 h' },
+    // ARC 3 — Quiet Mind (Mind, 3 weeks) — from supabase seed_arcs_basic
+    'arc3.area': { de: 'Mind', en: 'Mind', es: 'Mind', fr: 'Mind', it: 'Mind' },
+    'arc3.dur':  { de: '3 Wochen', en: '3 weeks', es: '3 semanas', fr: '3 semaines', it: '3 settimane' },
+    'arc3.h':    { de: 'Quiet Mind', en: 'Quiet Mind', es: 'Quiet Mind', fr: 'Quiet Mind', it: 'Quiet Mind' },
+    'arc3.b':    { de: 'Stille als bewusste tägliche Praxis — drei Wochen, in denen sie zur Default-Einstellung wird.', en: 'Stillness as a deliberate daily practice — three weeks for it to become the default.', es: 'La quietud como práctica diaria deliberada — tres semanas para que sea el modo por defecto.', fr: 'Le calme comme pratique quotidienne délibérée — trois semaines pour qu’il devienne le réglage par défaut.', it: 'La quiete come pratica quotidiana deliberata — tre settimane perché diventi default.' },
+    'arc3.h1':   { de: 'Meditation · 5 → 15 min (progressiv)', en: 'Meditation · 5 → 15 min (progressive)', es: 'Meditación · 5 → 15 min (progresivo)', fr: 'Méditation · 5 → 15 min (progressif)', it: 'Meditazione · 5 → 15 min (progressivo)' },
+    'arc3.h2':   { de: 'Breathwork ≥ 5 min', en: 'Breathwork ≥ 5 min', es: 'Respiración ≥ 5 min', fr: 'Respiration ≥ 5 min', it: 'Respirazione ≥ 5 min' },
+    'arc3.h3':   { de: 'Time in Nature ≥ 20 min', en: 'Time in Nature ≥ 20 min', es: 'Tiempo en la naturaleza ≥ 20 min', fr: 'Temps dans la nature ≥ 20 min', it: 'Tempo nella natura ≥ 20 min' },
+    'arc3.h4':   { de: 'Mood Check-In · 1×/Tag', en: 'Mood Check-In · 1×/day', es: 'Mood Check-In · 1×/día', fr: 'Mood Check-In · 1×/jour', it: 'Mood Check-In · 1×/giorno' },
+    'arc3.h5':   { de: 'Sleep ≥ 7,5 h', en: 'Sleep ≥ 7.5 h', es: 'Sueño ≥ 7,5 h', fr: 'Sommeil ≥ 7,5 h', it: 'Sonno ≥ 7,5 h' },
 
     // ─── LAYERS (Macro/Meso/Micro) ───────────────────────
     'layers.overline': { de: 'Die Architektur', en: 'The architecture', es: 'La arquitectura', fr: 'L’architecture', it: 'L’architettura' },
-    'layers.title':    { de: 'Vision. Phase. Alltag.', en: 'Vision. Phase. Daily.', es: 'Visión. Fase. Día a día.', fr: 'Vision. Phase. Quotidien.', it: 'Visione. Fase. Quotidiano.' }, // _x:'Macro. Meso. Micro.'
+    'layers.title':    { de: 'Lebensvision. ARC. Alltag.', en: 'Life vision. ARC. Daily.', es: 'Visión de vida. ARC. Día a día.', fr: 'Vision de vie. ARC. Quotidien.', it: 'Visione di vita. ARC. Quotidiano.' },
     'layers.sub':      { de: 'Aus den vier Prinzipien wird eine Struktur — drei Zeit-Ebenen, die ineinander greifen.', en: 'From those four principles emerges a structure — three time layers that interlock.', es: 'De esos cuatro principios surge una estructura — tres niveles temporales que encajan.', fr: "De ces quatre principes émerge une structure — trois niveaux temporels qui s'imbriquent.", it: 'Dai quattro principi nasce una struttura — tre livelli temporali che si incastrano.' },
 
     'macro.tier': { de: 'Vision', en: 'Vision', es: 'Visión', fr: 'Vision', it: 'Visione' }, // _x:'Macro'
@@ -173,7 +180,7 @@
 
     // ─── THE APP (4 showcases) ───────────────────────────
     'sys.overline': { de: 'In der App', en: 'Inside the app', es: 'Dentro de la app', fr: 'Dans l’app', it: 'Dentro l’app' },
-    'sys.title':    { de: 'Vier Räume. Eine Reise.', en: 'Four spaces. One journey.', es: 'Cuatro espacios. Un viaje.', fr: 'Quatre espaces. Un voyage.', it: 'Quattro spazi. Un viaggio.' },
+    'sys.title':    { de: 'Vier Tabs. Eine klare Logik.', en: 'Four tabs. One clear logic.', es: 'Cuatro pestañas. Una lógica clara.', fr: 'Quatre onglets. Une logique claire.', it: 'Quattro tab. Una logica chiara.' },
     'sys.sub':      { de: 'Drei Ebenen, vier Tabs — jeder erfüllt genau eine Aufgabe. Keine überladenen Screens, keine Multifunktions-Buttons.', en: 'Three layers, four tabs — each does exactly one job. No overloaded screens, no multi-function buttons.', es: 'Tres niveles, cuatro pestañas — cada una hace una sola cosa. Pantallas claras, sin botones multifunción.', fr: 'Trois niveaux, quatre onglets — chacun a une seule tâche. Pas d’écrans surchargés, pas de boutons multifonctions.', it: 'Tre livelli, quattro tab — ognuno fa una sola cosa. Schermate pulite, niente pulsanti multifunzione.' },
 
     // 01 Home
@@ -240,11 +247,6 @@
     'a5.d': { de: 'Hobbys, Natur, Kreativität, Spiel, Digital Detox.', en: 'Hobbies, nature, creativity, play, digital detox.', es: 'Aficiones, naturaleza, creatividad, juego, detox digital.', fr: 'Loisirs, nature, créativité, jeu, détox numérique.', it: 'Hobby, natura, creatività, gioco, detox digitale.' },
     'a5.q': { de: 'Was tust du, wenn niemand zusieht?', en: 'What do you do when nobody is watching?', es: '¿Qué haces cuando nadie mira?', fr: 'Que faites-vous quand personne ne regarde ?', it: 'Cosa fai quando nessuno guarda?' },
 
-    // ─── FOUNDATION ──────────────────────────────────────
-    'fnd2.over': { de: 'Hierarchisch', en: 'Hierarchical', es: 'Jerárquico', fr: 'Hiérarchique', it: 'Gerarchico' },
-    'fnd2.h':    { de: 'Habits in einer klaren Hierarchie.', en: 'Habits in a clear hierarchy.', es: 'Hábitos en una jerarquía clara.', fr: 'Des habitudes dans une hiérarchie claire.', it: 'Abitudini in una gerarchia chiara.' }, // _x:'Habits sind kein flacher Name.', en: 'Habits are not a flat name.', es: 'Los hábitos no son un nombre plano.', fr: 'Les habitudes ne sont pas un simple nom.', it: 'Le abitudini non sono un nome piatto.' },
-    'fnd2.b':    { de: 'Über 120 kuratierte Habits, sauber in Ober- und Unterkategorien strukturiert. Du trackst „Long Run = 12 km" — die Insights summieren das automatisch unter <em>Laufen</em> und <em>Ausdauertraining</em> mit.', en: 'Over 120 curated habits, neatly structured into parent and child categories. You track "Long Run = 12 km" — your insights automatically roll it up under <em>Running</em> and <em>Endurance training</em>.', es: 'Más de 120 hábitos curados, organizados con claridad en categorías padre e hija. Tú registras «Long Run = 12 km» — los insights lo agregan automáticamente bajo <em>Correr</em> y <em>Entrenamiento de resistencia</em>.', fr: "Plus de 120 habitudes sélectionnées, organisées proprement en catégories parentes et enfants. Tu suis « Long Run = 12 km » — les insights l'agrègent automatiquement sous <em>Course</em> et <em>Endurance</em>.", it: 'Oltre 120 abitudini curate, organizzate con chiarezza in categorie padre e figlie. Tracci «Long Run = 12 km» — gli insights lo aggregano automaticamente sotto <em>Corsa</em> e <em>Allenamento di resistenza</em>.' }, // _x:'Über 120 kuratierte Habits in einer Baum-Struktur...', en: 'Over 120 curated habits in a tree. You track "Long Run = 12 km" — insights automatically roll up under <em>Running</em> and <em>Endurance training</em>.', es: 'Más de 120 hábitos curados en árbol. Registras «Long Run = 12 km» — los insights se agregan bajo <em>Correr</em> y <em>Entrenamiento de resistencia</em>.', fr: "Plus de 120 habitudes sélectionnées en arborescence. Vous suivez « Long Run = 12 km » — les insights remontent automatiquement sous <em>Course</em> et <em>Endurance</em>.", it: 'Oltre 120 abitudini curate in un albero. Tracci «Long Run = 12 km» — gli insights si aggregano automaticamente sotto <em>Corsa</em> e <em>Allenamento di resistenza</em>.' },
-
     // ─── COMPARE ─────────────────────────────────────────
     'cmp.over': { de: 'Der Unterschied', en: 'The difference', es: 'La diferencia', fr: 'La différence', it: 'La differenza' },
     'cmp.h':    { de: 'Wir tracken Werte,<br />keine Häkchen.', en: 'We track values,<br />not checkmarks.', es: 'Registramos valores,<br />no marcas.', fr: 'Nous suivons des valeurs,<br />pas des cases cochées.', it: 'Tracciamo valori,<br />non spunte.' },
@@ -281,33 +283,16 @@
     'not4.h': { de: 'Kein Streak-um-jeden-Preis.', en: 'No streak at any cost.', es: 'No racha a cualquier precio.', fr: 'Pas de série à tout prix.', it: 'Niente streak a tutti i costi.' },
     'not4.b': { de: 'Streaks gibt es, aber Rest-Days sind eingebaut. Es gibt keine Streak-Shields.', en: 'Streaks exist, but rest days are built in. No streak shields.', es: 'Hay rachas, pero los días de descanso están integrados. Sin escudos de racha.', fr: 'Les séries existent, mais les jours de repos sont prévus. Pas de « boucliers de série ».', it: 'Le streak ci sono, ma i giorni di riposo sono integrati. Niente streak shield.' },
 
+    'not5.h': { de: 'Kein Vendor-Lock-in.', en: 'No vendor lock-in.', es: 'Sin vendor lock-in.', fr: 'Pas de vendor lock-in.', it: 'Nessun vendor lock-in.' },
+    'not5.b': { de: 'Voller ZIP-Export deiner Daten jederzeit. Konto-Reset und -Löschung mit einem Tap. Deine Daten gehören dir.', en: 'Full ZIP export of your data any time. Account reset and deletion with one tap. Your data is yours.', es: 'Exportación ZIP completa de tus datos cuando quieras. Reset y eliminación de cuenta con un toque. Tus datos son tuyos.', fr: "Export ZIP complet de tes données à tout moment. Réinitialisation et suppression du compte en un tap. Tes données t’appartiennent.", it: 'Export ZIP completo dei tuoi dati in qualsiasi momento. Reset e cancellazione account con un tap. I tuoi dati sono tuoi.' },
+
     'not6.h': { de: 'Kein Dark Pattern.', en: 'No dark patterns.', es: 'Sin dark patterns.', fr: 'Pas de dark patterns.', it: 'Niente dark pattern.' },
     'not6.b': { de: 'Keine Werbung, keine Tracker, kein Notification-Spam. EU-Hosting, DSGVO.', en: 'No ads, no trackers, no notification spam. EU hosting, GDPR.', es: 'Sin anuncios, sin rastreadores, sin spam de notificaciones. Hosting UE, RGPD.', fr: 'Pas de pub, pas de trackers, pas de spam de notifications. Hébergement UE, RGPD.', it: 'Niente pubblicità, niente tracker, niente spam di notifiche. Hosting UE, GDPR.' },
-
-    // ─── ACHIEVEMENTS ────────────────────────────────────
-    'ach.over':  { de: 'Wenn du dranbleibst', en: 'When you stay with it', es: 'Cuando perseveras', fr: 'Quand tu tiens bon', it: 'Quando tieni duro' },
-    'ach.h':     { de: 'Badges, die du <em>wirklich</em> verdient hast.', en: 'Badges you <em>actually</em> earned.', es: 'Insignias que <em>de verdad</em> ganaste.', fr: 'Des badges que tu as <em>vraiment</em> mérités.', it: 'Badge che hai <em>davvero</em> meritato.' },
-    'ach.sub':   { de: 'Kein XP-Casino, keine Coins, keine Pop-ups. Echte Meilensteine aus deinen echten Daten — sechs Beispiele von vielen.', en: 'No XP casino, no coins, no pop-ups. Real milestones from your real data — six examples of many.', es: 'Sin casino de XP, sin monedas, sin pop-ups. Hitos reales a partir de tus datos reales — seis ejemplos de muchos.', fr: "Pas de casino XP, pas de pièces, pas de pop-ups. De vrais jalons à partir de tes vraies données — six exemples parmi tant d'autres.", it: 'Niente casinò di XP, niente coin, niente pop-up. Veri traguardi dai tuoi dati reali — sei esempi tra molti.' },
-
-    'ach.s1.v':  { de: '30', en: '30', es: '30', fr: '30', it: '30' },
-    'ach.s1.l':  { de: 'Tage Streak in Folge', en: 'Day streak in a row', es: 'Días de racha seguidos', fr: 'Jours de série consécutifs', it: 'Giorni di streak consecutivi' },
-    'ach.s2.v':  { de: '12', en: '12', es: '12', fr: '12', it: '12' },
-    'ach.s2.l':  { de: 'Abgeschlossene ARCs', en: 'Completed ARCs', es: 'ARCs completados', fr: 'ARC terminés', it: 'ARC completati' },
-    'ach.s3.v':  { de: '100', en: '100', es: '100', fr: '100', it: '100' },
-    'ach.s3.l':  { de: 'Perfekte Tage', en: 'Perfect days', es: 'Días perfectos', fr: 'Jours parfaits', it: 'Giorni perfetti' },
-    'ach.s4.v':  { de: '10', en: '10', es: '10', fr: '10', it: '10' },
-    'ach.s4.l':  { de: 'Perfekte Wochen', en: 'Perfect weeks', es: 'Semanas perfectas', fr: 'Semaines parfaites', it: 'Settimane perfette' },
-    'ach.s5.v':  { de: '25', en: '25', es: '25', fr: '25', it: '25' },
-    'ach.s5.l':  { de: 'Selfmade Habits &amp; ARCs', en: 'Self-made habits &amp; ARCs', es: 'Hábitos y ARCs propios', fr: 'Habitudes et ARC personnels', it: 'Abitudini e ARC personali' },
-    'ach.s6.v':  { de: '50', en: '50', es: '50', fr: '50', it: '50' },
-    'ach.s6.l':  { de: 'Erledigte Goals', en: 'Completed goals', es: 'Metas completadas', fr: 'Objectifs accomplis', it: 'Goal completati' },
-
-    'ach.note':  { de: 'Achievements geben kein XP — das Badge selbst ist der Reward. Du sammelst sie für Streaks, abgeschlossene ARCs, perfekte Tage und Wochen, Selfmade-Inhalte, erledigte Goals und Journal-Einträge.', en: 'Achievements grant no XP — the badge itself is the reward. You collect them for streaks, completed ARCs, perfect days and weeks, self-made content, completed goals and journal entries.', es: 'Los logros no dan XP — la insignia misma es la recompensa. Los obtienes por rachas, ARCs completados, días y semanas perfectos, contenido propio, metas completadas y entradas de diario.', fr: "Les achievements ne donnent pas d'XP — le badge en lui-même est la récompense. Tu les collectes pour les séries, les ARC terminés, les jours et semaines parfaits, les contenus personnels, les objectifs accomplis et les entrées de journal.", it: 'Gli achievement non danno XP — il badge stesso è il premio. Li collezioni per streak, ARC completati, giorni e settimane perfette, contenuti personali, goal completati e voci di journal.' },
 
     // ─── FOUNDER NOTE ────────────────────────────────────
     'founder.over': { de: 'Hinter ArcUp', en: 'Behind ArcUp', es: 'Detrás de ArcUp', fr: 'Derrière ArcUp', it: 'Dietro ad ArcUp' },
     'founder.h':    { de: 'Hi, ich bin Michael.', en: 'Hi, I’m Michael.', es: 'Hola, soy Michael.', fr: 'Salut, je suis Michael.', it: 'Ciao, sono Michael.' },
-    'founder.b1':   { de: 'ArcUp ist mein Versuch, ein System für persönliche Entwicklung zu bauen, das ernst meint, was es verspricht — strukturiert, numerisch, mit Quellen im Rücken. Kein Habit-Tracker für Häkchen, kein Streak-Casino, kein Social-Feed.', en: 'ArcUp is my attempt to build a personal-development system that means what it says — structured, numeric, sourced. Not a checkbox tracker, not a streak casino, not a social feed.', es: 'ArcUp es mi intento de construir un sistema de desarrollo personal que cumple lo que promete — estructurado, numérico, con fuentes. No es un tracker de casillas, ni un casino de rachas, ni un feed social.', fr: "ArcUp est ma tentative de construire un système de développement personnel qui tient vraiment ses promesses — structuré, chiffré, sourcé. Pas un tracker à cases, pas un casino de séries, pas un fil social.", it: 'ArcUp è il mio tentativo di costruire un sistema di sviluppo personale che mantiene quel che promette — strutturato, numerico, con fonti. Non un tracker a spunte, non un casinò di streak, non un feed social.' },
+    'founder.b1':   { de: 'ArcUp ist mein Versuch, ein System für persönliche Entwicklung zu bauen, das ernst meint, was es verspricht — strukturiert, numerisch, durchdacht. Kein Streak-Casino, kein Social-Feed, kein Notification-Spam.', en: 'ArcUp is my attempt to build a personal-development system that means what it says — structured, numeric, considered. No streak casino, no social feed, no notification spam.', es: 'ArcUp es mi intento de construir un sistema de desarrollo personal que cumple lo que promete — estructurado, numérico, pensado. Sin casino de rachas, sin feed social, sin spam de notificaciones.', fr: "ArcUp est ma tentative de construire un système de développement personnel qui tient vraiment ses promesses — structuré, chiffré, réfléchi. Pas de casino de séries, pas de fil social, pas de spam de notifications.", it: 'ArcUp è il mio tentativo di costruire un sistema di sviluppo personale che mantiene quel che promette — strutturato, numerico, ragionato. Niente casinò di streak, niente feed social, niente spam di notifiche.' },
     'founder.b2':   { de: 'Solo gebaut, in Österreich. Kein VC, keine Werbung, keine Tracker. Wenn dir etwas fehlt oder du einen Bug findest: das Feedback-Formular in der App landet direkt bei mir.', en: 'Built solo, in Austria. No VC, no ads, no trackers. If something is missing or you find a bug, the feedback form in the app lands straight in my inbox.', es: 'Construido en solitario, en Austria. Sin VC, sin anuncios, sin rastreadores. Si te falta algo o encuentras un bug, el formulario de feedback en la app me llega directamente.', fr: "Construit en solo, en Autriche. Pas de VC, pas de pub, pas de trackers. S'il te manque quelque chose ou si tu trouves un bug, le formulaire de feedback dans l'app arrive directement chez moi.", it: 'Costruito da solo, in Austria. Niente VC, niente pubblicità, niente tracker. Se ti manca qualcosa o trovi un bug, il modulo di feedback nell’app arriva direttamente da me.' },
 
     // ─── PRICING ─────────────────────────────────────────
@@ -333,20 +318,17 @@
     'pr.free.tag':   { de: 'Für immer kostenlos.', en: 'Free forever.', es: 'Gratis para siempre.', fr: 'Gratuit pour toujours.', it: 'Gratis per sempre.' },
     'pr.free.cta':   { de: 'Kostenlos starten', en: 'Start for free', es: 'Empezar gratis', fr: 'Commencer gratuitement', it: 'Inizia gratis' },
 
-    'pr.lt.flag':   { de: 'Bestes Angebot', en: 'Best value', es: 'Mejor opción', fr: 'Meilleure offre', it: 'Migliore offerta' },
-    'pr.lt.name':   { de: 'Pro Lifetime', en: 'Pro Lifetime', es: 'Pro Lifetime', fr: 'Pro Lifetime', it: 'Pro Lifetime' },
-    'pr.lt.unit':   { de: 'einmalig', en: 'one-time', es: 'pago único', fr: 'paiement unique', it: 'una tantum' },
-    'pr.lt.tag':    { de: 'Ein Preis. Alle Features. Für immer.', en: 'One price. All features. Forever.', es: 'Un precio. Todas las funciones. Para siempre.', fr: 'Un prix. Toutes les fonctions. Pour toujours.', it: 'Un prezzo. Tutte le funzioni. Per sempre.' },
-    'pr.lt.cta':    { de: 'Pro Lifetime holen', en: 'Get Pro Lifetime', es: 'Conseguir Pro Lifetime', fr: 'Obtenir Pro Lifetime', it: 'Ottieni Pro Lifetime' },
+    'pr.pro.flag':            { de: 'Pro', en: 'Pro', es: 'Pro', fr: 'Pro', it: 'Pro' },
+    'pr.pro.name':            { de: 'Pro', en: 'Pro', es: 'Pro', fr: 'Pro', it: 'Pro' },
+    'pr.pro.tag':             { de: 'Alle Features. Drei Wege, Pro zu bekommen.', en: 'All features. Three ways to get Pro.', es: 'Todas las funciones. Tres formas de obtener Pro.', fr: 'Toutes les fonctions. Trois façons d’obtenir Pro.', it: 'Tutte le funzioni. Tre modi per ottenere Pro.' },
+    'pr.pro.monthly.unit':    { de: '/ Monat', en: '/ month', es: '/ mes', fr: '/ mois', it: '/ mese' },
+    'pr.pro.monthly.label':   { de: 'monatlich · jederzeit kündbar', en: 'monthly · cancel any time', es: 'mensual · cancela cuando quieras', fr: 'mensuel · résiliable à tout moment', it: 'mensile · cancellabile in qualsiasi momento' },
+    'pr.pro.yearly.unit':     { de: '/ Jahr', en: '/ year', es: '/ año', fr: '/ an', it: '/ anno' },
+    'pr.pro.yearly.label':    { de: 'jährlich · spart ca. 40 %', en: 'yearly · saves about 40%', es: 'anual · ahorra ~40 %', fr: 'annuel · économise environ 40 %', it: 'annuale · risparmia circa il 40 %' },
+    'pr.pro.lifetime.unit':   { de: 'einmalig', en: 'one-time', es: 'pago único', fr: 'paiement unique', it: 'una tantum' },
+    'pr.pro.lifetime.label':  { de: 'Lifetime · unbegrenzt', en: 'Lifetime · unlimited', es: 'Lifetime · ilimitado', fr: 'Lifetime · illimité', it: 'Lifetime · illimitato' },
+    'pr.pro.cta':             { de: 'Pro holen', en: 'Get Pro', es: 'Obtener Pro', fr: 'Obtenir Pro', it: 'Ottieni Pro' },
 
-    'pr.yr.name':   { de: 'Pro Jahr', en: 'Pro Yearly', es: 'Pro Anual', fr: 'Pro Annuel', it: 'Pro Annuale' },
-    'pr.yr.unit':   { de: '/ Jahr', en: '/ year', es: '/ año', fr: '/ an', it: '/ anno' },
-    'pr.yr.tag':    { de: 'Jährlich abgerechnet, jederzeit kündbar.', en: 'Billed yearly, cancel any time.', es: 'Facturado anualmente, cancela cuando quieras.', fr: 'Facturé annuellement, résiliable à tout moment.', it: 'Fatturato annualmente, cancellabile in qualsiasi momento.' },
-    'pr.yr.l1':     { de: 'Alle Pro-Features wie Lifetime', en: 'All Pro features as in Lifetime', es: 'Todas las funciones Pro como en Lifetime', fr: 'Toutes les fonctions Pro comme dans Lifetime', it: 'Tutte le funzioni Pro come in Lifetime' },
-    'pr.yr.l2':     { de: 'Auch monatlich verfügbar für <strong>€ 6,99 / Monat</strong>', en: 'Also available monthly at <strong>€ 6.99 / month</strong>', es: 'Disponible también mensualmente por <strong>€ 6,99 / mes</strong>', fr: 'Aussi disponible mensuellement à <strong>6,99 € / mois</strong>', it: 'Disponibile anche mensilmente a <strong>€ 6,99 / mese</strong>' },
-    'pr.yr.l3':     { de: 'Abrechnung über App Store oder Stripe', en: 'Billed via App Store or Stripe', es: 'Facturación vía App Store o Stripe', fr: 'Facturation via App Store ou Stripe', it: 'Fatturazione via App Store o Stripe' },
-    'pr.yr.l4':     { de: 'Jederzeit kündbar — Daten bleiben erhalten', en: 'Cancel any time — your data stays', es: 'Cancela cuando quieras — tus datos se conservan', fr: 'Résiliable à tout moment — vos données restent', it: 'Cancellabile in qualsiasi momento — i tuoi dati restano' },
-    'pr.yr.cta':    { de: 'Jährlich wählen', en: 'Choose yearly', es: 'Elegir anual', fr: 'Choisir annuel', it: 'Scegli annuale' },
 
     // ─── FAQ ─────────────────────────────────────────────
     'faq.over': { de: 'FAQ', en: 'FAQ', es: 'FAQ', fr: 'FAQ', it: 'FAQ' },
