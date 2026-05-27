@@ -374,6 +374,7 @@ nav.scrolled {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  gap: clamp(28px, 4vw, 72px);
   z-index: 1;
   padding: 0 24px;
   perspective: 1400px;
@@ -401,17 +402,15 @@ nav.scrolled {
 }
 .hero-phone--left,
 .hero-phone--right {
-  width: clamp(200px, 22vw, 300px);
+  width: clamp(190px, 20vw, 280px);
   z-index: 1;
-  opacity: 0.78;
+  opacity: 0.85;
 }
 .hero-phone--left {
-  margin-right: -7%;
-  transform: translateY(8%) rotate(-6deg);
+  transform: translateY(14%) rotate(-4deg);
 }
 .hero-phone--right {
-  margin-left: -7%;
-  transform: translateY(8%) rotate(6deg);
+  transform: translateY(14%) rotate(4deg);
 }
 
 /* Trust strip at the very bottom of hero */
