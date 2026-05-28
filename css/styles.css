@@ -407,10 +407,10 @@ nav.scrolled {
   opacity: 0.85;
 }
 .hero-phone--left {
-  transform: translateY(14%) rotate(-4deg);
+  transform: translateY(-2%) rotate(-4deg);
 }
 .hero-phone--right {
-  transform: translateY(14%) rotate(4deg);
+  transform: translateY(-2%) rotate(4deg);
 }
 
 /* Trust strip at the very bottom of hero */
