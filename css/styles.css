@@ -446,28 +446,41 @@ nav.scrolled {
 .principles {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 64px 48px;
+  gap: 20px;
 }
 .principle {
   position: relative;
-  padding-top: 8px;
-  border-top: 1px solid var(--hairline);
+  background: var(--bg-card);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  padding: 32px 30px;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+.principle:hover {
+  background: var(--bg-card-hov);
+  border-color: var(--hairline-2);
+  transform: translateY(-3px);
 }
 .principle-num {
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.14em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  background: rgba(34, 197, 94, 0.10);
   color: var(--accent);
-  padding-top: 16px;
-  margin-bottom: 18px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  margin-bottom: 20px;
 }
 .principle h3 {
   font-size: clamp(20px, 1.7vw, 24px);
   font-weight: 500;
   letter-spacing: -0.012em;
   line-height: 1.25;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 .principle p {
   color: var(--text-mute);
@@ -795,7 +808,6 @@ nav.scrolled {
 /* ════════════════════════════════════════════════════════════
    COMPARE — Checkmarks vs Numbers
    ════════════════════════════════════════════════════════════ */
-.compare { background: var(--bg-soft); }
 .compare-grid {
   display: grid;
   grid-template-columns: 1fr 60px 1fr;
@@ -1260,7 +1272,7 @@ nav.scrolled {
   .hero-trust { margin: 48px auto 64px; gap: 22px; }
 
   .layers-grid { grid-template-columns: 1fr; }
-  .principles { grid-template-columns: 1fr; gap: 44px 0; }
+  .principles { grid-template-columns: 1fr; gap: 16px; }
   .foundation-grid { grid-template-columns: 1fr; }
   .plans, .plans--two { grid-template-columns: 1fr; }
   .plan-prices li { grid-template-columns: auto auto; row-gap: 4px; }
