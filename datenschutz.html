@@ -98,6 +98,7 @@
       <h3>c) Hochgeladene Inhalte</h3>
       <ul>
         <li>ARC-Coverbilder, die der Nutzer selbst hochlädt (gespeichert im Storage-Bereich <code>arc-covers/&lt;user_id&gt;/</code>)</li>
+        <li>Optionale Screenshots, die der Nutzer freiwillig an eine Feedback-Nachricht anhängt (gespeichert im privaten Storage-Bereich <code>feedback-screenshots/&lt;user_id&gt;/</code>; nicht öffentlich abrufbar, nur über kurzlebige signierte URLs für Administratoren einsehbar). Solche Screenshots können je nach Bildinhalt personenbezogene Daten enthalten.</li>
       </ul>
 
       <h3>d) Abonnement- und Zahlungsdaten</h3>
@@ -150,7 +151,7 @@
       <h3>Supabase Inc. – Backend, Datenbank, Authentifizierung, Storage</h3>
       <ul>
         <li>Sitz: 970 Toa Payoh North, #07-04, Singapore 318992 (Holding); operative Tochter in den USA.</li>
-        <li>Funktion: Hosting der PostgreSQL-Datenbank, Authentifizierungs-Service, Object Storage (für Coverbilder und Daten-Exporte), Edge Functions.</li>
+        <li>Funktion: Hosting der PostgreSQL-Datenbank, Authentifizierungs-Service, Object Storage (für Coverbilder, optionale Feedback-Screenshots und Daten-Exporte), Edge Functions.</li>
         <li><strong>Hosting-Region: Stockholm (<code>eu-north-1</code>), Europäische Union.</strong> Datenbank, Auth-Service, Storage und Edge Functions liegen physisch in der EU.</li>
         <li>Drittlandsbezug: Supabase ist ein US-amerikanisches Unternehmen. Mit Supabase besteht ein AVV inklusive der EU-Standardvertragsklauseln nach Art. 46 Abs. 2 lit. c DSGVO.</li>
         <li>Datenschutzerklärung: <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">supabase.com/privacy</a></li>
@@ -224,7 +225,7 @@
       <h2>6. Speicherdauer</h2>
       <ul>
         <li><strong>Account-, Profil- und Nutzungsdaten:</strong> für die Dauer des bestehenden Vertragsverhältnisses. Bei Löschung des Kontos werden sie umgehend gelöscht (siehe 10.).</li>
-        <li><strong>Habit-Logs, Statistiken, Achievements, Ziele, Journal-Einträge, Selfmade-Habits/-ARCs, Coverbilder, Urlaubsperioden:</strong> bis zur Kontolöschung. Einzelne Datensätze kann der Nutzer jederzeit selbst innerhalb der App löschen.</li>
+        <li><strong>Habit-Logs, Statistiken, Achievements, Ziele, Journal-Einträge, Selfmade-Habits/-ARCs, Coverbilder, Feedback-Nachrichten samt optional angehängtem Screenshot, Urlaubsperioden:</strong> bis zur Kontolöschung. Einzelne Datensätze kann der Nutzer jederzeit selbst innerhalb der App löschen.</li>
         <li><strong>Cross-ARC-Vervollständigungs-Logs</strong> (<code>completion_logs</code>): rollierendes 90-Tage-Fenster; ältere Datensätze werden automatisch gelöscht.</li>
         <li><strong>Abo-/Rechnungsdaten:</strong> sieben Jahre gemäß § 132 Bundesabgabenordnung (BAO) bzw. § 212 UGB. Innerhalb dieser Frist werden Daten nur noch zu Beweis- und Aufbewahrungszwecken vorgehalten und nicht weiter aktiv verarbeitet.</li>
         <li><strong>Stripe-Datenbestand:</strong> Mit der Kontolöschung wird der Stripe-Kunde <strong>vollständig gelöscht</strong> (Stripe <code>customers.del</code>); damit werden auch laufende Abos automatisch beendet. Anonymisierte Zahlungsbelege verbleiben bei Stripe aus regulatorischen Gründen.</li>
@@ -249,7 +250,7 @@
       <ul>
         <li><strong>Expo SecureStore:</strong> speichert ausschließlich das Supabase-Sitzungstoken (JWT) verschlüsselt im sicheren Bereich des Betriebssystems (iOS Keychain / Android Keystore). Bei Logout oder Konto-Löschung wird das Token entfernt.</li>
         <li><strong>Lokaler Cache (TanStack React Query):</strong> im Arbeitsspeicher der App, zur Performance-Optimierung der Anzeige. Kein persistenter Datenexport; bei App-Schließung gelöscht.</li>
-        <li><strong>Foto-Auswahl (expo-image-picker):</strong> greift nach Bestätigung des System-Dialogs auf einzelne, vom Nutzer ausgewählte Bilder zu, ausschließlich zur Verwendung als ARC-Coverbild.</li>
+        <li><strong>Foto-Auswahl (expo-image-picker):</strong> greift nach Bestätigung des System-Dialogs auf einzelne, vom Nutzer ausgewählte Bilder zu, zur Verwendung als ARC-Coverbild oder als optionaler Screenshot-Anhang an eine Feedback-Nachricht.</li>
       </ul>
 
       <h2>9. Sicherheit</h2>
@@ -279,8 +280,8 @@
       </ul>
       <p>Zur Erleichterung der Ausübung dieser Rechte bietet die App zwei integrierte Selbstbedienungs-Funktionen:</p>
       <ul>
-        <li><strong>Datenexport („Datenexport" im Profil-Bereich):</strong> erstellt einen ZIP-Download Ihres gesamten personenbezogenen Datenbestands (alle Tabellen, in denen Sie Eigentümer sind, plus Ihre hochgeladenen Coverbilder) als JSON-Dateien plus Manifest. Aus Schutz vor missbräuchlichen Massenanfragen ist die Funktion auf <strong>eine Anfrage pro 24 Stunden</strong> beschränkt (Art. 12 Abs. 5 DSGVO).</li>
-        <li><strong>Konto-Löschung („Konto löschen" in den Account-Einstellungen):</strong> löscht unwiderruflich Ihren Supabase-Account, alle damit verknüpften Datensätze über <code>ON DELETE CASCADE</code>-Verknüpfungen, sämtliche von Ihnen hochgeladenen Storage-Objekte (Coverbilder und ggf. vorgenerierte Export-Archive) sowie Ihren Stripe-Kunden samt laufender Abos.</li>
+        <li><strong>Datenexport („Datenexport" im Profil-Bereich):</strong> erstellt einen ZIP-Download Ihres gesamten personenbezogenen Datenbestands (alle Tabellen, in denen Sie Eigentümer sind, plus Ihre hochgeladenen Coverbilder und an Feedback angehängten Screenshots) als JSON-Dateien plus Manifest. Aus Schutz vor missbräuchlichen Massenanfragen ist die Funktion auf <strong>eine Anfrage pro 24 Stunden</strong> beschränkt (Art. 12 Abs. 5 DSGVO).</li>
+        <li><strong>Konto-Löschung („Konto löschen" in den Account-Einstellungen):</strong> löscht unwiderruflich Ihren Supabase-Account, alle damit verknüpften Datensätze über <code>ON DELETE CASCADE</code>-Verknüpfungen, sämtliche von Ihnen hochgeladenen Storage-Objekte (Coverbilder, an Feedback angehängte Screenshots und ggf. vorgenerierte Export-Archive) sowie Ihren Stripe-Kunden samt laufender Abos.</li>
       </ul>
       <p>Darüber hinaus erreichen Sie uns unter der in 1. angegebenen Adresse.</p>
 
@@ -382,6 +383,7 @@
       <h3>c) Uploaded content</h3>
       <ul>
         <li>ARC cover images uploaded by the User (stored in the storage area <code>arc-covers/&lt;user_id&gt;/</code>)</li>
+        <li>Optional screenshots the User voluntarily attaches to a feedback message (stored in the private storage area <code>feedback-screenshots/&lt;user_id&gt;/</code>; not publicly accessible, viewable by administrators only via short-lived signed URLs). Depending on their content, such screenshots may contain personal data.</li>
       </ul>
 
       <h3>d) Subscription and payment data</h3>
@@ -432,7 +434,7 @@
       <h3>Supabase Inc. – backend, database, authentication, storage</h3>
       <ul>
         <li>Seat: 970 Toa Payoh North, #07-04, Singapore 318992 (holding); operating subsidiary in the USA.</li>
-        <li>Function: hosting of the PostgreSQL database, authentication service, object storage (for cover images and data exports), edge functions.</li>
+        <li>Function: hosting of the PostgreSQL database, authentication service, object storage (for cover images, optional feedback screenshots and data exports), edge functions.</li>
         <li><strong>Hosting region: Stockholm (<code>eu-north-1</code>), European Union.</strong> Database, auth service, storage and edge functions are physically located in the EU.</li>
         <li>Third-country reference: Supabase is a US company. A DPA including the EU Standard Contractual Clauses under Art. 46(2)(c) GDPR has been concluded with Supabase.</li>
         <li>Privacy policy: <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">supabase.com/privacy</a></li>
@@ -506,7 +508,7 @@
       <h2>6. Storage period</h2>
       <ul>
         <li><strong>Account, profile and usage data:</strong> for the duration of the existing contractual relationship. Upon deletion of the account, it is deleted immediately (see 10.).</li>
-        <li><strong>Habit logs, statistics, achievements, goals, journal entries, self-made habits/ARCs, cover images, vacation periods:</strong> until account deletion. Individual records can be deleted by the User at any time within the App.</li>
+        <li><strong>Habit logs, statistics, achievements, goals, journal entries, self-made habits/ARCs, cover images, feedback messages including any attached screenshot, vacation periods:</strong> until account deletion. Individual records can be deleted by the User at any time within the App.</li>
         <li><strong>Cross-ARC completion logs</strong> (<code>completion_logs</code>): rolling 90-day window; older records are automatically deleted.</li>
         <li><strong>Subscription/invoice data:</strong> seven years pursuant to Section 132 of the Austrian Federal Fiscal Code (BAO) or Section 212 UGB. During this period, data is retained only for evidence and storage purposes and is no longer actively processed.</li>
         <li><strong>Stripe records:</strong> Upon account deletion, the Stripe customer is <strong>fully deleted</strong> (Stripe <code>customers.del</code>); active subscriptions are thereby automatically terminated. Anonymised payment receipts remain with Stripe for regulatory reasons.</li>
@@ -529,7 +531,7 @@
       <ul>
         <li><strong>Expo SecureStore:</strong> stores only the Supabase session token (JWT) encrypted in the secure area of the operating system (iOS Keychain / Android Keystore). The token is removed on logout or account deletion.</li>
         <li><strong>Local cache (TanStack React Query):</strong> in the App's working memory, to optimise display performance. No persistent data export; deleted when the App is closed.</li>
-        <li><strong>Photo picker (expo-image-picker):</strong> after confirming the system dialog, accesses individual images selected by the User, exclusively for use as ARC cover image.</li>
+        <li><strong>Photo picker (expo-image-picker):</strong> after confirming the system dialog, accesses individual images selected by the User, for use as an ARC cover image or as an optional screenshot attachment to a feedback message.</li>
       </ul>
 
       <h2>9. Security</h2>
@@ -559,8 +561,8 @@
       </ul>
       <p>To facilitate the exercise of these rights, the App offers two integrated self-service functions:</p>
       <ul>
-        <li><strong>Data export ("Data export" in the profile area):</strong> creates a ZIP download of your entire personal data set (all tables where you are the owner, plus your uploaded cover images) as JSON files plus a manifest. To protect against abusive bulk requests, the function is limited to <strong>one request per 24 hours</strong> (Art. 12(5) GDPR).</li>
-        <li><strong>Account deletion ("Delete account" in the account settings):</strong> irreversibly deletes your Supabase account, all linked records via <code>ON DELETE CASCADE</code> relations, all storage objects you have uploaded (cover images and any pre-generated export archives) as well as your Stripe customer including active subscriptions.</li>
+        <li><strong>Data export ("Data export" in the profile area):</strong> creates a ZIP download of your entire personal data set (all tables where you are the owner, plus your uploaded cover images and screenshots attached to feedback) as JSON files plus a manifest. To protect against abusive bulk requests, the function is limited to <strong>one request per 24 hours</strong> (Art. 12(5) GDPR).</li>
+        <li><strong>Account deletion ("Delete account" in the account settings):</strong> irreversibly deletes your Supabase account, all linked records via <code>ON DELETE CASCADE</code> relations, all storage objects you have uploaded (cover images, screenshots attached to feedback and any pre-generated export archives) as well as your Stripe customer including active subscriptions.</li>
       </ul>
       <p>You can also reach us at the address given in 1.</p>
 
