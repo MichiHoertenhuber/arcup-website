@@ -46,7 +46,7 @@ Eine Domain wie `arc-up.com` kaufst du bei einem **Domain-Registrar**. Empfehlun
    - Typ `A`, Name `@`, Wert `185.199.110.153`
    - Typ `A`, Name `@`, Wert `185.199.111.153`
    - Typ `CNAME`, Name `www`, Wert `<dein-github-username>.github.io`
-4. In den GitHub Repo-Einstellungen → Pages → Custom Domain → `arcup.app` eintragen
+4. In den GitHub Repo-Einstellungen → Pages → Custom Domain → `arc-up.com` eintragen
 5. „Enforce HTTPS" aktivieren (GitHub stellt das SSL-Zertifikat kostenlos aus)
 
 DNS-Änderungen dauern 15 Minuten bis 24 Stunden.

@@ -413,6 +413,43 @@ nav.scrolled {
   transform: translateY(-2%) rotate(4deg);
 }
 
+/* Hero rotator — rotating life-area word under the headline */
+.hero-rotator {
+  margin: 20px auto 0;
+  font-size: clamp(17px, 1.9vw, 24px);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--text-mute);
+}
+.hero-rotator-word {
+  display: inline-block;
+  color: var(--accent);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.hero-rotator-word.swap { opacity: 0; transform: translateY(-8px); }
+
+/* ── Motion: floating hero phones, breathing glow, scroll reveal ── */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-phone:not(.hero-phone--left):not(.hero-phone--right) {
+    animation: floatCenter 6s ease-in-out infinite;
+  }
+  .hero-phone--left  { animation: floatLeft 7s ease-in-out infinite; }
+  .hero-phone--right { animation: floatRight 6.5s ease-in-out infinite 0.4s; }
+  .hero-stage-glow   { animation: glowBreathe 8s ease-in-out infinite; }
+
+  .js-anim .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .js-anim .reveal.is-visible { opacity: 1; transform: none; }
+}
+@keyframes floatCenter { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+@keyframes floatLeft  { 0%, 100% { transform: translateY(-2%) rotate(-4deg); } 50% { transform: translateY(calc(-2% - 12px)) rotate(-4deg); } }
+@keyframes floatRight { 0%, 100% { transform: translateY(-2%) rotate(4deg); } 50% { transform: translateY(calc(-2% - 12px)) rotate(4deg); } }
+@keyframes glowBreathe { 0%, 100% { opacity: 0.7; transform: scale(1); } 50% { opacity: 1; transform: scale(1.08); } }
+
 /* Trust strip at the very bottom of hero */
 .hero-trust {
   display: flex;

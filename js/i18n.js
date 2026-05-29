@@ -57,6 +57,7 @@
       fr: "Relie ta vision à long terme à ce que tu fais aujourd'hui.",
       it: 'Collega la tua visione a lungo termine con ciò che fai oggi.',
     },
+    'hero.rotPrefix': { de: 'Für', en: 'For', es: 'Para', fr: 'Pour', it: 'Per' },
     'hero.ctaPrimary': {
       de: 'App kostenlos laden', en: 'Get the app for free', es: 'Descargar gratis',
       fr: "Télécharger gratuitement", it: "Scarica gratis",
@@ -65,9 +66,9 @@
       de: 'So funktioniert ArcUp', en: 'How ArcUp works', es: 'Cómo funciona ArcUp',
       fr: 'Comment fonctionne ArcUp', it: 'Come funziona ArcUp',
     },
-    'hero.trust1': { de: 'Zahlen statt Häkchen',    en: 'Numbers, not checkmarks', es: 'Números, no casillas',  fr: 'Des chiffres, pas des cases', it: 'Numeri, non spunte' },
+    'hero.trust1': { de: 'Made in Austria', en: 'Made in Austria', es: 'Made in Austria', fr: 'Made in Austria', it: 'Made in Austria' },
     'hero.trust2': { de: 'EU-Hosting · DSGVO',      en: 'EU hosting · GDPR',      es: 'Hosting UE · RGPD',    fr: 'Hébergement UE · RGPD',  it: 'Hosting UE · GDPR' },
-    'hero.trust3': { de: 'Drei Ebenen, ein System', en: 'Three levels, one system', es: 'Tres niveles, un sistema', fr: 'Trois niveaux, un système', it: 'Tre livelli, un sistema' },
+    'hero.trust3': { de: 'Kein Abo-Zwang', en: 'No subscription required', es: 'Sin suscripción obligatoria', fr: 'Sans abonnement obligatoire', it: 'Nessun abbonamento obbligatorio' },
     'hero.trust4': { de: 'Keine Werbung, keine Tracker', en: 'No ads, no trackers', es: 'Sin anuncios, sin rastreadores', fr: 'Pas de pub, pas de trackers', it: 'Niente pubblicità, niente tracker' },
     'hero.trust5': { de: 'Voller Datenexport jederzeit', en: 'Full data export any time', es: 'Exportación completa de datos cuando quieras', fr: 'Export complet de tes données à tout moment', it: 'Export completo dei dati in qualsiasi momento' },
 
