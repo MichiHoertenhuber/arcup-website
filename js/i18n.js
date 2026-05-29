@@ -65,9 +65,9 @@
       de: 'So funktioniert ArcUp', en: 'How ArcUp works', es: 'Cómo funciona ArcUp',
       fr: 'Comment fonctionne ArcUp', it: 'Come funziona ArcUp',
     },
-    'hero.trust1': { de: 'Free für immer',          en: 'Free forever',           es: 'Gratis para siempre',  fr: 'Gratuit pour toujours',  it: 'Gratis per sempre' },
+    'hero.trust1': { de: 'Zahlen statt Häkchen',    en: 'Numbers, not checkmarks', es: 'Números, no casillas',  fr: 'Des chiffres, pas des cases', it: 'Numeri, non spunte' },
     'hero.trust2': { de: 'EU-Hosting · DSGVO',      en: 'EU hosting · GDPR',      es: 'Hosting UE · RGPD',    fr: 'Hébergement UE · RGPD',  it: 'Hosting UE · GDPR' },
-    'hero.trust3': { de: 'Pro mit Lifetime',        en: 'Pro with Lifetime',      es: 'Pro con Lifetime',     fr: 'Pro avec Lifetime',      it: 'Pro con Lifetime' },
+    'hero.trust3': { de: 'Drei Ebenen, ein System', en: 'Three levels, one system', es: 'Tres niveles, un sistema', fr: 'Trois niveaux, un système', it: 'Tre livelli, un sistema' },
     'hero.trust4': { de: 'Keine Werbung, keine Tracker', en: 'No ads, no trackers', es: 'Sin anuncios, sin rastreadores', fr: 'Pas de pub, pas de trackers', it: 'Niente pubblicità, niente tracker' },
     'hero.trust5': { de: 'Voller Datenexport jederzeit', en: 'Full data export any time', es: 'Exportación completa de datos cuando quieras', fr: 'Export complet de tes données à tout moment', it: 'Export completo dei dati in qualsiasi momento' },
 
@@ -340,7 +340,6 @@
     'ft.impressum':    { de: 'Impressum', en: 'Imprint', es: 'Aviso legal', fr: 'Mentions légales', it: 'Note legali' },
     'ft.datenschutz':  { de: 'Datenschutz', en: 'Privacy', es: 'Privacidad', fr: 'Confidentialité', it: 'Privacy' },
     'ft.agb':          { de: 'AGB', en: 'Terms', es: 'Términos', fr: 'CGU', it: 'Termini' },
-    'ft.macroMicroMeso': { de: 'Vision · Phase · Alltag', en: 'Vision · Phase · Daily', es: 'Visión · Fase · Día a día', fr: 'Vision · Phase · Quotidien', it: 'Visione · Fase · Quotidiano' },
 
     // ─── LEGAL PAGES ─────────────────────────────────────
     'legal.lastUpdated': {
