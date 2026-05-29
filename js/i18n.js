@@ -86,11 +86,11 @@
     },
     'p1.h': { de: 'Strukturiert statt beliebig.', en: 'Structured, not arbitrary.', es: 'Estructurado, no arbitrario.', fr: 'Structuré, pas arbitraire.', it: 'Strutturato, non arbitrario.' },
     'p1.b': {
-      de: 'Gewohnheiten sind keine Freitext-Notizen. Jede Gewohnheit hat einen Zielwert, eine Richtung (≥ oder ≤) und eine Einheit. „5,2 km gelaufen", nicht „Sport gemacht".',
-      en: "Habits aren't free-text notes. Each habit has a target value, a direction (≥ or ≤) and a unit. “Ran 5.2 km”, not “did sport”.",
-      es: 'Los hábitos no son notas libres. Cada uno tiene valor objetivo, dirección (≥ o ≤) y unidad. «5,2 km corridos», no «hice deporte».',
-      fr: "Les habitudes ne sont pas des notes libres. Chacune a une valeur cible, une direction (≥ ou ≤) et une unité. « 5,2 km courus », pas « fait du sport ».",
-      it: "Le abitudini non sono note libere. Ognuna ha un valore obiettivo, una direzione (≥ o ≤) e un'unità. «5,2 km corsi», non «fatto sport».",
+      de: 'Gewohnheiten sind keine Freitext-Notizen. Jede Gewohnheit hat einen Zielwert, eine Richtung (≥ oder ≤) und eine Einheit.',
+      en: "Habits aren't free-text notes. Each habit has a target value, a direction (≥ or ≤) and a unit.",
+      es: 'Los hábitos no son notas libres. Cada uno tiene valor objetivo, dirección (≥ o ≤) y unidad.',
+      fr: "Les habitudes ne sont pas des notes libres. Chacune a une valeur cible, une direction (≥ ou ≤) et une unité.",
+      it: "Le abitudini non sono note libere. Ognuna ha un valore obiettivo, una direzione (≥ o ≤) e un'unità.",
     },
     'p2.h': { de: 'Befristet statt endlos.', en: 'Time-boxed, not endless.', es: 'Con plazo, no sin fin.', fr: 'Limité dans le temps, pas sans fin.', it: 'A tempo, non infinito.' }, // _x:'Zeit-geboxte Anstrengung.', en: 'Time-boxed effort.', es: 'Esfuerzo con plazo.', fr: 'Effort limité dans le temps.', it: 'Sforzo a tempo definito.' },
     'p2.b': {
@@ -210,7 +210,7 @@
 
     // ─── AREAS ───────────────────────────────────────────
     'areas.overline': { de: 'Der Rahmen', en: 'The framework', es: 'El marco', fr: 'Le cadre', it: 'La cornice' },
-    'areas.title':    { de: 'Fünf Bereiche.<br />Ein Leben.', en: 'Five areas.<br />One life.', es: 'Cinco áreas.<br />Una vida.', fr: 'Cinq domaines.<br />Une vie.', it: 'Cinque aree.<br />Una vita.' },
+    'areas.title':    { de: 'Das große Ganze<br />im Blick.', en: 'The big picture,<br />in focus.', es: 'La imagen completa,<br />a la vista.', fr: "La vue d'ensemble,<br />toujours en vue.", it: 'Il quadro generale,<br />sempre in vista.' },
     'areas.sub':      { de: 'Jeder Lerninhalt, jede Gewohnheit und jeder ARC gehört zu genau einem Lebensbereich. Das hält den Fokus klar und verhindert „passt-überall"-Inhalte.', en: 'Every piece of learning content, habit and ARC belongs to exactly one life area. That keeps the focus sharp and prevents "fits anywhere" content.', es: 'Cada contenido de aprendizaje, cada hábito y cada ARC pertenece a exactamente una área de vida. Eso mantiene el foco nítido y evita el contenido «encaja en todas partes».', fr: "Chaque contenu d'apprentissage, chaque habitude et chaque ARC appartient à un seul domaine de vie. Cela garde le focus clair et évite le contenu « utile partout ».", it: 'Ogni contenuto di apprendimento, ogni abitudine e ogni ARC appartiene a una sola area di vita. Così il focus resta nitido e si evitano contenuti «buoni per tutto».' }, // _x:'...Das hält den Compass scharf...', en: 'Every source, habit and ARC belongs to exactly one area. That keeps the Compass sharp and prevents "fits anywhere" content.', es: 'Cada fuente, hábito y ARC pertenece a una sola área. Eso mantiene el Compass afilado y evita el contenido «encaja en todas partes».', fr: "Chaque source, habitude et ARC appartient à un seul domaine. Cela garde le Compass net et évite le contenu « utile partout ».", it: 'Ogni fonte, abitudine e ARC appartiene a una sola area. Così il Compass resta nitido e si evitano contenuti «buoni per tutto».' },
 
     'a1.h': { de: 'Body', en: 'Body', es: 'Cuerpo', fr: 'Corps', it: 'Corpo' },
@@ -235,7 +235,7 @@
 
     // ─── COMPARE ─────────────────────────────────────────
     'cmp.over': { de: 'Der Unterschied', en: 'The difference', es: 'La diferencia', fr: 'La différence', it: 'La differenza' },
-    'cmp.h':    { de: 'Wir tracken Werte,<br />keine Häkchen.', en: 'We track values,<br />not checkmarks.', es: 'Registramos valores,<br />no marcas.', fr: 'Nous suivons des valeurs,<br />pas des cases cochées.', it: 'Tracciamo valori,<br />non spunte.' },
+    'cmp.h':    { de: 'Echte Werte,<br />kein Abhaken.', en: 'Real values,<br />not box-ticking.', es: 'Valores reales,<br />nada de casillas.', fr: 'De vraies valeurs,<br />pas de cases à cocher.', it: 'Valori veri,<br />niente spunte.' },
     'cmp.sub':  { de: 'Andere fragen: „Hast du heute Sport gemacht?" ArcUp fragt: „Wie viele Kilometer? Wie viele Minuten? Wie schnell?" — und alles, was du einträgst, bleibt messbar.', en: 'Others ask: "Did you do sport today?" ArcUp asks: "How many kilometres? How many minutes? How fast?" — and every value you log stays measurable later on.', es: 'Otros preguntan: «¿Hiciste deporte hoy?» ArcUp pregunta: «¿Cuántos kilómetros? ¿Cuántos minutos? ¿A qué velocidad?» — y cada valor que registras sigue siendo medible después.', fr: 'Les autres demandent « t’as fait du sport aujourd’hui ? » ArcUp demande « combien de kilomètres ? combien de minutes ? à quelle vitesse ? » — et chaque valeur saisie reste mesurable plus tard.', it: 'Gli altri chiedono: «Hai fatto sport oggi?» ArcUp chiede: «Quanti chilometri? Quanti minuti? A che velocità?» — e ogni valore inserito resta misurabile in seguito.' },
 
     'cmp.badLabel': { de: 'Häkchen-Tracker', en: 'Checkbox tracker', es: 'Tracker de casillas', fr: 'Tracker à cases', it: 'Tracker a spunte' },
@@ -287,17 +287,18 @@
     'pr.sub':  { de: 'Alle Kernfunktionen sind kostenlos. Pro schaltet die Tiefe frei — mehrere parallele ARCs, Insights mit Gewohnheits-Korrelationen, Tagebuch, Ziele und KI-Generator.', en: 'All core features are free. Pro unlocks the depth — multiple parallel ARCs, Insights with habit correlations, Journal, Goals and AI generator.', es: 'Las funciones esenciales son gratis. Pro desbloquea la profundidad — varios ARCs en paralelo, Insights con correlaciones, Diario, Metas y generador IA.', fr: "Toutes les fonctions essentielles sont gratuites. Pro débloque la profondeur — plusieurs ARC en parallèle, Insights avec corrélations, Journal, Objectifs et générateur IA.", it: "Tutte le funzioni principali sono gratis. Pro sblocca la profondità — più ARC in parallelo, Insights con correlazioni, Diario, Obiettivi e generatore IA." },
 
     // Feature labels — mirrored 1:1 from the app's subscription screen (src/locales/*.ts → subscription.features.*)
-    'pf.habitTracking':  { de: 'Gewohnheits-Tracking',          en: 'Habit Tracking',              es: 'Seguimiento de hábitos',      fr: 'Suivi des habitudes',        it: 'Tracciamento abitudini' },
-    'pf.curatedHabits':  { de: '120+ fundierte Gewohnheiten',   en: '120+ Curated Habits',         es: '120+ hábitos fundamentados',  fr: '120+ habitudes fondées',     it: '120+ abitudini fondate' },
+    'pf.oneActiveArc':   { de: 'Ein aktiver ARC',              en: 'One active ARC',              es: 'Un ARC activo',               fr: 'Un ARC actif',               it: 'Un ARC attivo' },
+    'pf.evidenceBasedHabits': { de: 'Fundierte Gewohnheiten',  en: 'Evidence-Based Habits',       es: 'Hábitos fundamentados',       fr: 'Habitudes fondées',          it: 'Abitudini fondate' },
     'pf.lifeAreas':      { de: 'Lebensbereiche &amp; Vision',   en: 'Life Areas &amp; Vision',     es: 'Áreas de vida y Visión',      fr: 'Domaines de vie &amp; Vision', it: 'Aree di vita e Visione' },
-    'pf.contentLibrary': { de: 'Lerninhalte',   en: 'Learning Content',            es: 'Contenidos de aprendizaje', fr: "Contenus d'apprentissage",   it: 'Contenuti di apprendimento' },
+    'pf.lessons':        { de: 'Lerninhalte',                   en: 'Lessons',                     es: 'Contenidos de aprendizaje',   fr: "Contenus d'apprentissage",   it: 'Contenuti di apprendimento' },
     'pf.shareResults':   { de: 'Erfolge teilen',                en: 'Share Results',               es: 'Compartir resultados',        fr: 'Partager les résultats',     it: 'Condividi i risultati' },
     'pf.multipleArcs':   { de: 'Mehrere aktive ARCs',           en: 'Multiple Active ARCs',        es: 'Varios ARCs activos',         fr: 'Plusieurs ARCs actifs',      it: 'Più ARC attivi' },
     'pf.premiumContent': { de: 'Premium-Inhalte',               en: 'Premium Content',             es: 'Contenido Premium',           fr: 'Contenu Premium',            it: 'Contenuto Premium' },
     'pf.insights':       { de: 'Insights',                       en: 'Insights',                    es: 'Insights',                    fr: 'Insights',                   it: 'Insights' },
     'pf.goalTracking':   { de: 'Ziel-Tracking',                 en: 'Goal Tracking',               es: 'Seguimiento de objetivos',    fr: 'Suivi des objectifs',        it: 'Tracciamento obiettivi' },
-    'pf.journaling':     { de: 'Tagebuch',                     en: 'Journaling',                  es: 'Diario',                      fr: 'Journal',                    it: 'Diario' },
+    'pf.journaling':     { de: 'Tagebuch schreiben',           en: 'Journaling',                  es: 'Diario',                      fr: 'Journal',                    it: 'Diario' },
     'pf.customArcs':     { de: 'Eigene ARCs',                   en: 'Custom ARCs',                 es: 'ARCs personalizados',         fr: 'ARCs personnalisés',         it: 'ARC personalizzati' },
+    'pf.customHabits':   { de: 'Eigene Gewohnheiten',          en: 'Custom Habits',               es: 'Hábitos personalizados',      fr: 'Habitudes personnalisées',   it: 'Abitudini personalizzate' },
     'pf.aiGenerator':    { de: 'KI-Generator für ARCs',         en: 'AI ARC Generator',            es: 'Generador IA de ARCs',        fr: "Générateur IA d'ARCs",       it: 'Generatore IA di ARC' },
 
     'pr.free.name':  { de: 'Free', en: 'Free', es: 'Free', fr: 'Free', it: 'Free' },

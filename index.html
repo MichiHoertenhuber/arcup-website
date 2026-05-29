@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script>(function(){try{var s=['de','en','es','fr','it'],l=localStorage.getItem('arcup-lang')||(navigator.language||'de').slice(0,2).toLowerCase();document.documentElement.lang=s.indexOf(l)>-1?l:'de';}catch(e){}})();</script>
   <title>ArcUp — Building Better Habits</title>
-  <meta name="description" content="Nicht noch ein Gewohnheits-Tracker. Ein Wachstums-System aus zeitlich begrenzten ARCs, numerischen Gewohnheiten und eigenen Lerninhalten — verteilt auf fünf Lebensbereiche." />
+  <meta name="description" content="Verbinde deine langfristige Vision mit dem, was du heute tust. ArcUp macht aus großen Zielen messbare Schritte — Tag für Tag, in fünf Lebensbereichen." />
   <meta name="theme-color" content="#06080C" />
   <link rel="icon" type="image/png" href="./assets/favicon.png" />
 
+  <meta property="og:site_name" content="ArcUp" />
   <meta property="og:title" content="ArcUp — Building Better Habits" />
-  <meta property="og:description" content="Lebensvision, ARCs und numerische Gewohnheiten — ein System für strukturiertes Wachstum in fünf Lebensbereichen." />
+  <meta property="og:description" content="Verbinde deine Vision mit deinem Alltag: ArcUp macht aus großen Zielen messbare Schritte — Tag für Tag, in fünf Lebensbereichen." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="./assets/marketing/Homepage_Render.png" />
 
@@ -20,6 +21,15 @@
 
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/i18n.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ArcUp",
+    "url": "https://arc-up.com/"
+  }
+  </script>
 </head>
 <body>
 
@@ -94,12 +104,12 @@
   </ul>
 </header>
 
-<!-- ════════════ NUMBERS VS CHECKMARKS — the hook after the hook ════════════ -->
-<section class="section compare">
+<!-- ════════════ DER UNTERSCHIED + PRINZIPIEN (merged philosophy) ════════════ -->
+<section class="section compare" id="philosophy">
   <div class="container">
     <div class="section-head section-head--center">
       <span class="overline" data-i18n="cmp.over">Der Unterschied</span>
-      <h2 class="display-md" data-i18n-html="cmp.h">Wir tracken Werte,<br />keine Häkchen.</h2>
+      <h2 class="display-md" data-i18n-html="cmp.h">Echte Werte,<br />kein Abhaken.</h2>
       <p class="section-sub" data-i18n="cmp.sub">Andere fragen: „Hast du heute Sport gemacht?" ArcUp fragt: „Wie viele Kilometer? Wie viele Minuten? Wie schnell?" — und alles, was du einträgst, bleibt messbar.</p>
     </div>
 
@@ -127,11 +137,8 @@
       </div>
     </div>
   </div>
-</section>
 
-<!-- ════════════ MANIFESTO ════════════ -->
-<section class="section manifesto" id="philosophy">
-  <div class="container narrow">
+  <div class="container narrow manifesto philosophy-principles">
     <span class="overline" data-i18n="mani.overline">Was daraus folgt</span>
     <h2 class="display-md" data-i18n-html="mani.title">
       Vier Prinzipien,<br />
@@ -142,7 +149,7 @@
       <div class="principle">
         <span class="principle-num">01</span>
         <h3 data-i18n="p1.h">Strukturiert statt beliebig.</h3>
-        <p data-i18n="p1.b">Gewohnheiten sind keine Freitext-Notizen. Jede Gewohnheit hat einen Zielwert, eine Richtung (≥ oder ≤) und eine Einheit. „5,2 km gelaufen", nicht „Sport gemacht".</p>
+        <p data-i18n="p1.b">Gewohnheiten sind keine Freitext-Notizen. Jede Gewohnheit hat einen Zielwert, eine Richtung (≥ oder ≤) und eine Einheit.</p>
       </div>
       <div class="principle">
         <span class="principle-num">02</span>
@@ -340,7 +347,7 @@
   <div class="container">
     <div class="section-head section-head--center">
       <span class="overline" data-i18n="areas.overline">Der Rahmen</span>
-      <h2 class="display-md" data-i18n-html="areas.title">Fünf Bereiche.<br />Ein Leben.</h2>
+      <h2 class="display-md" data-i18n-html="areas.title">Das große Ganze<br />im Blick.</h2>
       <p class="section-sub" data-i18n="areas.sub">Jede Quelle, jeder Habit und jeder ARC gehört zu genau einem Lebensbereich. Das hält den Fokus klar und verhindert „passt-überall"-Inhalte.</p>
     </div>
 
@@ -434,17 +441,18 @@
         </div>
         <p class="plan-tag" data-i18n="pr.free.tag">Für immer kostenlos.</p>
         <ul class="plan-list">
-          <li data-i18n="pf.habitTracking">Gewohnheits-Tracking</li>
-          <li data-i18n="pf.curatedHabits">120+ fundierte Gewohnheiten</li>
+          <li data-i18n="pf.oneActiveArc">Ein aktiver ARC</li>
+          <li data-i18n="pf.evidenceBasedHabits">Fundierte Gewohnheiten</li>
           <li data-i18n="pf.lifeAreas">Lebensbereiche &amp; Vision</li>
-          <li data-i18n="pf.contentLibrary">Lerninhalte</li>
+          <li data-i18n="pf.lessons">Lerninhalte</li>
           <li data-i18n="pf.shareResults">Erfolge teilen</li>
           <li class="off" data-i18n="pf.multipleArcs">Mehrere aktive ARCs</li>
           <li class="off" data-i18n="pf.premiumContent">Premium-Inhalte</li>
           <li class="off" data-i18n="pf.insights">Insights</li>
           <li class="off" data-i18n="pf.goalTracking">Ziel-Tracking</li>
-          <li class="off" data-i18n="pf.journaling">Journaling</li>
+          <li class="off" data-i18n="pf.journaling">Tagebuch schreiben</li>
           <li class="off" data-i18n="pf.customArcs">Eigene ARCs</li>
+          <li class="off" data-i18n="pf.customHabits">Eigene Gewohnheiten</li>
           <li class="off" data-i18n="pf.aiGenerator">KI-Generator für ARCs</li>
         </ul>
         <a href="#download" class="btn btn-ghost btn-block" data-i18n="pr.free.cta">Kostenlos starten</a>
@@ -458,17 +466,18 @@
         <p class="plan-tag" data-i18n="pr.pro.tag">Alle Features. Drei Wege, Pro zu bekommen.</p>
 
         <ul class="plan-list">
-          <li data-i18n="pf.habitTracking">Gewohnheits-Tracking</li>
-          <li data-i18n="pf.curatedHabits">120+ fundierte Gewohnheiten</li>
+          <li data-i18n="pf.oneActiveArc">Ein aktiver ARC</li>
+          <li data-i18n="pf.evidenceBasedHabits">Fundierte Gewohnheiten</li>
           <li data-i18n="pf.lifeAreas">Lebensbereiche &amp; Vision</li>
-          <li data-i18n="pf.contentLibrary">Lerninhalte</li>
+          <li data-i18n="pf.lessons">Lerninhalte</li>
           <li data-i18n="pf.shareResults">Erfolge teilen</li>
           <li data-i18n="pf.multipleArcs">Mehrere aktive ARCs</li>
           <li data-i18n="pf.premiumContent">Premium-Inhalte</li>
           <li data-i18n="pf.insights">Insights</li>
           <li data-i18n="pf.goalTracking">Ziel-Tracking</li>
-          <li data-i18n="pf.journaling">Journaling</li>
+          <li data-i18n="pf.journaling">Tagebuch schreiben</li>
           <li data-i18n="pf.customArcs">Eigene ARCs</li>
+          <li data-i18n="pf.customHabits">Eigene Gewohnheiten</li>
           <li data-i18n="pf.aiGenerator">KI-Generator für ARCs</li>
         </ul>
 

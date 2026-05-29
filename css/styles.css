@@ -854,6 +854,9 @@ nav.scrolled {
   font-weight: 300;
 }
 
+/* Merged philosophy section: gap between the compare demo and the principles */
+.philosophy-principles { margin-top: clamp(72px, 9vw, 120px); }
+
 /* ════════════════════════════════════════════════════════════
    NOT THIS
    ════════════════════════════════════════════════════════════ */
