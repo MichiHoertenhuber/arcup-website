@@ -11,6 +11,7 @@
   (function () {
     var el = document.getElementById('heroRotator');
     if (!el) return;
+    var line = el.closest('.hero-rotator') || el.parentNode;
 
     var WORDS = {
       de: ['deinen Körper', 'deinen Geist', 'dein Wachstum', 'deine Beziehungen', 'deine Freizeit'],
@@ -28,10 +29,10 @@
     setInterval(function () {
       var w = words();
       i = (i + 1) % w.length;
-      el.classList.add('swap');
+      line.classList.add('swap');
       setTimeout(function () {
         el.textContent = w[i];
-        el.classList.remove('swap');
+        line.classList.remove('swap');
       }, 300);
     }, 2800);
   })();

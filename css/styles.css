@@ -420,13 +420,10 @@ nav.scrolled {
   font-weight: 500;
   letter-spacing: -0.01em;
   color: var(--text-mute);
-}
-.hero-rotator-word {
-  display: inline-block;
-  color: var(--accent);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.hero-rotator-word.swap { opacity: 0; transform: translateY(-8px); }
+.hero-rotator.swap { opacity: 0; transform: translateY(-8px); }
+.hero-rotator-word { display: inline-block; color: var(--accent); }
 
 /* ── Motion: floating hero phones, breathing glow, scroll reveal ── */
 @media (prefers-reduced-motion: no-preference) {
