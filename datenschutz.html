@@ -7,6 +7,7 @@
   <title>Datenschutzerklärung — ArcUp</title>
   <meta name="robots" content="noindex" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet" />
@@ -134,7 +135,7 @@
         <li><strong>Beweissicherung der Kenntnisnahme des Gesundheits-Hinweises</strong> (AGB § 9 Abs. 6–7) — Art. 6 Abs. 1 lit. f DSGVO, berechtigtes Interesse an der Dokumentation der Aufklärung gegenüber Haftungsansprüchen</li>
         <li><strong>Bearbeitung von In-App-Feedback, Support und Produktverbesserung</strong> — Art. 6 Abs. 1 lit. f DSGVO, berechtigtes Interesse an Fehlerbehebung und Produktverbesserung</li>
         <li><strong>Abrechnung des Pro-Tarifs, Abonnement-Verwaltung</strong> — Art. 6 Abs. 1 lit. b DSGVO; steuerrechtliche Aufbewahrung Art. 6 Abs. 1 lit. c DSGVO i. V. m. BAO</li>
-        <li><strong>KI-gestützte ARC-Vorschläge</strong> („Generate ARC", Pro-Feature) — Art. 6 Abs. 1 lit. b DSGVO, nur auf aktive Anfrage des Nutzers</li>
+        <li><strong>KI-gestützte ARC-Vorschläge</strong> („Generate ARC", Pro-Feature) — Art. 6 Abs. 1 lit. b DSGVO, nur auf aktive Anfrage des Nutzers; die optionale Mitsendung der selbst erstellten Gewohnheiten zusätzlich Art. 6 Abs. 1 lit. a DSGVO (Einwilligung per Opt-in-Schalter, standardmäßig deaktiviert)</li>
         <li><strong>Lokale Erinnerungs-Benachrichtigungen</strong> — Art. 6 Abs. 1 lit. a DSGVO (Einwilligung über System-Dialog)</li>
         <li><strong>Datenexport und Datenauskunft</strong> (DSGVO Art. 15/20) — Art. 6 Abs. 1 lit. c DSGVO i. V. m. Art. 15/20 DSGVO</li>
         <li><strong>Kontolöschung</strong> (DSGVO Art. 17) — Art. 6 Abs. 1 lit. c DSGVO i. V. m. Art. 17 DSGVO</li>
@@ -169,7 +170,8 @@
       <h3>Anthropic, PBC – Generierung von ARC-Vorschlägen (Pro-Feature)</h3>
       <ul>
         <li>Sitz: 548 Market St, PMB 90375, San Francisco, CA 94104, USA.</li>
-        <li>Funktion: Verarbeitung des vom Nutzer eingegebenen Textprompts plus mitgeschickter Katalog-Stammdaten (Habits, Lebensbereiche, Sprache, Einheitensystem) zur Erzeugung eines KI-generierten ARC-Vorschlags durch das Modell <em>Claude Haiku 4.5</em>.</li>
+        <li>Funktion: Verarbeitung des vom Nutzer eingegebenen Textprompts plus mitgeschickter Katalog-Stammdaten (integrierter System-Habit-Katalog, Lebensbereiche, Sprache, Einheitensystem) zur Erzeugung eines KI-generierten ARC-Vorschlags durch das Modell <em>Claude Haiku 4.5</em>.</li>
+        <li>Übermittelte Daten: Standardmäßig werden <strong>nur</strong> der Prompt-Freitext sowie der gemeinsame, für alle Nutzer identische System-Stammdaten-Katalog (Gewohnheiten, Lebensbereiche, Sprache, Einheit) übermittelt. Aktiviert der Pro-Nutzer den optionalen Schalter „Eigene Gewohnheiten einbeziehen" (standardmäßig <strong>deaktiviert</strong>), werden zusätzlich die <strong>Bezeichnungen seiner selbst erstellten Gewohnheiten</strong> übertragen. <strong>Nicht</strong> übermittelt werden in keinem Fall Profil-/Kontodaten, E-Mail-Adresse, Nutzer-ID, Habit-Logs, Statistiken, Streaks oder sonstige Verhaltens-/Verlaufsdaten.</li>
         <li>Drittlandsbezug: USA. Anthropic stellt EU-Standardvertragsklauseln zur Verfügung.</li>
         <li>Datenverwendung: Eingaben werden laut Anthropic-Richtlinie für API-Kunden <strong>nicht</strong> für das Training von Modellen verwendet. Anthropic speichert API-Eingaben standardmäßig nur für die Dauer der Anfrage bzw. zur Missbrauchserkennung für einen begrenzten Zeitraum.</li>
         <li>Diese Funktion wird <strong>ausschließlich auf aktive Anfrage</strong> des Pro-Nutzers ausgelöst.</li>
@@ -208,8 +210,11 @@
       </p>
       <p>
         Der separate, nutzergesteuerte KI-Generator („Generate ARC", Pro-Feature) ist hiervon zu
-        unterscheiden und in Abschnitt 4 (Anthropic, PBC) gesondert beschrieben — nur dort werden
-        vom Nutzer eingegebene Prompts in Echtzeit an Anthropic übermittelt.
+        unterscheiden und in Abschnitt 4 (Anthropic, PBC) gesondert beschrieben — nur dort werden in
+        Echtzeit der vom Nutzer eingegebene Prompt sowie der System-Stammdaten-Katalog und, sofern der
+        Nutzer den entsprechenden Schalter aktiviert hat (standardmäßig deaktiviert), die Bezeichnungen
+        seiner selbst erstellten Gewohnheiten an Anthropic übermittelt. Personenbezogene Profil-, Konto-
+        oder Verhaltensdaten werden auch dort nicht übertragen.
       </p>
 
       <h2>5. Drittlandsübermittlung</h2>
@@ -418,7 +423,7 @@
         <li><strong>Evidence of acknowledgement of the health notice</strong> (Terms § 9(6)–(7)) — Art. 6(1)(f) GDPR, legitimate interest in documenting the warning against liability claims</li>
         <li><strong>Handling in-app feedback, support and product improvement</strong> — Art. 6(1)(f) GDPR, legitimate interest in bug-fixing and product improvement</li>
         <li><strong>Billing of the Pro plan, subscription management</strong> — Art. 6(1)(b) GDPR; tax-law retention Art. 6(1)(c) GDPR in conjunction with BAO</li>
-        <li><strong>AI-assisted ARC suggestions</strong> ("Generate ARC", Pro feature) — Art. 6(1)(b) GDPR, only on active request of the User</li>
+        <li><strong>AI-assisted ARC suggestions</strong> ("Generate ARC", Pro feature) — Art. 6(1)(b) GDPR, only on active request of the User; the optional inclusion of self-created habits additionally Art. 6(1)(a) GDPR (consent via opt-in toggle, off by default)</li>
         <li><strong>Local reminder notifications</strong> — Art. 6(1)(a) GDPR (consent via system dialog)</li>
         <li><strong>Data export and access</strong> (GDPR Art. 15/20) — Art. 6(1)(c) GDPR in conjunction with Art. 15/20 GDPR</li>
         <li><strong>Account deletion</strong> (GDPR Art. 17) — Art. 6(1)(c) GDPR in conjunction with Art. 17 GDPR</li>
@@ -452,7 +457,8 @@
       <h3>Anthropic, PBC – generation of ARC suggestions (Pro feature)</h3>
       <ul>
         <li>Seat: 548 Market St, PMB 90375, San Francisco, CA 94104, USA.</li>
-        <li>Function: processing of the text prompt entered by the User plus catalogue master data sent along (habits, life areas, language, unit system) to produce an AI-generated ARC suggestion by the model <em>Claude Haiku 4.5</em>.</li>
+        <li>Function: processing of the text prompt entered by the User plus catalogue master data sent along (built-in system habit catalogue, life areas, language, unit system) to produce an AI-generated ARC suggestion by the model <em>Claude Haiku 4.5</em>.</li>
+        <li>Transmitted data: by default, <strong>only</strong> the free-text prompt and the shared system master-data catalogue (habits, life areas, language, unit) — identical for all users — are transmitted. If the Pro User enables the optional toggle "Include my own habits" (off by <strong>default</strong>), the <strong>names of their self-created habits</strong> are sent in addition. In no case are profile/account data, email address, user ID, habit logs, statistics, streaks or any other behavioural/history data transmitted.</li>
         <li>Third-country reference: USA. Anthropic provides EU Standard Contractual Clauses.</li>
         <li>Data use: according to Anthropic's policy for API customers, inputs are <strong>not</strong> used to train models. By default, Anthropic stores API inputs only for the duration of the request or for abuse detection for a limited period.</li>
         <li>This feature is triggered <strong>exclusively on active request</strong> of the Pro User.</li>
@@ -491,8 +497,11 @@
       </p>
       <p>
         The separate, user-controlled AI generator ("Generate ARC", Pro feature) is to be
-        distinguished from this and is described separately in Section 4 (Anthropic, PBC) —
-        only there are prompts entered by the User transmitted to Anthropic in real time.
+        distinguished from this and is described separately in Section 4 (Anthropic, PBC) — only there
+        are the prompt entered by the User, the system master-data catalogue and, if the User has
+        enabled the corresponding toggle (off by default), the names of their self-created habits
+        transmitted to Anthropic in real time. No personal profile, account or behavioural data is
+        transmitted there either.
       </p>
 
       <h2>5. Transfer to third countries</h2>
