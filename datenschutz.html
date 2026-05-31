@@ -102,12 +102,12 @@
         <li>Optionale Screenshots, die der Nutzer freiwillig an eine Feedback-Nachricht anhängt (gespeichert im privaten Storage-Bereich <code>feedback-screenshots/&lt;user_id&gt;/</code>; nicht öffentlich abrufbar, nur über kurzlebige signierte URLs für Administratoren einsehbar). Solche Screenshots können je nach Bildinhalt personenbezogene Daten enthalten.</li>
       </ul>
 
-      <h3>d) Abonnement- und Zahlungsdaten</h3>
+      <h3>d) Abonnement- und Kaufstatus-Daten</h3>
       <ul>
-        <li>Stripe-Kunden-ID (<code>stripe_customer_id</code>), Stripe-Abo-ID</li>
-        <li>Tarif, Status, Verlängerungsdatum, Kündigungsmarkierung</li>
-        <li>Letzter Rechnungsbetrag, Währung, Datum, Link zur von Stripe gehosteten Rechnung</li>
-        <li>Zahlungsmittel-Kennzeichen (Marke z. B. „Visa", letzte 4 Ziffern der Karte) – <strong>keine vollständigen Kreditkartennummern</strong>; die vollständigen Zahlungsdaten werden ausschließlich von Stripe verarbeitet und sind dem Anbieter nicht zugänglich.</li>
+        <li>Tarif, Status, Verlängerungs-/Ablaufdatum, Kündigungsmarkierung</li>
+        <li>Store-Kennzeichen, über das der Kauf erfolgte (z. B. „App Store", „Google Play")</li>
+        <li>Eine pseudonyme Abonnenten-Kennung bei RevenueCat, die unserer internen Nutzer-ID entspricht</li>
+        <li><strong>Keine</strong> Zahlungs-, Karten- oder Kontodaten: Der Kauf wird vollständig über die In-App-Kauf-Mechanismen von Apple bzw. Google abgewickelt; vollständige Zahlungsdaten werden ausschließlich vom jeweiligen Store verarbeitet und sind dem Anbieter zu keinem Zeitpunkt zugänglich.</li>
       </ul>
 
       <h3>e) Technische Daten</h3>
@@ -158,13 +158,13 @@
         <li>Datenschutzerklärung: <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">supabase.com/privacy</a></li>
       </ul>
 
-      <h3>Stripe Payments Europe, Ltd. – Zahlungsabwicklung</h3>
+      <h3>RevenueCat, Inc. – Abonnement-Validierung und -Statusverwaltung</h3>
       <ul>
-        <li>Sitz: 1 Grand Canal Street Lower, Grand Canal Dock, Dublin, Irland.</li>
-        <li>Funktion: Abwicklung der Pro-Abonnements und Lifetime-Käufe außerhalb der App-Store-IAP-Mechaniken (Stripe Checkout), Verwaltung des Customer Portal, Webhook-Lieferung von Abonnement-Ereignissen, Bereitstellung von Rechnungen.</li>
-        <li>Verarbeitete Daten: E-Mail, Stripe-Kunden-ID, Zahlungsmittel-Daten, Rechnungs- und Abo-Verlauf. Die vollständigen Kreditkarten-/Kontodaten verarbeitet ausschließlich Stripe.</li>
-        <li>Stripe ist eigenständiger Verantwortlicher für die Zahlungstransaktion (PCI-DSS-konform) und unser Auftragsverarbeiter für die in unserem Auftrag erhobenen Daten.</li>
-        <li>Datenschutzerklärung: <a href="https://stripe.com/at/privacy" target="_blank" rel="noopener noreferrer">stripe.com/at/privacy</a></li>
+        <li>Sitz: 1100 Mission St, San Francisco, CA 94103, USA.</li>
+        <li>Funktion: Technische Validierung der über Apple/Google getätigten In-App-Käufe sowie Verwaltung und Synchronisation des Abonnement-Status (Webhook-Lieferung von Kauf-, Verlängerungs- und Kündigungs-Ereignissen an unser Backend). RevenueCat wickelt <strong>keine</strong> Zahlungen ab.</li>
+        <li>Verarbeitete Daten: eine pseudonyme App-User-ID (entspricht unserer internen Nutzer-ID), Kauf-/Abonnement-Status, Produkt-Kennung, Store-Kennzeichen (Apple/Google), Zeitstempel. <strong>Keine</strong> Zahlungs-, Karten- oder Kontodaten, keine E-Mail-Adresse, keine Klarnamen.</li>
+        <li>Drittlandsbezug: USA. RevenueCat stellt EU-Standardvertragsklauseln zur Verfügung.</li>
+        <li>Datenschutzerklärung: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">revenuecat.com/privacy</a></li>
       </ul>
 
       <h3>Anthropic, PBC – Generierung von ARC-Vorschlägen (Pro-Feature)</h3>
@@ -219,7 +219,7 @@
 
       <h2>5. Drittlandsübermittlung</h2>
       <p>
-        Mit Supabase (US-Konzernzugehörigkeit, EU-Hosting) und Anthropic (USA) bestehen
+        Mit Supabase (US-Konzernzugehörigkeit, EU-Hosting), Anthropic (USA) und RevenueCat (USA) bestehen
         Datenverarbeitungen mit Bezug zu einem Drittstaat. Soweit Daten in die USA übertragen
         oder von dort aus zugänglich werden, stützen wir die Übermittlung auf die
         <strong>Standardvertragsklauseln (SCC)</strong> der EU-Kommission gem. Art. 46 Abs. 2
@@ -233,7 +233,7 @@
         <li><strong>Habit-Logs, Statistiken, Achievements, Ziele, Journal-Einträge, Selfmade-Habits/-ARCs, Coverbilder, Feedback-Nachrichten samt optional angehängtem Screenshot, Urlaubsperioden:</strong> bis zur Kontolöschung. Einzelne Datensätze kann der Nutzer jederzeit selbst innerhalb der App löschen.</li>
         <li><strong>Cross-ARC-Vervollständigungs-Logs</strong> (<code>completion_logs</code>): rollierendes 90-Tage-Fenster; ältere Datensätze werden automatisch gelöscht.</li>
         <li><strong>Abo-/Rechnungsdaten:</strong> sieben Jahre gemäß § 132 Bundesabgabenordnung (BAO) bzw. § 212 UGB. Innerhalb dieser Frist werden Daten nur noch zu Beweis- und Aufbewahrungszwecken vorgehalten und nicht weiter aktiv verarbeitet.</li>
-        <li><strong>Stripe-Datenbestand:</strong> Mit der Kontolöschung wird der Stripe-Kunde <strong>vollständig gelöscht</strong> (Stripe <code>customers.del</code>); damit werden auch laufende Abos automatisch beendet. Anonymisierte Zahlungsbelege verbleiben bei Stripe aus regulatorischen Gründen.</li>
+        <li><strong>Store-Abonnements &amp; RevenueCat:</strong> Aktive In-App-Abonnements werden von Apple bzw. Google verwaltet und durch eine Kontolöschung <strong>nicht</strong> automatisch beendet — der Nutzer muss sie in den Store-Einstellungen selbst kündigen (hierauf wird vor der Löschung hingewiesen). Der bei RevenueCat gespeicherte pseudonyme Abonnenten-Datensatz enthält keine Klardaten und kann auf Anfrage gelöscht werden.</li>
         <li><strong>Server-Logs:</strong> maximal 30 Tage durch Supabase-Logging, danach automatische Rotation.</li>
       </ul>
 
@@ -269,7 +269,7 @@
         <li><strong>Row-Level Security (RLS):</strong> Auf Datenbank-Ebene ist für jede Tabelle erzwungen, dass Nutzer ausschließlich auf ihre eigenen Zeilen zugreifen können (Vergleich <code>auth.uid() = user_id</code>).</li>
         <li><strong>Verschlüsselte Token-Ablage</strong> im Keychain/Keystore des Endgeräts.</li>
         <li><strong>Backups</strong> durch die EU-Infrastruktur des Cloud-Anbieters (verschlüsselte Snapshots).</li>
-        <li><strong>Strenge Minimal-Berechtigungen</strong> für Server-Funktionen; sensible Drittanbieter-Schlüssel (Stripe, Anthropic) liegen ausschließlich serverseitig.</li>
+        <li><strong>Strenge Minimal-Berechtigungen</strong> für Server-Funktionen; sensible Drittanbieter-Schlüssel (RevenueCat, Anthropic) liegen ausschließlich serverseitig.</li>
       </ul>
 
       <h2>10. Ihre Rechte als betroffene Person</h2>
@@ -286,7 +286,7 @@
       <p>Zur Erleichterung der Ausübung dieser Rechte bietet die App zwei integrierte Selbstbedienungs-Funktionen:</p>
       <ul>
         <li><strong>Datenexport („Datenexport" im Profil-Bereich):</strong> erstellt einen ZIP-Download Ihres gesamten personenbezogenen Datenbestands (alle Tabellen, in denen Sie Eigentümer sind, plus Ihre hochgeladenen Coverbilder und an Feedback angehängten Screenshots) als JSON-Dateien plus Manifest. Aus Schutz vor missbräuchlichen Massenanfragen ist die Funktion auf <strong>eine Anfrage pro 24 Stunden</strong> beschränkt (Art. 12 Abs. 5 DSGVO).</li>
-        <li><strong>Konto-Löschung („Konto löschen" in den Account-Einstellungen):</strong> löscht unwiderruflich Ihren Supabase-Account, alle damit verknüpften Datensätze über <code>ON DELETE CASCADE</code>-Verknüpfungen, sämtliche von Ihnen hochgeladenen Storage-Objekte (Coverbilder, an Feedback angehängte Screenshots und ggf. vorgenerierte Export-Archive) sowie Ihren Stripe-Kunden samt laufender Abos.</li>
+        <li><strong>Konto-Löschung („Konto löschen" in den Account-Einstellungen):</strong> löscht unwiderruflich Ihren Supabase-Account, alle damit verknüpften Datensätze über <code>ON DELETE CASCADE</code>-Verknüpfungen, sämtliche von Ihnen hochgeladenen Storage-Objekte (Coverbilder, an Feedback angehängte Screenshots und ggf. vorgenerierte Export-Archive). Über Apple bzw. Google abgeschlossene Abonnements werden hierdurch <strong>nicht</strong> gekündigt und müssen separat in den Store-Einstellungen beendet werden.</li>
       </ul>
       <p>Darüber hinaus erreichen Sie uns unter der in 1. angegebenen Adresse.</p>
 
@@ -391,12 +391,12 @@
         <li>Optional screenshots the User voluntarily attaches to a feedback message (stored in the private storage area <code>feedback-screenshots/&lt;user_id&gt;/</code>; not publicly accessible, viewable by administrators only via short-lived signed URLs). Depending on their content, such screenshots may contain personal data.</li>
       </ul>
 
-      <h3>d) Subscription and payment data</h3>
+      <h3>d) Subscription and purchase-status data</h3>
       <ul>
-        <li>Stripe customer ID (<code>stripe_customer_id</code>), Stripe subscription ID</li>
-        <li>Plan, status, renewal date, cancellation marker</li>
-        <li>Last invoice amount, currency, date, link to the Stripe-hosted invoice</li>
-        <li>Payment method identifier (brand e.g. "Visa", last 4 digits of the card) – <strong>no full credit card numbers</strong>; the complete payment data is processed exclusively by Stripe and is not accessible to the Provider.</li>
+        <li>Plan, status, renewal/expiry date, cancellation marker</li>
+        <li>Store identifier the purchase was made through (e.g. "App Store", "Google Play")</li>
+        <li>A pseudonymous subscriber identifier at RevenueCat, equal to our internal user ID</li>
+        <li><strong>No</strong> payment, card or bank-account data: the purchase is handled entirely via the in-app purchase mechanisms of Apple/Google; full payment data is processed exclusively by the respective store and is at no point accessible to the Provider.</li>
       </ul>
 
       <h3>e) Technical data</h3>
@@ -445,13 +445,13 @@
         <li>Privacy policy: <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">supabase.com/privacy</a></li>
       </ul>
 
-      <h3>Stripe Payments Europe, Ltd. – payment processing</h3>
+      <h3>RevenueCat, Inc. – subscription validation and status management</h3>
       <ul>
-        <li>Seat: 1 Grand Canal Street Lower, Grand Canal Dock, Dublin, Ireland.</li>
-        <li>Function: processing of Pro subscriptions and Lifetime purchases outside the in-app-purchase mechanisms of the stores (Stripe Checkout), Customer Portal management, webhook delivery of subscription events, provision of invoices.</li>
-        <li>Processed data: email, Stripe customer ID, payment method data, invoice and subscription history. Full credit-card/bank-account data is processed exclusively by Stripe.</li>
-        <li>Stripe is independent controller for the payment transaction (PCI-DSS compliant) and our processor for the data we collect.</li>
-        <li>Privacy policy: <a href="https://stripe.com/at/privacy" target="_blank" rel="noopener noreferrer">stripe.com/at/privacy</a></li>
+        <li>Seat: 1100 Mission St, San Francisco, CA 94103, USA.</li>
+        <li>Function: technical validation of in-app purchases made via Apple/Google and management and synchronisation of the subscription status (webhook delivery of purchase, renewal and cancellation events to our backend). RevenueCat does <strong>not</strong> process any payments.</li>
+        <li>Processed data: a pseudonymous app user ID (equal to our internal user ID), purchase/subscription status, product identifier, store identifier (Apple/Google), timestamps. <strong>No</strong> payment, card or bank-account data, no email address, no real names.</li>
+        <li>Third-country transfer: USA. RevenueCat provides EU Standard Contractual Clauses.</li>
+        <li>Privacy policy: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">revenuecat.com/privacy</a></li>
       </ul>
 
       <h3>Anthropic, PBC – generation of ARC suggestions (Pro feature)</h3>
@@ -506,7 +506,7 @@
 
       <h2>5. Transfer to third countries</h2>
       <p>
-        With Supabase (US corporate affiliation, EU hosting) and Anthropic (USA), there are
+        With Supabase (US corporate affiliation, EU hosting), Anthropic (USA) and RevenueCat (USA), there are
         processing operations involving a third country. To the extent data is transferred to
         the USA or accessible from there, we base the transfer on the
         <strong>Standard Contractual Clauses (SCC)</strong> of the EU Commission under
@@ -520,7 +520,7 @@
         <li><strong>Habit logs, statistics, achievements, goals, journal entries, self-made habits/ARCs, cover images, feedback messages including any attached screenshot, vacation periods:</strong> until account deletion. Individual records can be deleted by the User at any time within the App.</li>
         <li><strong>Cross-ARC completion logs</strong> (<code>completion_logs</code>): rolling 90-day window; older records are automatically deleted.</li>
         <li><strong>Subscription/invoice data:</strong> seven years pursuant to Section 132 of the Austrian Federal Fiscal Code (BAO) or Section 212 UGB. During this period, data is retained only for evidence and storage purposes and is no longer actively processed.</li>
-        <li><strong>Stripe records:</strong> Upon account deletion, the Stripe customer is <strong>fully deleted</strong> (Stripe <code>customers.del</code>); active subscriptions are thereby automatically terminated. Anonymised payment receipts remain with Stripe for regulatory reasons.</li>
+        <li><strong>Store subscriptions &amp; RevenueCat:</strong> Active in-app subscriptions are managed by Apple/Google and are <strong>not</strong> automatically terminated by deleting your account — you must cancel them yourself in the store settings (you are warned of this before deletion). The pseudonymous subscriber record held at RevenueCat contains no plain-text data and can be deleted on request.</li>
         <li><strong>Server logs:</strong> max. 30 days via Supabase logging, then automatic rotation.</li>
       </ul>
 
@@ -554,7 +554,7 @@
         <li><strong>Row-Level Security (RLS):</strong> at the database level, each table enforces that users can only access their own rows (comparison <code>auth.uid() = user_id</code>).</li>
         <li><strong>Encrypted token storage</strong> in the device's Keychain/Keystore.</li>
         <li><strong>Backups</strong> via the EU infrastructure of the cloud provider (encrypted snapshots).</li>
-        <li><strong>Strict minimum permissions</strong> for server functions; sensitive third-party keys (Stripe, Anthropic) are kept exclusively server-side.</li>
+        <li><strong>Strict minimum permissions</strong> for server functions; sensitive third-party keys (RevenueCat, Anthropic) are kept exclusively server-side.</li>
       </ul>
 
       <h2>10. Your rights as a data subject</h2>
@@ -571,7 +571,7 @@
       <p>To facilitate the exercise of these rights, the App offers two integrated self-service functions:</p>
       <ul>
         <li><strong>Data export ("Data export" in the profile area):</strong> creates a ZIP download of your entire personal data set (all tables where you are the owner, plus your uploaded cover images and screenshots attached to feedback) as JSON files plus a manifest. To protect against abusive bulk requests, the function is limited to <strong>one request per 24 hours</strong> (Art. 12(5) GDPR).</li>
-        <li><strong>Account deletion ("Delete account" in the account settings):</strong> irreversibly deletes your Supabase account, all linked records via <code>ON DELETE CASCADE</code> relations, all storage objects you have uploaded (cover images, screenshots attached to feedback and any pre-generated export archives) as well as your Stripe customer including active subscriptions.</li>
+        <li><strong>Account deletion ("Delete account" in the account settings):</strong> irreversibly deletes your Supabase account, all linked records via <code>ON DELETE CASCADE</code> relations, all storage objects you have uploaded (cover images, screenshots attached to feedback and any pre-generated export archives). Subscriptions concluded via Apple/Google are <strong>not</strong> cancelled by this and must be ended separately in the respective store settings.</li>
       </ul>
       <p>You can also reach us at the address given in 1.</p>
 
