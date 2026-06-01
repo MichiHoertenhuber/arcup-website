@@ -40,7 +40,7 @@
 <main class="container">
   <div class="legal-page">
     <h1 data-i18n="legal.datenschutz.title">Datenschutzerklärung</h1>
-    <p class="last-updated" data-i18n="legal.lastUpdated">Stand: 23. Mai 2026</p>
+    <p class="last-updated" data-i18n="legal.lastUpdated">Stand: 1. Juni 2026</p>
 
     <p class="legal-fallback-notice" data-i18n="legal.fallbackNotice"></p>
 
@@ -78,7 +78,7 @@
         <li>E-Mail-Adresse (für Anmeldung, Konto-Bestätigung, Passwort-Zurücksetzung)</li>
         <li>Benutzername, Vorname (im Profil)</li>
         <li>Spracheinstellung, Maßeinheit (metrisch/imperial), Zeitzone, Farbschema, erster Wochentag</li>
-        <li>Erinnerungszeiten für Habit-Benachrichtigungen (Morgen / Mittag / Abend)</li>
+        <li>Benachrichtigungs-Einstellungen: Erinnerungszeiten für Habit-Benachrichtigungen (Morgen / Mittag / Abend), ein Hauptschalter für alle Benachrichtigungen sowie die An/Aus-Schalter für die Rückkehr-Erinnerung (bei längerer Inaktivität) und die Streak-in-Gefahr-Erinnerung</li>
         <li>Onboarding-Status („welche Walkthroughs habe ich gesehen")</li>
         <li>Zeitpunkt der einmaligen Kenntnisnahme des Gesundheits-Hinweises (siehe <a href="agb.html">AGB</a> § 9 Abs. 6–7)</li>
         <li>Zeitstempel der Kontoerstellung, des letzten Logins und des letzten Datenexports</li>
@@ -125,7 +125,7 @@
         <li><strong>Keine</strong> Kontakte</li>
         <li><strong>Keine</strong> Kalender-, SMS- oder Telefonbuchdaten</li>
         <li><strong>Keine</strong> Push-Token / Geräte-Identifier für Push-Server (Benachrichtigungen werden ausschließlich <strong>lokal</strong> auf dem Gerät geplant – siehe 7.)</li>
-        <li><strong>Kein</strong> App-Tracking, <strong>keine</strong> Analytics, <strong>keine</strong> Werbe-IDs, <strong>keine</strong> Cookies in der App, <strong>keine</strong> Drittanbieter-Tracker (Google Analytics, Facebook SDK o. ä. sind nicht eingebunden)</li>
+        <li><strong>Kein</strong> App-Tracking durch Dritte, <strong>keine</strong> Drittanbieter-Analyse- oder Werbe-SDKs, <strong>keine</strong> Werbe-IDs, <strong>keine</strong> Cookies in der App, <strong>keine</strong> Drittanbieter-Tracker (Google Analytics, Facebook SDK o. ä. sind <strong>nicht</strong> eingebunden). Ein separates Verhaltens-Tracking findet nicht statt; rein interne, <strong>aggregierte</strong> Auswertungen bereits zu Funktionszwecken vorhandener Daten zur Reichweiten- und Nutzungsmessung sind in Abschnitt 3 beschrieben.</li>
         <li><strong>Keine</strong> Gesundheitsdaten im engeren Sinne des Art. 9 DSGVO werden gezielt erhoben. Habit-Logs können zwar Werte enthalten, die Rückschlüsse auf Verhalten zulassen (z. B. Schlafdauer, Schritte), werden jedoch ausschließlich auf Initiative des Nutzers eingegeben.</li>
       </ul>
 
@@ -141,6 +141,22 @@
         <li><strong>Datenexport und Datenauskunft</strong> (DSGVO Art. 15/20) — Art. 6 Abs. 1 lit. c DSGVO i. V. m. Art. 15/20 DSGVO</li>
         <li><strong>Kontolöschung</strong> (DSGVO Art. 17) — Art. 6 Abs. 1 lit. c DSGVO i. V. m. Art. 17 DSGVO</li>
         <li><strong>Aufrechterhaltung und Sicherheit des Betriebs</strong> (Logs, Missbrauchserkennung) — Art. 6 Abs. 1 lit. f DSGVO, berechtigtes Interesse an stabilem und sicherem Betrieb</li>
+        <li><strong>Reichweiten- und Nutzungsmessung zur Produktverbesserung</strong> (internes Admin-Panel) — <strong>ausschließlich aggregierte bzw. pseudonyme</strong> Kennzahlen, berechnet aus bereits zu Funktionszwecken vorhandenen Daten (z. B. Gesamt- und aktive Nutzerzahlen, Neuregistrierungen, Verteilungen nach Sprache/Zeitzone/Tarif, Engagement-Durchschnitte wie Level/XP/Streak, Monatstrends); <strong>keine</strong> Auswertung identifizierbarer Einzelinhalte — Art. 6 Abs. 1 lit. f DSGVO, berechtigtes Interesse an der Verbesserung und wirtschaftlichen Tragfähigkeit der App; Widerspruchsrecht nach Art. 21 DSGVO</li>
+      </ul>
+
+      <h3>Zugriff durch den Betreiber</h3>
+      <p>
+        Der Anbieter ist datenschutzrechtlich <strong>Verantwortlicher</strong> (nicht Auftragsverarbeiter)
+        und kann im technisch und organisatorisch erforderlichen Umfang auf gespeicherte Account- und
+        Nutzungsdaten zugreifen – etwa zur Aufrechterhaltung des Betriebs, zur Fehlerbehebung, zur
+        Bearbeitung von Support-Anfragen, zur Abwehr von Missbrauch sowie zur Erfüllung gesetzlicher
+        Pflichten. Der Zugriff erfolgt nach dem Grundsatz der <strong>Erforderlichkeit</strong>
+        (need-to-know):
+      </p>
+      <ul>
+        <li>Systematische <strong>Auswertungen</strong> (siehe Abschnitt 3) erfolgen <strong>ausschließlich auf aggregierter bzw. pseudonymisierter Basis</strong>; dabei werden keine identifizierbaren Einzelinhalte einzelner Nutzer durchgesehen.</li>
+        <li>Auf <strong>identifizierbare Einzelinhalte</strong> (z. B. der Freitext einer Feedback-Nachricht samt angehängtem Screenshot) wird nur bei einem <strong>konkreten Anlass</strong> zugegriffen, etwa zur Bearbeitung der jeweiligen Support-Nachricht.</li>
+        <li>Der Betrieb wird derzeit von einer <strong>einzelnen verantwortlichen Person</strong> geführt; eine Weitergabe an oder Einsicht durch weitere Personen findet nicht statt. Sollte sich dies ändern, werden die Betroffenen informiert und etwaige Vertraulichkeits- bzw. Auftragsverarbeitungspflichten vorab erfüllt.</li>
       </ul>
 
       <h2>4. Empfänger / Auftragsverarbeiter</h2>
@@ -243,8 +259,18 @@
         ArcUp nutzt <strong>keinen</strong> Push-Server (kein FCM, kein APNs-Token wird gespeichert
         oder an unsere Server übertragen). Alle Erinnerungen sind <strong>lokal auf dem Gerät</strong>
         durch das Betriebssystem geplante Benachrichtigungen. Der Nutzer kann sie jederzeit über
-        die Profil-Einstellungen der App oder über die System-Einstellungen seines Geräts
-        vollständig deaktivieren.
+        die Profil-Einstellungen der App – einzeln je Kategorie oder zentral über einen Hauptschalter –
+        oder über die System-Einstellungen seines Geräts vollständig deaktivieren.
+      </p>
+      <p>
+        Es gibt drei Kategorien lokaler Erinnerungen, jeweils einzeln abschaltbar:
+        (1) tägliche Habit-Erinnerungen zu den gewählten Tageszeiten, (2) eine
+        <strong>Rückkehr-Erinnerung</strong>, die nach einer festen Zahl an Tagen ohne App-Nutzung
+        ausgelöst und beim nächsten Öffnen automatisch wieder verworfen wird, sowie (3) eine
+        <strong>Streak-in-Gefahr-Erinnerung</strong>, die nur dann am Abend (gerätelokale Zeit)
+        ausgelöst wird, wenn ein laufender Streak besteht und der Tag noch nicht abgeschlossen ist.
+        Alle drei werden ausschließlich aus bereits auf dem Gerät vorhandenen Daten berechnet;
+        es werden hierfür keine Daten an Server übertragen.
       </p>
       <p>
         Die Berechtigung zur Anzeige von Benachrichtigungen wird über den jeweiligen System-Dialog
@@ -367,7 +393,7 @@
         <li>Email address (for sign-in, account confirmation, password reset)</li>
         <li>Username, first name (in the profile)</li>
         <li>Language preference, unit system (metric/imperial), time zone, colour scheme, first weekday</li>
-        <li>Reminder times for habit notifications (morning / midday / evening)</li>
+        <li>Notification settings: reminder times for habit notifications (morning / midday / evening), a master switch for all notifications, plus the on/off toggles for the come-back reminder (after a period of inactivity) and the streak-at-risk reminder</li>
         <li>Onboarding status ("which walkthroughs have I seen")</li>
         <li>Time of the one-time acknowledgement of the health notice (see <a href="agb.html">Terms</a> § 9(6)–(7))</li>
         <li>Timestamps of account creation, last login and last data export</li>
@@ -413,7 +439,7 @@
         <li><strong>No</strong> contacts</li>
         <li><strong>No</strong> calendar, SMS or phonebook data</li>
         <li><strong>No</strong> push tokens / device identifiers for push servers (notifications are scheduled exclusively <strong>locally</strong> on the device – see 7.)</li>
-        <li><strong>No</strong> app tracking, <strong>no</strong> analytics, <strong>no</strong> advertising IDs, <strong>no</strong> cookies in the app, <strong>no</strong> third-party trackers (Google Analytics, Facebook SDK or similar are not integrated)</li>
+        <li><strong>No</strong> third-party app tracking, <strong>no</strong> third-party analytics or advertising SDKs, <strong>no</strong> advertising IDs, <strong>no</strong> cookies in the app, <strong>no</strong> third-party trackers (Google Analytics, Facebook SDK or similar are <strong>not</strong> integrated). No separate behavioural tracking takes place; purely internal, <strong>aggregated</strong> evaluations of data already held for functional purposes, for reach and usage measurement, are described in Section 3.</li>
         <li><strong>No</strong> health data in the narrower sense of Art. 9 GDPR is collected purposefully. Habit logs may contain values that allow conclusions about behaviour (e.g. sleep duration, steps), but they are entered only at the User's initiative.</li>
       </ul>
 
@@ -429,6 +455,21 @@
         <li><strong>Data export and access</strong> (GDPR Art. 15/20) — Art. 6(1)(c) GDPR in conjunction with Art. 15/20 GDPR</li>
         <li><strong>Account deletion</strong> (GDPR Art. 17) — Art. 6(1)(c) GDPR in conjunction with Art. 17 GDPR</li>
         <li><strong>Maintaining and securing operation</strong> (logs, abuse detection) — Art. 6(1)(f) GDPR, legitimate interest in stable and secure operation</li>
+        <li><strong>Reach and usage measurement for product improvement</strong> (internal admin panel) — <strong>exclusively aggregated or pseudonymous</strong> metrics computed from data already held for functional purposes (e.g. total and active user counts, new sign-ups, distributions by language/timezone/plan, engagement averages such as level/XP/streak, monthly trends); <strong>no</strong> evaluation of identifiable individual content — Art. 6(1)(f) GDPR, legitimate interest in improving and sustaining the App; right to object under Art. 21 GDPR</li>
+      </ul>
+
+      <h3>Access by the operator</h3>
+      <p>
+        Under data protection law the provider is the <strong>controller</strong> (not a processor) and may
+        access stored account and usage data to the extent technically and organisationally necessary –
+        for example to maintain operation, to fix errors, to handle support requests, to prevent abuse and
+        to comply with legal obligations. Access follows the principle of <strong>necessity</strong>
+        (need-to-know):
+      </p>
+      <ul>
+        <li>Systematic <strong>evaluations</strong> (see Section 3) are carried out <strong>exclusively on an aggregated or pseudonymised basis</strong>; no identifiable individual content of individual users is reviewed in the process.</li>
+        <li><strong>Identifiable individual content</strong> (e.g. the free text of a feedback message together with an attached screenshot) is accessed only on a <strong>specific occasion</strong>, such as to handle the respective support message.</li>
+        <li>Operation is currently run by a <strong>single responsible person</strong>; no disclosure to or access by further persons takes place. Should this change, data subjects will be informed and any confidentiality or processing obligations will be fulfilled in advance.</li>
       </ul>
 
       <h2>4. Recipients / processors</h2>
@@ -530,7 +571,17 @@
         ArcUp uses <strong>no</strong> push server (no FCM, no APNs token is stored or
         transmitted to our servers). All reminders are <strong>locally on the device</strong>
         scheduled notifications by the operating system. The User can deactivate them at any
-        time via the profile settings of the App or via the system settings of their device.
+        time via the profile settings of the App — individually per category or centrally via a
+        master switch — or via the system settings of their device.
+      </p>
+      <p>
+        There are three categories of local reminders, each individually switchable:
+        (1) daily habit reminders at the chosen times of day, (2) a <strong>come-back reminder</strong>
+        that triggers after a fixed number of days without app usage and is automatically discarded
+        the next time the app is opened, and (3) a <strong>streak-at-risk reminder</strong> that
+        fires in the evening (device-local time) only when an ongoing streak exists and the day is
+        not yet complete. All three are computed solely from data already present on the device;
+        no data is transmitted to servers for this purpose.
       </p>
       <p>
         Permission to display notifications is obtained via the respective iOS/Android system
