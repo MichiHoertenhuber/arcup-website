@@ -69,7 +69,7 @@
     'hero.trust1': { de: 'Made in Austria', en: 'Made in Austria', es: 'Made in Austria', fr: 'Made in Austria', it: 'Made in Austria' },
     'hero.trust2': { de: 'EU-Hosting · DSGVO',      en: 'EU hosting · GDPR',      es: 'Hosting UE · RGPD',    fr: 'Hébergement UE · RGPD',  it: 'Hosting UE · GDPR' },
     'hero.trust3': { de: 'Kein Abo-Zwang', en: 'No subscription required', es: 'Sin suscripción obligatoria', fr: 'Sans abonnement obligatoire', it: 'Nessun abbonamento obbligatorio' },
-    'hero.trust4': { de: 'Keine Werbung, keine Tracker', en: 'No ads, no trackers', es: 'Sin anuncios, sin rastreadores', fr: 'Pas de pub, pas de trackers', it: 'Niente pubblicità, niente tracker' },
+    'hero.trust4': { de: 'Keine personalisierte Werbung, keine Tracker', en: 'No personalized ads, no trackers', es: 'Sin publicidad personalizada, sin rastreadores', fr: 'Pas de pub personnalisée, pas de trackers', it: 'Niente pubblicità personalizzata, niente tracker' },
     'hero.trust5': { de: 'Voller Datenexport jederzeit', en: 'Full data export any time', es: 'Exportación completa de datos cuando quieras', fr: 'Export complet de tes données à tout moment', it: 'Export completo dei dati in qualsiasi momento' },
 
     'hero.altHome':  { de: 'ArcUp Home — Tageserfüllung, Wochenerfüllung, Level und aktive ARCs', en: 'ArcUp Home — daily and weekly completion, level and active ARCs', es: 'ArcUp Inicio — cumplimiento diario y semanal, nivel y ARCs activos', fr: "ArcUp Accueil — achèvement quotidien et hebdomadaire, niveau et ARC actifs", it: "ArcUp Home — completamento giornaliero e settimanale, livello e ARC attivi" },
@@ -255,7 +255,7 @@
     'not5.h': { de: 'Keine Datenfalle.', en: 'No data trap.', es: 'Sin trampa de datos.', fr: 'Pas de piège à données.', it: 'Nessuna trappola dei dati.' },
     'not5.b': { de: 'Voller ZIP-Export deiner Daten jederzeit. Konto-Reset und -Löschung mit einem Tap. Deine Daten gehören dir.', en: 'Full ZIP export of your data any time. Account reset and deletion with one tap. Your data is yours.', es: 'Exportación ZIP completa de tus datos cuando quieras. Reset y eliminación de cuenta con un toque. Tus datos son tuyos.', fr: "Export ZIP complet de tes données à tout moment. Réinitialisation et suppression du compte en un tap. Tes données t’appartiennent.", it: 'Export ZIP completo dei tuoi dati in qualsiasi momento. Reset e cancellazione account con un tap. I tuoi dati sono tuoi.' },
 
-    'not6.h': { de: 'Keine Tricks, keine Werbung.', en: 'No tricks, no ads.', es: 'Sin trucos, sin anuncios.', fr: 'Pas d’astuces, pas de pub.', it: 'Niente trucchi, niente pubblicità.' },
+    'not6.h': { de: 'Keine Tricks, keine Fallen.', en: 'No tricks, no traps.', es: 'Sin trucos, sin trampas.', fr: 'Pas d’astuces, pas de pièges.', it: 'Niente trucchi, niente trappole.' },
     'not6.b': { de: 'Keine Tracker, kein Notification-Spam, keine versteckten Fallen, die dich länger in der App halten. EU-Hosting nach DSGVO.', en: 'No trackers, no notification spam, no hidden tricks to keep you in the app longer. EU hosting under GDPR.', es: 'Sin rastreadores, sin spam de notificaciones, sin trampas ocultas para retenerte más en la app. Hosting UE conforme al RGPD.', fr: 'Pas de trackers, pas de spam de notifications, pas de pièges cachés pour te retenir plus longtemps. Hébergement UE conforme au RGPD.', it: 'Niente tracker, niente spam di notifiche, niente trappole nascoste per trattenerti più a lungo. Hosting UE conforme al GDPR.' },
 
     // ─── FOUNDER NOTE ────────────────────────────────────
