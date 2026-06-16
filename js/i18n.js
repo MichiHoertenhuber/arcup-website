@@ -87,11 +87,11 @@
     },
     'p1.h': { de: 'Strukturiert statt beliebig.', en: 'Structured, not arbitrary.', es: 'Estructurado, no arbitrario.', fr: 'Structuré, pas arbitraire.', it: 'Strutturato, non arbitrario.' },
     'p1.b': {
-      de: 'Gewohnheiten sind keine Freitext-Notizen. Jede Gewohnheit hat einen Zielwert, eine Richtung (≥ oder ≤) und eine Einheit.',
-      en: "Habits aren't free-text notes. Each habit has a target value, a direction (≥ or ≤) and a unit.",
-      es: 'Los hábitos no son notas libres. Cada uno tiene valor objetivo, dirección (≥ o ≤) y unidad.',
-      fr: "Les habitudes ne sont pas des notes libres. Chacune a une valeur cible, une direction (≥ ou ≤) et une unité.",
-      it: "Le abitudini non sono note libere. Ognuna ha un valore obiettivo, una direzione (≥ o ≤) e un'unità.",
+      de: 'Gewohnheiten sind keine Freitext-Notizen, sondern strukturiert: Zielwert, Richtung (≥ oder ≤) und Einheit. Und sie bauen aufeinander auf — ein Zone-2-Lauf zählt automatisch auch für die übergeordnete Gewohnheit Ausdauertraining.',
+      en: "Habits aren't free-text notes — they're structured: a target value, a direction (≥ or ≤) and a unit. And they nest: a Zone 2 run automatically counts toward its parent habit, endurance training.",
+      es: 'Los hábitos no son notas libres, sino estructurados: valor objetivo, dirección (≥ o ≤) y unidad. Y se anidan: una carrera en Zona 2 cuenta automáticamente también para su hábito superior, el entrenamiento de resistencia.',
+      fr: "Les habitudes ne sont pas des notes libres, mais structurées : valeur cible, direction (≥ ou ≤) et unité. Et elles s'emboîtent : une course en Zone 2 compte automatiquement aussi pour son habitude parente, l'entraînement d'endurance.",
+      it: "Le abitudini non sono note libere, ma strutturate: valore obiettivo, direzione (≥ o ≤) e unità. E si annidano: una corsa in Zona 2 conta automaticamente anche per la sua abitudine superiore, l'allenamento di resistenza.",
     },
     'p2.h': { de: 'Befristet statt endlos.', en: 'Time-boxed, not endless.', es: 'Con plazo, no sin fin.', fr: 'Limité dans le temps, pas sans fin.', it: 'A tempo, non infinito.' }, // _x:'Zeit-geboxte Anstrengung.', en: 'Time-boxed effort.', es: 'Esfuerzo con plazo.', fr: 'Effort limité dans le temps.', it: 'Sforzo a tempo definito.' },
     'p2.b': {
