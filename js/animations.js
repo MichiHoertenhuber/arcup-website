@@ -6,7 +6,7 @@
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // ── Hero word rotator ──────────────────────────────────────
-  // Cycles the five life areas. Reads the active <html lang> on every
+  // Cycles the six life areas. Reads the active <html lang> on every
   // tick, so it follows live language switches without extra wiring.
   (function () {
     var el = document.getElementById('heroRotator');
@@ -14,11 +14,11 @@
     var line = el.closest('.hero-rotator') || el.parentNode;
 
     var WORDS = {
-      de: ['deinen Körper', 'deinen Geist', 'dein Wachstum', 'deine Beziehungen', 'deine Freizeit'],
-      en: ['your body', 'your mind', 'your growth', 'your relationships', 'your leisure'],
-      es: ['tu cuerpo', 'tu mente', 'tu crecimiento', 'tus relaciones', 'tu ocio'],
-      fr: ['ton corps', 'ton esprit', 'ta croissance', 'tes relations', 'tes loisirs'],
-      it: ['il tuo corpo', 'la tua mente', 'la tua crescita', 'le tue relazioni', 'il tuo tempo libero']
+      de: ['deinen Körper', 'deinen Geist', 'deine Karriere', 'deine Beziehungen', 'deinen Lebensstil', 'deine Ernährung'],
+      en: ['your body', 'your mind', 'your career', 'your relationships', 'your lifestyle', 'your nutrition'],
+      es: ['tu cuerpo', 'tu mente', 'tu carrera', 'tus relaciones', 'tu estilo de vida', 'tu nutrición'],
+      fr: ['ton corps', 'ton esprit', 'ta carrière', 'tes relations', 'ton style de vie', 'ta nutrition'],
+      it: ['il tuo corpo', 'la tua mente', 'la tua carriera', 'le tue relazioni', 'il tuo stile di vita', 'la tua alimentazione']
     };
     function words() { return WORDS[document.documentElement.lang] || WORDS.de; }
 

@@ -31,6 +31,7 @@
   --growth:        #60A5FA;
   --relationships: #F472B6;
   --leisure:       #FCD34D;
+  --nutrition:     #FB923C;
 
   /* Layout */
   --max:       1240px;
@@ -693,7 +694,7 @@ nav.scrolled {
 
 .areas-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 16px;
   margin-top: 56px;
 }
