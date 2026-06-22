@@ -51,11 +51,11 @@
     'hero.headline2': { de: 'better',   en: 'better',   es: 'mejores',   fr: 'de meilleures', it: 'migliori' },
     'hero.headline3': { de: 'habits.',  en: 'habits.',  es: 'hábitos.',  fr: 'habitudes.',    it: 'abitudini.' },
     'hero.sub': {
-      de: 'Verbinde deine langfristige Vision mit dem, was du heute tust.',
-      en: 'Connect your long-term vision with what you do today.',
-      es: 'Conecta tu visión a largo plazo con lo que haces hoy.',
-      fr: "Relie ta vision à long terme à ce que tu fais aujourd'hui.",
-      it: 'Collega la tua visione a lungo termine con ciò che fai oggi.',
+      de: 'Pick your ARC, lock in, and finish stronger.',
+      en: 'Pick your ARC, lock in, and finish stronger.',
+      es: 'Pick your ARC, lock in, and finish stronger.',
+      fr: 'Pick your ARC, lock in, and finish stronger.',
+      it: 'Pick your ARC, lock in, and finish stronger.',
     },
     'hero.rotPrefix': { de: 'Für', en: 'For', es: 'Para', fr: 'Pour', it: 'Per' },
     'hero.ctaPrimary': {
@@ -311,7 +311,7 @@
 
     // ─── CTA ─────────────────────────────────────────────
     'cta.h':   { de: 'Starte einen <em>ARC</em>,<br />keinen Vorsatz.', en: 'Start an <em>ARC</em>,<br />not a resolution.', es: 'Empieza un <em>ARC</em>,<br />no un propósito.', fr: 'Lancez un <em>ARC</em>,<br />pas une résolution.', it: 'Lancia un <em>ARC</em>,<br />non un buon proposito.' },
-    'cta.sub': { de: 'Verbinde deine langfristige Vision mit dem, was du heute tust.', en: 'Connect your long-term vision with what you do today.', es: 'Conecta tu visión a largo plazo con lo que haces hoy.', fr: "Relie ta vision à long terme à ce que tu fais aujourd'hui.", it: 'Collega la tua visione a lungo termine con ciò che fai oggi.' },
+    'cta.sub': { de: 'Pick your ARC, lock in, and finish stronger.', en: 'Pick your ARC, lock in, and finish stronger.', es: 'Pick your ARC, lock in, and finish stronger.', fr: 'Pick your ARC, lock in, and finish stronger.', it: 'Pick your ARC, lock in, and finish stronger.' },
     'cta.appStoreAria': { de: 'Im App Store laden', en: 'Download on the App Store', es: 'Descargar en App Store', fr: "Télécharger sur l'App Store", it: 'Scarica su App Store' },
     'cta.appStoreSmall':{ de: 'Download on the', en: 'Download on the', es: 'Descargar en', fr: 'Télécharger sur l’', it: 'Scarica su' },
     'cta.appStoreBig':  { de: 'App Store', en: 'App Store', es: 'App Store', fr: 'App Store', it: 'App Store' },
