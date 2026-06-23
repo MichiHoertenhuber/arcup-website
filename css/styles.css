@@ -1436,6 +1436,23 @@ nav.scrolled {
   background: var(--area, var(--accent));
 }
 
+/* Single featured ARC (the real Classic Winter ARC) */
+.arcs-grid--single {
+  grid-template-columns: minmax(0, 680px);
+  justify-content: center;
+}
+.arc-pills { display: flex; align-items: center; gap: 8px; }
+.arc-example--featured { padding: 36px 36px; }
+.arc-example--featured .arc-habits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11px 28px;
+}
+@media (max-width: 560px) {
+  .arc-example--featured { padding: 28px 24px; }
+  .arc-example--featured .arc-habits { grid-template-columns: 1fr; }
+}
+
 /* ════════════════════════════════════════════════════════════
    FOUNDATION single-card variant
    ════════════════════════════════════════════════════════════ */
