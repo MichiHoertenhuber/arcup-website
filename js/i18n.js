@@ -120,8 +120,8 @@
 
     // ─── ARC EXAMPLES ────────────────────────────────────
     'arcs.overline': { de: 'Konkret', en: 'Concretely', es: 'En concreto', fr: 'Concrètement', it: 'In concreto' },
-    'arcs.title':    { de: 'So sieht ein ARC aus.', en: 'What an ARC looks like.', es: 'Cómo se ve un ARC.', fr: 'À quoi ressemble un ARC.', it: 'Com’è fatto un ARC.' },
-    'arcs.sub':      { de: 'Ein realer ARC aus der Sammlung — mit Dauer, Lebensbereich und den echten Gewohnheiten, Werttypen und Zielwerten, die du trackst.', en: 'One real ARC from the library — with duration, life area and the actual habits, value types and targets you track.', es: 'Un ARC real de la biblioteca — con duración, área de vida y los hábitos, tipos de valor y objetivos reales que registras.', fr: "Un ARC réel de la bibliothèque — avec durée, domaine de vie et les habitudes, types de valeur et objectifs réels que tu suis.", it: 'Un ARC reale dalla biblioteca — con durata, area di vita e le abitudini, i tipi di valore e gli obiettivi reali che tracci.' },
+    'arcs.title':    { de: 'So sehen unsere ARCs aus.', en: 'What our ARCs look like.', es: 'Así son nuestros ARC.', fr: 'À quoi ressemblent nos ARC.', it: 'Ecco i nostri ARC.' },
+    'arcs.sub':      { de: 'Drei reale ARCs aus der Sammlung — jeweils mit Dauer, Lebensbereich und den echten Gewohnheiten, Werttypen und Zielwerten, die du trackst.', en: 'Three real ARCs from the library — each with duration, life area and the actual habits, value types and targets you track.', es: 'Tres ARCs reales de la biblioteca — cada uno con duración, área de vida y los hábitos, tipos de valor y objetivos reales que registras.', fr: "Trois ARC réels de la bibliothèque — chacun avec durée, domaine de vie et les habitudes, types de valeur et objectifs réels que tu suis.", it: 'Tre ARC reali dalla biblioteca — ognuno con durata, area di vita e le abitudini, i tipi di valore e gli obiettivi reali che tracci.' },
 
     // ARC — the real Classic Winter ARC (Body, 8 weeks, Hard) — Supabase arc id 20
     'arc1.area': { de: 'Körper', en: 'Body', es: 'Cuerpo', fr: 'Corps', it: 'Corpo' },
@@ -141,6 +141,32 @@
     'arc1.h10':  { de: 'Atemübungen ≥ 15 min', en: 'Breathwork ≥ 15 min', es: 'Ejercicios de respiración ≥ 15 min', fr: 'Exercices de respiration ≥ 15 min', it: 'Esercizi di respirazione ≥ 15 min' },
     'arc1.h11':  { de: 'Tagebuch schreiben ≥ 10 min', en: 'Journaling ≥ 10 min', es: 'Escribir un diario ≥ 10 min', fr: 'Tenir un journal ≥ 10 min', it: 'Scrivere un diario ≥ 10 min' },
     'arc1.h12':  { de: 'Social-Media-Zeit ≤ 1 h', en: 'Social Media Time ≤ 1 h', es: 'Tiempo en redes sociales ≤ 1 h', fr: 'Temps sur les réseaux sociaux ≤ 1 h', it: 'Tempo sui social ≤ 1 h' },
+
+    // ARC — Calm Mind (Mind, 6 weeks, Medium) — Supabase
+    'arc2.area': { de: 'Geist', en: 'Mind', es: 'Mente', fr: 'Esprit', it: 'Mente' },
+    'arc2.dur':  { de: '6 Wochen', en: '6 weeks', es: '6 semanas', fr: '6 semaines', it: '6 settimane' },
+    'arc2.diff': { de: 'Mittel', en: 'Medium', es: 'Medio', fr: 'Moyen', it: 'Medio' },
+    'arc2.h':    { de: 'Ruhiger Geist', en: 'Calm Mind', es: 'Mente en calma', fr: 'Esprit calme', it: 'Mente serena' },
+    'arc2.b':    { de: 'Sechs Wochen tägliche Praxis aus Meditation, Atmung und Dankbarkeit — von zerstreut und gestresst zu klar und ruhig.', en: 'Six weeks of daily meditation, breathwork and gratitude — from scattered and stressed to clear and calm.', es: 'Seis semanas de meditación, respiración y gratitud a diario — del agobio a la claridad y la calma.', fr: 'Six semaines de méditation, respiration et gratitude au quotidien — du stress à la clarté et au calme.', it: 'Sei settimane di meditazione, respirazione e gratitudine ogni giorno — dallo stress alla lucidità e alla calma.' },
+    'arc2.h1':   { de: 'Meditation 5 → 15 min', en: 'Meditation 5 → 15 min', es: 'Meditación 5 → 15 min', fr: 'Méditation 5 → 15 min', it: 'Meditazione 5 → 15 min' },
+    'arc2.h2':   { de: 'Atemübungen ≥ 5 min', en: 'Breathwork ≥ 5 min', es: 'Ejercicios de respiración ≥ 5 min', fr: 'Exercices de respiration ≥ 5 min', it: 'Esercizi di respirazione ≥ 5 min' },
+    'arc2.h3':   { de: 'Dankbarkeitstagebuch ≥ 5 min', en: 'Gratitude Journaling ≥ 5 min', es: 'Diario de gratitud ≥ 5 min', fr: 'Journal de gratitude ≥ 5 min', it: 'Diario della gratitudine ≥ 5 min' },
+    'arc2.h4':   { de: 'Stimmungscheck · täglich', en: 'Mood Check-in · daily', es: 'Registro de ánimo · a diario', fr: "Point d'humeur · chaque jour", it: 'Check dell’umore · ogni giorno' },
+    'arc2.h5':   { de: 'Zeit in der Natur ≥ 15 min', en: 'Time in Nature ≥ 15 min', es: 'Tiempo en la naturaleza ≥ 15 min', fr: 'Temps dans la nature ≥ 15 min', it: 'Tempo nella natura ≥ 15 min' },
+    'arc2.h6':   { de: 'Yoga Nidra ≥ 20 min/Woche', en: 'Yoga Nidra ≥ 20 min/week', es: 'Yoga Nidra ≥ 20 min/semana', fr: 'Yoga Nidra ≥ 20 min/semaine', it: 'Yoga Nidra ≥ 20 min/settimana' },
+
+    // ARC — Clean Eating Reset (Nutrition, 6 weeks, Medium) — Supabase
+    'arc3.area': { de: 'Ernährung', en: 'Nutrition', es: 'Nutrición', fr: 'Nutrition', it: 'Alimentazione' },
+    'arc3.dur':  { de: '6 Wochen', en: '6 weeks', es: '6 semanas', fr: '6 semaines', it: '6 settimane' },
+    'arc3.diff': { de: 'Mittel', en: 'Medium', es: 'Medio', fr: 'Moyen', it: 'Medio' },
+    'arc3.h':    { de: 'Ernährungs-Neustart', en: 'Clean Eating Reset', es: 'Reinicio de alimentación', fr: 'Nouveau départ alimentaire', it: 'Ripartenza alimentare' },
+    'arc3.b':    { de: 'Sechs Wochen für bessere Standards — mehr Gemüse, Wasser und selbst kochen, weniger Zucker und Fertigkost.', en: 'Six weeks of better defaults — more vegetables, water and home cooking, less sugar and junk.', es: 'Seis semanas de mejores hábitos — más verduras, agua y cocina casera, menos azúcar y ultraprocesados.', fr: 'Six semaines de meilleures habitudes — plus de légumes, d’eau et de cuisine maison, moins de sucre et de malbouffe.', it: 'Sei settimane di abitudini migliori — più verdura, acqua e cucina casalinga, meno zucchero e cibo spazzatura.' },
+    'arc3.h1':   { de: 'Gemüse 3 → 5 Portionen', en: 'Vegetables 3 → 5 servings', es: 'Verduras 3 → 5 raciones', fr: 'Légumes 3 → 5 portions', it: 'Verdura 3 → 5 porzioni' },
+    'arc3.h2':   { de: 'Wasser trinken ≥ 2 l', en: 'Drink Water ≥ 2 l', es: 'Beber agua ≥ 2 l', fr: "Boire de l'eau ≥ 2 l", it: 'Bere acqua ≥ 2 l' },
+    'arc3.h3':   { de: 'Proteinbedarf decken · täglich', en: 'Meet protein needs · daily', es: 'Cubrir proteínas · a diario', fr: 'Couvrir les protéines · chaque jour', it: 'Coprire le proteine · ogni giorno' },
+    'arc3.h4':   { de: 'Zu Hause kochen · täglich', en: 'Cook at Home · daily', es: 'Cocinar en casa · a diario', fr: 'Cuisiner maison · chaque jour', it: 'Cucinare a casa · ogni giorno' },
+    'arc3.h5':   { de: 'Zuckerhaltiges ≤ 1×/Tag', en: 'Sugary foods ≤ 1×/day', es: 'Azúcar ≤ 1×/día', fr: 'Sucre ≤ 1×/jour', it: 'Zuccheri ≤ 1×/giorno' },
+    'arc3.h6':   { de: 'Kein Fast Food · täglich', en: 'No Fast Food · daily', es: 'Sin comida rápida · a diario', fr: 'Pas de fast-food · chaque jour', it: 'Niente fast food · ogni giorno' },
 
     // ─── THE APP (4 showcases) ───────────────────────────
     'sys.overline': { de: 'In der App', en: 'Inside the app', es: 'Dentro de la app', fr: 'Dans l’app', it: 'Dentro l’app' },

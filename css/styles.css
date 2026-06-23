@@ -1436,20 +1436,29 @@ nav.scrolled {
   background: var(--area, var(--accent));
 }
 
-/* Single featured ARC (the real Classic Winter ARC) */
-.arcs-grid--single {
+/* Duration + difficulty pills, shown together top-right on each ARC card */
+.arc-pills { display: flex; align-items: center; gap: 8px; }
+
+/* Featured ARC (Classic Winter) on top — full width, 2-column habit list — with
+   the two newer ARCs side-by-side below in a width-matched row. The compound
+   selectors keep these from being overridden by the responsive .arcs-grid rules. */
+.arcs-examples .arcs-grid--single {
   grid-template-columns: minmax(0, 680px);
   justify-content: center;
 }
-.arc-pills { display: flex; align-items: center; gap: 8px; }
-.arc-example--featured { padding: 36px 36px; }
+.arcs-examples .arcs-grid--two {
+  grid-template-columns: 1fr 1fr;
+  max-width: 680px;
+  margin: 20px auto 0;
+}
+.arc-example--featured { padding: 32px 32px; }
 .arc-example--featured .arc-habits {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 11px 28px;
 }
-@media (max-width: 560px) {
-  .arc-example--featured { padding: 28px 24px; }
+@media (max-width: 640px) {
+  .arcs-examples .arcs-grid--two { grid-template-columns: 1fr; }
   .arc-example--featured .arc-habits { grid-template-columns: 1fr; }
 }
 
