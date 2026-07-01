@@ -1462,6 +1462,37 @@ nav.scrolled {
   .arc-example--featured .arc-habits { grid-template-columns: 1fr; }
 }
 
+/* Staged ARC (Morning Momentum) — habits grouped by unlock stage into three
+   columns, so the build-up is visible at a glance. Sits below the two-column row. */
+.arcs-examples .arcs-grid--single + .arcs-grid--single { margin-top: 20px; }
+.arc-example--staged .arc-stages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px 26px;
+  border-top: 1px solid var(--hairline);
+  padding-top: 20px;
+}
+.arc-stage-label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--area, var(--text-dim));
+  margin-bottom: 12px;
+}
+.arc-example--staged .arc-habits {
+  display: flex;
+  flex-direction: column;
+  border-top: none;
+  padding-top: 0;
+  gap: 9px;
+}
+.arc-stage-pill { border-color: var(--area); color: var(--area); }
+@media (max-width: 640px) {
+  .arc-example--staged .arc-stages { grid-template-columns: 1fr; gap: 18px; }
+}
+
 /* ════════════════════════════════════════════════════════════
    FOUNDATION single-card variant
    ════════════════════════════════════════════════════════════ */
