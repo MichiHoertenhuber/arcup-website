@@ -38,7 +38,7 @@
 <main class="container">
   <div class="legal-page">
     <h1 data-i18n="legal.datenschutz.title">Datenschutzerklärung</h1>
-    <p class="last-updated" data-i18n="legal.lastUpdated">Stand: 1. Juni 2026</p>
+    <p class="last-updated" data-i18n="legal.lastUpdated">Stand: 13. Juli 2026</p>
 
     <p class="legal-fallback-notice" data-i18n="legal.fallbackNotice"></p>
 
@@ -306,7 +306,9 @@
       <h2>8. Lokale Datenspeicherung auf dem Gerät</h2>
       <ul>
         <li><strong>Expo SecureStore:</strong> speichert ausschließlich das Supabase-Sitzungstoken (JWT) verschlüsselt im sicheren Bereich des Betriebssystems (iOS Keychain / Android Keystore). Bei Logout oder Konto-Löschung wird das Token entfernt.</li>
-        <li><strong>Lokaler Cache (TanStack React Query):</strong> im Arbeitsspeicher der App, zur Performance-Optimierung der Anzeige. Kein persistenter Datenexport; bei App-Schließung gelöscht.</li>
+        <li><strong>Lokaler Daten-Cache (TanStack React Query):</strong> zuletzt geladene App-Daten des angemeldeten Nutzers werden zur Offline-Anzeige und Performance-Optimierung bis zu 24 Stunden lokal auf dem Gerät zwischengespeichert (App-Speicherbereich, für andere Apps nicht zugänglich). Beim Logout wird der Cache vollständig gelöscht; er verlässt das Gerät zu keinem Zeitpunkt.</li>
+        <li><strong>Offline-Warteschlange für Habit-Einträge:</strong> ohne Internetverbindung erfasste Habit-Einträge werden lokal zwischengespeichert und bei Wiederverbindung automatisch an den Server übertragen und lokal entfernt. Einträge, die serverseitig nicht mehr zulässig sind (älter als der Vortag), werden verworfen.</li>
+        <li><strong>Bild-Cache (expo-image):</strong> ARC- und Lerninhalt-Coverbilder werden zur Offline-Anzeige im lokalen App-Cache des Geräts vorgehalten; das Betriebssystem bzw. die App-Deinstallation räumt diesen Cache auf.</li>
         <li><strong>Foto-Auswahl (expo-image-picker):</strong> greift nach Bestätigung des System-Dialogs auf einzelne, vom Nutzer ausgewählte Bilder zu, zur Verwendung als ARC-Coverbild oder als optionaler Screenshot-Anhang an eine Feedback-Nachricht.</li>
       </ul>
 
@@ -643,7 +645,9 @@
       <h2>8. Local data storage on the device</h2>
       <ul>
         <li><strong>Expo SecureStore:</strong> stores only the Supabase session token (JWT) encrypted in the secure area of the operating system (iOS Keychain / Android Keystore). The token is removed on logout or account deletion.</li>
-        <li><strong>Local cache (TanStack React Query):</strong> in the App's working memory, to optimise display performance. No persistent data export; deleted when the App is closed.</li>
+        <li><strong>Local data cache (TanStack React Query):</strong> the signed-in User's most recently loaded App data is cached locally on the device for up to 24 hours for offline display and performance (app storage area, not accessible to other apps). The cache is fully deleted on logout; it never leaves the device.</li>
+        <li><strong>Offline queue for habit entries:</strong> habit entries recorded without an internet connection are stored locally and automatically transmitted to the server and removed locally once the connection returns. Entries the server no longer accepts (older than the previous day) are discarded.</li>
+        <li><strong>Image cache (expo-image):</strong> ARC and learning-content cover images are kept in the device's local app cache for offline display; the operating system or uninstalling the App clears this cache.</li>
         <li><strong>Photo picker (expo-image-picker):</strong> after confirming the system dialog, accesses individual images selected by the User, for use as an ARC cover image or as an optional screenshot attachment to a feedback message.</li>
       </ul>
 

@@ -364,11 +364,11 @@
 
     // ─── LEGAL PAGES ─────────────────────────────────────
     'legal.lastUpdated': {
-      de: 'Stand: 13. Juni 2026',
-      en: 'Last updated: 13 June 2026',
-      es: 'Última actualización: 13 de junio de 2026',
-      fr: 'Dernière mise à jour : 13 juin 2026',
-      it: 'Ultimo aggiornamento: 13 giugno 2026',
+      de: 'Stand: 13. Juli 2026',
+      en: 'Last updated: 13 July 2026',
+      es: 'Última actualización: 13 de julio de 2026',
+      fr: 'Dernière mise à jour : 13 juillet 2026',
+      it: 'Ultimo aggiornamento: 13 luglio 2026',
     },
     'legal.fallbackNotice': {
       de: '',
