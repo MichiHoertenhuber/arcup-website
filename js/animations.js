@@ -37,6 +37,46 @@
     }, 2800);
   })();
 
+  // ── Hero stage tilt ────────────────────────────────────────
+  // The three phones share one 3D space (preserve-3d + translateZ),
+  // so gently tilting the stage toward the pointer yields real depth
+  // parallax. Desktop pointers only; eased via rAF lerp.
+  (function () {
+    var stage = document.getElementById('heroStage');
+    if (!stage || reduce) return;
+    if (!window.matchMedia('(pointer: fine)').matches) return;
+    var hero = stage.closest('.hero');
+    if (!hero) return;
+
+    var targetX = 0, targetY = 0, curX = 0, curY = 0, raf = null;
+
+    function loop() {
+      curX += (targetX - curX) * 0.08;
+      curY += (targetY - curY) * 0.08;
+      stage.style.setProperty('--tilt-x', curX.toFixed(3) + 'deg');
+      stage.style.setProperty('--tilt-y', curY.toFixed(3) + 'deg');
+      if (Math.abs(targetX - curX) + Math.abs(targetY - curY) > 0.005) {
+        raf = requestAnimationFrame(loop);
+      } else {
+        raf = null;
+      }
+    }
+    function kick() { if (!raf) raf = requestAnimationFrame(loop); }
+
+    hero.addEventListener('mousemove', function (e) {
+      var r = stage.getBoundingClientRect();
+      var nx = (e.clientX - (r.left + r.width / 2)) / (r.width / 2);
+      var ny = (e.clientY - (r.top + r.height / 2)) / (r.height / 2);
+      targetY = Math.max(-1, Math.min(1, nx)) * 5;    /* rotateY follows x */
+      targetX = Math.max(-1, Math.min(1, ny)) * -3.5; /* rotateX counters y */
+      kick();
+    });
+    hero.addEventListener('mouseleave', function () {
+      targetX = 0; targetY = 0;
+      kick();
+    });
+  })();
+
   // ── Scroll reveal ──────────────────────────────────────────
   // Fades + lifts content into view as it enters the viewport.
   // Siblings sharing a parent are staggered for a gentle cascade.

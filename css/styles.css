@@ -368,36 +368,55 @@ nav.scrolled {
   gap: 12px;
 }
 
-/* The stage — center phone + two side phones */
+/* The stage — 3D fan: center phone in front, side phones angled in behind.
+ * Children live in one shared 3D space (preserve-3d + translateZ), so the
+ * JS pointer tilt on --tilt-x/--tilt-y produces real depth parallax.
+ * Float/entrance animations use the individual `translate` property so they
+ * compose with the static 3D `transform` instead of overwriting it. */
 .hero-stage {
   position: relative;
   margin-top: 88px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  gap: clamp(28px, 4vw, 72px);
   z-index: 1;
   padding: 0 24px;
   perspective: 1400px;
+  transform-style: preserve-3d;
+  transform: perspective(1200px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
 }
 .hero-stage-glow {
   position: absolute;
   width: 70%; height: 60%;
-  bottom: 0; left: 15%;
+  bottom: -6%; left: 15%;
   background: radial-gradient(ellipse at bottom, var(--accent-glow) 0%, transparent 65%);
   filter: blur(80px);
   z-index: -1;
+  transform: translateZ(-180px);
+}
+/* Stage floor — thin light line the phones appear to stand on */
+.hero-stage::after {
+  content: '';
+  position: absolute;
+  left: 8%; right: 8%; bottom: -34px;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent,
+    rgba(34, 197, 94, 0.35) 30%,
+    rgba(134, 239, 172, 0.65) 50%,
+    rgba(34, 197, 94, 0.35) 70%,
+    transparent);
+  filter: drop-shadow(0 0 14px rgba(34, 197, 94, 0.5));
 }
 .hero-phone {
   height: auto;
   filter: drop-shadow(0 40px 80px rgba(0, 0, 0, 0.55));
-  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.hero-phone:not(.hero-phone--left):not(.hero-phone--right) {
-  /* Center phone */
+.hero-phone--center {
   width: clamp(260px, 28vw, 380px);
   z-index: 2;
   position: relative;
+  transform: translateZ(70px);
   filter: drop-shadow(0 50px 100px rgba(0, 0, 0, 0.7))
           drop-shadow(0 0 60px rgba(34, 197, 94, 0.18));
 }
@@ -405,13 +424,14 @@ nav.scrolled {
 .hero-phone--right {
   width: clamp(190px, 20vw, 280px);
   z-index: 1;
-  opacity: 0.85;
+  opacity: 0.9;
+  margin: 0 clamp(-64px, -4.5vw, -36px);
 }
 .hero-phone--left {
-  transform: translateY(-2%) rotate(-4deg);
+  transform: translateZ(-110px) rotateY(20deg) rotate(-2deg);
 }
 .hero-phone--right {
-  transform: translateY(-2%) rotate(4deg);
+  transform: translateZ(-110px) rotateY(-20deg) rotate(2deg);
 }
 
 /* Hero rotator — rotating life-area word under the headline */
@@ -426,14 +446,24 @@ nav.scrolled {
 .hero-rotator.swap { opacity: 0; transform: translateY(-8px); }
 .hero-rotator-word { display: inline-block; color: var(--accent); }
 
-/* ── Motion: floating hero phones, breathing glow, scroll reveal ── */
+/* ── Motion: staggered entrance, floating phones, breathing glow, reveal ──
+ * Entrance keyframes only define `from`; the browser animates toward each
+ * phone's natural state, so base opacity/position stay the single source
+ * of truth. Float starts after the entrance has fully settled. */
 @media (prefers-reduced-motion: no-preference) {
-  .hero-phone:not(.hero-phone--left):not(.hero-phone--right) {
-    animation: floatCenter 6s ease-in-out infinite;
+  .hero-phone--center {
+    animation: phoneRise 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both,
+               floatPhone 6s ease-in-out 1.4s infinite;
   }
-  .hero-phone--left  { animation: floatLeft 7s ease-in-out infinite; }
-  .hero-phone--right { animation: floatRight 6.5s ease-in-out infinite 0.4s; }
-  .hero-stage-glow   { animation: glowBreathe 8s ease-in-out infinite; }
+  .hero-phone--left {
+    animation: phoneFanLeft 1s cubic-bezier(0.16, 1, 0.3, 1) 0.35s both,
+               floatPhone 7s ease-in-out 1.8s infinite;
+  }
+  .hero-phone--right {
+    animation: phoneFanRight 1s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both,
+               floatPhone 6.5s ease-in-out 2.1s infinite;
+  }
+  .hero-stage-glow { animation: glowBreathe 8s ease-in-out infinite; }
 
   .js-anim .reveal {
     opacity: 0;
@@ -443,10 +473,11 @@ nav.scrolled {
   }
   .js-anim .reveal.is-visible { opacity: 1; transform: none; }
 }
-@keyframes floatCenter { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
-@keyframes floatLeft  { 0%, 100% { transform: translateY(-2%) rotate(-4deg); } 50% { transform: translateY(calc(-2% - 12px)) rotate(-4deg); } }
-@keyframes floatRight { 0%, 100% { transform: translateY(-2%) rotate(4deg); } 50% { transform: translateY(calc(-2% - 12px)) rotate(4deg); } }
-@keyframes glowBreathe { 0%, 100% { opacity: 0.7; transform: scale(1); } 50% { opacity: 1; transform: scale(1.08); } }
+@keyframes phoneRise     { from { opacity: 0; translate: 0 60px; } }
+@keyframes phoneFanLeft  { from { opacity: 0; translate: 96px 36px; } }
+@keyframes phoneFanRight { from { opacity: 0; translate: -96px 36px; } }
+@keyframes floatPhone    { 0%, 100% { translate: 0 0; } 50% { translate: 0 -12px; } }
+@keyframes glowBreathe   { 0%, 100% { opacity: 0.7; scale: 1; } 50% { opacity: 1; scale: 1.08; } }
 
 /* Trust strip at the very bottom of hero */
 .hero-trust {
@@ -1266,10 +1297,11 @@ nav.scrolled {
   .section { padding: 100px 0; }
   .hero { padding: 140px 0 0; min-height: 0; }
   .hero-stage { margin-top: 64px; }
-  .hero-phone--left, .hero-phone--right { display: none; }
-  .hero-phone:not(.hero-phone--left):not(.hero-phone--right) {
-    width: clamp(240px, 60vw, 340px);
+  .hero-phone--left, .hero-phone--right {
+    width: clamp(120px, 30vw, 200px);
+    margin: 0 clamp(-44px, -10vw, -20px);
   }
+  .hero-phone--center { width: clamp(210px, 52vw, 340px); }
   .hero-trust { margin: 48px auto 64px; gap: 22px; }
 
   .layers-grid { grid-template-columns: 1fr; }
