@@ -687,6 +687,23 @@ nav.scrolled {
   filter: drop-shadow(0 30px 80px rgba(0, 0, 0, 0.55));
 }
 
+/* Duo variant: two phones side by side (front tab + back tab).
+   max-width keeps the pair inside the column on narrow viewports:
+   54% + 54% − 14% overlap ≈ 94% of the container. */
+.showcase-art--duo img {
+  max-height: 560px;
+  max-width: 54%;
+}
+.showcase-art--duo img:first-child {
+  position: relative;
+  z-index: 2;
+}
+.showcase-art--duo img:last-child {
+  margin-left: -14%;
+  transform: translateY(32px) scale(0.94);
+  z-index: 1;
+}
+
 /* ════════════════════════════════════════════════════════════
    FIVE AREAS
    ════════════════════════════════════════════════════════════ */
