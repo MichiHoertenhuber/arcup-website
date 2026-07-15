@@ -75,6 +75,9 @@
     'hero.altHome':  { de: 'ArcUp Home — Tageserfüllung, Wochenerfüllung, Level und aktive ARCs', en: 'ArcUp Home — daily and weekly completion, level and active ARCs', es: 'ArcUp Inicio — cumplimiento diario y semanal, nivel y ARCs activos', fr: "ArcUp Accueil — achèvement quotidien et hebdomadaire, niveau et ARC actifs", it: "ArcUp Home — completamento giornaliero e settimanale, livello e ARC attivi" },
     'hero.altARCs':  { de: 'ARCademy — ausgewählte ARCs', en: 'ARCademy — selected ARCs', es: 'ARCademy — ARCs seleccionados', fr: 'ARCademy — ARC sélectionnés', it: 'ARCademy — ARC selezionati' },
     'hero.altRef':   { de: 'Compass — Lebensrad', en: 'Compass — Wheel of Life', es: 'Compass — Rueda de la vida', fr: 'Compass — Roue de la vie', it: 'Compass — Ruota della vita' },
+    'hero.altHabits': { de: 'ARCademy — Gewohnheiten-Bibliothek', en: 'ARCademy — Habit library', es: 'ARCademy — biblioteca de hábitos', fr: "ARCademy — bibliothèque d'habitudes", it: 'ARCademy — libreria delle abitudini' },
+    'hero.altInsights': { de: 'Insights — Level, Streak und Statistiken der Lebensbereiche', en: 'Insights — level, Streak and life-area stats', es: 'Insights — nivel, Streak y estadísticas por área de vida', fr: 'Insights — niveau, Streak et statistiques par domaine de vie', it: 'Insights — livello, Streak e statistiche per area di vita' },
+    'hero.altDiscover': { de: 'Discover — Lerninhalte und Lektionen', en: 'Discover — learning content and lessons', es: 'Discover — contenidos y lecciones', fr: 'Discover — contenus et leçons', it: 'Discover — contenuti e lezioni' },
 
     // ─── MANIFESTO ───────────────────────────────────────
     'mani.overline': { de: 'Was uns leitet', en: 'What guides us', es: 'Lo que nos guía', fr: 'Ce qui nous guide', it: 'Ciò che ci guida' },

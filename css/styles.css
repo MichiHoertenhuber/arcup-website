@@ -458,6 +458,24 @@ nav.scrolled {
           drop-shadow(0 0 60px rgba(34, 197, 94, 0));
 }
 .hero-phone.slot-left, .hero-phone.slot-right { cursor: pointer; }
+/* Off-stage slots — phones beyond the visible three wait here, pushed
+ * deeper and faded out, and slide in from the side they will enter. */
+.hero-phone--hidden,
+.hero-phone.slot-hidden-left,
+.hero-phone.slot-hidden-right {
+  z-index: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.hero-phone--hidden,
+.hero-phone.slot-hidden-right {
+  transform: translateX(calc(var(--drag) + var(--fan-x) * 1.55)) translateZ(-260px)
+             rotateY(-26deg) rotate(2deg) scale(calc(var(--side-scale) * 0.85));
+}
+.hero-phone.slot-hidden-left {
+  transform: translateX(calc(var(--drag) - var(--fan-x) * 1.55)) translateZ(-260px)
+             rotateY(26deg) rotate(-2deg) scale(calc(var(--side-scale) * 0.85));
+}
 
 /* Slot indicator dots */
 .hero-stage-dots {
@@ -519,6 +537,10 @@ nav.scrolled {
   }
   /* Live drag feedback must track the pointer directly */
   .hero-stage.is-dragging .hero-phone { transition: none; }
+
+  /* Base float for phones without an entrance (the initially hidden ones);
+   * the three entrance rules below override with their own timings. */
+  .hero-phone { animation: floatPhone 6.5s ease-in-out 1.6s infinite; }
 
   .hero-phone--center {
     animation: phoneRise 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both,

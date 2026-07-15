@@ -39,30 +39,41 @@
 
   // ── Hero stage carousel ────────────────────────────────────
   // Swipe / drag horizontally (or tap a side phone / a dot) to move a
-  // different screenshot into the front slot. The three phones cycle
-  // through the left / center / right slots of the 3D fan; slot classes
-  // override the static fallback classes, which stay put so the one-time
-  // entrance animations never re-fire.
+  // different screenshot into the front slot. The phones cycle through
+  // the visible left / center / right slots of the 3D fan; the rest wait
+  // off-stage in the hidden slots on the side they will enter from.
+  // Slot classes override the static fallback classes, which stay put so
+  // the one-time entrance animations never re-fire.
   (function () {
     var stage = document.getElementById('heroStage');
     if (!stage) return;
     var phones = Array.prototype.slice.call(stage.querySelectorAll('.hero-phone'));
-    if (phones.length !== 3) return;
+    var n = phones.length;
+    if (n < 3) return;
     var dots = Array.prototype.slice.call(document.querySelectorAll('.hero-stage-dot'));
 
-    var SLOT = ['slot-center', 'slot-right', 'slot-left']; // indexed by (idx - center) mod 3
-    var center = 1; // DOM order: ARCs, Home, Compass — start on Home
+    var ALL_SLOTS = ['slot-left', 'slot-center', 'slot-right', 'slot-hidden-left', 'slot-hidden-right'];
+    var half = Math.floor(n / 2);
+    var center = 1; // DOM order starts ARCs, Home, Compass, … — start on Home
 
+    function slotFor(idx) {
+      // signed circular distance from the center phone, in [-half, half)
+      var d = ((idx - center + half) % n + n) % n - half;
+      if (d === 0) return 'slot-center';
+      if (d === -1) return 'slot-left';
+      if (d === 1) return 'slot-right';
+      return d < 0 ? 'slot-hidden-left' : 'slot-hidden-right';
+    }
     function apply() {
       phones.forEach(function (ph, idx) {
-        ph.classList.remove('slot-left', 'slot-center', 'slot-right');
-        ph.classList.add(SLOT[(idx - center + 3) % 3]);
+        ALL_SLOTS.forEach(function (s) { ph.classList.remove(s); });
+        ph.classList.add(slotFor(idx));
       });
       dots.forEach(function (dot, idx) {
         dot.classList.toggle('is-active', idx === center);
       });
     }
-    function goTo(idx) { center = (idx + 3) % 3; apply(); }
+    function goTo(idx) { center = (idx + n) % n; apply(); }
 
     phones.forEach(function (ph) { ph.setAttribute('draggable', 'false'); });
     apply();
