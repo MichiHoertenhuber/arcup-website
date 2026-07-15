@@ -37,6 +37,81 @@
     }, 2800);
   })();
 
+  // ── Hero stage carousel ────────────────────────────────────
+  // Swipe / drag horizontally (or tap a side phone / a dot) to move a
+  // different screenshot into the front slot. The three phones cycle
+  // through the left / center / right slots of the 3D fan; slot classes
+  // override the static fallback classes, which stay put so the one-time
+  // entrance animations never re-fire.
+  (function () {
+    var stage = document.getElementById('heroStage');
+    if (!stage) return;
+    var phones = Array.prototype.slice.call(stage.querySelectorAll('.hero-phone'));
+    if (phones.length !== 3) return;
+    var dots = Array.prototype.slice.call(document.querySelectorAll('.hero-stage-dot'));
+
+    var SLOT = ['slot-center', 'slot-right', 'slot-left']; // indexed by (idx - center) mod 3
+    var center = 1; // DOM order: ARCs, Home, Compass — start on Home
+
+    function apply() {
+      phones.forEach(function (ph, idx) {
+        ph.classList.remove('slot-left', 'slot-center', 'slot-right');
+        ph.classList.add(SLOT[(idx - center + 3) % 3]);
+      });
+      dots.forEach(function (dot, idx) {
+        dot.classList.toggle('is-active', idx === center);
+      });
+    }
+    function goTo(idx) { center = (idx + 3) % 3; apply(); }
+
+    phones.forEach(function (ph) { ph.setAttribute('draggable', 'false'); });
+    apply();
+
+    // Pointer swipe. touch-action: pan-y on the stage keeps vertical
+    // scrolling native; we only claim gestures that start horizontal.
+    var pid = null, startX = 0, startY = 0, axis = null, swiped = false;
+
+    stage.addEventListener('pointerdown', function (e) {
+      if (e.pointerType === 'mouse' && e.button !== 0) return;
+      pid = e.pointerId;
+      startX = e.clientX;
+      startY = e.clientY;
+      axis = null;
+    });
+    window.addEventListener('pointermove', function (e) {
+      if (pid === null || e.pointerId !== pid) return;
+      var dx = e.clientX - startX, dy = e.clientY - startY;
+      if (axis === null && Math.abs(dx) + Math.abs(dy) > 8) {
+        axis = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
+      }
+      if (axis !== 'x') return;
+      swiped = true;
+      stage.classList.add('is-dragging');
+      stage.style.setProperty('--drag', (dx * 0.35).toFixed(1) + 'px');
+    });
+    function release(e) {
+      if (pid === null || e.pointerId !== pid) return;
+      pid = null;
+      stage.classList.remove('is-dragging');
+      stage.style.setProperty('--drag', '0px');
+      var dx = e.clientX - startX;
+      if (axis === 'x' && Math.abs(dx) > 48) goTo(center + (dx < 0 ? 1 : -1));
+      // Let the click that follows pointerup see the swipe, then reset.
+      setTimeout(function () { swiped = false; }, 0);
+    }
+    window.addEventListener('pointerup', release);
+    window.addEventListener('pointercancel', release);
+
+    phones.forEach(function (ph, idx) {
+      ph.addEventListener('click', function () {
+        if (!swiped && idx !== center) goTo(idx);
+      });
+    });
+    dots.forEach(function (dot, idx) {
+      dot.addEventListener('click', function () { goTo(idx); });
+    });
+  })();
+
   // ── Hero stage tilt ────────────────────────────────────────
   // The three phones share one 3D space (preserve-3d + translateZ),
   // so gently tilting the stage toward the pointer yields real depth
@@ -64,6 +139,7 @@
     function kick() { if (!raf) raf = requestAnimationFrame(loop); }
 
     hero.addEventListener('mousemove', function (e) {
+      if (stage.classList.contains('is-dragging')) return;
       var r = stage.getBoundingClientRect();
       var nx = (e.clientX - (r.left + r.width / 2)) / (r.width / 2);
       var ny = (e.clientY - (r.top + r.height / 2)) / (r.height / 2);
