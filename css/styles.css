@@ -598,19 +598,19 @@ nav.scrolled {
 }
 
 /* ════════════════════════════════════════════════════════════
-   SHOWCASES — 4 cinematic feature blocks
+   SHOWCASES — scrolling feature steps + sticky device stage
+   Desktop: copy blocks scroll on the left while a pinned phone on
+   the right swaps its screenshot per step. Mobile: stage hidden,
+   each step falls back to its inline screenshot.
    ════════════════════════════════════════════════════════════ */
 .showcases { padding-top: 140px; padding-bottom: 80px; }
 .showcase { padding: 80px 0; }
 
-.showcase-inner {
+.showcase-flow {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 64px;
 }
-.showcase--reverse .showcase-inner > .showcase-copy { order: 2; }
-.showcase--reverse .showcase-inner > .showcase-art  { order: 1; }
 
 .showcase-num {
   font-size: 11.5px;
@@ -702,6 +702,127 @@ nav.scrolled {
   margin-left: -14%;
   transform: translateY(32px) scale(0.94);
   z-index: 1;
+}
+
+/* ── Sticky device stage (desktop) ─────────────────────────── */
+.showcase-stage { position: relative; }
+
+.stage-pin {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1400px;
+}
+
+/* Huge outlined step number as a watermark behind the phone */
+.stage-num {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(240px, 26vw, 420px);
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.06);
+  user-select: none;
+  pointer-events: none;
+  transition: opacity 0.45s ease;
+}
+.stage-num.is-swapping { opacity: 0; }
+
+.stage-device {
+  position: relative;
+  width: min(24vw, 330px, 40vh);
+  aspect-ratio: 1480 / 2740;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.22, 0.68, 0.3, 1);
+}
+.stage-device::before {
+  content: '';
+  position: absolute;
+  width: 130%; height: 70%;
+  top: 15%; left: -15%;
+  background: radial-gradient(ellipse, var(--accent-glow) 0%, transparent 65%);
+  filter: blur(90px);
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.stage-shot {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(64px) scale(0.9);
+  transition: opacity 0.5s ease, transform 0.7s cubic-bezier(0.22, 0.68, 0.3, 1);
+  filter: drop-shadow(0 30px 80px rgba(0, 0, 0, 0.55));
+  pointer-events: none;
+}
+.stage-shot.is-active  { opacity: 1; transform: none; z-index: 2; }
+.stage-shot.is-leaving { opacity: 0; transform: translateY(-56px) scale(1.03); z-index: 1; }
+/* Scrolling upward flips the travel direction so motion follows the page */
+.stage-device.dir-up .stage-shot            { transform: translateY(-64px) scale(0.9); }
+.stage-device.dir-up .stage-shot.is-active  { transform: none; }
+.stage-device.dir-up .stage-shot.is-leaving { transform: translateY(56px) scale(1.03); }
+
+/* Progress rail — pointer-only shortcuts (stage is aria-hidden) */
+.stage-rail {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.stage-rail button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: var(--text-dim);
+  transition: color 0.3s ease;
+}
+.stage-rail button::before {
+  content: '';
+  width: 14px;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+.stage-rail button:hover { color: var(--text-mute); }
+.stage-rail button.is-active { color: var(--accent); }
+.stage-rail button.is-active::before { width: 28px; }
+
+/* Desktop: steps get near-viewport height so the pinned stage has
+   scroll room; the inline art hides — the stage carries the shots. */
+@media (min-width: 901px) {
+  .showcase-steps .showcase {
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+  }
+  .showcase-steps .showcase-art { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stage-shot { transition: opacity 0.3s ease; transform: none; }
+  .stage-shot.is-leaving,
+  .stage-device.dir-up .stage-shot { transform: none; }
+  .stage-device { transition: none; }
 }
 
 /* ════════════════════════════════════════════════════════════
@@ -1279,13 +1400,13 @@ nav.scrolled {
   .plan-prices li { grid-template-columns: auto auto; row-gap: 4px; }
   .plan-price-label { grid-column: 1 / -1; text-align: left; }
 
-  .showcase-inner {
-    grid-template-columns: 1fr;
+  .showcase-flow { display: block; }
+  .showcase-stage { display: none; }
+  .showcase {
+    padding: 50px 0;
+    display: grid;
     gap: 56px;
   }
-  .showcase--reverse .showcase-inner > .showcase-copy { order: 1; }
-  .showcase--reverse .showcase-inner > .showcase-art  { order: 2; }
-  .showcase { padding: 50px 0; }
   .showcase-art img { max-height: 520px; }
 }
 
