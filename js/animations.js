@@ -1,41 +1,9 @@
-/* ArcUp — subtle motion: hero word rotator + scroll reveal.
+/* ArcUp — subtle motion: hero stage carousel, tilt + scroll reveal.
  * Pure vanilla JS, no deps. Fully respects prefers-reduced-motion. */
 (function () {
   'use strict';
 
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  // ── Hero word rotator ──────────────────────────────────────
-  // Cycles the six life areas. Reads the active <html lang> on every
-  // tick, so it follows live language switches without extra wiring.
-  (function () {
-    var el = document.getElementById('heroRotator');
-    if (!el) return;
-    var line = el.closest('.hero-rotator') || el.parentNode;
-
-    var WORDS = {
-      de: ['deinen Körper', 'deinen Geist', 'deine Karriere', 'deine Beziehungen', 'deinen Lebensstil', 'deine Ernährung'],
-      en: ['your body', 'your mind', 'your career', 'your relationships', 'your lifestyle', 'your nutrition'],
-      es: ['tu cuerpo', 'tu mente', 'tu carrera', 'tus relaciones', 'tu estilo de vida', 'tu nutrición'],
-      fr: ['ton corps', 'ton esprit', 'ta carrière', 'tes relations', 'ton style de vie', 'ta nutrition'],
-      it: ['il tuo corpo', 'la tua mente', 'la tua carriera', 'le tue relazioni', 'il tuo stile di vita', 'la tua alimentazione']
-    };
-    function words() { return WORDS[document.documentElement.lang] || WORDS.de; }
-
-    var i = 0;
-    el.textContent = words()[0];
-    if (reduce) return;
-
-    setInterval(function () {
-      var w = words();
-      i = (i + 1) % w.length;
-      line.classList.add('swap');
-      setTimeout(function () {
-        el.textContent = w[i];
-        line.classList.remove('swap');
-      }, 300);
-    }, 2800);
-  })();
 
   // ── Hero stage carousel ────────────────────────────────────
   // Swipe / drag horizontally (or tap a side phone / a dot) to move a
@@ -51,6 +19,7 @@
     var n = phones.length;
     if (n < 3) return;
     var dots = Array.prototype.slice.call(document.querySelectorAll('.hero-stage-dot'));
+    var captions = Array.prototype.slice.call(document.querySelectorAll('.hero-stage-caption span'));
 
     var ALL_SLOTS = ['slot-left', 'slot-center', 'slot-right', 'slot-hidden-left', 'slot-hidden-right'];
     var half = Math.floor(n / 2);
@@ -72,8 +41,16 @@
       dots.forEach(function (dot, idx) {
         dot.classList.toggle('is-active', idx === center);
       });
+      captions.forEach(function (cap, idx) {
+        cap.classList.toggle('is-active', idx === center);
+      });
     }
     function goTo(idx) { center = (idx + n) % n; apply(); }
+
+    var prevBtn = document.getElementById('heroPrev');
+    var nextBtn = document.getElementById('heroNext');
+    if (prevBtn) prevBtn.addEventListener('click', function () { goTo(center - 1); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { goTo(center + 1); });
 
     phones.forEach(function (ph) { ph.setAttribute('draggable', 'false'); });
     apply();

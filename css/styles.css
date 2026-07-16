@@ -191,6 +191,8 @@ nav.scrolled {
   gap: 32px;
 }
 .nav-brand { display: flex; align-items: center; }
+/* Lang switcher sitting directly in the nav (index has no link list) */
+.nav-inner > [data-lang-switcher] { margin-left: auto; }
 
 .nav-links {
   display: flex;
@@ -235,7 +237,7 @@ nav.scrolled {
    ════════════════════════════════════════════════════════════ */
 .hero {
   position: relative;
-  padding: 180px 0 0;
+  padding: 150px 0 0;
   overflow: hidden;
   isolation: isolate;
   min-height: 100vh;
@@ -285,58 +287,49 @@ nav.scrolled {
   z-index: 2;
 }
 
-.hero-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 12px;
+/* Welcome block — mirrors the app's landing slide: small uppercase kicker,
+ * the big ARC UP brand mark (ARC slides in from the left, UP from the
+ * right), the bold green tagline and the one-line sub. */
+.hero-kicker {
+  display: block;
+  font-size: 12.5px;
   font-weight: 500;
-  color: var(--text);
-  letter-spacing: 0.04em;
-  padding: 8px 16px 8px 12px;
-  border-radius: 999px;
-  border: 1px solid var(--hairline-2);
-  background: rgba(255,255,255,0.04);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  margin-bottom: 40px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 20px;
 }
-.hero-pill-dot {
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 14px var(--accent);
-  animation: pulse 2.4s ease-in-out infinite;
-}
-@keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%      { opacity: 0.5; transform: scale(0.85); }
-}
-
-/* Massive 3-line headline */
-.hero-headline {
-  font-size: clamp(64px, 12vw, 180px);
-  line-height: 0.88;
-  letter-spacing: -0.055em;
-  font-weight: 500;
+.hero-brand {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: clamp(14px, 2.4vw, 30px);
+  font-size: clamp(58px, 9vw, 112px);
+  letter-spacing: 0.16em;
+  line-height: 1;
   color: var(--text);
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  max-width: 1100px;
 }
-.hero-headline span {
-  display: block;
-}
-.hero-accent {
+.hero-brand-arc {
+  font-weight: 700;
   color: var(--accent);
-  font-style: normal;
+  text-shadow: 0 0 44px rgba(34, 197, 94, 0.35);
+}
+.hero-brand-up {
+  font-weight: 300;
+  color: var(--text-dim);
+}
+.hero-tagline {
+  margin-top: 24px;
+  font-size: clamp(19px, 2vw, 24px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--accent);
 }
 
 .hero-sub {
   max-width: 580px;
-  margin: 36px auto 0;
+  margin: 12px auto 0;
   font-size: clamp(15px, 1.25vw, 18px);
   line-height: 1.55;
   color: var(--text-mute);
@@ -348,7 +341,7 @@ nav.scrolled {
   justify-content: center;
   align-items: center;
   gap: 28px;
-  margin-top: 44px;
+  margin-top: 30px;
   flex-wrap: wrap;
 }
 .hero-secondary {
@@ -378,19 +371,62 @@ nav.scrolled {
  * The static .hero-phone--left/center/right classes stay on the elements as
  * the no-JS fallback and as anchors for the one-time entrance animations;
  * the JS-managed .slot-* classes (specificity 0,2,0) override them. */
-.hero-stage {
+/* Shell wraps the stage plus the two arrow buttons: the sizing variables
+ * live here so stage AND arrows share them, and the arrows stay outside the
+ * stage's 3D tilt transform. */
+.hero-stage-shell {
   --phone-w: clamp(260px, 28vw, 380px);
   --fan-x: calc(var(--phone-w) * 0.70);
   --side-scale: 0.74;
+  position: relative;
+  margin-top: 56px;
+}
+.hero-stage {
   --drag: 0px;
   position: relative;
-  margin-top: 88px;
-  height: calc(var(--phone-w) * 1.852); /* PNGs are 1480x2740 */
+  height: calc(var(--phone-w) * 1.852); /* screenshots are 1480x2740 */
   z-index: 1;
   perspective: 1400px;
   transform-style: preserve-3d;
   transform: perspective(1200px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
   touch-action: pan-y;
+}
+/* Prev/next arrows — the no-swipe path on desktop. Hidden on touch-only
+ * devices, where swiping the stage is the natural gesture. */
+.hero-stage-arrow {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  z-index: 3;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid var(--hairline-2);
+  background: rgba(255, 255, 255, 0.045);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: var(--text-mute);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  appearance: none;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+.hero-stage-arrow:hover {
+  color: var(--accent);
+  border-color: rgba(34, 197, 94, 0.5);
+  background: rgba(34, 197, 94, 0.08);
+}
+.hero-stage-arrow--prev {
+  left: max(12px, calc(50% - var(--fan-x) - var(--phone-w) * var(--side-scale) / 2 - 72px));
+}
+.hero-stage-arrow--next {
+  right: max(12px, calc(50% - var(--fan-x) - var(--phone-w) * var(--side-scale) / 2 - 72px));
+}
+@media (hover: none) and (pointer: coarse) {
+  .hero-stage-arrow { display: none; }
 }
 .hero-stage-glow {
   position: absolute;
@@ -482,7 +518,7 @@ nav.scrolled {
   display: flex;
   justify-content: center;
   gap: 4px;
-  margin-top: 56px;
+  margin-top: 14px;
   position: relative;
   z-index: 2;
 }
@@ -513,23 +549,36 @@ nav.scrolled {
   box-shadow: 0 0 10px rgba(34, 197, 94, 0.6);
 }
 
-/* Hero rotator — rotating life-area word under the headline */
-.hero-rotator {
-  margin: 20px auto 0;
-  font-size: clamp(17px, 1.9vw, 24px);
-  font-weight: 500;
-  letter-spacing: -0.01em;
+/* Caption — names the screen currently in the front slot */
+.hero-stage-caption {
+  position: relative;
+  z-index: 2;
+  margin: 46px auto 0;
+  padding: 0 24px;
+  text-align: center;
+  font-size: 15px;
   color: var(--text-mute);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  min-height: 23px;
 }
-.hero-rotator.swap { opacity: 0; transform: translateY(-8px); }
-.hero-rotator-word { display: inline-block; color: var(--accent); }
+.hero-stage-caption span { display: none; }
+.hero-stage-caption span.is-active { display: inline-block; }
 
 /* ── Motion: staggered entrance, floating phones, breathing glow, reveal ──
  * Entrance keyframes only define `from`; the browser animates toward each
  * phone's natural state, so base opacity/position stay the single source
  * of truth. Float starts after the entrance has fully settled. */
 @media (prefers-reduced-motion: no-preference) {
+  /* Welcome entrance — mirrors the app landing: the brand words slide in
+   * from the sides while the block fades; tagline, sub and CTA follow. */
+  .hero-kicker { animation: heroFade 0.5s ease both; }
+  .hero-brand-arc { animation: brandArcIn 0.75s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .hero-brand-up { animation: brandUpIn 0.75s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .hero-tagline, .hero-sub, .hero-cta {
+    animation: heroFadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.55s both;
+  }
+
+  .hero-stage-caption span.is-active { animation: heroFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) both; }
+
   .hero-phone {
     transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
                 opacity 0.7s ease,
@@ -564,6 +613,10 @@ nav.scrolled {
   }
   .js-anim .reveal.is-visible { opacity: 1; transform: none; }
 }
+@keyframes heroFade   { from { opacity: 0; } }
+@keyframes heroFadeUp { from { opacity: 0; translate: 0 26px; } }
+@keyframes brandArcIn { from { opacity: 0; translate: -340px 0; } }
+@keyframes brandUpIn  { from { opacity: 0; translate: 340px 0; } }
 @keyframes phoneRise     { from { opacity: 0; translate: 0 60px; } }
 @keyframes phoneFanLeft  { from { opacity: 0; translate: 96px 36px; } }
 @keyframes phoneFanRight { from { opacity: 0; translate: -96px 36px; } }
@@ -1386,15 +1439,15 @@ nav.scrolled {
 
 @media (max-width: 900px) {
   .section { padding: 100px 0; }
-  .hero { padding: 140px 0 0; min-height: 0; }
-  .hero-stage {
-    margin-top: 64px;
+  .hero { padding: 130px 0 0; min-height: 0; }
+  .hero-stage-shell {
+    margin-top: 48px;
     --phone-w: clamp(210px, 52vw, 340px);
     --fan-x: calc(var(--phone-w) * 0.60);
     --side-scale: 0.58;
   }
-  .hero-stage-dots { margin-top: 48px; }
-  .hero-trust { margin: 48px auto 64px; gap: 22px; }
+  .hero-stage-caption { margin-top: 42px; }
+  .hero-trust { margin: 44px auto 64px; gap: 22px; }
 
   .layers-grid { grid-template-columns: 1fr; }
   .principles { grid-template-columns: 1fr; gap: 16px; }
@@ -1450,8 +1503,8 @@ nav.scrolled {
   }
   .nav-toggle { display: flex; }
 
-  .hero { padding: 120px 0 0; }
-  .hero-headline { font-size: clamp(56px, 16vw, 96px); }
+  .hero { padding: 110px 0 0; }
+  .hero-brand { font-size: clamp(48px, 15vw, 64px); }
   .hero-sub { font-size: 15px; max-width: 92%; }
   .hero-cta { flex-direction: column; align-items: stretch; gap: 18px; }
   .hero-cta .btn { width: 100%; }

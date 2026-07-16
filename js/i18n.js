@@ -79,6 +79,18 @@
     'hero.altInsights': { de: 'Insights — Level, Streak und Statistiken der Lebensbereiche', en: 'Insights — level, Streak and life-area stats', es: 'Insights — nivel, Streak y estadísticas por área de vida', fr: 'Insights — niveau, Streak et statistiques par domaine de vie', it: 'Insights — livello, Streak e statistiche per area di vita' },
     'hero.altDiscover': { de: 'Discover — Lerninhalte und Lektionen', en: 'Discover — learning content and lessons', es: 'Discover — contenidos y lecciones', fr: 'Discover — contenus et leçons', it: 'Discover — contenuti e lezioni' },
 
+    // Welcome block + carousel controls — wording mirrors the app's landing screen
+    'hero.kicker': { de: 'Willkommen bei', en: 'Welcome to', es: 'Bienvenido a', fr: 'Bienvenue sur', it: 'Benvenuto su' },
+    'hero.tagline': { de: 'Building Better Habits', en: 'Building Better Habits', es: 'Building Better Habits', fr: 'Building Better Habits', it: 'Building Better Habits' },
+    'hero.prev': { de: 'Vorheriger Screenshot', en: 'Previous screenshot', es: 'Captura anterior', fr: 'Capture précédente', it: 'Schermata precedente' },
+    'hero.next': { de: 'Nächster Screenshot', en: 'Next screenshot', es: 'Siguiente captura', fr: 'Capture suivante', it: 'Schermata successiva' },
+    'hero.capHome': { de: 'Home. Dein Tag auf einen Blick.', en: 'Home. Your day at a glance.', es: 'Inicio. Tu día de un vistazo.', fr: "Accueil. Ta journée d'un coup d'œil.", it: "Home. Oggi, a colpo d'occhio." },
+    'hero.capARCs': { de: 'ARCademy. Deine nächste Challenge.', en: 'ARCademy. Your next challenge.', es: 'ARCademy. Tu próximo reto.', fr: 'ARCademy. Ton prochain défi.', it: 'ARCademy. La tua prossima sfida.' },
+    'hero.capHabits': { de: 'ARCademy. Jede Gewohnheit messbar.', en: 'ARCademy. Every Habit, measurable.', es: 'ARCademy. Cada hábito, medible.', fr: 'ARCademy. Chaque habitude, mesurable.', it: 'ARCademy. Ogni abitudine, misurabile.' },
+    'hero.capInsights': { de: 'Insights. Schwarz auf weiß.', en: 'Insights. In black and white.', es: 'Insights. Negro sobre blanco.', fr: 'Insights. Noir sur blanc.', it: 'Insights. Nero su bianco.' },
+    'hero.capDiscover': { de: 'Discover. Versteh deine Gewohnheiten.', en: 'Discover. Understand your Habits.', es: 'Discover. Entiende tus hábitos.', fr: 'Discover. Comprends tes habitudes.', it: 'Discover. Capisci le tue abitudini.' },
+    'hero.capRef': { de: 'Compass. Das große Ganze.', en: 'Compass. The big picture.', es: 'Compass. El panorama completo.', fr: "Compass. La vue d'ensemble.", it: 'Compass. Il quadro completo.' },
+
     // ─── MANIFESTO ───────────────────────────────────────
     'mani.overline': { de: 'Was uns leitet', en: 'What guides us', es: 'Lo que nos guía', fr: 'Ce qui nous guide', it: 'Ciò che ci guida' },
     'mani.title': {
