@@ -50,7 +50,18 @@
         <span class="brand-arc">ARC</span><span class="brand-up">UP</span>
       </span>
     </a>
-    <div data-lang-switcher></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#philosophy" data-i18n="nav.philosophy">Philosophie</a></li>
+      <li><a href="#system" data-i18n="nav.system">Das System</a></li>
+      <li><a href="#areas" data-i18n="nav.areas">Lebensbereiche</a></li>
+      <li><a href="#pricing" data-i18n="nav.pricing">Pro</a></li>
+      <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+      <li><a href="#download" class="btn btn-pill" data-i18n="nav.download">App laden</a></li>
+      <li><div data-lang-switcher></div></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" data-i18n-attr-aria-label="nav.menu" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
@@ -60,30 +71,24 @@
     <div class="hero-grid-lines"></div>
   </div>
 
-  <div class="container hero-inner">
+  <div class="hero-split">
 
-    <span class="hero-kicker" data-i18n="hero.kicker">Willkommen bei</span>
+    <div class="hero-copy">
+      <span class="hero-kicker" data-i18n="hero.kicker">Willkommen bei</span>
 
-    <h1 class="hero-brand">
-      <span class="hero-brand-arc">ARC</span><span class="hero-brand-up">UP</span>
-    </h1>
+      <h1 class="hero-brand">
+        <span class="hero-brand-arc">ARC</span><span class="hero-brand-up">UP</span>
+      </h1>
 
-    <p class="hero-tagline" data-i18n="hero.tagline">Building Better Habits</p>
+      <p class="hero-tagline" data-i18n="hero.tagline">Building Better Habits</p>
 
-    <p class="hero-sub" data-i18n-html="hero.sub">
-      Pick your ARC, lock in, and finish stronger.
-    </p>
-
-    <div class="hero-cta">
-      <a href="#download" class="btn btn-primary btn-lg" data-i18n="hero.ctaPrimary">App kostenlos laden</a>
-      <a href="#system" class="hero-secondary">
-        <span data-i18n="hero.ctaSecondary">So funktioniert ArcUp</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-      </a>
+      <p class="hero-sub" data-i18n-html="hero.sub">
+        Pick your ARC, lock in, and finish stronger.
+      </p>
     </div>
-  </div>
 
-  <div class="hero-stage-shell">
+    <div class="hero-showcase">
+      <div class="hero-stage-shell">
     <button type="button" class="hero-stage-arrow hero-stage-arrow--prev" id="heroPrev" data-i18n-attr-aria-label="hero.prev" aria-label="Vorheriger Screenshot">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
     </button>
@@ -98,27 +103,20 @@
       <img src="./assets/marketing_new/5_Discover-portrait.webp" data-i18n-attr-alt="hero.altDiscover" alt="Discover — Lerninhalte und Lektionen" class="hero-phone hero-phone--hidden" fetchpriority="low" />
     </div>
 
-    <button type="button" class="hero-stage-arrow hero-stage-arrow--next" id="heroNext" data-i18n-attr-aria-label="hero.next" aria-label="Nächster Screenshot">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
-    </button>
-  </div>
+        <button type="button" class="hero-stage-arrow hero-stage-arrow--next" id="heroNext" data-i18n-attr-aria-label="hero.next" aria-label="Nächster Screenshot">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
 
-  <p class="hero-stage-caption" aria-live="polite">
-    <span data-i18n="hero.capARCs">ARCademy. Deine nächste Challenge.</span>
-    <span class="is-active" data-i18n="hero.capHome">Home. Dein Tag auf einen Blick.</span>
-    <span data-i18n="hero.capRef">Compass. Das große Ganze.</span>
-    <span data-i18n="hero.capHabits">ARCademy. Jede Gewohnheit messbar.</span>
-    <span data-i18n="hero.capInsights">Insights. Schwarz auf weiß.</span>
-    <span data-i18n="hero.capDiscover">Discover. Versteh deine Gewohnheiten.</span>
-  </p>
-
-  <div class="hero-stage-dots">
-    <button type="button" class="hero-stage-dot" data-i18n-attr-aria-label="hero.altARCs" aria-label="ARCademy — ausgewählte ARCs"></button>
-    <button type="button" class="hero-stage-dot is-active" data-i18n-attr-aria-label="hero.altHome" aria-label="ArcUp Home — Tageserfüllung, Wochenerfüllung, Level und aktive ARCs"></button>
-    <button type="button" class="hero-stage-dot" data-i18n-attr-aria-label="hero.altRef" aria-label="Compass — Lebensrad"></button>
-    <button type="button" class="hero-stage-dot" data-i18n-attr-aria-label="hero.altHabits" aria-label="ARCademy — Gewohnheiten-Bibliothek"></button>
-    <button type="button" class="hero-stage-dot" data-i18n-attr-aria-label="hero.altInsights" aria-label="Insights — Level, Streak und Statistiken der Lebensbereiche"></button>
-    <button type="button" class="hero-stage-dot" data-i18n-attr-aria-label="hero.altDiscover" aria-label="Discover — Lerninhalte und Lektionen"></button>
+      <div class="hero-stage-dots">
+        <button type="button" class="hero-stage-dot" data-i18n-attr-aria-label="hero.altARCs" aria-label="ARCademy — ausgewählte ARCs"></button>
+        <button type="button" class="hero-stage-dot is-active" data-i18n-attr-aria-label="hero.altHome" aria-label="ArcUp Home — Tageserfüllung, Wochenerfüllung, Level und aktive ARCs"></button>
+        <button type="button" class="hero-stage-dot" data-i18n-attr-aria-label="hero.altRef" aria-label="Compass — Lebensrad"></button>
+        <button type="button" class="hero-stage-dot" data-i18n-attr-aria-label="hero.altHabits" aria-label="ARCademy — Gewohnheiten-Bibliothek"></button>
+        <button type="button" class="hero-stage-dot" data-i18n-attr-aria-label="hero.altInsights" aria-label="Insights — Level, Streak und Statistiken der Lebensbereiche"></button>
+        <button type="button" class="hero-stage-dot" data-i18n-attr-aria-label="hero.altDiscover" aria-label="Discover — Lerninhalte und Lektionen"></button>
+      </div>
+    </div>
   </div>
 
   <ul class="hero-trust">
@@ -664,6 +662,19 @@
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 
+  const toggle = document.getElementById('navToggle');
+  const links  = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    links.classList.toggle('open');
+    toggle.classList.toggle('open');
+  });
+  links.querySelectorAll('a').forEach(a =>
+    a.addEventListener('click', () => {
+      links.classList.remove('open');
+      toggle.classList.remove('open');
+    })
+  );
+
   // Subtle scroll-state for nav
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => {
@@ -671,5 +682,5 @@
   }, { passive: true });
 </script>
 
-<style>*, *::before, *::after { animation: none !important; transition: none !important; }</style><script>window.addEventListener("load",function(){setTimeout(function(){document.getElementById("heroNext").click();},300);});</script></body>
+<style>*, *::before, *::after { animation: none !important; transition: none !important; }</style></body>
 </html>

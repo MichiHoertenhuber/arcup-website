@@ -19,7 +19,6 @@
     var n = phones.length;
     if (n < 3) return;
     var dots = Array.prototype.slice.call(document.querySelectorAll('.hero-stage-dot'));
-    var captions = Array.prototype.slice.call(document.querySelectorAll('.hero-stage-caption span'));
 
     var ALL_SLOTS = ['slot-left', 'slot-center', 'slot-right', 'slot-hidden-left', 'slot-hidden-right'];
     var half = Math.floor(n / 2);
@@ -40,9 +39,6 @@
       });
       dots.forEach(function (dot, idx) {
         dot.classList.toggle('is-active', idx === center);
-      });
-      captions.forEach(function (cap, idx) {
-        cap.classList.toggle('is-active', idx === center);
       });
     }
     function goTo(idx) { center = (idx + n) % n; apply(); }

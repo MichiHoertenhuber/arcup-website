@@ -191,8 +191,6 @@ nav.scrolled {
   gap: 32px;
 }
 .nav-brand { display: flex; align-items: center; }
-/* Lang switcher sitting directly in the nav (index has no link list) */
-.nav-inner > [data-lang-switcher] { margin-left: auto; }
 
 .nav-links {
   display: flex;
@@ -280,11 +278,20 @@ nav.scrolled {
   -webkit-mask-image: radial-gradient(ellipse at center top, black 0%, transparent 70%);
 }
 
-/* Inner content — centered story */
-.hero-inner {
+/* Layout — stacked and centered by default (the mobile look); on wide
+ * screens the split media query below turns this into two columns:
+ * welcome copy on the left, the phone stage on the right. */
+.hero-split {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.hero-copy {
   text-align: center;
   position: relative;
   z-index: 2;
+  padding: 0 24px;
 }
 
 /* Welcome block — mirrors the app's landing slide: small uppercase kicker,
@@ -336,29 +343,28 @@ nav.scrolled {
   letter-spacing: -0.005em;
 }
 
-.hero-cta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 28px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
-.hero-secondary {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14.5px;
-  font-weight: 500;
-  color: var(--text);
-  padding: 6px 4px;
-  border-bottom: 1px solid var(--hairline-2);
-  transition: color 0.2s ease, border-color 0.2s ease, gap 0.2s ease;
-}
-.hero-secondary:hover {
-  color: var(--accent);
-  border-bottom-color: var(--accent);
-  gap: 12px;
+/* Two-column hero on laptop/desktop: copy left, stage right — the whole
+ * highlight fits the first viewport. Mobile keeps the stacked app look. */
+@media (min-width: 1024px) {
+  .hero { padding-top: 96px; }
+  .hero-split {
+    display: grid;
+    grid-template-columns: minmax(340px, 440px) 1fr;
+    align-items: center;
+    gap: clamp(24px, 4vw, 72px);
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 48px;
+  }
+  .hero-copy { text-align: left; padding: 0; }
+  .hero-brand { justify-content: flex-start; font-size: clamp(52px, 6.4vw, 92px); }
+  .hero-sub { margin-left: 0; }
+  .hero-showcase { min-width: 0; }
+  .hero-stage-shell {
+    margin-top: 0;
+    --phone-w: clamp(200px, 20vw, 290px);
+  }
+  .hero-trust { margin: 20px auto 44px; }
 }
 
 /* The stage — swipeable 3D fan: three phones cycle through the left /
@@ -518,7 +524,7 @@ nav.scrolled {
   display: flex;
   justify-content: center;
   gap: 4px;
-  margin-top: 14px;
+  margin-top: 48px;
   position: relative;
   z-index: 2;
 }
@@ -549,20 +555,6 @@ nav.scrolled {
   box-shadow: 0 0 10px rgba(34, 197, 94, 0.6);
 }
 
-/* Caption — names the screen currently in the front slot */
-.hero-stage-caption {
-  position: relative;
-  z-index: 2;
-  margin: 46px auto 0;
-  padding: 0 24px;
-  text-align: center;
-  font-size: 15px;
-  color: var(--text-mute);
-  min-height: 23px;
-}
-.hero-stage-caption span { display: none; }
-.hero-stage-caption span.is-active { display: inline-block; }
-
 /* ── Motion: staggered entrance, floating phones, breathing glow, reveal ──
  * Entrance keyframes only define `from`; the browser animates toward each
  * phone's natural state, so base opacity/position stay the single source
@@ -573,11 +565,9 @@ nav.scrolled {
   .hero-kicker { animation: heroFade 0.5s ease both; }
   .hero-brand-arc { animation: brandArcIn 0.75s cubic-bezier(0.22, 1, 0.36, 1) both; }
   .hero-brand-up { animation: brandUpIn 0.75s cubic-bezier(0.22, 1, 0.36, 1) both; }
-  .hero-tagline, .hero-sub, .hero-cta {
+  .hero-tagline, .hero-sub {
     animation: heroFadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.55s both;
   }
-
-  .hero-stage-caption span.is-active { animation: heroFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) both; }
 
   .hero-phone {
     transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
@@ -1446,7 +1436,7 @@ nav.scrolled {
     --fan-x: calc(var(--phone-w) * 0.60);
     --side-scale: 0.58;
   }
-  .hero-stage-caption { margin-top: 42px; }
+  .hero-stage-dots { margin-top: 44px; }
   .hero-trust { margin: 44px auto 64px; gap: 22px; }
 
   .layers-grid { grid-template-columns: 1fr; }
@@ -1506,9 +1496,6 @@ nav.scrolled {
   .hero { padding: 110px 0 0; }
   .hero-brand { font-size: clamp(48px, 15vw, 64px); }
   .hero-sub { font-size: 15px; max-width: 92%; }
-  .hero-cta { flex-direction: column; align-items: stretch; gap: 18px; }
-  .hero-cta .btn { width: 100%; }
-  .hero-secondary { justify-content: center; }
 
   .areas-grid { grid-template-columns: 1fr 1fr; }
   .area-desc { min-height: 0; }
