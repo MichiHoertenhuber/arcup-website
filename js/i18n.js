@@ -40,31 +40,12 @@
     'nav.lang':        { de: 'Sprache wählen',   en: 'Select language', es: 'Seleccionar idioma', fr: 'Choisir la langue', it: 'Seleziona lingua' },
 
     // ─── HERO ────────────────────────────────────────────
-    'hero.pill': {
-      de: 'iOS &amp; Android · Jetzt verfügbar',
-      en: 'iOS &amp; Android · Available now',
-      es: 'iOS y Android · Ya disponible',
-      fr: 'iOS et Android · Disponible maintenant',
-      it: 'iOS e Android · Ora disponibile',
-    },
-    'hero.headline1': { de: 'Building', en: 'Building', es: 'Construir', fr: 'Construire', it: 'Costruire' },
-    'hero.headline2': { de: 'better',   en: 'better',   es: 'mejores',   fr: 'de meilleures', it: 'migliori' },
-    'hero.headline3': { de: 'habits.',  en: 'habits.',  es: 'hábitos.',  fr: 'habitudes.',    it: 'abitudini.' },
     'hero.sub': {
       de: 'Pick your ARC, lock in, and finish stronger.',
       en: 'Pick your ARC, lock in, and finish stronger.',
       es: 'Pick your ARC, lock in, and finish stronger.',
       fr: 'Pick your ARC, lock in, and finish stronger.',
       it: 'Pick your ARC, lock in, and finish stronger.',
-    },
-    'hero.rotPrefix': { de: 'Für', en: 'For', es: 'Para', fr: 'Pour', it: 'Per' },
-    'hero.ctaPrimary': {
-      de: 'App kostenlos laden', en: 'Get the app for free', es: 'Descargar gratis',
-      fr: "Télécharger gratuitement", it: "Scarica gratis",
-    },
-    'hero.ctaSecondary': {
-      de: 'So funktioniert ArcUp', en: 'How ArcUp works', es: 'Cómo funciona ArcUp',
-      fr: 'Comment fonctionne ArcUp', it: 'Come funziona ArcUp',
     },
     'hero.trust1': { de: 'Made in Austria', en: 'Made in Austria', es: 'Made in Austria', fr: 'Made in Austria', it: 'Made in Austria' },
     'hero.trust2': { de: 'EU-Hosting · DSGVO',      en: 'EU hosting · GDPR',      es: 'Hosting UE · RGPD',    fr: 'Hébergement UE · RGPD',  it: 'Hosting UE · GDPR' },
@@ -84,12 +65,6 @@
     'hero.tagline': { de: 'Building Better Habits', en: 'Building Better Habits', es: 'Building Better Habits', fr: 'Building Better Habits', it: 'Building Better Habits' },
     'hero.prev': { de: 'Vorheriger Screenshot', en: 'Previous screenshot', es: 'Captura anterior', fr: 'Capture précédente', it: 'Schermata precedente' },
     'hero.next': { de: 'Nächster Screenshot', en: 'Next screenshot', es: 'Siguiente captura', fr: 'Capture suivante', it: 'Schermata successiva' },
-    'hero.capHome': { de: 'Home. Dein Tag auf einen Blick.', en: 'Home. Your day at a glance.', es: 'Inicio. Tu día de un vistazo.', fr: "Accueil. Ta journée d'un coup d'œil.", it: "Home. Oggi, a colpo d'occhio." },
-    'hero.capARCs': { de: 'ARCademy. Deine nächste Challenge.', en: 'ARCademy. Your next challenge.', es: 'ARCademy. Tu próximo reto.', fr: 'ARCademy. Ton prochain défi.', it: 'ARCademy. La tua prossima sfida.' },
-    'hero.capHabits': { de: 'ARCademy. Jede Gewohnheit messbar.', en: 'ARCademy. Every Habit, measurable.', es: 'ARCademy. Cada hábito, medible.', fr: 'ARCademy. Chaque habitude, mesurable.', it: 'ARCademy. Ogni abitudine, misurabile.' },
-    'hero.capInsights': { de: 'Insights. Schwarz auf weiß.', en: 'Insights. In black and white.', es: 'Insights. Negro sobre blanco.', fr: 'Insights. Noir sur blanc.', it: 'Insights. Nero su bianco.' },
-    'hero.capDiscover': { de: 'Discover. Versteh deine Gewohnheiten.', en: 'Discover. Understand your Habits.', es: 'Discover. Entiende tus hábitos.', fr: 'Discover. Comprends tes habitudes.', it: 'Discover. Capisci le tue abitudini.' },
-    'hero.capRef': { de: 'Compass. Das große Ganze.', en: 'Compass. The big picture.', es: 'Compass. El panorama completo.', fr: "Compass. La vue d'ensemble.", it: 'Compass. Il quadro completo.' },
 
     // ─── MANIFESTO ───────────────────────────────────────
     'mani.overline': { de: 'Was uns leitet', en: 'What guides us', es: 'Lo que nos guía', fr: 'Ce qui nous guide', it: 'Ciò che ci guida' },
