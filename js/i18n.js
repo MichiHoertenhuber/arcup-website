@@ -339,12 +339,26 @@
     'ft.agb':          { de: 'AGB', en: 'Terms', es: 'Términos', fr: 'CGU', it: 'Termini' },
 
     // ─── LEGAL PAGES ─────────────────────────────────────
-    'legal.lastUpdated': {
-      de: 'Stand: 16. Juli 2026',
-      en: 'Last updated: 16 July 2026',
-      es: 'Última actualización: 16 de julio de 2026',
-      fr: 'Dernière mise à jour : 16 juillet 2026',
-      it: 'Ultimo aggiornamento: 16 luglio 2026',
+    'legal.lastUpdated.datenschutz': {
+      de: 'Stand: 17. Juli 2026',
+      en: 'Last updated: 17 July 2026',
+      es: 'Última actualización: 17 de julio de 2026',
+      fr: 'Dernière mise à jour : 17 juillet 2026',
+      it: 'Ultimo aggiornamento: 17 luglio 2026',
+    },
+    'legal.lastUpdated.agb': {
+      de: 'Stand: 17. Juli 2026',
+      en: 'Last updated: 17 July 2026',
+      es: 'Última actualización: 17 de julio de 2026',
+      fr: 'Dernière mise à jour : 17 juillet 2026',
+      it: 'Ultimo aggiornamento: 17 luglio 2026',
+    },
+    'legal.lastUpdated.impressum': {
+      de: 'Stand: 13. Juni 2026',
+      en: 'Last updated: 13 June 2026',
+      es: 'Última actualización: 13 de junio de 2026',
+      fr: 'Dernière mise à jour : 13 juin 2026',
+      it: 'Ultimo aggiornamento: 13 giugno 2026',
     },
     'legal.fallbackNotice': {
       de: '',

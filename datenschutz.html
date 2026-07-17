@@ -38,7 +38,7 @@
 <main class="container">
   <div class="legal-page">
     <h1 data-i18n="legal.datenschutz.title">Datenschutzerklärung</h1>
-    <p class="last-updated" data-i18n="legal.lastUpdated">Stand: 16. Juli 2026</p>
+    <p class="last-updated" data-i18n="legal.lastUpdated.datenschutz">Stand: 17. Juli 2026</p>
 
     <p class="legal-fallback-notice" data-i18n="legal.fallbackNotice"></p>
 
@@ -275,7 +275,7 @@
         <li><strong>Habit-Logs, Statistiken, Achievements, Ziele, Journal-Einträge, Selfmade-Habits/-ARCs, Coverbilder, Feedback-Nachrichten samt optional angehängtem Screenshot, Urlaubsperioden:</strong> bis zur Kontolöschung. Einzelne Datensätze kann der Nutzer jederzeit selbst innerhalb der App löschen.</li>
         <li><strong>Cross-ARC-Vervollständigungs-Logs</strong> (<code>completion_logs</code>): rollierendes 90-Tage-Fenster; ältere Datensätze werden automatisch gelöscht.</li>
         <li><strong>Abo-/Rechnungsdaten:</strong> sieben Jahre gemäß § 132 Bundesabgabenordnung (BAO) bzw. § 212 UGB. Innerhalb dieser Frist werden Daten nur noch zu Beweis- und Aufbewahrungszwecken vorgehalten und nicht weiter aktiv verarbeitet.</li>
-        <li><strong>Store-Abonnements &amp; RevenueCat:</strong> Aktive In-App-Abonnements werden von Apple bzw. Google verwaltet und durch eine Kontolöschung <strong>nicht</strong> automatisch beendet — der Nutzer muss sie in den Store-Einstellungen selbst kündigen (hierauf wird vor der Löschung hingewiesen). Der bei RevenueCat gespeicherte pseudonyme Abonnenten-Datensatz enthält keine Klardaten und kann auf Anfrage gelöscht werden.</li>
+        <li><strong>Store-Abonnements &amp; RevenueCat:</strong> Aktive In-App-Abonnements werden von Apple bzw. Google verwaltet und durch eine Kontolöschung <strong>nicht</strong> automatisch beendet — der Nutzer muss sie in den Store-Einstellungen selbst kündigen (hierauf wird vor der Löschung hingewiesen). Der bei RevenueCat gespeicherte pseudonyme Abonnenten-Datensatz enthält keine Klardaten und wird bei der Konto-Löschung automatisch über die RevenueCat-API mitgelöscht.</li>
         <li><strong>Server-Logs:</strong> maximal 30 Tage durch Supabase-Logging, danach automatische Rotation.</li>
       </ul>
 
@@ -342,7 +342,7 @@
       <p>Zur Erleichterung der Ausübung dieser Rechte bietet die App zwei integrierte Selbstbedienungs-Funktionen:</p>
       <ul>
         <li><strong>Datenexport („Datenexport" im Profil-Bereich):</strong> erstellt einen ZIP-Download Ihres gesamten personenbezogenen Datenbestands (alle Tabellen, in denen Sie Eigentümer sind, plus Ihre hochgeladenen Coverbilder und an Feedback angehängten Screenshots) als JSON-Dateien plus Manifest. Aus Schutz vor missbräuchlichen Massenanfragen ist die Funktion auf <strong>eine Anfrage pro 24 Stunden</strong> beschränkt (Art. 12 Abs. 5 DSGVO).</li>
-        <li><strong>Konto-Löschung („Konto löschen" in den Account-Einstellungen):</strong> löscht unwiderruflich Ihren Supabase-Account, alle damit verknüpften Datensätze über <code>ON DELETE CASCADE</code>-Verknüpfungen, sämtliche von Ihnen hochgeladenen Storage-Objekte (Coverbilder, an Feedback angehängte Screenshots und ggf. vorgenerierte Export-Archive). Über Apple bzw. Google abgeschlossene Abonnements werden hierdurch <strong>nicht</strong> gekündigt und müssen separat in den Store-Einstellungen beendet werden.</li>
+        <li><strong>Konto-Löschung („Konto löschen" in den Account-Einstellungen):</strong> löscht unwiderruflich Ihren Supabase-Account, alle damit verknüpften Datensätze über <code>ON DELETE CASCADE</code>-Verknüpfungen, sämtliche von Ihnen hochgeladenen Storage-Objekte (Coverbilder, an Feedback angehängte Screenshots und ggf. vorgenerierte Export-Archive) sowie den pseudonymen Abonnenten-Datensatz bei RevenueCat. Über Apple bzw. Google abgeschlossene Abonnements werden hierdurch <strong>nicht</strong> gekündigt und müssen separat in den Store-Einstellungen beendet werden.</li>
       </ul>
       <p>Darüber hinaus erreichen Sie uns unter der in 1. angegebenen Adresse.</p>
 
