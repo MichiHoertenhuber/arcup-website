@@ -38,7 +38,7 @@
 <main class="container">
   <div class="legal-page">
     <h1 data-i18n="legal.datenschutz.title">Datenschutzerklärung</h1>
-    <p class="last-updated" data-i18n="legal.lastUpdated">Stand: 13. Juli 2026</p>
+    <p class="last-updated" data-i18n="legal.lastUpdated">Stand: 16. Juli 2026</p>
 
     <p class="legal-fallback-notice" data-i18n="legal.fallbackNotice"></p>
 
@@ -310,6 +310,7 @@
         <li><strong>Offline-Warteschlange für Habit-Einträge:</strong> ohne Internetverbindung erfasste Habit-Einträge werden lokal zwischengespeichert und bei Wiederverbindung automatisch an den Server übertragen und lokal entfernt. Einträge, die serverseitig nicht mehr zulässig sind (älter als der Vortag), werden verworfen.</li>
         <li><strong>Bild-Cache (expo-image):</strong> ARC- und Lerninhalt-Coverbilder werden zur Offline-Anzeige im lokalen App-Cache des Geräts vorgehalten; das Betriebssystem bzw. die App-Deinstallation räumt diesen Cache auf.</li>
         <li><strong>Foto-Auswahl (expo-image-picker):</strong> greift nach Bestätigung des System-Dialogs auf einzelne, vom Nutzer ausgewählte Bilder zu, zur Verwendung als ARC-Coverbild oder als optionaler Screenshot-Anhang an eine Feedback-Nachricht.</li>
+        <li><strong>Anmelde-Schutzzähler:</strong> Zeitstempel fehlgeschlagener Anmeldeversuche (inkl. der dabei eingegebenen E-Mail-Adresse) und angeforderter Bestätigungs-/Zurücksetzungs-Codes werden ausschließlich lokal auf dem Gerät gespeichert, um wiederholte Fehlversuche und übermäßige Code-Anfragen zu drosseln (Schutz vor Missbrauch). Einträge verfallen automatisch (Fehlversuche nach 24 Stunden, Code-Anfragen nach 1 Stunde) und verlassen das Gerät zu keinem Zeitpunkt.</li>
       </ul>
 
       <h2>9. Sicherheit</h2>
@@ -320,6 +321,7 @@
       <ul>
         <li><strong>Transport-Verschlüsselung:</strong> Sämtliche Kommunikation zwischen App und Server erfolgt über HTTPS/TLS.</li>
         <li><strong>Authentifizierung:</strong> Passwort-basierte Anmeldung mit Supabase Auth; serverseitiges Hashing der Passwörter.</li>
+        <li><strong>Drosselung von Anmelde- und Code-Anfragen:</strong> serverseitige Rate-Limits von Supabase Auth sowie eine gerätelokale Sperre nach wiederholten Fehlversuchen begrenzen Brute-Force-Angriffe und E-Mail-Spam (Passwort-Zurücksetzen, E-Mail-Änderung, Bestätigungs-Codes).</li>
         <li><strong>Row-Level Security (RLS):</strong> Auf Datenbank-Ebene ist für jede Tabelle erzwungen, dass Nutzer ausschließlich auf ihre eigenen Zeilen zugreifen können (Vergleich <code>auth.uid() = user_id</code>).</li>
         <li><strong>Verschlüsselte Token-Ablage</strong> im Keychain/Keystore des Endgeräts.</li>
         <li><strong>Backups</strong> durch die EU-Infrastruktur des Cloud-Anbieters (verschlüsselte Snapshots).</li>
@@ -649,6 +651,7 @@
         <li><strong>Offline queue for habit entries:</strong> habit entries recorded without an internet connection are stored locally and automatically transmitted to the server and removed locally once the connection returns. Entries the server no longer accepts (older than the previous day) are discarded.</li>
         <li><strong>Image cache (expo-image):</strong> ARC and learning-content cover images are kept in the device's local app cache for offline display; the operating system or uninstalling the App clears this cache.</li>
         <li><strong>Photo picker (expo-image-picker):</strong> after confirming the system dialog, accesses individual images selected by the User, for use as an ARC cover image or as an optional screenshot attachment to a feedback message.</li>
+        <li><strong>Sign-in protection counters:</strong> timestamps of failed sign-in attempts (including the email address entered) and of requested confirmation/reset codes are stored exclusively locally on the device to throttle repeated failures and excessive code requests (abuse protection). Entries expire automatically (failed attempts after 24 hours, code requests after 1 hour) and never leave the device.</li>
       </ul>
 
       <h2>9. Security</h2>
@@ -659,6 +662,7 @@
       <ul>
         <li><strong>Transport encryption:</strong> all communication between App and server is via HTTPS/TLS.</li>
         <li><strong>Authentication:</strong> password-based sign-in with Supabase Auth; server-side hashing of passwords.</li>
+        <li><strong>Throttling of sign-in and code requests:</strong> server-side rate limits of Supabase Auth plus a device-local lockout after repeated failed attempts limit brute-force attacks and email spam (password reset, email change, confirmation codes).</li>
         <li><strong>Row-Level Security (RLS):</strong> at the database level, each table enforces that users can only access their own rows (comparison <code>auth.uid() = user_id</code>).</li>
         <li><strong>Encrypted token storage</strong> in the device's Keychain/Keystore.</li>
         <li><strong>Backups</strong> via the EU infrastructure of the cloud provider (encrypted snapshots).</li>
