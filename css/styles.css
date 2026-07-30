@@ -1415,6 +1415,9 @@ nav.scrolled {
   color: var(--accent);
   border-bottom: 1px solid rgba(34, 197, 94, 0.3);
   transition: border-color 0.15s ease;
+  /* Long link text (e.g. full Amazon help URLs) must break instead of forcing
+     a horizontal scroll on narrow phones. */
+  overflow-wrap: anywhere;
 }
 .legal-page a:hover { border-bottom-color: var(--accent); }
 .legal-page ul, .legal-page ol {
@@ -1622,8 +1625,10 @@ nav.scrolled {
   background: var(--area, var(--accent));
 }
 
-/* Duration + difficulty pills, shown together top-right on each ARC card */
-.arc-pills { display: flex; align-items: center; gap: 8px; }
+/* Duration + difficulty pills, shown together top-right on each ARC card.
+   flex-wrap lets them fall onto a second line instead of crushing / breaking
+   mid-word on narrow phones (the staged card carries three pills). */
+.arc-pills { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 
 /* Featured ARC (Classic Winter) on top — full width, 2-column habit list — with
    the two newer ARCs side-by-side below in a width-matched row. The compound
@@ -1677,6 +1682,19 @@ nav.scrolled {
 .arc-stage-pill { border-color: var(--area); color: var(--area); }
 @media (max-width: 640px) {
   .arc-example--staged .arc-stages { grid-template-columns: 1fr; gap: 18px; }
+}
+
+/* Small phones — the meta row (area label + duration/difficulty pills) no longer
+   fits on one line, so stack it: area on top, pills left-aligned below. Trim the
+   card padding a touch to give the content more breathing room too. */
+@media (max-width: 480px) {
+  .arc-example,
+  .arc-example--featured { padding: 26px 20px; }
+  .arc-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 }
 
 /* ════════════════════════════════════════════════════════════
